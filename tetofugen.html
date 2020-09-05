@@ -286,7 +286,7 @@ window.addEventListener("DOMContentLoaded", function(){
         const srcDataurl = srcCanvas.toDataURL();
         const dstDataurl = dstCanvas.toDataURL();
         document.getElementById("input").innerHTML = "<img src='" + srcDataurl + "' style='width: 180px; height: 360px;'>";
-        document.getElementById("output").innerHTML = "<img src='" + dstDataurl + "' style='width: 180px; height: 360px; image-rendering: pixelated;'>";
+        document.getElementById("output").innerHTML = "<img src='" + dstDataurl + "' style='width: 180px; height: 360px; image-rendering: pixelated; image-rendering: crisp-edges;'>";
 
         const fumenUrl = "http://fumen.zui.jp/?" + encodeFumen(blocks);
         const fumenLinkParent = document.getElementById("tetofu");
