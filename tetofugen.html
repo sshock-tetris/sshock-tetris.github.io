@@ -4,15 +4,66 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>譜面画像から譜面を起こすテスト</title>
+<style>
+#drop-target {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dotted #999999;
+  margin: 5px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  min-height: 360px;
+}
+.drop-target-dragover {
+  border: 3px dotted #ff9999 !important;
+  background-color: #fff8f8 !important;
+}
+.result-block {
+  display: flex;
+  justify-content: center;
+}
+.result-item {
+  padding: 0 5px;
+}
+.input-image {
+  width: 180px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.output-image {
+  width: 180px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+.copyright {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+}
+</style>
 </head>
 <body>
 <h1>譜面画像から譜面を起こすテスト</h1>
 <p>譜面画像ファイルから色を認識してテト譜を起こします。</p>
 <input type="file" id="selectfile" accept='image/*'>
-<div style="border: none; margin: 5px; background-color: #f8f8f8; min-height: 360px; text-align: center;">
-<span id="input"></span>
-<span id="output"></span><br>
-<span id="tetofu"><a></a></span>
+<div id="drop-target">
+<div class="result-block">
+<div id="input" class="result-item"><img></div>
+<div id="output" class="result-item"><img></div>
+</div>
+<div id="tetofu"><a></a></div>
+<div id="usage">次のいずれかの方法で画像を読み込んでください:
+<ul>
+<li>上のファイル選択ボタンを押し、画像ファイルを選択する</li>
+<li>このエリア内に画像ファイルをドロップする</li>
+<li>画像をクリップボードにコピーし、Ctrl + V を押して画像ファイルをペーストする</li>
+</ul>
+</div>
 </div>
 <h3>使用方法と注意事項</h3>
 <ul>
@@ -36,6 +87,8 @@
 <li>カメラ撮影画像の受付(自動ゆがみ補正など)</li>
 <li>譜面の自動切り抜き</li>
 </ul>
+<hr>
+<small class="copyright">Tetofu-generator v0.2, Copyright: (C) 2020 shellshock.</small>
 
 <script>
 // This script is released under the MIT License.
@@ -180,8 +233,10 @@ function getColorIndex(src, x, y, blockPx, srcWidth) {
 
 function recognize(src, dst, srcWidth, srcHeight) {
   let blocks = [];
-  const blockPx = srcWidth / 10;
-  console.log("blockPx: ", blockPx);
+  const blockX = srcWidth / 10;
+  const blockY = srcHeight / 20;
+  const blockPx = blockX > blockY ? blockX : blockY;
+  console.log("x:", blockX, "y", blockY, "block pixel:", blockPx);
   for (let i = 0; i < 20; i++) {
     for (let j = 0; j < 10; j++) {
       const color = getColorIndex(src, j, i, blockPx, srcWidth);
@@ -197,7 +252,7 @@ function formatFumenPairToStr(blockInfo) {
   const pattern = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
   const z = blockInfo.type * 240 + blockInfo.count;
   const remainder = z % 64;
-  const quotient = z / 64;
+  const quotient = parseInt(z / 64, 10);
   return pattern.charAt(remainder) + pattern.charAt(quotient);
 }
 
@@ -238,70 +293,132 @@ function encodeFumen(block) {
   return encoded;
 }
 
+function load(file) {
+  if (file.length != 1) {
+    return;
+  }
+
+  let img = null;
+  const reader = new FileReader();
+  reader.readAsDataURL(file[0]);
+  const srcCanvas = document.createElement("canvas");
+  const dstCanvas = document.createElement("canvas");
+
+  reader.onload = function(){
+    img = new Image();
+    img.onload = function(){
+      const srcContext = srcCanvas.getContext('2d');
+      const dstContext = dstCanvas.getContext('2d');
+      const width = img.width;
+      const height = img.height;
+      const aspectRatio = height / width;
+      console.log("aspect ratio: ", aspectRatio);
+      if (width < 80 || height < 160) {
+        window.alert("画像サイズが小さすぎます。最低でも幅80px、高さ160px必要です。大きな画像を用意した方が精度が上がります。");
+        return;
+      }
+      if (aspectRatio < 1.96 || aspectRatio > 2.04) {
+        window.alert("縦横比が正しくありません。ブロックは縦横20x10の正方形、かつ縦横比が2:1である必要があります。画面をできるだけ正確に切り抜いてください。");
+        return;
+      }
+      srcCanvas.width = width;
+      srcCanvas.height = height;
+      srcContext.drawImage(img, 0, 0);
+      dstCanvas.width = 10;
+      dstCanvas.height = 20;
+
+      const srcData = srcContext.getImageData(0, 0, width, height);
+      const dstData = dstContext.createImageData(10, 20);
+      const src = srcData.data;
+      const dst = dstData.data;
+      const blocks = recognize(src, dst, width, height);
+      srcContext.putImageData(srcData, 0, 0);
+      dstContext.putImageData(dstData, 0, 0);
+
+      const imgElementIn = document.createElement("img");
+      const imgElementOut = document.createElement("img");
+      imgElementIn.src = srcCanvas.toDataURL();
+      imgElementIn.className = "input-image";
+      imgElementOut.src = dstCanvas.toDataURL();
+      imgElementOut.className = "output-image";
+      document.getElementById("input").replaceChild(imgElementIn, document.getElementById("input").firstChild);
+      document.getElementById("output").replaceChild(imgElementOut, document.getElementById("output").firstChild);
+
+      const fumenUrl = "http://fumen.zui.jp/?" + encodeFumen(blocks);
+      const fumenLinkParent = document.getElementById("tetofu");
+      const fumenLink = document.createElement("a");
+      fumenLink.href = fumenUrl;
+      fumenLink.innerText = fumenUrl;
+      fumenLink.target = "_blank";
+      fumenLink.rel = "noopener noreferrer";
+      fumenLink.style.wordBreak = "break-all";
+      fumenLinkParent.replaceChild(fumenLink, fumenLinkParent.firstChild);
+
+      document.getElementById("usage").style.display = "none";
+    }
+    img.src = reader.result;
+  }
+}
+
+function onDrop(event) {
+  // デフォルト動作(ファイルオープン)を阻止
+  event.preventDefault();
+  document.getElementById("drop-target").className = "";
+
+  console.log(event);
+  if (event.dataTransfer.files) {
+    load(event.dataTransfer.files);
+    /*
+    for (let i = 0; i < event.dataTransfer.items.length; i++) {
+      if (event.dataTransfer.items[i].kind === 'file' && event.dataTransfer.items[i].type.startsWith("image/")) {
+        FileList
+        const file = event.dataTransfer.items[i].getAsFile();
+        console.log(file.name);
+      }
+    }
+    */
+  }
+}
+
+function onDragOver(event) {
+  // デフォルト動作(ファイルオープン)を阻止
+  event.preventDefault();
+  document.getElementById("drop-target").className = "drop-target-dragover";
+}
+
+function onDragLeave(event) {
+  // デフォルト動作(ファイルオープン)を阻止
+  event.preventDefault();
+  document.getElementById("drop-target").className = "";
+}
+
+function onPaste(event) {
+  console.dir(event);
+  load(event.clipboardData.files);
+}
+
 window.addEventListener("DOMContentLoaded", function(){
   const ofd = document.getElementById("selectfile");
   ofd.addEventListener("change", function(evt) {
-    const file = evt.target.files;
-    if (file.length < 1) {
-      return;
-    }
-
-    let img = null;
-    const reader = new FileReader();
-    reader.readAsDataURL(file[0]);
-    const srcCanvas = document.createElement("canvas");
-    const dstCanvas = document.createElement("canvas");
-
-    reader.onload = function(){
-      img = new Image();
-      img.onload = function(){
-        const srcContext = srcCanvas.getContext('2d');
-        const dstContext = dstCanvas.getContext('2d');
-        const width = img.width;
-        const height = img.height;
-        const aspectRatio = height / width;
-        console.log("aspect ratio: ", aspectRatio);
-        if (width < 80 || height < 160) {
-          window.alert("画像サイズが小さすぎます。最低でも幅80px、高さ160px必要です。大きな画像を用意した方が精度が上がります。");
-          return;
-        }
-        if (aspectRatio < 1.96 || aspectRatio > 2.04) {
-          window.alert("縦横比が正しくありません。ブロックは縦横20x10の正方形、かつ縦横比が2:1である必要があります。画面をできるだけ正確に切り抜いてください。");
-          return;
-        }
-        srcCanvas.width = width;
-        srcCanvas.height = height;
-        srcContext.drawImage(img, 0, 0);
-        dstCanvas.width = 10;
-        dstCanvas.height = 20;
-
-        const srcData = srcContext.getImageData(0, 0, width, height);
-        const dstData = dstContext.createImageData(10, 20);
-        const src = srcData.data;
-        const dst = dstData.data;
-        const blocks = recognize(src, dst, width, height);
-        srcContext.putImageData(srcData, 0, 0);
-        dstContext.putImageData(dstData, 0, 0);
- 
-        const srcDataurl = srcCanvas.toDataURL();
-        const dstDataurl = dstCanvas.toDataURL();
-        document.getElementById("input").innerHTML = "<img src='" + srcDataurl + "' style='width: 180px; height: 360px;'>";
-        document.getElementById("output").innerHTML = "<img src='" + dstDataurl + "' style='width: 180px; height: 360px; image-rendering: pixelated; image-rendering: crisp-edges;'>";
-
-        const fumenUrl = "http://fumen.zui.jp/?" + encodeFumen(blocks);
-        const fumenLinkParent = document.getElementById("tetofu");
-        const fumenLink = document.createElement("a");
-        fumenLink.href = fumenUrl;
-        fumenLink.innerText = fumenUrl;
-        fumenLink.target = "_blank";
-        fumenLink.rel = "noopener noreferrer";
-        fumenLink.style.wordBreak = "break-all";
-        fumenLinkParent.removeChild(fumenLinkParent.firstChild);
-        fumenLinkParent.appendChild(fumenLink);
-      }
-      img.src = reader.result;
-    }
+    load(evt.target.files);
   }, false);
+
+  // Clipboard
+  document.body.addEventListener("paste", function(event) {
+    onPaste(event);
+  });
+
+  // Drop Target
+  const dt = document.getElementById("drop-target");
+  dt.addEventListener("drop", function(event) {
+    onDrop(event);
+  });
+  dt.addEventListener("dragover", function(event) {
+    onDragOver(event);
+  });
+  dt.addEventListener("dragleave", function(event) {
+    onDragLeave(event);
+  });
 });
 </script>
 </body>
