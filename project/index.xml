@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | about: @sshock_tetris</title>
+    <link>https://sshock-tetris.github.io/project/</link>
+      <atom:link href="https://sshock-tetris.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 shellshock.</copyright><lastBuildDate>Tue, 15 Sep 2020 00:04:47 +0900</lastBuildDate>
+    <image>
+      <url>https://sshock-tetris.github.io/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_512x512_fill_lanczos_center_2.png</url>
+      <title>Projects</title>
+      <link>https://sshock-tetris.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>TETRIS99 Margin Timer</title>
+      <link>https://sshock-tetris.github.io/project/margin-timer/</link>
+      <pubDate>Tue, 15 Sep 2020 00:04:47 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/project/margin-timer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>譜面画像から譜面を起こす</title>
+      <link>https://sshock-tetris.github.io/project/tetofugen/</link>
+      <pubDate>Tue, 15 Sep 2020 00:02:03 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/project/tetofugen/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
