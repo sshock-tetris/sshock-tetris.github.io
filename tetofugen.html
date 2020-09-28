@@ -57,11 +57,11 @@
 <div id="output" class="result-item"><img></div>
 </div>
 <div id="tetofu"><a></a></div>
-<div id="usage">次のいずれかの方法で画像を読み込んでください:
+<div id="usage">次のいずれかの方法で譜面画像を読み込んでください:
 <ul>
-<li>上のファイル選択ボタンを押し、画像ファイルを選択する</li>
-<li>このエリア内に画像ファイルをドロップする</li>
-<li>画像をクリップボードにコピーし、Ctrl + V を押して画像ファイルをペーストする</li>
+<li>上のファイル選択ボタン(または参照ボタン)を押し、画像ファイルを選択する</li>
+<li>このエリア内に画像ファイルをドラッグ&amp;ドロップする</li>
+<li>画像をクリップボードにコピーし、Ctrl + V を押してペーストする</li>
 </ul>
 </div>
 </div>
@@ -88,7 +88,7 @@
 <li>譜面の自動切り抜き</li>
 </ul>
 <hr>
-<small class="copyright">Tetofu-generator v0.2, Copyright: (C) 2020 shellshock.</small>
+<small class="copyright">Tetofu-generator v0.3, Copyright: (C) 2020 shellshock.</small>
 
 <script>
 // This script is released under the MIT License.
@@ -211,15 +211,15 @@ function getColorIndex(src, x, y, blockPx, srcWidth) {
     // I
     return 1;
   }
-  if (color[0] > 160 && color[1] > 160 && color[2] < 50 && Math.abs(r_g) < 80) {
+  if (color[0] > 160 && color[1] > 160 && color[2] < 90 && Math.abs(r_g) < 80) {
     // O
     return 3;
   }
-  if (color[0] > 80 && color[0] <= 160 && color[1] > 140 && color[2] < 60) {
+  if (color[0] > 35 && color[0] <= 160 && color[1] > 120 && color[2] < 80 && r_g > 30 && g_b > 80) {
     // S
     return 7;
   }
-  if (color[0] > 160 && color[1] > 80 && color[2] < 50) {
+  if (color[0] > 160 && color[1] > 80 && color[2] < 60) {
     // L
     return 2;
   }
@@ -365,18 +365,8 @@ function onDrop(event) {
   event.preventDefault();
   document.getElementById("drop-target").className = "";
 
-  console.log(event);
   if (event.dataTransfer.files) {
     load(event.dataTransfer.files);
-    /*
-    for (let i = 0; i < event.dataTransfer.items.length; i++) {
-      if (event.dataTransfer.items[i].kind === 'file' && event.dataTransfer.items[i].type.startsWith("image/")) {
-        FileList
-        const file = event.dataTransfer.items[i].getAsFile();
-        console.log(file.name);
-      }
-    }
-    */
   }
 }
 
