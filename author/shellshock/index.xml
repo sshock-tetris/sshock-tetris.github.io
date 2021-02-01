@@ -5,12 +5,140 @@
     <link>https://sshock-tetris.github.io/author/shellshock/</link>
       <atom:link href="https://sshock-tetris.github.io/author/shellshock/index.xml" rel="self" type="application/rss+xml" />
     <description>shellshock</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 shellshock.</copyright><lastBuildDate>Mon, 14 Sep 2020 20:30:13 +0900</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2021 shellshock.</copyright><lastBuildDate>Sun, 31 Jan 2021 18:30:15 +0900</lastBuildDate>
     <image>
       <url>https://sshock-tetris.github.io/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_512x512_fill_lanczos_center_2.png</url>
       <title>shellshock</title>
       <link>https://sshock-tetris.github.io/author/shellshock/</link>
     </image>
+    
+    <item>
+      <title>配信環境</title>
+      <link>https://sshock-tetris.github.io/post/streaming_env/</link>
+      <pubDate>Sun, 31 Jan 2021 18:30:15 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/post/streaming_env/</guid>
+      <description>&lt;p&gt;配信環境について書こうと思う。&lt;/p&gt;
+&lt;h2 id=&#34;ハードウェア&#34;&gt;ハードウェア&lt;/h2&gt;
+&lt;h3 id=&#34;マイク-at9440--lct240-pro&#34;&gt;マイク: AT9440 → LCT240 Pro&lt;/h3&gt;
+&lt;p&gt;AT9440は、購入してもうすぐ15年になろうとしている、年季のあるコンデンサーマイク。
+ステレオマイクであり、声の収録よりも周囲の音を収録するのに適しているのかもしれない。&lt;/p&gt;
+&lt;p&gt;プラグインパワー仕様のマイクで、それに対応していないと拾えない。
+しかし、ボタン電池を入れることで非対応であっても何とか使えるのがこのマイクの特徴。
+ただ、電池を入れても増幅できる音量は限られていて、たいていの場合適正音量にならないのが残念。&lt;/p&gt;
+&lt;p&gt;9月末に、オーディオインターフェースにつなぎやすいコンデンサーマイクを新調した。
+LCT240 Proに。&lt;/p&gt;
+&lt;h3 id=&#34;マイクアンプ-at-ma2-現在未使用&#34;&gt;マイクアンプ: AT-MA2 (現在未使用)&lt;/h3&gt;
+&lt;p&gt;マイクのところで書いたとおり、AT9440はプラグインパワー仕様であり、
+その仕様に対応したビデオカメラやICレコーダーでなければまともに拾えない。
+後述するオーディオインターフェースで音量を上げてもまだ小さい。
+ソフトウェア的に音量を上げることもできるが、それをやるとノイズもかなり増える。
+この問題を解決するのが、このマイクアンプである。
+音量を上げてもノイズレベルを小さく抑えてくれる。
+これのおかげで、オーディオインターフェースでもプラグインパワー仕様のマイクが使えるようになる。&lt;/p&gt;
+&lt;p&gt;最大のネックはACアダプター必須なこと。9V電池で代用したり、モバイルバッテリーで代用する人もいるが、
+いずれも何らかの改造は必要。&lt;/p&gt;
+&lt;p&gt;あと、オーディオインターフェースで使う際にマイクとこれを毎回つなぎ直しているが、非常に煩わしくなってきたので、
+マイクとスタンドとケーブル1本で済む環境に変えたいところ。&lt;/p&gt;
+&lt;p&gt;LCT240 Proに変えてからは、このマイクアンプが不要になりよりシンプルになった。&lt;/p&gt;
+&lt;h3 id=&#34;オーディオインターフェース-motu-m2&#34;&gt;オーディオインターフェース: MOTU M2&lt;/h3&gt;
+&lt;p&gt;声を出す上で音質を重視するのであれば、オーディオインターフェースは必須。
+最近のCOVID-19の影響で人気の機材は売り切れることが相次ぎ、自分が使っているこのMOTU M2も入荷までに数ヶ月かかるそうだ(2020年9月現在)。
+自分の場合、幸いにもちょうど入荷のタイミングが良かったので1週間ほどで届いた。
+数あるオーディオインターフェースの中でこれを選んだのは、値段以上の音質のよさから。
+でもこの製品に限らず、パソコン内蔵のものから変えるだけでも違いがわかるかもしれない。&lt;/p&gt;
+&lt;p&gt;配信者としてバリバリ使いたい人はAG03みたいなミキサーとオーディオインターフェースを兼ねた機材を買った方が幸せになるかもしれない。
+AG03なら音量調整もミュートも手元のボタンで一発でできるし、遅延がないエフェクターもついていて使い勝手がいいと思う。
+自分がそれにしなかったのは、単に音質にこだわっただけ。&lt;/p&gt;
+&lt;h3 id=&#34;キャプチャボード-avermedia-gc573&#34;&gt;キャプチャボード: AVerMedia GC573&lt;/h3&gt;
+&lt;p&gt;4K解像度で60fps、しかもHDRも録画できるキャプチャボード。
+4K、60fps、HDR、これらを全て満たすキャプチャボードは少ない。
+もちろん、今配信しているNintendo Switchで使うには明らかにオーバースペックだが、
+キャプチャボードは頻繁に買い換えるものではなく、壊れなければ何年でも使えるものなので、将来を見越してこれを買った。&lt;/p&gt;
+&lt;p&gt;キャプチャボードには外付け型と内蔵型があるが、遅延、帯域、安定性の面では断然内蔵型が良い。
+外付け型は、拡張性が殆どないノートPCや、据置型だがコンパクトなPCなど内蔵型が使えないパソコンで使う場合の妥協策である。&lt;/p&gt;
+&lt;p&gt;遅延は、テトリスであればキャプチャボードから出てくる映像でもかろうじて問題ないレベル。
+FPSや格闘ゲームでは厳しいかもしれない。パススルー機能で別のディスプレイに映すと良い。&lt;/p&gt;
+&lt;p&gt;ちなみに、最近では1000円ぐらいで買える激安キャプチャボードも出てきているが、遅延が大きいためHDMI分配器が必須だったり、
+キャプチャ音声がモノラルだったりと激安ならではの欠点があるので、買おうと思っている人は気をつけよう。&lt;/p&gt;
+&lt;h3 id=&#34;パソコン&#34;&gt;パソコン&lt;/h3&gt;
+&lt;p&gt;配信には必須だが、詳しいことは省略。内蔵型キャプチャボードがつけられること、
+メーカーやBTOではなくパーツを買って組み立てていること、PCゲームが遊べるグラフィックボード
+がついていることだけ書いておく。&lt;/p&gt;
+&lt;p&gt;普通のノートPCは配信には不向き。
+PC用ゲームをせず、ゲーム機の画面をキャプチャボード経由で配信するのであれば、
+4コア以上のCPUと最低8GBのメモリは必要と思った方がいい。&lt;/p&gt;
+&lt;h3 id=&#34;インターネット回線&#34;&gt;インターネット回線&lt;/h3&gt;
+&lt;p&gt;配信するにあたって特に重要となるのが、上りの速度と安定性。
+配信では有線が必須。無線(Wi-Fi)では、最初は動いているように見えても途中で止まるリスクが高く、使えないものと考えるべき。
+どうしても無線で配信する場合は、次のことに気をつける。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;5GHz帯、かつW52内のチャンネルに接続する&lt;br&gt;
+2.4GHz帯は電子レンジやBluetoothと干渉するので通信が切れやすい。
+5GHz帯でも、W52以外のチャンネルタイプ(W53やW56)はレーダーを検出すると一時的に通信が切れる。
+以上の理由から、5GHz帯W52の範囲内に手動で設定することを推奨する。&lt;br&gt;
+ただし、電波の混み具合やレーダーの検出具合、電子レンジの干渉などは実際に試してみないとわからないので、
+W52でも安定しない場合は安定するチャンネルを試行錯誤して決めるべき。&lt;/li&gt;
+&lt;li&gt;可能な限り他のWi-Fiデバイスの通信をしない&lt;br&gt;
+他のデバイスが通信をすると、その間は通信が止まってしまう。
+大容量データのダウンロードやビデオ通話を始めた途端に通信が切れる。
+MU-MIMOに対応した親機と子機を使うと緩和される。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;必要となる速度は配信する解像度や配信サイトによってバラバラなので、各自調べて余裕があるかをよく確認したい。
+自分の環境では、幸いにも安定して100Mbps出るため、4K 60fps配信に耐えうる環境のようだ。
+ただ、4K 60fps配信はYouTube Liveの仕様上、低遅延にできず30秒の遅延になってしまうので現時点では使えない。&lt;/p&gt;
+&lt;h2 id=&#34;ソフトウェア&#34;&gt;ソフトウェア&lt;/h2&gt;
+&lt;p&gt;配信ソフトウェアは、オープンソースソフトウェアであるOBS (Open Broadcaster Software)をありがたく使わせてもらっている。
+このソフトウェアさえあれば、大体のことは何でもできる。
+L字にして文字を入れたり、チャットを表示したり、Discordの通話グループで誰が話しているか表示したり。
+OBSは何でもできる代わりに、重たいソフトウェアである。不要なソースは消そう。&lt;/p&gt;
+&lt;p&gt;有料の配信ソフトウェアであれば、XSplitが代表（無料版もあるがロゴが入るし機能制限がある）。
+OBSにはない複数同時配信ができたりするが、使ったことはないので詳しくは知らない。&lt;/p&gt;
+&lt;h3 id=&#34;音声ミキシング&#34;&gt;音声ミキシング&lt;/h3&gt;
+&lt;p&gt;配信において重要となるのが、音のミキシングである。
+設定を間違えると必要な音が出なかったり、しゃべっている声が小さすぎて聞き苦しいことになる。
+OBS単体ではできることに限界が出てくる。&lt;/p&gt;
+&lt;p&gt;自分の場合、OBSではキャプチャデバイスの音、マイクの音、その他音声の3種類に分けて管理している。
+その他音声には、Discordの会話、棒読みちゃんの音があり、これらはソフトウェアで作った擬似デバイスを使っている。
+その擬似デバイスとは、
+&lt;a href=&#34;https://syncroom.yamaha.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YAMAHA SYNCROOM(旧NETDUETTO)&lt;/a&gt;をインストールしたときに入る
+&lt;code&gt;VoiceMeeter Input (Yamaha SYNCROOM Driver (WDM))&lt;/code&gt; (以下VoiceMeeter Input)である。
+あるいは、同様の機能のある
+&lt;a href=&#34;https://vb-audio.com/Voicemeeter/banana.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Voicemeeter Banana&lt;/a&gt;でも良い。
+Discordや棒読みちゃんの音声の出力デバイスをVoiceMeeter Inputに設定する。
+オーディオインターフェースにループバック(あるいはステレオミキサー)があればそれを使う手もあるが、
+あえてVoiceMeeter Inputを使うメリットは&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;設定を間違えた結果キャプチャボードの音声が二重になる&lt;/li&gt;
+&lt;li&gt;配信中に他の動画配信を見ると意図せずその音が配信に乗ってしまう&lt;/li&gt;
+&lt;li&gt;Windowsの効果音が配信に乗ってしまう&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;のような放送事故を防げることである。
+この設定を行うことで通話音声を確実かつ綺麗に配信できるようになる。&lt;/p&gt;
+&lt;h3 id=&#34;ノイズキャンセリング--nvidia-broadcast&#34;&gt;ノイズキャンセリング : NVIDIA Broadcast&lt;/h3&gt;
+&lt;p&gt;コンデンサーマイクの主な特徴は高音の抜けの良さと遠く離れていても音を拾うことである。
+離れた音が拾いやすいということは、雑音も拾いやすいということで、声以外の余計な雑音まで拾ってしまう。
+エアコンの送風音、パソコンの冷却ファンの音、キーボードやマウスの操作音、ゲームコントローラーの操作音
+などを拾ってしまい、良いマイクなのに雑音が多くて使えない、ということになる。&lt;/p&gt;
+&lt;p&gt;最近登場したNVIDIA Broadcastがリアルタイム(実際には100ms弱の遅延あり?)でそれら雑音を全て綺麗に消してくれるので、
+非常に助かっている。しかし動作条件は厳しく、NVIDIAのRTXシリーズのグラフィックカードがなければ使えない。
+(NVIDIA Broadcastより前にリリースされたRTX Voiceを使えば少しだけ動作条件は緩くなる)
+もちろん、ノイズを消している分声質は変わってしまうが、余計な音が完全に消えるというのは画期的である。
+動作条件を満たしている環境であれば、積極的に使いたい。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;余談&#34;&gt;余談&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;どれだけ配信設備を整えても、大事なことは中身。決して配信設備でも声でもない。&lt;/li&gt;
+&lt;li&gt;視聴者は全員平等。特定人物の肩入れをしすぎないようにする。&lt;/li&gt;
+&lt;li&gt;定期的に配信することはチャンネル登録者を増やす意味ではプラスに働くが、精神面ではマイナスに働くことがある。
+本業や家庭の事情など自分の置かれている環境が突然変わることがあるのに配信は定期というギャップは、
+知らないうちにストレスをためることになる。&lt;/li&gt;
+&lt;li&gt;配信することを義務と思った時点で辛くなる。その時は遠慮なく休む。&lt;/li&gt;
+&lt;li&gt;配信者が楽しめない配信をしない。態度は声に現れる。それは視聴者を減らす要因である。&lt;/li&gt;
+&lt;li&gt;配信は心に余裕があったときだけにとどめたい。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上が、私の配信における心構えである。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>あきりん企画 #テトリス運動会 に参加・配信しました</title>
@@ -19,7 +147,7 @@
       <guid>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</guid>
       <description>&lt;p&gt;あきりん企画の 
 &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1297842792815718403&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#テトリス運動会&lt;/a&gt; に参加し、様子を配信しました。&lt;/p&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;運動会企画！！&lt;br&gt;9/12(土)22:00～&lt;br&gt;4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br&gt;詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href=&#34;https://t.co/Vy5KBCYcGN&#34;&gt;pic.twitter.com/Vy5KBCYcGN&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw&#34;&gt;August 24, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;運動会企画！！&lt;br&gt;9/12(土)22:00～&lt;br&gt;4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br&gt;詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href=&#34;https://t.co/Vy5KBCYcGN&#34;&gt;pic.twitter.com/Vy5KBCYcGN&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき 2/3 22:00～ふさ王 (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw&#34;&gt;August 24, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 
@@ -29,7 +157,7 @@
 &lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;結果&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;結果発表！！&lt;br&gt;優勝は緑チームです！！おめでとう！！&lt;br&gt;他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href=&#34;https://t.co/uiIBqqOXAD&#34;&gt;pic.twitter.com/uiIBqqOXAD&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw&#34;&gt;September 12, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;結果発表！！&lt;br&gt;優勝は緑チームです！！おめでとう！！&lt;br&gt;他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href=&#34;https://t.co/uiIBqqOXAD&#34;&gt;pic.twitter.com/uiIBqqOXAD&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき 2/3 22:00～ふさ王 (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw&#34;&gt;September 12, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
@@ -89,7 +217,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;放送委員として&#34;&gt;放送委員として&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;りょうそうさんと掛け合いができたのは最高に楽しかった&lt;/li&gt;
+&lt;li&gt;涼蒼さんと掛け合いができたのは最高に楽しかった&lt;/li&gt;
 &lt;li&gt;もうちょっと自分の配信のことを宣伝しても良かった
 &lt;ul&gt;
 &lt;li&gt;自分が放送委員であることをあまりアピールしなかった&lt;/li&gt;
@@ -103,7 +231,7 @@
 &lt;li&gt;配信者の腕の見せ所なので、次回からは少しは改善したい&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;通話相手(りょうそうさん)に頼りっきりになっていた感があった
+&lt;li&gt;通話相手(涼蒼さん)に頼りっきりになっていた感があった
 &lt;ul&gt;
 &lt;li&gt;自分だけで面白い配信ができるよう頑張りたい&lt;/li&gt;
 &lt;/ul&gt;
@@ -174,7 +302,7 @@
 &lt;p&gt;いつも素敵な企画をありがとうございます。今回もとても楽しかったです。
 結果は緑組の優勝ということで、黄組は惜しくも2位で自分がそこまで貢献できたわけでは決してありませんが、
 観戦しているだけでも興奮していました。&lt;/p&gt;
-&lt;p&gt;配信内で通話だけでなく場までつないだりょうそうさん、配信に来てくださった皆様、そして参加者の皆様、ありがとうございました。
+&lt;p&gt;配信内で通話だけでなく場までつないだ涼蒼さん、配信に来てくださった皆様、そして参加者の皆様、ありがとうございました。
 来年の運動会企画も検討されているそうで、次回が待ち遠しいです。&lt;/p&gt;
 &lt;p&gt;では、これにて。&lt;/p&gt;
 </description>
