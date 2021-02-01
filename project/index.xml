@@ -5,12 +5,70 @@
     <link>https://sshock-tetris.github.io/project/</link>
       <atom:link href="https://sshock-tetris.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2020 shellshock.</copyright><lastBuildDate>Tue, 15 Sep 2020 00:04:47 +0900</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2021 shellshock.</copyright><lastBuildDate>Sun, 17 Jan 2021 12:21:33 +0900</lastBuildDate>
     <image>
       <url>https://sshock-tetris.github.io/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
       <link>https://sshock-tetris.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>テトライブ(仮)</title>
+      <link>https://sshock-tetris.github.io/project/tetlive/</link>
+      <pubDate>Sun, 17 Jan 2021 12:21:33 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/project/tetlive/</guid>
+      <description>&lt;h1 id=&#34;テトライブ一期生メンバー&#34;&gt;テトライブ一期生メンバー&lt;/h1&gt;
+&lt;p&gt;(※50音順、敬称略)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;あそんでくらすよ^^&lt;/li&gt;
+&lt;li&gt;くぷりん&lt;/li&gt;
+&lt;li&gt;shellshock&lt;/li&gt;
+&lt;li&gt;シノン&lt;/li&gt;
+&lt;li&gt;夏影ソウナ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;活動記録&#34;&gt;活動記録&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;日付&lt;/th&gt;
+&lt;th&gt;内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2020/10/10&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://youtu.be/5vC4WWr6j1A?t=6780&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ベリフェス延長戦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2020/10/25&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=5sRHwwpdAtM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【バーチャル焼肉→寿司】#テトリス文化祭 の反省会（仮）&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2020/12/12&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=BEYKkJp8AXE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#テトリス配信者忘年会2020&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2021/01/10&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=3mtjRESkYKw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#テトリス配信者新年会2021&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;heading&#34;&gt;🤔&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;「テトライブ」という名称、大丈夫??&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;結成経緯&#34;&gt;結成経緯(?)&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=5sRHwwpdAtM&amp;amp;t=3096&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【バーチャル焼肉→寿司】#テトリス文化祭 の反省会（仮）&lt;/a&gt;
+より。5人の総称どうする？という話題でなかなか思いつかないところに突如登場。
+当時はこの名称にすると決定したわけではないが、事実上決定していた。
+他の候補には桃太郎(5人のアイコンのうち3人が動物なことから)もあった。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>TETRIS99 Margin Timer</title>
