@@ -25,8 +25,9 @@
 &lt;p&gt;プラグインパワー仕様のマイクで、それに対応していないと拾えない。
 しかし、ボタン電池を入れることで非対応であっても何とか使えるのがこのマイクの特徴。
 ただ、電池を入れても増幅できる音量は限られていて、たいていの場合適正音量にならないのが残念。&lt;/p&gt;
-&lt;p&gt;9月末に、オーディオインターフェースにつなぎやすいコンデンサーマイクを新調した。
-LCT240 Proに。&lt;/p&gt;
+&lt;p&gt;後述の通り接続が不便だったため、9月末にコンデンサーマイクLCT240 Proを新調した(※)。&lt;/p&gt;
+&lt;p&gt;※ただしゃべるだけが目的ならダイナミックマイクの定番SM-58でも良いし、もっと安いコンデンサーマイクなら
+MPM-1000あたりでも良いと思うが、あまり用途を絞りたくなかったのでこれにした。&lt;/p&gt;
 &lt;h3 id=&#34;マイクアンプ-at-ma2-現在未使用&#34;&gt;マイクアンプ: AT-MA2 (現在未使用)&lt;/h3&gt;
 &lt;p&gt;マイクのところで書いたとおり、AT9440はプラグインパワー仕様であり、
 その仕様に対応したビデオカメラやICレコーダーでなければまともに拾えない。
@@ -35,18 +36,18 @@ LCT240 Proに。&lt;/p&gt;
 この問題を解決するのが、このマイクアンプである。
 音量を上げてもノイズレベルを小さく抑えてくれる。
 これのおかげで、オーディオインターフェースでもプラグインパワー仕様のマイクが使えるようになる。&lt;/p&gt;
-&lt;p&gt;最大のネックはACアダプター必須なこと。9V電池で代用したり、モバイルバッテリーで代用する人もいるが、
+&lt;p&gt;最大のネックはACアダプター必須なこと。9V型乾電池やモバイルバッテリーで代用する人もいるが、
 いずれも何らかの改造は必要。&lt;/p&gt;
-&lt;p&gt;あと、オーディオインターフェースで使う際にマイクとこれを毎回つなぎ直しているが、非常に煩わしくなってきたので、
-マイクとスタンドとケーブル1本で済む環境に変えたいところ。&lt;/p&gt;
-&lt;p&gt;LCT240 Proに変えてからは、このマイクアンプが不要になりよりシンプルになった。&lt;/p&gt;
+&lt;p&gt;オーディオインターフェースで使う際にマイクとこれを毎回つなぎ直すのが非常に煩わしくなってきたので、
+マイクとスタンドとケーブル1本で済む環境に変えた。
+LCT240 Proに変えてからは、このマイクアンプが不要になりよりシンプルになった。&lt;/p&gt;
 &lt;h3 id=&#34;オーディオインターフェース-motu-m2&#34;&gt;オーディオインターフェース: MOTU M2&lt;/h3&gt;
 &lt;p&gt;声を出す上で音質を重視するのであれば、オーディオインターフェースは必須。
-最近のCOVID-19の影響で人気の機材は売り切れることが相次ぎ、自分が使っているこのMOTU M2も入荷までに数ヶ月かかるそうだ(2020年9月現在)。
-自分の場合、幸いにもちょうど入荷のタイミングが良かったので1週間ほどで届いた。
+最近のCOVID-19の影響で人気の機材が相次いで売り切れ、MOTU M2も入荷までに数ヶ月かかるそうだ(2020年9月現在)。
+自分の場合、幸いにもちょうど入荷のタイミングが良く1週間ほどで届いた。
 数あるオーディオインターフェースの中でこれを選んだのは、値段以上の音質のよさから。
 でもこの製品に限らず、パソコン内蔵のものから変えるだけでも違いがわかるかもしれない。&lt;/p&gt;
-&lt;p&gt;配信者としてバリバリ使いたい人はAG03みたいなミキサーとオーディオインターフェースを兼ねた機材を買った方が幸せになるかもしれない。
+&lt;p&gt;配信者としてバリバリ使いたい人は、AG03のようにミキサーとオーディオインターフェースを兼ねた機材を買った方が幸せになると思う。
 AG03なら音量調整もミュートも手元のボタンで一発でできるし、遅延がないエフェクターもついていて使い勝手がいいと思う。
 自分がそれにしなかったのは、単に音質にこだわっただけ。&lt;/p&gt;
 &lt;h3 id=&#34;キャプチャボード-avermedia-gc573&#34;&gt;キャプチャボード: AVerMedia GC573&lt;/h3&gt;
@@ -95,9 +96,8 @@ OBSは何でもできる代わりに、重たいソフトウェアである。�
 OBSにはない複数同時配信ができたりするが、使ったことはないので詳しくは知らない。&lt;/p&gt;
 &lt;h3 id=&#34;音声ミキシング&#34;&gt;音声ミキシング&lt;/h3&gt;
 &lt;p&gt;配信において重要となるのが、音のミキシングである。
-設定を間違えると必要な音が出なかったり、しゃべっている声が小さすぎて聞き苦しいことになる。
-OBS単体ではできることに限界が出てくる。&lt;/p&gt;
-&lt;p&gt;自分の場合、OBSではキャプチャデバイスの音、マイクの音、その他音声の3種類に分けて管理している。
+設定を間違えると必要な音が出なかったり、しゃべっている声が小さすぎて聞き苦しいことになる。&lt;/p&gt;
+&lt;p&gt;OBSではキャプチャデバイスの音、マイクの音、その他音声の3種類に分けて管理している。
 その他音声には、Discordの会話、棒読みちゃんの音があり、これらはソフトウェアで作った擬似デバイスを使っている。
 その擬似デバイスとは、
 &lt;a href=&#34;https://syncroom.yamaha.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YAMAHA SYNCROOM(旧NETDUETTO)&lt;/a&gt;をインストールしたときに入る
@@ -120,14 +120,14 @@ Discordや棒読みちゃんの音声の出力デバイスをVoiceMeeter Input�
 エアコンの送風音、パソコンの冷却ファンの音、キーボードやマウスの操作音、ゲームコントローラーの操作音
 などを拾ってしまい、良いマイクなのに雑音が多くて使えない、ということになる。&lt;/p&gt;
 &lt;p&gt;最近登場したNVIDIA Broadcastがリアルタイム(実際には100ms弱の遅延あり?)でそれら雑音を全て綺麗に消してくれるので、
-非常に助かっている。しかし動作条件は厳しく、NVIDIAのRTXシリーズのグラフィックカードがなければ使えない。
+非常に助かっている。しかし動作条件は厳しく、NVIDIAのRTXシリーズのグラフィックボードがなければ使えない。
 (NVIDIA Broadcastより前にリリースされたRTX Voiceを使えば少しだけ動作条件は緩くなる)
 もちろん、ノイズを消している分声質は変わってしまうが、余計な音が完全に消えるというのは画期的である。
 動作条件を満たしている環境であれば、積極的に使いたい。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;余談&#34;&gt;余談&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;どれだけ配信設備を整えても、大事なことは中身。決して配信設備でも声でもない。&lt;/li&gt;
+&lt;li&gt;どれだけ配信環境を整えても、大事なことは中身。決して配信設備でも声でもない。&lt;/li&gt;
 &lt;li&gt;視聴者は全員平等。特定人物の肩入れをしすぎないようにする。&lt;/li&gt;
 &lt;li&gt;定期的に配信することはチャンネル登録者を増やす意味ではプラスに働くが、精神面ではマイナスに働くことがある。
 本業や家庭の事情など自分の置かれている環境が突然変わることがあるのに配信は定期というギャップは、
@@ -138,6 +138,178 @@ Discordや棒読みちゃんの音声の出力デバイスをVoiceMeeter Input�
 &lt;/ul&gt;
 &lt;p&gt;以上が、私の配信における心構えである。&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>テトライブ(仮)</title>
+      <link>https://sshock-tetris.github.io/project/tetlive/</link>
+      <pubDate>Sun, 17 Jan 2021 12:21:33 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/project/tetlive/</guid>
+      <description>&lt;h1 id=&#34;テトライブ一期生メンバー&#34;&gt;テトライブ一期生メンバー&lt;/h1&gt;
+&lt;p&gt;(※50音順、敬称略)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://twitter.com/viviviviagain&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;あそんでくらすよ^^&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://twitter.com/kupurin01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;くぷりん&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;shellshock&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://twitter.com/sinonTETRIS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;シノン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://twitter.com/waruiko&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;夏影ソウナ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;活動記録&#34;&gt;活動記録&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;日付&lt;/th&gt;
+&lt;th&gt;内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2020/10/10&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://youtu.be/5vC4WWr6j1A?t=6780&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ベリフェス延長戦&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2020/10/25&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=5sRHwwpdAtM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【バーチャル焼肉→寿司】#テトリス文化祭 の反省会（仮）&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2020/12/12&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=BEYKkJp8AXE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#テトリス配信者忘年会2020&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2021/01/10&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=3mtjRESkYKw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#テトリス配信者新年会2021&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;heading&#34;&gt;🤔&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;「テトライブ」という名称、大丈夫??&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;名称の由来&#34;&gt;名称の由来&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;tetlive_comment.png&#34; alt=&#34;comments&#34;&gt;&lt;/p&gt;
+&lt;p&gt;画像は
+&lt;a href=&#34;https://www.youtube.com/watch?v=5sRHwwpdAtM&amp;amp;t=3096&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【バーチャル焼肉→寿司】#テトリス文化祭 の反省会（仮）&lt;/a&gt;
+のコメントより抜粋。&lt;br&gt;
+5人の総称どうする？という話題でなかなか思いつかないところに突如登場。
+当時はこの名称にすると明確に決めたわけではないが、事実上決定していた。
+他の候補には桃太郎(5人のアイコンのうち3人が動物なことから)もあった。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>譜面画像からテト譜を起こす</title>
+      <link>https://sshock-tetris.github.io/post/tetofugen/</link>
+      <pubDate>Thu, 24 Sep 2020 09:11:47 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/post/tetofugen/</guid>
+      <description>&lt;p&gt;この記事は、
+&lt;a href=&#34;https://sshock-tetris.github.io/tetofugen.html&#34;&gt;譜面画像からテト譜を起こす&lt;/a&gt;の技術資料です。
+画像からどのような方法を使ってテト譜を起こすのか興味がある人が対象です。
+手法に興味はなく、ただ使ってみたいという人は、
+&lt;a href=&#34;https://sshock-tetris.github.io/tetofugen.html&#34;&gt;譜面画像からテト譜を起こす&lt;/a&gt;に移動してください。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;きっかけ&#34;&gt;きっかけ&lt;/h1&gt;
+&lt;p&gt;この配信を見たとき、画像から自動的にテト譜を起こせたら効率よく分析できるんじゃないかと思った。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1gm5MSPGlUM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;需要あるのかな？と適当に調べるとまず
+&lt;a href=&#34;https://crize.blog.jp/archives/16752321.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;テトリスの画面をテト譜に起こしたかった&lt;/a&gt;
+が見つかり、その中で&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;画像からテト譜起こして解析するツール出来ないかな&lt;br&gt;画像処理に長けた人が少ないんだろうか&lt;/p&gt;&amp;mdash; もりおじの⁰よめにおいでよ⁰いますぐに (@sakana897) &lt;a href=&#34;https://twitter.com/sakana897/status/1055769972054482944?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;というツイートを見つけた。2年前から需要があったことがわかり、作ってみることにした。&lt;/p&gt;
+&lt;h1 id=&#34;認識手法&#34;&gt;認識手法&lt;/h1&gt;
+&lt;h2 id=&#34;入力画像の前提条件の設定&#34;&gt;入力画像の前提条件の設定&lt;/h2&gt;
+&lt;p&gt;まず、入力画像はキャプチャボードからのみを前提とした。
+カメラからの撮影画像の場合、どう撮影しても譜面がまっすぐにはならず、ゆがみ補正が必須になる。
+色補正も必要だったり、場合によってはノイズを消さないといけなかったりと、
+前処理がどうしても必要になり、これでは画像認識の本質にたどりつかず本末転倒となる。&lt;/p&gt;
+&lt;p&gt;次に、キャプチャボードの画像から縦20ブロック、横10ブロックの譜面画像のみを切り出したものを入力画像とすることとした。
+キャプチャボードの画像全体からの場合、譜面を認識させるという前処理が必要で、
+この場合も画像認識の本質にたどり着けなくなる恐れがある。&lt;/p&gt;
+&lt;p&gt;以上から、入力画像の前提条件は&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;キャプチャボードからのみ&lt;/li&gt;
+&lt;li&gt;縦20ブロック、横10ブロックの画像のみを切り出した譜面画像を入力とする&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;とした。&lt;/p&gt;
+&lt;h2 id=&#34;入力画像から20x10ブロックを特定する&#34;&gt;入力画像から20x10ブロックを特定する&lt;/h2&gt;
+&lt;p&gt;前提条件を満たした入力画像は、縦横比が2:1となっているはずで、1ブロックが正方形となっているはずである。
+1ブロックあたりのピクセル数は、&lt;code&gt;画像の縦ピクセル ÷ 20&lt;/code&gt;、&lt;code&gt;画像の横ピクセル ÷ 10&lt;/code&gt;の大きい方とする。
+これは、縦横比がぴったり2:1となっているとは限らず、もし小さい方を採用すると認識するべき位置にずれが生じて別のブロックの色を
+誤って読み取ってしまい、認識率が低下するためである。&lt;/p&gt;
+&lt;h2 id=&#34;ブロックごとに色を調べる&#34;&gt;ブロックごとに色を調べる&lt;/h2&gt;
+&lt;p&gt;まず、特定したブロックのピクセルのうち中央50%を取り、ピクセルのRGBカラーの値のそれぞれの平均を求める。
+これを、ブロックの色とみなす。&lt;/p&gt;
+&lt;p&gt;次に、ブロックの色について、テトリミノの色と一致する条件を決定していく。
+条件は、RGBの色差関係やRGBの数値の大小関係で決定する。
+以下、赤の色値を&lt;code&gt;r&lt;/code&gt;、緑の色値を&lt;code&gt;g&lt;/code&gt;、青の色値を&lt;code&gt;b&lt;/code&gt;とする。&lt;/p&gt;
+&lt;h3 id=&#34;せり上がりブロック-灰色&#34;&gt;せり上がりブロック (灰色)&lt;/h3&gt;
+&lt;p&gt;$$ r + g + b &amp;gt; 200, かつ  |r - g| &amp;lt; 25, かつ  |r - b| &amp;lt; 25, かつ  |g - b| &amp;lt; 25 $$&lt;/p&gt;
+&lt;h3 id=&#34;iミノ-水色&#34;&gt;Iミノ (水色)&lt;/h3&gt;
+&lt;p&gt;$$ b &amp;gt; 160, かつ r - b &amp;lt; -80, かつ g - b &amp;lt; -10 $$&lt;/p&gt;
+&lt;h3 id=&#34;sミノ-黄緑色&#34;&gt;Sミノ (黄緑色)&lt;/h3&gt;
+&lt;p&gt;$$ 35 &amp;lt; r \le 160, かつ g &amp;gt; 120, かつ b &amp;lt; 80, かつ r - g &amp;gt; 30, かつ g - b &amp;gt; 80 $$&lt;/p&gt;
+&lt;h3 id=&#34;zミノ-赤色&#34;&gt;Zミノ (赤色)&lt;/h3&gt;
+&lt;p&gt;$$ r &amp;gt; 160, かつ r - g &amp;gt; 20, かつ r - b &amp;gt; 20, かつ |g - b| &amp;lt; 40 $$&lt;/p&gt;
+&lt;h3 id=&#34;jミノ-青色&#34;&gt;Jミノ (青色)&lt;/h3&gt;
+&lt;p&gt;$$ g &amp;lt; 110, かつ b &amp;gt; 160, かつ r - b &amp;lt; -80, かつ g - b &amp;lt; -80 $$&lt;/p&gt;
+&lt;h3 id=&#34;lミノ-橙色&#34;&gt;Lミノ (橙色)&lt;/h3&gt;
+&lt;p&gt;$$ r &amp;gt; 160, かつ g &amp;gt; 80, かつ b &amp;lt; 60 $$&lt;/p&gt;
+&lt;h3 id=&#34;oミノ-黄色&#34;&gt;Oミノ (黄色)&lt;/h3&gt;
+&lt;p&gt;$$ r &amp;gt; 160, かつ g &amp;gt; 160, かつ b &amp;lt; 90, かつ |r - g| &amp;lt; 80 $$&lt;/p&gt;
+&lt;h3 id=&#34;tミノ-紫色&#34;&gt;Tミノ (紫色)&lt;/h3&gt;
+&lt;p&gt;$$ g &amp;lt; 120, かつ |r - g| &amp;gt; 70, かつ |g - b| &amp;gt; 70, かつ |r - b| &amp;lt; 100 $$&lt;/p&gt;
+&lt;h2 id=&#34;テト譜へのリンクを生成する&#34;&gt;テト譜へのリンクを生成する&lt;/h2&gt;
+&lt;p&gt;テト譜の仕様は、
+&lt;a href=&#34;https://docs.google.com/presentation/d/1V4PNyt41to81phK9u0iXnIkAfp-nV3g3xcl7c5qW-FI/edit#slide=id.g21adbcaeda_0_87&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;参考資料2.&lt;/a&gt;を参照。
+テト譜のフィールドの大きさは認識する譜面より大きいため、はみ出している部分は全て空白扱いとする。&lt;/p&gt;
+&lt;h1 id=&#34;今後の課題&#34;&gt;今後の課題&lt;/h1&gt;
+&lt;p&gt;RGBの色差関係やRGBの数値の大小関係を調べることにより、色を区別する手法を使用した。しかし、この手法には限界がある。&lt;/p&gt;
+&lt;p&gt;テトリスにはテトリミノの見た目が大きく変わるテーマを用意していることが多く、
+全体的に明るめの色となる場合や、全体的に暗めの色となる場合がある。
+両者ではRGBの色差関係やRGBの数値の大小関係が大きく異なることがあるが、それぞれについて別の閾値を定義することはできない。
+これは、ブロック単位で色情報を見ている現時点での手法に問題があり、
+ブロック全体の明るさの傾向などを新たに調査し適合させる必要がある。そのような方法をいかに実装するかが、今後の課題である。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;youtube用のテト譜ジェネレーターがリリースされています&#34;&gt;YouTube用のテト譜ジェネレーターがリリースされています&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://twitter.com/X7_SoRA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SoRA_X7さん&lt;/a&gt;が、Chrome拡張機能
+&lt;a href=&#34;https://chrome.google.com/webstore/detail/kjphnlnbbkgljiaabegchlghlaejpgfb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube用のテト譜ジェネレーター&lt;/a&gt;を既にリリースしています。
+その拡張機能の方が便利で、認識精度も高いので是非ご利用ください。&lt;/p&gt;
+&lt;h1 id=&#34;参考資料&#34;&gt;参考資料&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://crize.blog.jp/archives/16752321.html&#34;&gt;https://crize.blog.jp/archives/16752321.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1V4PNyt41to81phK9u0iXnIkAfp-nV3g3xcl7c5qW-FI/edit#slide=id.g21adbcaeda_0_87&#34;&gt;https://docs.google.com/presentation/d/1V4PNyt41to81phK9u0iXnIkAfp-nV3g3xcl7c5qW-FI/edit#slide=id.g21adbcaeda_0_87&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TETRIS99 Margin Timer</title>
+      <link>https://sshock-tetris.github.io/project/margin-timer/</link>
+      <pubDate>Tue, 15 Sep 2020 00:04:47 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/project/margin-timer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>譜面画像から譜面を起こす</title>
+      <link>https://sshock-tetris.github.io/project/tetofugen/</link>
+      <pubDate>Tue, 15 Sep 2020 00:02:03 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/project/tetofugen/</guid>
+      <description></description>
     </item>
     
     <item>
