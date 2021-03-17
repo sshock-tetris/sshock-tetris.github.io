@@ -5,12 +5,106 @@
     <link>https://sshock-tetris.github.io/project/</link>
       <atom:link href="https://sshock-tetris.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2021 shellshock.</copyright><lastBuildDate>Sun, 17 Jan 2021 12:21:33 +0900</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2021 shellshock.</copyright><lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0900</lastBuildDate>
     <image>
       <url>https://sshock-tetris.github.io/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
       <link>https://sshock-tetris.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>TETRIS 99マージンタイマー自動開始装置</title>
+      <link>https://sshock-tetris.github.io/project/timer-auto-starter/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/project/timer-auto-starter/</guid>
+      <description>&lt;h1 id=&#34;tetris99-マージンタイマー自動開始装置&#34;&gt;TETRIS99 マージンタイマー自動開始装置&lt;/h1&gt;
+&lt;p&gt;マージンタイマーを自動的に開始できるソフトウェアです。&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/sshock-tetris/autoStartMarginTimer/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/sshock-tetris/autoStartMarginTimer/blob/main/docs/%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%E8%87%AA%E5%8B%95%E9%96%8B%E5%A7%8B%E8%A3%85%E7%BD%AE_%E4%BD%BF%E3%81%84%E6%96%B9.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;使い方&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>#あさてと</title>
+      <link>https://sshock-tetris.github.io/project/morning-tetris/</link>
+      <pubDate>Wed, 17 Mar 2021 19:30:00 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/project/morning-tetris/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://twitter.com/Phosphorus7904/status/1294450958500425728&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Illustrated by りんP&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;あさてとhttpstwittercomhashtagあさてと-とは&#34;&gt;
+&lt;a href=&#34;https://twitter.com/hashtag/%e3%81%82%e3%81%95%e3%81%a6%e3%81%a8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#あさてと&lt;/a&gt; とは&lt;/h1&gt;
+&lt;p&gt;平日朝に、TETRIS 99のVIP部屋に指定した時間に入って一緒にテトリスをするだけの企画です。
+私(shellshock)の勝手な都合により、日本時間の8:30前後になります。&lt;/p&gt;
+&lt;p&gt;1日1回が原則ですが、場合によっては1日2回することもあります。&lt;/p&gt;
+&lt;p&gt;派生として、
+&lt;a href=&#34;https://twitter.com/hashtag/%e4%bc%91%e6%97%a5%e3%81%82%e3%81%95%e3%81%a6%e3%81%a8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#休日あさてと&lt;/a&gt;もあります。
+休日あさてとは、9:00、9:20、9:40の3回あり、いずれもVIP部屋です。&lt;/p&gt;
+&lt;h1 id=&#34;あさてと-の参加方法&#34;&gt;あさてと の参加方法&lt;/h1&gt;
+&lt;p&gt;私(shellshock)が開始10分前までに時間指定するので、その時間に入ってください。
+マッチング状態により別部屋ができる可能性があります。&lt;/p&gt;
+&lt;h1 id=&#34;目的&#34;&gt;目的&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;朝にテトリスをやることで目を覚まし、脳を活性化させる&lt;/li&gt;
+&lt;li&gt;毎日続けることでテトリスの空白期間を作らないようにする&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;あさてとの歴史&#34;&gt;あさてとの歴史&lt;/h1&gt;
+&lt;p&gt;あさてとは、私のチャンネル登録者100人記念の通話雑談配信にて
+「平日の朝に目覚ましのためにTETRIS 99のVIP部屋に潜ってる」と話したことがきっかけで、
+それまで何もツイートせずにこっそりやっていたのを時間指定して入るようにしたのがきっかけです。&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;個人的にあさてと&lt;br&gt;でw &lt;a href=&#34;https://t.co/bNAkgwchFg&#34;&gt;pic.twitter.com/bNAkgwchFg&lt;/a&gt;&lt;/p&gt;&amp;mdash; シノン@テトリス最強を目指すVtuber (@sinonTETRIS) &lt;a href=&#34;https://twitter.com/sinonTETRIS/status/1276551395793985537?ref_src=twsrc%5Etfw&#34;&gt;June 26, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;配信されていたんですね。では &lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt; でいきましょう！w&lt;/p&gt;&amp;mdash; shellshock (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1276553726602252288?ref_src=twsrc%5Etfw&#34;&gt;June 26, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;名前の候補は「朝テト」「あさてと」「あさテト」の3つを考えていて、
+どれにしようか迷っていたところ、シノンさんが「あさてと」を既に使っていたということで
+「あさてと」に即決しました。&lt;/p&gt;
+&lt;p&gt;そして、2020/6/29に初めて時間指定をしました。&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;8:35 VIP &lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt;&lt;/p&gt;&amp;mdash; shellshock (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1277384757546893312?ref_src=twsrc%5Etfw&#34;&gt;June 28, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;が、その時はまだ10分前に告知するルールがなかったので誰もいませんでした。
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;入ったときには10秒前だったし、27人しかいなかったし、時間の告知も直前だったしでいないのは当然だと思う。&lt;/p&gt;&amp;mdash; shellshock (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1277388350127665152?ref_src=twsrc%5Etfw&#34;&gt;June 28, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;あさてとを半年以上続けた結果、参加者が10名を超える日が増えてきました。いつもご参加ありがとうございます！&lt;/p&gt;
+&lt;h1 id=&#34;qampa&#34;&gt;Q&amp;amp;A&lt;/h1&gt;
+&lt;h3 id=&#34;q-なぜvip部屋&#34;&gt;Q. なぜVIP部屋？&lt;/h3&gt;
+&lt;p&gt;A. 他の部屋よりも落下速度が速く、目覚ましに効果的だからです。&lt;/p&gt;
+&lt;h3 id=&#34;q-他の部屋の時間指定はしないの&#34;&gt;Q. 他の部屋の時間指定はしないの？&lt;/h3&gt;
+&lt;p&gt;A. 今のところ予定はありません。&lt;/p&gt;
+&lt;h3 id=&#34;q-あさてとって他に時間指定してる人はいる&#34;&gt;Q. あさてとって他に時間指定してる人はいる？&lt;/h3&gt;
+&lt;p&gt;A. 今のところ(2021/2/20現在)確認していません。
+あさてとは私の独占企画ではありません！他の方が時間と部屋を決めてあさてとをすることは歓迎します。&lt;/p&gt;
+&lt;h3 id=&#34;q-あさてとは平日だけ休日はあるの&#34;&gt;Q. あさてとは平日だけ？休日はあるの？&lt;/h3&gt;
+&lt;p&gt;A. 私が時間指定するあさてとは平日のみです。しかし、休日には休日あさてとがあります。
+なお、休日は土曜日と日曜日、日本国における国民の祝日、年末年始とします。&lt;/p&gt;
+&lt;p&gt;何らかのアクシデントにより、平日であっても時間指定がない場合もあります。
+その場合は中止とします。&lt;/p&gt;
+&lt;h3 id=&#34;q-8時半ぐらいだと通学通勤でできないですなぜこの時間帯なのですか&#34;&gt;Q. 8時半ぐらいだと通学(通勤)でできないです。なぜこの時間帯なのですか？&lt;/h3&gt;
+&lt;p&gt;A. 私の仕事が常時在宅勤務で通勤時間がなく、ちょうど仕事前にできるからです。在宅勤務の特権みたいなものです。
+もし在宅勤務でなくなったらあさてとは終了となりますが、今のところは大丈夫です。&lt;/p&gt;
+&lt;h3 id=&#34;q-あさてとの配信をしてもいいですか&#34;&gt;Q. あさてとの配信をしてもいいですか？&lt;/h3&gt;
+&lt;p&gt;A. もちろんOKです。歓迎します！何の断りもなく配信してしまってかまいません。私が気がついたら配信URLをツイートします。
+ツイート忘れはご容赦ください。&lt;/p&gt;
+&lt;h3 id=&#34;q-なぜ時間指定時間を固定しても良いのでは&#34;&gt;Q. なぜ時間指定？時間を固定しても良いのでは？&lt;/h3&gt;
+&lt;p&gt;A. 2020年9月に時間指定か1試合時間固定か2試合時間固定かのアンケートを採ったことがあり、
+過半数ではないものの時間指定が一番多かったため現在も時間指定としています。
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt; の時間指定について&lt;/p&gt;&amp;mdash; shellshock (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1308428144127348738?ref_src=twsrc%5Etfw&#34;&gt;September 22, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;q-あさてとに参加していたら遅刻しましたどうしてくれるんですか&#34;&gt;Q. あさてとに参加していたら遅刻しました。どうしてくれるんですか？&lt;/h3&gt;
+&lt;p&gt;A. 私は一切責任を負えません。参加した人の自己責任です。決して無理に参加されることのないよう、お願いします。
+なお、平日の参加が難しい方向けに休日あさてとがあるのでご検討ください。&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt; は私の独占企画では全くないので、できる時に適当に時間と部屋を決めてやりましょう。&lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt; はいいぞ&lt;br&gt;&lt;br&gt;※効果・効能は個人差があります&lt;br&gt;※スナイプは無理のない範囲で&lt;/p&gt;&amp;mdash; shellshock (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1278479331870687232?ref_src=twsrc%5Etfw&#34;&gt;July 2, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
     
     <item>
       <title>テトライブ(仮)</title>
@@ -20,15 +114,11 @@
       <description>&lt;h1 id=&#34;テトライブ一期生メンバー&#34;&gt;テトライブ一期生メンバー&lt;/h1&gt;
 &lt;p&gt;(※50音順、敬称略)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://twitter.com/viviviviagain&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;あそんでくらすよ^^&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://twitter.com/kupurin01&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;くぷりん&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;あそんでくらすよ^ ^　&lt;a href=&#34;https://twitter.com/viviviviagain&#34; class=&#34;small fab fa-twitter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter&lt;/a&gt;　&lt;a href=&#34;https://www.youtube.com/channel/UCPwsnqG-6v131Pbx8Y24jwg&#34; class=&#34;small fab fa-youtube&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;くぷりん　&lt;a href=&#34;https://twitter.com/kupurin01&#34; class=&#34;small fab fa-twitter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter&lt;/a&gt;　&lt;a href=&#34;https://www.youtube.com/channel/UCPWrDjFz28fpv_nUJYhx_4A&#34; class=&#34;small fab fa-youtube&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;shellshock&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://twitter.com/sinonTETRIS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;シノン&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://twitter.com/waruiko&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;夏影ソウナ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;シノン　&lt;a href=&#34;https://twitter.com/sinonTETRIS&#34; class=&#34;small fab fa-twitter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter&lt;/a&gt;　&lt;a href=&#34;https://www.youtube.com/channel/UCSFxJRqpgbeY5qLDzWexGTw&#34; class=&#34;small fab fa-youtube&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;夏影ソウナ　&lt;a href=&#34;https://twitter.com/waruiko&#34; class=&#34;small fab fa-twitter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter&lt;/a&gt;　&lt;a href=&#34;https://www.youtube.com/channel/UCoI4Gr6g5SLmAi60AqooDEA&#34; class=&#34;small fab fa-youtube&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;活動記録&#34;&gt;活動記録&lt;/h1&gt;
 &lt;table&gt;
@@ -77,18 +167,19 @@
     </item>
     
     <item>
+      <title>譜面画像から譜面を起こす</title>
+      <link>https://sshock-tetris.github.io/project/tetofugen/</link>
+      <pubDate>Thu, 24 Sep 2020 00:02:03 +0900</pubDate>
+      <guid>https://sshock-tetris.github.io/project/tetofugen/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://sshock-tetris.github.io/tetofugen.html&#34;&gt;https://sshock-tetris.github.io/tetofugen.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>TETRIS99 Margin Timer</title>
       <link>https://sshock-tetris.github.io/project/margin-timer/</link>
       <pubDate>Tue, 15 Sep 2020 00:04:47 +0900</pubDate>
       <guid>https://sshock-tetris.github.io/project/margin-timer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>譜面画像から譜面を起こす</title>
-      <link>https://sshock-tetris.github.io/project/tetofugen/</link>
-      <pubDate>Tue, 15 Sep 2020 00:02:03 +0900</pubDate>
-      <guid>https://sshock-tetris.github.io/project/tetofugen/</guid>
       <description></description>
     </item>
     
