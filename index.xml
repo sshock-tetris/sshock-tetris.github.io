@@ -760,8 +760,6 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 &lt;h3 id=&#34;obsを探すボタン&#34;&gt;&lt;code&gt;OBSを探す&lt;/code&gt;ボタン&lt;/h3&gt;
 &lt;p&gt;このボタンをクリックすると、自動開始装置がOBSの&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウと
 &lt;code&gt;&#39;MarginTimer&#39; の相互作用&lt;/code&gt;ウィンドウを探し、2つのウィンドウが見つかり次第場面認識を開始する。&lt;/p&gt;
-&lt;p&gt;タイマーを自動開始するために必要な準備ができていればこのボタンは無効化され、
-以後場面認識を開始してタイマーが自動開始するようになる。&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     &lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウのウィンドウサイズが大きくなり、
