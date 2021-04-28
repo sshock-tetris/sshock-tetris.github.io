@@ -93,11 +93,13 @@
 ※カメラなどでNintendo Switchの画面を直撮りしている映像には対応しません&lt;/li&gt;
 &lt;li&gt;OBS (配信用ソフトウェア)&lt;br&gt;
 ※表示言語を日本語にしてください。他の言語では動作しません&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/sshock-tetris/Tetris99MarginTimer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TETRIS 99用マージンタイマー&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;導入手順&#34;&gt;導入手順&lt;/h1&gt;
 &lt;h2 id=&#34;tetris-99用マージンタイマーの導入&#34;&gt;TETRIS 99用マージンタイマーの導入&lt;/h2&gt;
+&lt;p&gt;※
+&lt;a href=&#34;https://github.com/sshock-tetris/Tetris99MarginTimer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;マージンタイマー&lt;/a&gt;を既に導入済の場合は、
+マージンタイマーのソース名を&lt;code&gt;MarginTimer&lt;/code&gt;に変更してから
+&lt;a href=&#34;#%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e6%ba%96%e5%82%99&#34;&gt;自動開始装置の準備&lt;/a&gt;へ進んでください&lt;/p&gt;
 &lt;h3 id=&#34;1-マージンタイマーのダウンロード&#34;&gt;1. マージンタイマーのダウンロード&lt;/h3&gt;
 
 
@@ -261,7 +263,7 @@ OBSを起動し、ブラウザソースを追加する。&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;code&gt;ローカルファイル&lt;/code&gt;にチェックを入れ、ローカルファイルの場所をソースのアドレスに保存した&lt;code&gt;timer.html&lt;/code&gt;にする。
-高さを600から60に変更し、OKをクリックする。&lt;/p&gt;
+幅は600以上を推奨。高さを60あれば十分。変更後、OKをクリックする。&lt;/p&gt;
 &lt;h3 id=&#34;3-タイマーの動作確認&#34;&gt;3. タイマーの動作確認&lt;/h3&gt;
 
 
@@ -438,10 +440,10 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/releases_hue663e0e979e21b9b82415f66e2139335_14656_2000x2000_fit_lanczos_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/releases_hue070276e24a2b23c27e08520744fcf3d_14212_2000x2000_fit_lanczos_2.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/releases_hue663e0e979e21b9b82415f66e2139335_14656_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;830&#34; height=&#34;490&#34;&gt;
+  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/releases_hue070276e24a2b23c27e08520744fcf3d_14212_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;494&#34;&gt;
 &lt;/a&gt;
 
 
@@ -449,8 +451,75 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/sshock-tetris/autoStartMarginTimer/releases&#34;&gt;https://github.com/sshock-tetris/autoStartMarginTimer/releases&lt;/a&gt;
-から、最新バージョンの自動開始装置のzipファイルをダウンロードする。
-圧縮されているので、適当な場所に展開する。展開すると、次の3ファイルがある。&lt;/p&gt;
+から、最新バージョンの自動開始装置のzipファイルをダウンロードする。&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;h4 id=&#34;ウェブブラウザ-google-chrome-を使用している場合&#34;&gt;ウェブブラウザ Google Chrome を使用している場合&lt;/h4&gt;
+&lt;p&gt;ダウンロードが終了した後、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;このファイルは一般的にダウンロードされているファイルではなく、危害を及ぼす可能性があります。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;と表示される場合がある。&lt;/p&gt;
+&lt;figure &gt;
+&lt;p&gt;&lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_bar_hu321632d7c1c03f3f2f7d21d683dac4b5_4447_2000x2000_fit_lanczos_2.png&#34; &gt;&lt;/p&gt;
+  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_bar_hu321632d7c1c03f3f2f7d21d683dac4b5_4447_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;460&#34; height=&#34;58&#34;&gt;
+&lt;/a&gt;
+&lt;/figure&gt;
+&lt;figure &gt;
+&lt;p&gt;&lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_warn_hubeaaeb3365a5d50819e619b5853dcd65_6869_2000x2000_fit_lanczos_2.png&#34; &gt;&lt;/p&gt;
+  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_warn_hubeaaeb3365a5d50819e619b5853dcd65_6869_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;690&#34; height=&#34;189&#34;&gt;
+&lt;/a&gt;
+&lt;/figure&gt;
+&lt;p&gt;この場合は、&lt;code&gt;保存&lt;/code&gt;を押して進めて欲しい。&lt;/p&gt;
+&lt;figure &gt;
+&lt;p&gt;&lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_confirm_huf5b07dfecc3f0b35db1fb2fdad9c4ea1_6661_2000x2000_fit_lanczos_2.png&#34; &gt;&lt;/p&gt;
+  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_confirm_huf5b07dfecc3f0b35db1fb2fdad9c4ea1_6661_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;324&#34; height=&#34;176&#34;&gt;
+&lt;/a&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;保存&lt;/code&gt;を押したときに上図のような確認メッセージが表示されるが、かまわず&lt;code&gt;続行する&lt;/code&gt;を押す。
+これは、ダウンロード数が少ないだけで疑われるというChromeのお節介な機能の1つである。&lt;/p&gt;
+&lt;p&gt;上記URLは自動開始装置の正式な公開場所であり、そこからダウンロードしていれば問題ないはずである。
+この圧縮ファイルは公開されたソースコードからGitHubの自動ビルド機能によってできたファイルであり、
+危害を加える危険物が含まれないように考慮している。&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ダウンロードしたファイルを右クリックして&lt;code&gt;プロパティ&lt;/code&gt;を選び、
+下のセキュリティ項目の&lt;code&gt;許可する&lt;/code&gt;にチェックを入れてファイルのブロック解除を行う。
+セキュリティ項目が表示されない場合はブロックが解除されているので、その場合は操作不要である。
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/property_hudfd7cc8c78bf0bedf82dcd7741ddbc04_13376_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/property_hudfd7cc8c78bf0bedf82dcd7741ddbc04_13376_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;421&#34; height=&#34;580&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;圧縮されているので、適当な場所に展開する。展開すると、次の3ファイルがある。&lt;/p&gt;
 
 
 
@@ -707,10 +776,10 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 &lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/autostartmargintimer_init_huec6886bf29ab5ae5e78e6d6c219a5c79_3259_2000x2000_fit_lanczos_2.png&#34; &gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/autostartmargintimer_init_hu4a02b4f4e2ec0493a9b2f4626215c9b5_3480_2000x2000_fit_lanczos_2.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/autostartmargintimer_init_huec6886bf29ab5ae5e78e6d6c219a5c79_3259_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;312&#34; height=&#34;146&#34;&gt;
+  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/autostartmargintimer_init_hu4a02b4f4e2ec0493a9b2f4626215c9b5_3480_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;312&#34; height=&#34;146&#34;&gt;
 &lt;/a&gt;
 
 
@@ -805,8 +874,9 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
   &lt;div&gt;
     &lt;h3 id=&#34;ウィンドウ-プロジェクター-ソースウィンドウの注意事項&#34;&gt;&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウの注意事項&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;ウィンドウを画面外には移動してはならない。&lt;br&gt;
-映像が更新されず、正常に認識できなくなる。&lt;/li&gt;
+&lt;li&gt;ウィンドウを画面外に移動してはならない。&lt;br&gt;
+画面外に移動すると映像が更新されず、正常に認識できなくなる。
+ただし、ウィンドウが背面になっている場合は問題ない。&lt;/li&gt;
 &lt;li&gt;コンテキストメニュー(ウィンドウを右クリックした時に表示されるメニュー)のうち、
 &lt;code&gt;ウィンドウをコンテンツに合わせる&lt;/code&gt;を選択してはならない。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウをアクティブ状態にしてはならない。&lt;br&gt;
@@ -964,11 +1034,11 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 &lt;h3 id=&#34;シェアバトルもちよりバトルで動作しますか&#34;&gt;シェアバトル、もちよりバトルで動作しますか？&lt;/h3&gt;
 &lt;p&gt;動作未確認です。「ゲーム開始準備中」の表示がなければ動作しないと思います。&lt;/p&gt;
 &lt;h3 id=&#34;マラソンで動作しますか&#34;&gt;マラソンで動作しますか？&lt;/h3&gt;
-&lt;p&gt;動作しません。理由はCPUバトルの場合と同じですが、開始時間は右側に表示されているのでこのタイマーの出番はありませんよね？ :)&lt;/p&gt;
+&lt;p&gt;動作しません。理由はCPUバトルの場合と同じですが、時間が右側に表示されているのでこのタイマーの出番はありませんよね？ : )&lt;/p&gt;
 &lt;h1 id=&#34;サポート&#34;&gt;サポート&lt;/h1&gt;
 &lt;p&gt;マージンタイマーの導入に関して質問、うまく動作できないなど何か問題がある場合は、
 
-&lt;a href=&#34;https://twitter.com/sshock_tetris&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@sshock_tetris&lt;/a&gt;にDMやメンションを使用して連絡してください。&lt;/p&gt;
+&lt;a href=&#34;https://twitter.com/sshock_tetris&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@sshock_tetris&lt;/a&gt;にDMやメンションなどで連絡してください。&lt;/p&gt;
 &lt;p&gt;マージンタイマー自動開始装置のバグ報告は、
 &lt;a href=&#34;https://github.com/sshock-tetris/autoStartMarginTimer/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Issues&lt;/a&gt;まで。&lt;/p&gt;
 &lt;p&gt;ただし、個人的な都合によりサポートできる範囲に限界があるため、必ずしも対応できるとは限らないことをご理解ください。&lt;/p&gt;
@@ -1084,7 +1154,7 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
       <guid>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</guid>
       <description>&lt;p&gt;あきりん企画の 
 &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1297842792815718403&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#テトリス運動会&lt;/a&gt; に参加し、様子を配信しました。&lt;/p&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;運動会企画！！&lt;br&gt;9/12(土)22:00～&lt;br&gt;4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br&gt;詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href=&#34;https://t.co/Vy5KBCYcGN&#34;&gt;pic.twitter.com/Vy5KBCYcGN&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき 4/24 21:00～アート王 (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw&#34;&gt;August 24, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;運動会企画！！&lt;br&gt;9/12(土)22:00～&lt;br&gt;4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br&gt;詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href=&#34;https://t.co/Vy5KBCYcGN&#34;&gt;pic.twitter.com/Vy5KBCYcGN&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき 5/1～5/5 リクエスト企画 (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw&#34;&gt;August 24, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 
@@ -1094,7 +1164,7 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 &lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;結果&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;結果発表！！&lt;br&gt;優勝は緑チームです！！おめでとう！！&lt;br&gt;他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href=&#34;https://t.co/uiIBqqOXAD&#34;&gt;pic.twitter.com/uiIBqqOXAD&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき 4/24 21:00～アート王 (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw&#34;&gt;September 12, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;結果発表！！&lt;br&gt;優勝は緑チームです！！おめでとう！！&lt;br&gt;他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href=&#34;https://t.co/uiIBqqOXAD&#34;&gt;pic.twitter.com/uiIBqqOXAD&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき 5/1～5/5 リクエスト企画 (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw&#34;&gt;September 12, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;

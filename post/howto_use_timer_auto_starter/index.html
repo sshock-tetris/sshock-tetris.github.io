@@ -246,7 +246,7 @@
     
       <meta property="article:published_time" content="2021-04-04T00:00:00&#43;09:00">
     
-    <meta property="article:modified_time" content="2021-04-04T00:00:00&#43;09:00">
+    <meta property="article:modified_time" content="2021-04-29T00:00:00&#43;09:00">
   
 
   
@@ -279,7 +279,7 @@
   ],
   
   "datePublished": "2021-04-04T00:00:00+09:00",
-  "dateModified": "2021-04-04T00:00:00+09:00",
+  "dateModified": "2021-04-29T00:00:00+09:00",
   
   "author": {
     "@type": "Person",
@@ -570,8 +570,10 @@
     
     
       
+          最終更新
+      
     
-    2021/04/04
+    2021/04/29
   </span>
   
 
@@ -580,7 +582,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    10 分で読める
+    11 分で読める
   </span>
   
 
@@ -742,11 +744,13 @@
 ※カメラなどでNintendo Switchの画面を直撮りしている映像には対応しません</li>
 <li>OBS (配信用ソフトウェア)<br>
 ※表示言語を日本語にしてください。他の言語では動作しません</li>
-<li>
-<a href="https://github.com/sshock-tetris/Tetris99MarginTimer" target="_blank" rel="noopener">TETRIS 99用マージンタイマー</a></li>
 </ul>
 <h1 id="導入手順">導入手順</h1>
 <h2 id="tetris-99用マージンタイマーの導入">TETRIS 99用マージンタイマーの導入</h2>
+<p>※
+<a href="https://github.com/sshock-tetris/Tetris99MarginTimer/" target="_blank" rel="noopener">マージンタイマー</a>を既に導入済の場合は、
+マージンタイマーのソース名を<code>MarginTimer</code>に変更してから
+<a href="#%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e6%ba%96%e5%82%99">自動開始装置の準備</a>へ進んでください</p>
 <h3 id="1-マージンタイマーのダウンロード">1. マージンタイマーのダウンロード</h3>
 
 
@@ -910,7 +914,7 @@ OBSを起動し、ブラウザソースを追加する。</p>
 </figure>
 
 <code>ローカルファイル</code>にチェックを入れ、ローカルファイルの場所をソースのアドレスに保存した<code>timer.html</code>にする。
-高さを600から60に変更し、OKをクリックする。</p>
+幅は600以上を推奨。高さを60あれば十分。変更後、OKをクリックする。</p>
 <h3 id="3-タイマーの動作確認">3. タイマーの動作確認</h3>
 
 
@@ -1087,10 +1091,10 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 <figure >
 
 
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/releases_hue663e0e979e21b9b82415f66e2139335_14656_2000x2000_fit_lanczos_2.png" >
+  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/releases_hue070276e24a2b23c27e08520744fcf3d_14212_2000x2000_fit_lanczos_2.png" >
 
 
-  <img data-src="/post/howto_use_timer_auto_starter/releases_hue663e0e979e21b9b82415f66e2139335_14656_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="830" height="490">
+  <img data-src="/post/howto_use_timer_auto_starter/releases_hue070276e24a2b23c27e08520744fcf3d_14212_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="720" height="494">
 </a>
 
 
@@ -1098,8 +1102,75 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 </figure>
 
 <p><a href="https://github.com/sshock-tetris/autoStartMarginTimer/releases">https://github.com/sshock-tetris/autoStartMarginTimer/releases</a>
-から、最新バージョンの自動開始装置のzipファイルをダウンロードする。
-圧縮されているので、適当な場所に展開する。展開すると、次の3ファイルがある。</p>
+から、最新バージョンの自動開始装置のzipファイルをダウンロードする。</p>
+<div class="alert alert-note">
+  <div>
+    <h4 id="ウェブブラウザ-google-chrome-を使用している場合">ウェブブラウザ Google Chrome を使用している場合</h4>
+<p>ダウンロードが終了した後、</p>
+<blockquote>
+<p>このファイルは一般的にダウンロードされているファイルではなく、危害を及ぼす可能性があります。</p>
+</blockquote>
+<p>と表示される場合がある。</p>
+<figure >
+<p><a data-fancybox="" href="/post/howto_use_timer_auto_starter/dlmgr_bar_hu321632d7c1c03f3f2f7d21d683dac4b5_4447_2000x2000_fit_lanczos_2.png" ></p>
+  <img data-src="/post/howto_use_timer_auto_starter/dlmgr_bar_hu321632d7c1c03f3f2f7d21d683dac4b5_4447_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="460" height="58">
+</a>
+</figure>
+<figure >
+<p><a data-fancybox="" href="/post/howto_use_timer_auto_starter/dlmgr_warn_hubeaaeb3365a5d50819e619b5853dcd65_6869_2000x2000_fit_lanczos_2.png" ></p>
+  <img data-src="/post/howto_use_timer_auto_starter/dlmgr_warn_hubeaaeb3365a5d50819e619b5853dcd65_6869_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="690" height="189">
+</a>
+</figure>
+<p>この場合は、<code>保存</code>を押して進めて欲しい。</p>
+<figure >
+<p><a data-fancybox="" href="/post/howto_use_timer_auto_starter/dlmgr_confirm_huf5b07dfecc3f0b35db1fb2fdad9c4ea1_6661_2000x2000_fit_lanczos_2.png" ></p>
+  <img data-src="/post/howto_use_timer_auto_starter/dlmgr_confirm_huf5b07dfecc3f0b35db1fb2fdad9c4ea1_6661_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="324" height="176">
+</a>
+</figure>
+<p><code>保存</code>を押したときに上図のような確認メッセージが表示されるが、かまわず<code>続行する</code>を押す。
+これは、ダウンロード数が少ないだけで疑われるというChromeのお節介な機能の1つである。</p>
+<p>上記URLは自動開始装置の正式な公開場所であり、そこからダウンロードしていれば問題ないはずである。
+この圧縮ファイルは公開されたソースコードからGitHubの自動ビルド機能によってできたファイルであり、
+危害を加える危険物が含まれないように考慮している。</p>
+
+  </div>
+</div>
+
+<p>ダウンロードしたファイルを右クリックして<code>プロパティ</code>を選び、
+下のセキュリティ項目の<code>許可する</code>にチェックを入れてファイルのブロック解除を行う。
+セキュリティ項目が表示されない場合はブロックが解除されているので、その場合は操作不要である。
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/property_hudfd7cc8c78bf0bedf82dcd7741ddbc04_13376_2000x2000_fit_lanczos_2.png" >
+
+
+  <img data-src="/post/howto_use_timer_auto_starter/property_hudfd7cc8c78bf0bedf82dcd7741ddbc04_13376_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="421" height="580">
+</a>
+
+
+
+</figure>
+</p>
+<p>圧縮されているので、適当な場所に展開する。展開すると、次の3ファイルがある。</p>
 
 
 
@@ -1356,10 +1427,10 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 <figure >
 
 
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/autostartmargintimer_init_huec6886bf29ab5ae5e78e6d6c219a5c79_3259_2000x2000_fit_lanczos_2.png" >
+  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/autostartmargintimer_init_hu4a02b4f4e2ec0493a9b2f4626215c9b5_3480_2000x2000_fit_lanczos_2.png" >
 
 
-  <img data-src="/post/howto_use_timer_auto_starter/autostartmargintimer_init_huec6886bf29ab5ae5e78e6d6c219a5c79_3259_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="312" height="146">
+  <img data-src="/post/howto_use_timer_auto_starter/autostartmargintimer_init_hu4a02b4f4e2ec0493a9b2f4626215c9b5_3480_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="312" height="146">
 </a>
 
 
@@ -1454,8 +1525,9 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
   <div>
     <h3 id="ウィンドウ-プロジェクター-ソースウィンドウの注意事項"><code>ウィンドウ プロジェクター (ソース)</code>ウィンドウの注意事項</h3>
 <ol>
-<li>ウィンドウを画面外には移動してはならない。<br>
-映像が更新されず、正常に認識できなくなる。</li>
+<li>ウィンドウを画面外に移動してはならない。<br>
+画面外に移動すると映像が更新されず、正常に認識できなくなる。
+ただし、ウィンドウが背面になっている場合は問題ない。</li>
 <li>コンテキストメニュー(ウィンドウを右クリックした時に表示されるメニュー)のうち、
 <code>ウィンドウをコンテンツに合わせる</code>を選択してはならない。</li>
 <li><code>ウィンドウ プロジェクター (ソース)</code>ウィンドウをアクティブ状態にしてはならない。<br>
@@ -1613,11 +1685,11 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 <h3 id="シェアバトルもちよりバトルで動作しますか">シェアバトル、もちよりバトルで動作しますか？</h3>
 <p>動作未確認です。「ゲーム開始準備中」の表示がなければ動作しないと思います。</p>
 <h3 id="マラソンで動作しますか">マラソンで動作しますか？</h3>
-<p>動作しません。理由はCPUバトルの場合と同じですが、開始時間は右側に表示されているのでこのタイマーの出番はありませんよね？ :)</p>
+<p>動作しません。理由はCPUバトルの場合と同じですが、時間が右側に表示されているのでこのタイマーの出番はありませんよね？ : )</p>
 <h1 id="サポート">サポート</h1>
 <p>マージンタイマーの導入に関して質問、うまく動作できないなど何か問題がある場合は、
 
-<a href="https://twitter.com/sshock_tetris" target="_blank" rel="noopener">@sshock_tetris</a>にDMやメンションを使用して連絡してください。</p>
+<a href="https://twitter.com/sshock_tetris" target="_blank" rel="noopener">@sshock_tetris</a>にDMやメンションなどで連絡してください。</p>
 <p>マージンタイマー自動開始装置のバグ報告は、
 <a href="https://github.com/sshock-tetris/autoStartMarginTimer/issues" target="_blank" rel="noopener">Issues</a>まで。</p>
 <p>ただし、個人的な都合によりサポートできる範囲に限界があるため、必ずしも対応できるとは限らないことをご理解ください。</p>
