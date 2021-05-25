@@ -72,8 +72,6 @@
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
-    
 
     
 
@@ -247,7 +245,7 @@
     
       <meta property="article:published_time" content="2021-01-31T18:30:15&#43;09:00">
     
-    <meta property="article:modified_time" content="2021-02-03T08:55:00&#43;09:00">
+    <meta property="article:modified_time" content="2021-05-25T00:10:00&#43;09:00">
   
 
   
@@ -276,7 +274,7 @@
   "headline": "配信環境",
   
   "datePublished": "2021-01-31T18:30:15+09:00",
-  "dateModified": "2021-02-03T08:55:00+09:00",
+  "dateModified": "2021-05-25T00:10:00+09:00",
   
   "author": {
     "@type": "Person",
@@ -330,8 +328,7 @@
 
       <div id="search-box">
         
-        <input name="q" id="search-query" placeholder="検索..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
         
       </div>
 
@@ -480,10 +477,6 @@
 
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
       
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
 
       
       <li class="nav-item dropdown theme-dropdown">
@@ -564,7 +557,7 @@
           最終更新
       
     
-    2021/02/03
+    2021/05/25
   </span>
   
 
@@ -639,7 +632,7 @@ LCT240 Proに変えてからは、このマイクアンプが不要になりよ�
 自分の場合、幸いにもちょうど入荷のタイミングが良く1週間ほどで届いた。
 数あるオーディオインターフェースの中でこれを選んだのは、値段以上の音質のよさから。
 でもこの製品に限らず、パソコン内蔵のものから変えるだけでも違いがわかるかもしれない。</p>
-<p>配信者としてバリバリ使いたい人は、AG03のようにミキサーとオーディオインターフェースを兼ねた機材を買った方が幸せになると思う。
+<p>配信者にとっては、AG03のようにミキサーとオーディオインターフェースを兼ねた機材を買った方が幸せになると思う。
 AG03なら音量調整もミュートも手元のボタンで一発でできるし、遅延がないエフェクターもついていて使い勝手がいいと思う。
 自分がそれにしなかったのは、単に音質にこだわっただけ。</p>
 <h3 id="キャプチャボード-avermedia-gc573">キャプチャボード: AVerMedia GC573</h3>
@@ -689,13 +682,14 @@ OBSにはない複数同時配信ができたりするが、使ったことは�
 <h3 id="音声ミキシング">音声ミキシング</h3>
 <p>配信において重要となるのが、音のミキシングである。
 設定を間違えると必要な音が出なかったり、しゃべっている声が小さすぎて聞き苦しいことになる。</p>
-<p>OBSではキャプチャデバイスの音、マイクの音、その他音声の3種類に分けて管理している。
+<p>OBSの音声ソースをキャプチャデバイスの音、マイクの音、その他音声の3種類に分けて管理している。
 その他音声には、Discordの会話、棒読みちゃんの音があり、これらはソフトウェアで作った擬似デバイスを使っている。
 その擬似デバイスとは、
 <a href="https://syncroom.yamaha.com/" target="_blank" rel="noopener">YAMAHA SYNCROOM(旧NETDUETTO)</a>をインストールしたときに入る
 <code>VoiceMeeter Input (Yamaha SYNCROOM Driver (WDM))</code> (以下VoiceMeeter Input)である。
 あるいは、同様の機能のある
-<a href="https://vb-audio.com/Voicemeeter/banana.htm" target="_blank" rel="noopener">Voicemeeter Banana</a>でも良い。
+<a href="https://vb-audio.com/Voicemeeter/banana.htm" target="_blank" rel="noopener">VoiceMeeter Banana</a>でも良い
+(こちらの方が高機能だが、私の環境ではキャプチャデバイスの遅延が増える謎現象が発生したため断念した)。
 Discordや棒読みちゃんの音声の出力デバイスをVoiceMeeter Inputに設定する。
 オーディオインターフェースにループバック(あるいはステレオミキサー)があればそれを使う手もあるが、
 あえてVoiceMeeter Inputを使うメリットは</p>
@@ -714,13 +708,14 @@ Discordや棒読みちゃんの音声の出力デバイスをVoiceMeeter Input�
 <p>最近登場したNVIDIA Broadcastがリアルタイム(実際には100ms弱の遅延あり?)でそれら雑音を全て綺麗に消してくれるので、
 非常に助かっている。しかし動作条件は厳しく、NVIDIAのRTXシリーズのグラフィックボードがなければ使えない。
 (NVIDIA Broadcastより前にリリースされたRTX Voiceを使えば少しだけ動作条件は緩くなる)
-もちろん、ノイズを消している分声質は変わってしまうが、余計な音が完全に消えるというのは画期的である。
-動作条件を満たしている環境であれば、積極的に使いたい。</p>
+もちろん、雑音が残ってしまうことがあったり、ノイズを消している分声質が変わってしまったりするが、
+余計な音がほぼ完全に消えるというのは画期的である。動作条件を満たしている環境であれば、積極的に使いたい。</p>
 <hr>
 <h3 id="余談">余談</h3>
 <ul>
 <li>どれだけ配信環境を整えても、大事なことは中身。決して配信設備でも声でもない。</li>
 <li>視聴者は全員平等。特定人物の肩入れをしすぎないようにする。</li>
+<li>荒らしは視聴者ではない。徹底的に排除することを努める。</li>
 <li>定期的に配信することはチャンネル登録者を増やす意味ではプラスに働くが、精神面ではマイナスに働くことがある。
 本業や家庭の事情など自分の置かれている環境が突然変わることがあるのに配信は定期というギャップは、
 知らないうちにストレスをためることになる。</li>
@@ -860,9 +855,6 @@ Discordや棒読みちゃんの音声の出力デバイスをVoiceMeeter Input�
 
 
 
-  
-  
-
 
 
 
@@ -894,8 +886,6 @@ Discordや棒読みちゃんの音声の出力デバイスをVoiceMeeter Input�
 
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
-    
 
     
     
@@ -908,46 +898,13 @@ Discordや棒読みちゃんの音声の出力デバイスをVoiceMeeter Input�
     
 
     
-    
-    
-    
-    
-    
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"結果が見つかりませんでした","placeholder":"検索...","results":"results found"};
-      const content_type = {
-        'post': "投稿",
-        'project': "プロジェクト",
-        'publication' : "発表文献",
-        'talk' : "登壇",
-        'slides' : "Slides"
-        };
-    </script>
-    
 
     
     
 
     
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
 
     
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
     
 
     
@@ -968,12 +925,10 @@ Discordや棒読みちゃんの音声の出力デバイスをVoiceMeeter Input�
     
     
     
-      
     
     
     
-    
-    <script src="/js/academic.min.4aaf2d64e50f8e54cf66dcc54147a22e.js"></script>
+    <script src="/js/academic.min.a21fcc4a4cdf5eeefae0603e61b3030c.js"></script>
 
     
 
