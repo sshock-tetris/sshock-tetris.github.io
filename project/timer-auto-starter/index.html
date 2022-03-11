@@ -1,1027 +1,156 @@
-<!DOCTYPE html><html lang="ja-jp" >
-
+<!doctype html><html lang=ja>
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.8.0">
-
-  
-
-  
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="shellshock">
-
-  
-  
-  
-    
-  
-  <meta name="description" content="配信者向けTETRIS 99マージンタイマーを、画像認識して自動的に動かす装置">
-
-  
-  <link rel="alternate" hreflang="ja-jp" href="https://sshock-tetris.github.io/project/timer-auto-starter/">
-
-  
-
-
-  
-  
-  
-  <meta name="theme-color" content="#2962ff">
-  
-
-  
-  
-  
-  <script src="/js/mathjax-config.js"></script>
-  
-
-  
-  
-  
-  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-        
-      
-    
-
-    
-
-    
-
-    
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
-    
-      
-
-      
-      
-
-      
-    
-
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-  
-
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/academic.css">
-
-  
-
-
-
-
-  
-
-
-  
-  
-
-  
-
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_192x192_fill_lanczos_center_2.png">
-
-  <link rel="canonical" href="https://sshock-tetris.github.io/project/timer-auto-starter/">
-
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  
-  <meta property="twitter:card" content="summary_large_image">
-  
-  <meta property="twitter:site" content="@sshock_tetris">
-  <meta property="twitter:creator" content="@sshock_tetris">
-  
-  <meta property="og:site_name" content="about: @sshock_tetris">
-  <meta property="og:url" content="https://sshock-tetris.github.io/project/timer-auto-starter/">
-  <meta property="og:title" content="TETRIS 99マージンタイマー自動開始装置 | about: @sshock_tetris">
-  <meta property="og:description" content="配信者向けTETRIS 99マージンタイマーを、画像認識して自動的に動かす装置"><meta property="og:image" content="https://sshock-tetris.github.io/project/timer-auto-starter/featured.png">
-  <meta property="twitter:image" content="https://sshock-tetris.github.io/project/timer-auto-starter/featured.png"><meta property="og:locale" content="ja-jp">
-  
-    
-      <meta property="article:published_time" content="2021-03-18T00:00:00&#43;09:00">
-    
-    <meta property="article:modified_time" content="2021-05-25T00:10:00&#43;09:00">
-  
-
-  
-
-
-    
-
-
-
-
-
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://sshock-tetris.github.io/project/timer-auto-starter/"
-  },
-  "headline": "TETRIS 99マージンタイマー自動開始装置",
-  
-  "image": [
-    "https://sshock-tetris.github.io/project/timer-auto-starter/featured.png"
-  ],
-  
-  "datePublished": "2021-03-18T00:00:00+09:00",
-  "dateModified": "2021-05-25T00:10:00+09:00",
-  
-  "author": {
-    "@type": "Person",
-    "name": "shellshock"
-  },
-  
-  "publisher": {
-    "@type": "Organization",
-    "name": "about: @sshock_tetris",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://sshock-tetris.github.io/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_192x192_fill_lanczos_center_2.png"
-    }
-  },
-  "description": "配信者向けTETRIS 99マージンタイマーを、画像認識して自動的に動かす装置"
-}
-</script>
-
-  
-
-  
-
-
-  
-
-
-  
-
-
-
-
-
-  <title>TETRIS 99マージンタイマー自動開始装置 | about: @sshock_tetris</title>
-
-</head>
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
-
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-  
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">about: @sshock_tetris</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切り替え">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">about: @sshock_tetris</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-      
-
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
-      
-
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  <article class="article article-project">
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.4.0 for Hugo">
+<meta name=author content="shellshock">
+<meta name=description content="配信者向けTETRIS 99マージンタイマーを、画像認識して自動的に動かすソフトウェア">
+<link rel=alternate hreflang=ja href=https://sshock-tetris.github.io/project/timer-auto-starter/>
+<meta name=theme-color content="#1565c0">
+<script src=/js/mathjax-config.js></script>
+<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload='this.media="all"'>
+<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
+<link rel=stylesheet href=/css/wowchemy.111905fb8cee47463f68a35021c3bb8f.css>
+<link rel=icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_180x180_fill_lanczos_center_3.png>
+<link rel=canonical href=https://sshock-tetris.github.io/project/timer-auto-starter/>
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@sshock_tetris">
+<meta property="twitter:creator" content="@sshock_tetris">
+<meta property="og:site_name" content="about: @sshock_tetris">
+<meta property="og:url" content="https://sshock-tetris.github.io/project/timer-auto-starter/">
+<meta property="og:title" content="TETRIS 99マージンタイマー自動開始装置 | about: @sshock_tetris">
+<meta property="og:description" content="配信者向けTETRIS 99マージンタイマーを、画像認識して自動的に動かすソフトウェア"><meta property="og:image" content="https://sshock-tetris.github.io/project/timer-auto-starter/featured.png">
+<meta property="twitter:image" content="https://sshock-tetris.github.io/project/timer-auto-starter/featured.png"><meta property="og:locale" content="ja">
+<meta property="article:published_time" content="2021-03-18T00:00:00+09:00">
+<meta property="article:modified_time" content="2022-03-10T00:10:00+09:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sshock-tetris.github.io/project/timer-auto-starter/"},"headline":"TETRIS 99マージンタイマー自動開始装置","image":["https://sshock-tetris.github.io/project/timer-auto-starter/featured.png"],"datePublished":"2021-03-18T00:00:00+09:00","dateModified":"2022-03-10T00:10:00+09:00","publisher":{"@type":"Organization","name":"about: @sshock_tetris","logo":{"@type":"ImageObject","url":"https://sshock-tetris.github.io/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_192x192_fill_lanczos_center_3.png"}},"description":"配信者向けTETRIS 99マージンタイマーを、画像認識して自動的に動かすソフトウェア"}</script>
+<title>TETRIS 99マージンタイマー自動開始装置 | about: @sshock_tetris</title></head><body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=dd6388cd7b3203de025b4f1ad1ed5673>
+<script src=/js/wowchemy-init.min.7e5427316d1b14a30f257ae3467b3e21.js></script>
+<div class=page-header>
+<header class=header--fixed>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container-xl>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/>about: @sshock_tetris</a>
+</div><button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=ナビゲーションの切り替え>
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/>about: @sshock_tetris</a>
+</div><div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class=nav-link href=/#about><span>Home</span></a>
+</li><li class=nav-item>
+<a class=nav-link href=/post/><span>Posts</span></a>
+</li><li class=nav-item>
+<a class="nav-link active" href=/project/><span>Projects</span></a>
+</li></ul></div><ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>Light</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>Dark</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>Automatic</span>
+</a>
+</div></li></ul></div></nav></header></div><div class=page-body>
+<article class="article article-project">
 <div class="article-container pt-3">
-  <h1>TETRIS 99マージンタイマー自動開始装置</h1>
-
-  
-
-  
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  
-  <span ><a href="/author/shellshock/">shellshock</a></span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          最終更新
-      
-    
-    2021/05/25
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/tetris99/">tetris99</a></span>
-  
-
-</div>
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 312px; max-height: 146px;">
-  <div style="position: relative">
-    <img src="/project/timer-auto-starter/featured.png" alt="" class="featured-image">
-    
-  </div>
-</div>
-
-
-
-  <div class="article-container">
-
-    <div class="article-style">
-      <h1 id="tetris99-マージンタイマー自動開始装置">TETRIS99 マージンタイマー自動開始装置</h1>
-<p>マージンタイマーを自動的に開始できるソフトウェアです。</p>
-<p>
-<a href="https://github.com/sshock-tetris/autoStartMarginTimer/releases" target="_blank" rel="noopener">ダウンロード</a></p>
-<p>
-<a href="/post/howto_use_timer_auto_starter/">導入方法</a></p>
-
-    </div>
-
-    
-
-
-
-
-
-
-
-
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=https://sshock-tetris.github.io/project/timer-auto-starter/&amp;text=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae" target="_blank" rel="noopener" class="share-btn-twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://sshock-tetris.github.io/project/timer-auto-starter/&amp;t=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae" target="_blank" rel="noopener" class="share-btn-facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae&amp;body=https://sshock-tetris.github.io/project/timer-auto-starter/" target="_blank" rel="noopener" class="share-btn-email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://sshock-tetris.github.io/project/timer-auto-starter/&amp;title=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae" target="_blank" rel="noopener" class="share-btn-linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="whatsapp://send?text=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%20https://sshock-tetris.github.io/project/timer-auto-starter/" target="_blank" rel="noopener" class="share-btn-whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://sshock-tetris.github.io/project/timer-auto-starter/&amp;title=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae" target="_blank" rel="noopener" class="share-btn-weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-    
-
-
-
-
-
-  
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="project-related-pages content-widget-hr">
-      
-      
-
-      
-      
-      
-        <h2>投稿</h2>
-        
-          
-            
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/howto_use_timer_auto_starter/" >TETRIS 99マージンタイマー自動開始装置の導入方法</a>
-    </h3>
-
-    
-    <div class="article-style">
-      画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  
-  <span ><a href="/author/shellshock/">shellshock</a></span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          最終更新
-      
-    
-    2021/05/25
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    11 分で読める
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/tetris99/">tetris99</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/post/howto_use_timer_auto_starter/" >
-      <img src="/post/howto_use_timer_auto_starter/featured_hu6f44cd79dc252c24fd7ae79990481271_3084_150x0_resize_lanczos_2.png" alt="TETRIS 99マージンタイマー自動開始装置の導入方法">
-    </a>
-    
-  </div>
-</div>
-
-          
-        
-      
-
-      
-      
-      
-
-      
-      
-      
-    </div>
-  </div>
-</article>
-
-      
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
-        
-      
-
-    
-
-    
-    
-
-    
-    
-    <script>const code_highlighting = true;</script>
-    
-
-    
-    
-    <script>const isSiteThemeDark = false;</script>
-    
-
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="/js/academic.min.a21fcc4a4cdf5eeefae0603e61b3030c.js"></script>
-
-    
-
-
-
-
-
-
-  
-  
-  <div class="container">
-    <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    © 2021 shellshock.
-  </p>
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-  </div>
-  
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">引用</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> コピー
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> ダウンロード
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
+<h1>TETRIS 99マージンタイマー自動開始装置</h1><div class=article-metadata>
+<div>
+</div><span class=article-date>
+最終更新
+2022/03/10
+</span>
+<span class=middot-divider></span>
+<span class=article-categories>
+<i class="fas fa-folder mr-1"></i><a href=/category/tetris99/>tetris99</a></span>
+</div></div><div class="article-header article-container featured-image-wrapper mt-4 mb-4" style=max-width:312px;max-height:146px>
+<div style=position:relative>
+<img src=/project/timer-auto-starter/featured_hu6f44cd79dc252c24fd7ae79990481271_3084_720x2500_fit_q75_h2_lanczos_3.webp width=312 height=146 alt class=featured-image>
+</div></div><div class=article-container>
+<div class=article-style>
+<p>マージンタイマーを自動的に開始できるソフトウェアです。</dt></p><ul>
+<li><a href=https://github.com/sshock-tetris/autoStartMarginTimer/releases target=_blank rel=noopener>ダウンロード</a></li><li><a href=/post/howto_use_timer_auto_starter/>導入方法</a></li></ul><div class="alert alert-note">
+<div>
+<h3 id=マージンとは>マージンとは</h3><p>試合の早期決着を目的に導入されているTETRIS 99固有のシステム。<br>
+試合開始から10分が経過すると、ライン消去時の相手に送るライン数から上乗せされるようになる。
+30秒ごとに1ラインずつ上乗せされる。たとえば、10分なら+1ライン、11分なら+3ライン。<br>
+TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため、15分が経過すると最大となる
+(1ライン + 11ライン = 12ライン)。相手に送る場合に限定されるため、自陣のせり上がり予告との相殺にはマージンは適用されない。</p><p>試合時間さえわかれば、どれだけ上乗せされているかが視覚的に理解できるようにするのが、マージンタイマーである。</p></div></div></div><div class="project-related-pages content-widget-hr">
+<h2>投稿</h2><div class="media stream-item view-compact">
+<div class=media-body>
+<div class="section-subheading article-title mb-0 mt-0">
+<a href=/post/howto_use_timer_auto_starter/>TETRIS 99マージンタイマー自動開始装置の導入方法</a>
+</div><a href=/post/howto_use_timer_auto_starter/ class=summary-link>
+<div class=article-style>
+画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法
+</div></a>
+<div class="stream-meta article-metadata">
+<div class=article-metadata>
+<div>
+</div><span class=article-date>
+最終更新
+2022/03/05
+</span>
+<span class=middot-divider></span>
+<span class=article-reading-time>
+12 分で読める
+</span>
+<span class=middot-divider></span>
+<span class=article-categories>
+<i class="fas fa-folder mr-1"></i><a href=/category/tetris99/>tetris99</a></span>
+</div></div></div><div class=ml-3>
+<a href=/post/howto_use_timer_auto_starter/>
+<img src=/post/howto_use_timer_auto_starter/featured_hu6f44cd79dc252c24fd7ae79990481271_3084_150x0_resize_q75_h2_lanczos_3.webp height=70 width=150 alt="TETRIS 99マージンタイマー自動開始装置の導入方法" loading=lazy>
+</a>
+</div></div><div class="media stream-item view-compact">
+<div class=media-body>
+<div class="section-subheading article-title mb-0 mt-0">
+<a href=/post/howto_use_timer_auto_starter/>TETRIS 99マージンタイマー自動開始装置の導入方法</a>
+</div><a href=/post/howto_use_timer_auto_starter/ class=summary-link>
+<div class=article-style>
+画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法
+</div></a>
+<div class="stream-meta article-metadata">
+<div class=article-metadata>
+<div>
+</div><span class=article-date>
+最終更新
+2022/03/05
+</span>
+<span class=middot-divider></span>
+<span class=article-reading-time>
+12 分で読める
+</span>
+<span class=middot-divider></span>
+<span class=article-categories>
+<i class="fas fa-folder mr-1"></i><a href=/category/tetris99/>tetris99</a></span>
+</div></div></div><div class=ml-3>
+<a href=/post/howto_use_timer_auto_starter/>
+<img src=/post/howto_use_timer_auto_starter/featured_hu6f44cd79dc252c24fd7ae79990481271_3084_150x0_resize_q75_h2_lanczos_3.webp height=70 width=150 alt="TETRIS 99マージンタイマー自動開始装置の導入方法" loading=lazy>
+</a>
+</div></div></div></div></article></div><div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class="powered-by copyright-license-text">
+© 2022 shellshock.
+</p><p class=powered-by>
+Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> — the free, <a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>open source</a> website builder that empowers creators.
+</p></footer></div></div><script src=/js/vendor-bundle.min.3d946de2e8784a477845261d87025092.js></script>
+<script src=https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin=anonymous></script>
+<script id=page-data type=application/json>{"use_headroom":true}</script>
+<script src=/js/wowchemy-headroom.e8fd2d733eef6a8bbbe0539398fc0547.js type=module></script>
+<script src=/ja/js/wowchemy.min.98e82fe50d971df767bed1625cd88228.js></script>
+<script>(function(n){var o={kitId:"nne4ntc",scriptTimeout:3e3,async:!0},s=n.documentElement,r=setTimeout(function(){s.className=s.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},o.scriptTimeout),e=n.createElement("script"),i=!1,a=n.getElementsByTagName("script")[0],t;s.className+=" wf-loading",e.src="https://use.typekit.net/"+o.kitId+".js",e.async=!0,e.onload=e.onreadystatechange=function(){if(t=this.readyState,i||t&&t!="complete"&&t!="loaded")return;i=!0,clearTimeout(r);try{Typekit.load(o)}catch(e){}},a.parentNode.insertBefore(e,a)})(document)</script>
+</body></html>

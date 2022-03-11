@@ -1,1323 +1,617 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>tetris99 | about: @sshock_tetris</title>
-    <link>https://sshock-tetris.github.io/category/tetris99/</link>
-      <atom:link href="https://sshock-tetris.github.io/category/tetris99/index.xml" rel="self" type="application/rss+xml" />
-    <description>tetris99</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja-jp</language><copyright>© 2021 shellshock.</copyright><lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0900</lastBuildDate>
-    <image>
-      <url>https://sshock-tetris.github.io/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_512x512_fill_lanczos_center_2.png</url>
-      <title>tetris99</title>
-      <link>https://sshock-tetris.github.io/category/tetris99/</link>
-    </image>
-    
-    <item>
-      <title>TETRIS 99マージンタイマー自動開始装置の導入方法</title>
-      <link>https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/</link>
-      <pubDate>Sun, 04 Apr 2021 00:00:00 +0900</pubDate>
-      <guid>https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/</guid>
-      <description>&lt;p&gt;この記事は、
-&lt;a href=&#34;https://sshock-tetris.github.io/project/timer-auto-starter/&#34;&gt;TETRIS 99マージンタイマー自動開始装置&lt;/a&gt;の取り扱い説明書です。
-
-&lt;a href=&#34;https://github.com/sshock-tetris/autoStartMarginTimer/blob/main/docs/%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%E8%87%AA%E5%8B%95%E9%96%8B%E5%A7%8B%E8%A3%85%E7%BD%AE_%E4%BD%BF%E3%81%84%E6%96%B9.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;テキスト&lt;/a&gt;
-と同じ内容ですが、それには画像がないため、このページでは画像付きで説明します。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;目次&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#動作要件&#34;&gt;動作要件&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#導入手順&#34;&gt;導入手順&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#tetris-99用マージンタイマーの導入&#34;&gt;TETRIS 99用マージンタイマーの導入&lt;/a&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#1-マージンタイマーのダウンロード&#34;&gt;1. マージンタイマーのダウンロード&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#2-obsにタイマーを追加&#34;&gt;2. OBSにタイマーを追加&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#3-タイマーの動作確認&#34;&gt;3. タイマーの動作確認&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#自動開始装置の準備&#34;&gt;自動開始装置の準備&lt;/a&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#1-自動開始装置のダウンロード&#34;&gt;1. 自動開始装置のダウンロード&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#2-obsの準備&#34;&gt;2. OBSの準備&lt;/a&gt;
-              &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&#34;#キャプチャ映像の上下左右に黒縁がある場合&#34;&gt;キャプチャ映像の上下左右に黒縁がある場合&lt;/a&gt;&lt;/li&gt;
-              &lt;/ul&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#自動開始装置の操作方法&#34;&gt;自動開始装置の操作方法&lt;/a&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#状態&#34;&gt;状態&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#obsを探すボタン&#34;&gt;&lt;code&gt;OBSを探す&lt;/code&gt;ボタン&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#タイマー手動スタートボタン&#34;&gt;&lt;code&gt;タイマー手動スタート&lt;/code&gt;ボタン&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#状態をリセット&#34;&gt;&lt;code&gt;状態をリセット&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#エラーメッセージ&#34;&gt;エラーメッセージ&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#obsを探すを押したとき&#34;&gt;&lt;code&gt;OBSを探す&lt;/code&gt;を押したとき&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#タイマー手動スタートを押したとき&#34;&gt;&lt;code&gt;タイマー手動スタート&lt;/code&gt;を押したとき&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#q-amp-a&#34;&gt;Q &amp;amp; A&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#ゲームが始まっても状態が準備完了待機中から進みません&#34;&gt;ゲームが始まっても状態が&amp;quot;準備完了。待機中&amp;hellip;&amp;ldquo;から進みません。&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#想定外のところでタイマーが動いてしまいます&#34;&gt;想定外のところでタイマーが動いてしまいます。&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする&#34;&gt;&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#ゲームの音は場面認識に関係ありますか&#34;&gt;ゲームの音は場面認識に関係ありますか？&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#ホーム画面に戻っても大丈夫&#34;&gt;ホーム画面に戻っても大丈夫？&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#cpuバトルで動作しますか&#34;&gt;CPUバトルで動作しますか？&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#シェアバトルもちよりバトルで動作しますか&#34;&gt;シェアバトル、もちよりバトルで動作しますか？&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#マラソンで動作しますか&#34;&gt;マラソンで動作しますか？&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#サポート&#34;&gt;サポート&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-
-&lt;h1 id=&#34;動作要件&#34;&gt;動作要件&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Windowsを搭載した配信用パソコン&lt;/li&gt;
-&lt;li&gt;HDMIキャプチャボード&lt;br&gt;
-※カメラなどでNintendo Switchの画面を直撮りしている映像には対応しません&lt;/li&gt;
-&lt;li&gt;OBS (配信用ソフトウェア)&lt;br&gt;
-※表示言語を日本語にしてください。他の言語では動作しません&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;導入手順&#34;&gt;導入手順&lt;/h1&gt;
-&lt;h2 id=&#34;tetris-99用マージンタイマーの導入&#34;&gt;TETRIS 99用マージンタイマーの導入&lt;/h2&gt;
-&lt;p&gt;※
-&lt;a href=&#34;https://github.com/sshock-tetris/Tetris99MarginTimer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;マージンタイマー&lt;/a&gt;を既に導入済の場合は、
-マージンタイマーのソース名を&lt;code&gt;MarginTimer&lt;/code&gt;に変更してから
-&lt;a href=&#34;#%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e6%ba%96%e5%82%99&#34;&gt;自動開始装置の準備&lt;/a&gt;へ進んでください&lt;/p&gt;
-&lt;h3 id=&#34;1-マージンタイマーのダウンロード&#34;&gt;1. マージンタイマーのダウンロード&lt;/h3&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/save_as_timer_hu547a7544f8c48a671967bc3f1d4278bf_14363_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/save_as_timer_hu547a7544f8c48a671967bc3f1d4278bf_14363_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;600px&#34; height=&#34;400&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html&#34;&gt;https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html&lt;/a&gt; にアクセスする。
-&lt;code&gt;Raw&lt;/code&gt;を右クリックし、名前を付けて保存を選び、&lt;code&gt;timer.html&lt;/code&gt;を適当な場所に保存する。&lt;/p&gt;
-&lt;h3 id=&#34;2-obsにタイマーを追加&#34;&gt;2. OBSにタイマーを追加&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/add_browser_hu6b8f25f23caccba8ff00a1c0b51c3690_8545_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/add_browser_hu6b8f25f23caccba8ff00a1c0b51c3690_8545_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;355&#34; height=&#34;421&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-OBSを起動し、ブラウザソースを追加する。&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/new_margintimer_huf7907983e7a219ce77a77bade84d15a2_2707_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/new_margintimer_huf7907983e7a219ce77a77bade84d15a2_2707_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;354&#34; height=&#34;346&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-タイマーの名称を&lt;code&gt;MarginTimer&lt;/code&gt;にして、OKをクリックする。(⚠スペル要注意)&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/timer_property_initial_hua0e557934b108ba89d195df377e59f25_12643_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/timer_property_initial_hua0e557934b108ba89d195df377e59f25_12643_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;524&#34; height=&#34;622&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;code&gt;&#39;MarginTimer&#39; のプロパティ&lt;/code&gt;が表示される。&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/timer_property_example2_huaa2c3a4a7822591b275d441bf80e4662_1188_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/timer_property_example2_huaa2c3a4a7822591b275d441bf80e4662_1188_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;522&#34; height=&#34;106&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;code&gt;ローカルファイル&lt;/code&gt;にチェックを入れ、ローカルファイルの場所をソースのアドレスに保存した&lt;code&gt;timer.html&lt;/code&gt;にする。
-幅は600以上を推奨。高さを60あれば十分。変更後、OKをクリックする。&lt;/p&gt;
-&lt;h3 id=&#34;3-タイマーの動作確認&#34;&gt;3. タイマーの動作確認&lt;/h3&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/margintimer_menu_huf72c0be1603454277af2f3b5e50bb7e7_5752_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/margintimer_menu_huf72c0be1603454277af2f3b5e50bb7e7_5752_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;418&#34; height=&#34;280&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;追加したブラウザソースを右クリックし、[対話]メニューを選択すると&lt;code&gt;&#39;MarginTimer&#39; の相互作用&lt;/code&gt;ウィンドウが表示される。
-このウィンドウがアクティブ状態の時にキー操作を行うとタイマーが動作する。&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/interactive_window_hu7ef440a7e57086f91cbe55897c3e9dbe_5311_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/interactive_window_hu7ef440a7e57086f91cbe55897c3e9dbe_5311_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;624&#34; height=&#34;113&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    &lt;h4 id=&#34;キー操作一覧&#34;&gt;キー操作一覧&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;キー&lt;/th&gt;
-&lt;th&gt;動作&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Enter&lt;/td&gt;
-&lt;td&gt;タイマー開始&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Space&lt;/td&gt;
-&lt;td&gt;タイマー停止・再開(*1)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ESC&lt;/td&gt;
-&lt;td&gt;タイマー消去&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2秒後にタイマー開始（*2）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;3秒後にタイマー開始（*2）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;4秒後にタイマー開始（*2）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;(*1) タイマーを再開できるのはタイマーを停止したときのみです。タイマーを消去した後は再開できません。&lt;br&gt;
-(*2） キーはゲーム開始時のカウントダウンの数値に合わせています。&amp;ldquo;Go&amp;quot;が表示される1秒間があるため、実際の待ち時間ではありません。
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;自動開始装置は、この対話ウィンドウに擬似的にキー入力をさせて、
-タイマー開始とタイマーリセット&amp;amp;消去を自動的に行うことで実現している。&lt;/p&gt;
-&lt;p&gt;なお、マージンタイマーはマージンに到達すると色が変わり、最終的に赤くなるようにできている。&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/timer_color_hu38bfcf0b6ffd871d52feff33bfdd8d5e_19954_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/timer_color_hu38bfcf0b6ffd871d52feff33bfdd8d5e_19954_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;270&#34; height=&#34;301&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    &lt;h4 id=&#34;マージンとは&#34;&gt;マージンとは&lt;/h4&gt;
-&lt;p&gt;試合の早期決着を目的に導入されているTETRIS 99固有のシステム。&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tetris99 | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/category/tetris99/</link><atom:link href="https://sshock-tetris.github.io/category/tetris99/index.xml" rel="self" type="application/rss+xml"/><description>tetris99</description><generator>Wowchemy (https://wowchemy.com)</generator><language>ja</language><lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_512x512_fill_lanczos_center_3.png</url><title>tetris99</title><link>https://sshock-tetris.github.io/category/tetris99/</link></image><item><title>TETRIS 99マージンタイマー自動開始装置の導入方法</title><link>https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/</link><pubDate>Sun, 04 Apr 2021 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/</guid><description>&lt;p>この記事は、&lt;a href="https://sshock-tetris.github.io/project/timer-auto-starter/">TETRIS 99マージンタイマー自動開始装置&lt;/a>の取り扱い説明書です。
+&lt;a href="https://github.com/sshock-tetris/autoStartMarginTimer/blob/main/docs/%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%E8%87%AA%E5%8B%95%E9%96%8B%E5%A7%8B%E8%A3%85%E7%BD%AE_%E4%BD%BF%E3%81%84%E6%96%B9.txt" target="_blank" rel="noopener">テキスト&lt;/a>
+と同じ内容ですが、それには画像がないため、このページでは画像付きで説明します。&lt;/p>
+&lt;hr>
+&lt;details class="toc-inpage d-print-none d-xl-none " open>
+&lt;summary class="font-weight-bold">目次&lt;/summary>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#動作要件">動作要件&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#導入手順">導入手順&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#tetris-99用マージンタイマーの導入">TETRIS 99用マージンタイマーの導入&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#自動開始装置の準備">自動開始装置の準備&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#自動開始装置の操作方法">自動開始装置の操作方法&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#状態">状態&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#obsを探すボタン">&lt;code>OBSを探す&lt;/code>ボタン&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#タイマー手動スタートボタン">&lt;code>タイマー手動スタート&lt;/code>ボタン&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#状態をリセット">&lt;code>状態をリセット&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#エラーメッセージ">エラーメッセージ&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#obsを探すを押したとき">&lt;code>OBSを探す&lt;/code>を押したとき&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#タイマー手動スタートを押したとき">&lt;code>タイマー手動スタート&lt;/code>を押したとき&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#q-amp-a">Q &amp;amp; A&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#ゲームが始まっても状態が準備完了待機中から進みません">ゲームが始まっても状態が&amp;quot;準備完了。待機中&amp;hellip;&amp;ldquo;から進みません。&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#想定外のところでタイマーが動いてしまいます">想定外のところでタイマーが動いてしまいます。&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする">&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#ゲームの音は場面認識に関係ありますか">ゲームの音は場面認識に関係ありますか？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#ホーム画面に戻っても大丈夫">ホーム画面に戻っても大丈夫？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#対応しているモードは">対応しているモードは？&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#サポート">サポート&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/details>
+&lt;h2 id="動作要件">動作要件&lt;/h2>
+&lt;ul>
+&lt;li>Windowsを搭載した配信用パソコン&lt;/li>
+&lt;li>HDMIキャプチャボード&lt;br>
+※カメラなどでNintendo Switchの画面を直撮りしている映像には対応しません&lt;/li>
+&lt;li>OBS (配信用ソフトウェア)&lt;br>
+※表示言語を日本語にしてください。他の言語では動作しません&lt;br>
+※他の配信用ソフトウェア (Streamlabs OBS、XSplitなど) は対応していません&lt;/li>
+&lt;/ul>
+&lt;h2 id="導入手順">導入手順&lt;/h2>
+&lt;h3 id="tetris-99用マージンタイマーの導入">TETRIS 99用マージンタイマーの導入&lt;/h3>
+&lt;p>※&lt;a href="https://github.com/sshock-tetris/Tetris99MarginTimer/" target="_blank" rel="noopener">マージンタイマー&lt;/a>を既に導入済の場合は、
+マージンタイマーのソース名を&lt;mark>MarginTimer&lt;/mark>に変更してから&lt;a href="#%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e6%ba%96%e5%82%99">自動開始装置の準備&lt;/a>へ進んでください&lt;/p>
+&lt;h4 id="1-マージンタイマーのダウンロード">1. マージンタイマーのダウンロード&lt;/h4>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://sshock-tetris.github.io/images/save_as_timer.png" alt="Rawのコンテキストメニュー" loading="lazy" data-zoomable width="600px" />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;p>&lt;a href="https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html" target="_blank" rel="noopener">https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html&lt;/a> にアクセスする。
+&lt;code>Raw&lt;/code>を右クリックし、名前を付けて保存を選び、&lt;code>timer.html&lt;/code>を適当な場所に保存する。&lt;/p>
+&lt;h4 id="2-obsにタイマーを追加">2. OBSにタイマーを追加&lt;/h4>
+&lt;img src="https://sshock-tetris.github.io/images/add_browser.png" alt="OBS - ソースの追加 - ブラウザ">
+OBSを起動し、ブラウザソースを追加する。
+&lt;img src="https://sshock-tetris.github.io/images/new_margintimer.png" alt="ソースを作成/選択画面">
+&lt;p>タイマーの名称を &lt;mark>MarginTimer&lt;/mark> にして、OKをクリックする。&lt;mark>(⚠スペル要注意)&lt;/mark>&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/timer_property_initial.png" alt="'MarginTimer' のプロパティ画面">
+&lt;p>&lt;code>'MarginTimer' のプロパティ&lt;/code>が表示される。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/timer_property_example2.png" alt="ローカルファイルチェックボックスと各種設定">
+&lt;p>&lt;code>ローカルファイル&lt;/code>にチェックを入れ、ローカルファイルの場所をソースのアドレスに保存した&lt;code>timer.html&lt;/code>にする。
+幅は600以上を推奨。高さは60あれば十分。変更後、OKをクリックする。&lt;/p>
+&lt;h4 id="3-タイマーの動作確認">3. タイマーの動作確認&lt;/h4>
+&lt;img src="https://sshock-tetris.github.io/images/margintimer_menu.png" alt="OBS - ブラウザソース - コンテキストメニュー">
+&lt;p>追加したブラウザソースを右クリックし、[対話]メニューを選択すると&lt;code>'MarginTimer' の相互作用&lt;/code>ウィンドウが表示される。
+このウィンドウがアクティブ状態の時にキー操作を行うとタイマーが動作する。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/interactive_window.png" alt="'MarginTimer' との相互作用ウィンドウ">
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h3 id="キー操作一覧">キー操作一覧&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>キー&lt;/th>
+&lt;th>動作&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Enter&lt;/td>
+&lt;td>タイマー開始&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Space&lt;/td>
+&lt;td>タイマー停止・再開 (*1)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ESC&lt;/td>
+&lt;td>タイマー消去&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>2秒後にタイマー開始 (*2)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2&lt;/td>
+&lt;td>3秒後にタイマー開始 (*2)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3&lt;/td>
+&lt;td>4秒後にタイマー開始 (*2)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>(*1) タイマーを再開できるのはタイマーを停止したときのみです。タイマーを消去した後は再開できません。&lt;br>
+(*2) キーはゲーム開始時のカウントダウンの数値に合わせています。&amp;ldquo;Go&amp;quot;が表示される1秒間があるため、実際の待ち時間ではありません。
+&lt;/div>
+&lt;/div>
+&lt;p>自動開始装置は、この対話ウィンドウに擬似的にキー入力をさせて、
+タイマー開始とタイマーリセット&amp;amp;消去を自動的に行うことで実現している。&lt;/p>
+&lt;p>なお、マージンタイマーはマージンに到達すると色が変わり、最終的に赤くなるようにできている。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/timer_color.png" alt="マージンタイマーの時間経過と色一覧">
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h3 id="マージンとは">マージンとは&lt;/h3>
+&lt;p>試合の早期決着を目的に導入されているTETRIS 99固有のシステム。&lt;br>
 試合開始から10分が経過すると、ライン消去時の相手に送るライン数から上乗せされるようになる。
-30秒ごとに1ラインずつ上乗せされる。たとえば、10分なら+1ライン、11分なら+3ライン。&lt;br&gt;
+30秒ごとに1ラインずつ上乗せされる。たとえば、10分なら+1ライン、11分なら+3ライン。&lt;br>
 TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため、15分が経過すると最大となる
 (1ライン + 11ライン = 12ライン)。相手に送る場合に限定されるため、自陣のせり上がり予告との相殺にはマージンは適用されない。
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;タイマーの導入ができたら、自動開始装置の準備へ進もう。&lt;/p&gt;
-&lt;h2 id=&#34;自動開始装置の準備&#34;&gt;自動開始装置の準備&lt;/h2&gt;
-&lt;h3 id=&#34;1-自動開始装置のダウンロード&#34;&gt;1. 自動開始装置のダウンロード&lt;/h3&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/releases_hue070276e24a2b23c27e08520744fcf3d_14212_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/releases_hue070276e24a2b23c27e08520744fcf3d_14212_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;720&#34; height=&#34;494&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/sshock-tetris/autoStartMarginTimer/releases&#34;&gt;https://github.com/sshock-tetris/autoStartMarginTimer/releases&lt;/a&gt;
-から、最新バージョンの自動開始装置のzipファイルをダウンロードする。&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    &lt;h4 id=&#34;ウェブブラウザ-google-chrome-を使用している場合&#34;&gt;ウェブブラウザ Google Chrome を使用している場合&lt;/h4&gt;
-&lt;p&gt;ダウンロードが終了した後、&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;このファイルは一般的にダウンロードされているファイルではなく、危害を及ぼす可能性があります。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;と表示される場合がある。&lt;/p&gt;
-&lt;figure &gt;
-&lt;p&gt;&lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_bar_hu321632d7c1c03f3f2f7d21d683dac4b5_4447_2000x2000_fit_lanczos_2.png&#34; &gt;&lt;/p&gt;
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_bar_hu321632d7c1c03f3f2f7d21d683dac4b5_4447_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;460&#34; height=&#34;58&#34;&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
-&lt;figure &gt;
-&lt;p&gt;&lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_warn_hubeaaeb3365a5d50819e619b5853dcd65_6869_2000x2000_fit_lanczos_2.png&#34; &gt;&lt;/p&gt;
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_warn_hubeaaeb3365a5d50819e619b5853dcd65_6869_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;690&#34; height=&#34;189&#34;&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
-&lt;p&gt;この場合は、&lt;code&gt;保存&lt;/code&gt;を押して進めて欲しい。&lt;/p&gt;
-&lt;figure &gt;
-&lt;p&gt;&lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_confirm_huf5b07dfecc3f0b35db1fb2fdad9c4ea1_6661_2000x2000_fit_lanczos_2.png&#34; &gt;&lt;/p&gt;
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/dlmgr_confirm_huf5b07dfecc3f0b35db1fb2fdad9c4ea1_6661_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;324&#34; height=&#34;176&#34;&gt;
-&lt;/a&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;保存&lt;/code&gt;を押したときに上図のような確認メッセージが表示されるが、かまわず&lt;code&gt;続行する&lt;/code&gt;を押す。
-これは、ダウンロード数が少ないだけで疑われるというChromeのお節介な機能の1つである。&lt;/p&gt;
-&lt;p&gt;上記URLは自動開始装置の正式な公開場所であり、そこからダウンロードしていれば問題ないはずである。
+&lt;/div>
+&lt;/div>
+&lt;p>タイマーの導入ができたら、自動開始装置の準備へ進もう。&lt;/p>
+&lt;h3 id="自動開始装置の準備">自動開始装置の準備&lt;/h3>
+&lt;h4 id="1-自動開始装置のダウンロード">1. 自動開始装置のダウンロード&lt;/h4>
+&lt;img src="https://sshock-tetris.github.io/images/releases.png" alt="自動開始装置のReleasesページ">
+&lt;p>&lt;a href="https://github.com/sshock-tetris/autoStartMarginTimer/releases" target="_blank" rel="noopener">https://github.com/sshock-tetris/autoStartMarginTimer/releases&lt;/a>
+から、最新バージョンの自動開始装置のzipファイルをダウンロードする。&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h4 id="ウェブブラウザ-google-chrome-を使用している場合">ウェブブラウザ Google Chrome を使用している場合&lt;/h4>
+&lt;p>ダウンロードが終了した後、&lt;/p>
+&lt;blockquote>
+&lt;p>このファイルは一般的にダウンロードされているファイルではなく、危害を及ぼす可能性があります。&lt;/p>
+&lt;/blockquote>
+&lt;p>と表示される場合がある。
+&lt;img src="https://sshock-tetris.github.io/images/dlmgr_bar.png" alt="ダウンロードバーでの警告表示">&lt;/p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://sshock-tetris.github.io/images/dlmgr_warn.png" alt="ダウンロードマネージャーでの警告表示" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;p>この場合は、&lt;code>保存&lt;/code>を押して進めて欲しい。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/dlmgr_confirm.png" alt="ファイル保存時の確認メッセージ">
+&lt;p>&lt;code>保存&lt;/code>を押したときに上図のような確認メッセージが表示されるが、かまわず&lt;code>続行する&lt;/code>を押す。
+これは、ダウンロード数が少ないだけで疑われるというChromeのお節介な機能の1つである。&lt;/p>
+&lt;p>上記URLは自動開始装置の正式な公開場所であり、そこからダウンロードしていれば問題ないはずである。
 この圧縮ファイルは公開されたソースコードからGitHubの自動ビルド機能によってできたファイルであり、
-危害を加える危険物が含まれないように考慮している。&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;ダウンロードしたファイルを右クリックして&lt;code&gt;プロパティ&lt;/code&gt;を選び、
-下のセキュリティ項目の&lt;code&gt;許可する&lt;/code&gt;にチェックを入れてファイルのブロック解除を行う。
+危害を加える危険物が含まれないように考慮している。&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;p>ダウンロードしたファイルを右クリックして&lt;code>プロパティ&lt;/code>を選び、
+下のセキュリティ項目の&lt;code>許可する&lt;/code>にチェックを入れてファイルのブロック解除を行う。
 セキュリティ項目が表示されない場合はブロックが解除されているので、その場合は操作不要である。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/property_hudfd7cc8c78bf0bedf82dcd7741ddbc04_13376_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/property_hudfd7cc8c78bf0bedf82dcd7741ddbc04_13376_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;421&#34; height=&#34;580&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;圧縮されているので、適当な場所に展開する。展開すると、次の3ファイルがある。&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/extracted_hu4dad4461cc4e2f8abb05c6c4c5f58061_4495_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/extracted_hu4dad4461cc4e2f8abb05c6c4c5f58061_4495_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;609&#34; height=&#34;94&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;h3 id=&#34;2-obsの準備&#34;&gt;2. OBSの準備&lt;/h3&gt;
-&lt;p&gt;ソースに映像キャプチャデバイス(キャプチャボードの映像)がなければ追加する。&lt;/p&gt;
-&lt;p&gt;&amp;lsquo;MarginTimer&amp;rsquo;ソースを右クリックし、&lt;code&gt;対話&lt;/code&gt;メニューを選択する。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/margintimer_menu_huf72c0be1603454277af2f3b5e50bb7e7_5752_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/margintimer_menu_huf72c0be1603454277af2f3b5e50bb7e7_5752_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;418&#34; height=&#34;280&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;キャプチャボードの映像ソースを右クリックして&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;メニューを選ぶ。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/window_projector_source_hu4c2d9e321840ceb2e9677cbfb264a0fb_5265_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/window_projector_source_hu4c2d9e321840ceb2e9677cbfb264a0fb_5265_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;361&#34; height=&#34;256&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;それぞれ、&lt;code&gt;&#39;MarginTimer&#39; の相互作用&lt;/code&gt;ウィンドウ、&lt;code&gt;ウィンドウ プロジェクター (ソース) - 映像キャプチャデバイス&lt;/code&gt;ウィンドウが表示されていることを確認する。&lt;/p&gt;
-&lt;h4 id=&#34;キャプチャ映像の上下左右に黒縁がある場合&#34;&gt;キャプチャ映像の上下左右に黒縁がある場合&lt;/h4&gt;
-&lt;p&gt;キャプチャ映像の上下左右が黒く額縁状態なっている場合、
-そのままではタイマー自動開始装置が場面をうまく認識できないので、以下の要領で額縁状態を解消させる。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;キャプチャボードの映像ソースを右クリックして、&lt;code&gt;フィルタ&lt;/code&gt;を選ぶ。&lt;br&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/filter_hu00136e7027335d4ad65a5900b0d4a469_8954_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/filter_hu00136e7027335d4ad65a5900b0d4a469_8954_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;863&#34; height=&#34;758&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;code&gt;&#39;映像キャプチャデバイス&#39; のためのフィルタ&lt;/code&gt;ウィンドウが表示される。&lt;/li&gt;
-&lt;li&gt;ウィンドウ左下(エフェクトフィルタ)の&lt;code&gt;+&lt;/code&gt;ボタンをクリックし、&lt;code&gt;クロップ/パッド&lt;/code&gt;を追加する。&lt;br&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/crop_pad_hud33a74b80a5b28f03b67a7055c42a479_5357_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/crop_pad_hud33a74b80a5b28f03b67a7055c42a479_5357_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;243&#34; height=&#34;428&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;フィルタの名前を付ける。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/crop_pad_name_hude01bb6c480fa7e40ee5472ca0650c34_1791_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/crop_pad_name_hude01bb6c480fa7e40ee5472ca0650c34_1791_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;557&#34; height=&#34;132&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;追加した&lt;code&gt;クロップ/パッド&lt;/code&gt;フィルタをクリックし、黒縁が表示されなくなるまで上下左右の数値を増やす。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/filter_crop_hu5402dd87d72ad24c3f7859770de0992e_9778_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/filter_crop_hu5402dd87d72ad24c3f7859770de0992e_9778_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;863&#34; height=&#34;758&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;自動開始装置の操作方法&#34;&gt;自動開始装置の操作方法&lt;/h2&gt;
-&lt;p&gt;タイマー自動開始装置 (autoStartMarginTimer.exe)を起動する。
-起動すると、以下のようなウィンドウが表示される。&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/autostartmargintimer_init_hu4a02b4f4e2ec0493a9b2f4626215c9b5_3480_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/autostartmargintimer_init_hu4a02b4f4e2ec0493a9b2f4626215c9b5_3480_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;312&#34; height=&#34;146&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;h3 id=&#34;状態&#34;&gt;状態&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;状態&lt;/th&gt;
-&lt;th&gt;説明&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;[自動開始できません]&lt;/td&gt;
-&lt;td&gt;まだ準備ができておらず、タイマーを自動開始できない。&lt;br&gt;自動開始装置を起動した時、および状態をリセットした時はこの状態となる。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;準備完了。待機中&amp;hellip;&lt;/td&gt;
-&lt;td&gt;ゲームが始まるのを待っている。タイマーを自動開始できる状態。&lt;br&gt;タイマーが表示中の場合は、この状態になった時にタイマーを自動的に消去する。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;マッチング/ゲーム開始準備中&lt;/td&gt;
-&lt;td&gt;マッチング中、またはゲーム開始準備中を認識した。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;READY&lt;/td&gt;
-&lt;td&gt;マッチングが終わりREADYを認識した。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;GO&lt;/td&gt;
-&lt;td&gt;試合が始まり、タイマーを開始した。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    &lt;h4 id=&#34;obsを管理者権限で起動している場合&#34;&gt;OBSを管理者権限で起動している場合&lt;/h4&gt;
-&lt;p&gt;タイマー自動開始装置も管理者権限で実行する。&lt;/p&gt;
-&lt;p&gt;Windowsの仕様の問題で、管理者権限でなければOBSが起動していることを認識できない。&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;obsを探すボタン&#34;&gt;&lt;code&gt;OBSを探す&lt;/code&gt;ボタン&lt;/h3&gt;
-&lt;p&gt;このボタンをクリックすると、自動開始装置がOBSの&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウと
-&lt;code&gt;&#39;MarginTimer&#39; の相互作用&lt;/code&gt;ウィンドウを探し、2つのウィンドウが見つかり次第場面認識を開始する。&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    &lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウのウィンドウサイズが大きくなり、
+&lt;img src="https://sshock-tetris.github.io/images/property.png" alt="自動開始装置ファイルのプロパティ画面">&lt;/p>
+&lt;p>圧縮されているので、適当な場所に展開する。展開すると、次の3ファイルがある。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/extracted.png" alt="展開後のファイルリスト">
+&lt;h4 id="2-obsの準備">2. OBSの準備&lt;/h4>
+&lt;p>ソースに映像キャプチャデバイス(キャプチャボードの映像)がなければ追加する。&lt;/p>
+&lt;p>&amp;lsquo;MarginTimer&amp;rsquo;ソースを右クリックし、&lt;code>対話&lt;/code>メニューを選択する。
+&lt;img src="https://sshock-tetris.github.io/images/margintimer_menu.png" alt="OBS - ブラウザソース - コンテキストメニュー">&lt;/p>
+&lt;p>キャプチャボードの映像ソースを右クリックして&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>メニューを選ぶ。
+&lt;img src="https://sshock-tetris.github.io/images/window_projector_source.png" alt="OBS - 映像ソース - コンテキストメニュー">&lt;/p>
+&lt;p>それぞれ、&lt;code>'MarginTimer' の相互作用&lt;/code>ウィンドウ、&lt;code>ウィンドウ プロジェクター (ソース) - 映像キャプチャデバイス&lt;/code>ウィンドウが表示されていることを確認する。&lt;/p>
+&lt;h4 id="キャプチャ映像の上下左右に黒縁がある場合">キャプチャ映像の上下左右に黒縁がある場合&lt;/h4>
+&lt;p>キャプチャ映像の上下左右が黒く額縁状態なっている場合、
+そのままではマージンタイマー自動開始装置が場面をうまく認識できないことがある。
+以下の要領で額縁状態を解消させる。&lt;/p>
+&lt;ol>
+&lt;li>キャプチャボードの映像ソースを右クリックして、&lt;code>フィルタ&lt;/code>を選ぶ。&lt;br>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://sshock-tetris.github.io/images/filter.png" alt="映像ソースのフィルタウィンドウ(初期状態)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+映像ソースのフィルタウィンドウが表示される。&lt;/li>
+&lt;li>ウィンドウ左下(エフェクトフィルタ)の&lt;code>+&lt;/code>ボタンをクリックし、&lt;code>クロップ/パッド&lt;/code>を追加する。&lt;br>
+&lt;img src="https://sshock-tetris.github.io/images/crop_pad.png" alt="エフェクトフィルタ追加 - クロップ/パッド">&lt;/li>
+&lt;li>フィルタの名前を付ける。
+&lt;img src="https://sshock-tetris.github.io/images/crop_pad_name.png" alt="フィルタ名入力ダイアログボックス">&lt;/li>
+&lt;li>追加した&lt;code>クロップ/パッド&lt;/code>フィルタをクリックし、黒縁が表示されなくなるまで上下左右の数値を増やす。
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://sshock-tetris.github.io/images/filter_crop.png" alt="映像ソースのフィルタウィンドウ(クロップ/パッド選択済)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>&lt;/li>
+&lt;/ol>
+&lt;h2 id="自動開始装置の操作方法">自動開始装置の操作方法&lt;/h2>
+&lt;p>マージンタイマー自動開始装置 (autoStartMarginTimer.exe)を起動する。
+起動すると、以下のようなウィンドウが表示される。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/autostartmargintimer_init.png" alt="起動直後の自動開始装置ウィンドウ">
+&lt;h3 id="状態">状態&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>状態&lt;/th>
+&lt;th>説明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>[自動開始できません]&lt;/td>
+&lt;td>まだ準備ができておらず、タイマーを自動開始できない。&lt;br>自動開始装置を起動した時、および状態をリセットした時はこの状態となる。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>準備完了。待機中&amp;hellip;&lt;/td>
+&lt;td>ゲームが始まるのを待っている。タイマーを自動開始できる状態。&lt;br>タイマーが表示中の場合は、この状態になった時にタイマーを自動的に消去する。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>マッチング/ゲーム開始準備中&lt;/td>
+&lt;td>マッチング中、またはゲーム開始準備中を認識した。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>READY&lt;/td>
+&lt;td>マッチングが終わりREADYを認識した。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>GO&lt;/td>
+&lt;td>試合が始まり、タイマーを開始した。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h3 id="obsを管理者権限で起動している場合">OBSを管理者権限で起動している場合&lt;/h3>
+&lt;p>マージンタイマー自動開始装置も管理者権限で実行する。&lt;/p>
+&lt;p>Windowsの仕様の問題で、管理者権限でなければOBSが起動していることを認識できない。&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="obsを探すボタン">&lt;code>OBSを探す&lt;/code>ボタン&lt;/h3>
+&lt;p>このボタンをクリックすると、自動開始装置がOBSの&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウと
+&lt;code>'MarginTimer' の相互作用&lt;/code>ウィンドウを探し、2つのウィンドウが見つかり次第場面認識を開始する。&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウのウィンドウサイズが大きくなり、
 最大化ボタンと最小化ボタンが消えるが、これは正常動作である。
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;準備ができていない場合は、このようなエラーメッセージが表示される。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/error_obs_not_detected_hudd94ded3d48e37b872f26abb07ab6710_3132_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/error_obs_not_detected_hudd94ded3d48e37b872f26abb07ab6710_3132_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;412&#34; height=&#34;159&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;準備ができていれば、このボタンが無効化され、自動的に画像認識により場面を認識するようになる。
-場面に応じてタイマーを開始したり消去したりするので、うまく認識できていれば以後操作は不要である。&lt;/p&gt;
-&lt;div class=&#34;alert alert-warning&#34;&gt;
-  &lt;div&gt;
-    &lt;h3 id=&#34;ウィンドウ-プロジェクター-ソースウィンドウの注意事項&#34;&gt;&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウの注意事項&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;ウィンドウを画面外に移動してはならない。&lt;br&gt;
+&lt;/div>
+&lt;/div>
+&lt;p>準備ができていない場合は、このようなエラーメッセージが表示される。
+&lt;img src="https://sshock-tetris.github.io/images/error_obs_not_detected.png" alt="OBS検出エラーメッセージ">&lt;/p>
+&lt;p>準備ができていれば、このボタンが無効化され、自動的に画像認識により場面を認識するようになる。
+場面に応じてタイマーを開始したり消去したりするので、うまく認識できていれば以後操作は不要である。&lt;/p>
+&lt;div class="alert alert-warning">
+&lt;div>
+&lt;h3 id="ウィンドウ-プロジェクター-ソースウィンドウの注意事項">&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウの注意事項&lt;/h3>
+&lt;ol>
+&lt;li>ウィンドウを画面外に移動してはならない。&lt;br>
 画面外に移動すると映像が更新されず、正常に認識できなくなる。
-ただし、ウィンドウが背面になっている場合は問題ない。&lt;/li&gt;
-&lt;li&gt;コンテキストメニュー(ウィンドウを右クリックした時に表示されるメニュー)のうち、
-&lt;code&gt;ウィンドウをコンテンツに合わせる&lt;/code&gt;を選択してはならない。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウをアクティブ状態にしてはならない。&lt;br&gt;
-自動開始装置がタイマーを開始させる時にそのウィンドウがアクティブ状態になっていると、
-ウィンドウが閉じてしまい画像認識ができなくなる。
-閉じてしまった場合は&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;を再度開き、&lt;code&gt;OBSを探す&lt;/code&gt;ボタンを押す。&lt;/li&gt;
-&lt;/ol&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;タイマー手動スタートボタン&#34;&gt;&lt;code&gt;タイマー手動スタート&lt;/code&gt;ボタン&lt;/h3&gt;
-&lt;p&gt;OBSとの連携ができている状態でこのボタンを押すと、タイマーを手動で開始することができる。
+ただし、ウィンドウが背面になっている場合は問題ない。&lt;/li>
+&lt;li>コンテキストメニュー(ウィンドウを右クリックした時に表示されるメニュー)のうち、
+&lt;code>ウィンドウをコンテンツに合わせる&lt;/code>を選択してはならない。&lt;/li>
+&lt;/ol>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="タイマー手動スタートボタン">&lt;code>タイマー手動スタート&lt;/code>ボタン&lt;/h3>
+&lt;p>OBSとの連携ができている状態でこのボタンを押すと、タイマーを手動で開始することができる。
 これはタイマーが自動的に開始しないなどのトラブルが発生してタイマーを手動で開始する必要がある場合や
-動作テストのためのボタンで、通常は使用する必要はない。&lt;/p&gt;
-&lt;h3 id=&#34;状態をリセット&#34;&gt;&lt;code&gt;状態をリセット&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;試合が始まったのに場面を認識できずにタイマーが始まらない、マッチング中の画面を正しく認識できない
-などの症状を見かけた時は、タイマー自動開始装置の状態のリセットを試してほしい。&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/reset_hu9bae2d6dbec073929a3bc5966dec05d7_3996_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/reset_hu9bae2d6dbec073929a3bc5966dec05d7_3996_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;312&#34; height=&#34;146&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-タイトルバーを右クリックすると、&lt;code&gt;状態をリセット&lt;/code&gt;メニューがあるので、それを選択する。
-タイマー自動開始装置の状態に関係なく起動直後の状態に戻る。&lt;/p&gt;
-&lt;h1 id=&#34;エラーメッセージ&#34;&gt;エラーメッセージ&lt;/h1&gt;
-&lt;h3 id=&#34;obsを探すを押したとき&#34;&gt;&lt;code&gt;OBSを探す&lt;/code&gt;を押したとき&lt;/h3&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/error_obs_not_detected_hudd94ded3d48e37b872f26abb07ab6710_3132_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/error_obs_not_detected_hudd94ded3d48e37b872f26abb07ab6710_3132_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;412&#34; height=&#34;159&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;自動開始装置に必要なOBSの準備ができていない。特に、以下の点をよく確認する。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ソースのウィンドウ プロジェクターを表示しているか？&lt;/li&gt;
-&lt;li&gt;MarginTimerのスペルが間違っていないか？&lt;/li&gt;
-&lt;li&gt;OBSの表示言語が日本語になっているか？&lt;/li&gt;
-&lt;li&gt;OBSが管理者権限で動作している場合、自動開始装置も管理者権限で動いているか？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;タイマー手動スタートを押したとき&#34;&gt;&lt;code&gt;タイマー手動スタート&lt;/code&gt;を押したとき&lt;/h3&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/error_cant_send_hu3bb7ddbf19f48aaa200b23e10a9482a7_2169_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/error_cant_send_hu3bb7ddbf19f48aaa200b23e10a9482a7_2169_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;346&#34; height=&#34;152&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;先にOBSの準備をする。&lt;/p&gt;
-&lt;h1 id=&#34;q-amp-a&#34;&gt;Q &amp;amp; A&lt;/h1&gt;
-&lt;h3 id=&#34;ゲームが始まっても状態が準備完了待機中から進みません&#34;&gt;ゲームが始まっても状態が&amp;quot;準備完了。待機中&amp;hellip;&amp;ldquo;から進みません。&lt;/h3&gt;
-&lt;p&gt;以下、ご確認ください。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;正しいウィンドウ プロジェクターを表示していますか？&lt;br&gt;
-オーバーレイが含まれた映像、動画ソースなど、キャプチャボードの映像でない場合は認識できません。&lt;/li&gt;
-&lt;li&gt;キャプチャボードの映像が額縁状態に縮小されている場合は額縁状態を解消するよう調整してください。&lt;/li&gt;
-&lt;li&gt;OBSを探す時に、何らかの問題でウィンドウプロジェクターのウィンドウサイズが変化しなかった場合も同様に場面の認識ができません。
-この現象が発生した場合は、作者までご連絡ください。&lt;/li&gt;
-&lt;li&gt;ウィンドウ プロジェクター ウィンドウを画面外に移動していないか確認してください。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;想定外のところでタイマーが動いてしまいます&#34;&gt;想定外のところでタイマーが動いてしまいます。&lt;/h3&gt;
-&lt;p&gt;TETRIS 99のゲームを動かしていることが前提条件となるため、Switchのアルバムから静止画や動画を再生した場合は、
+動作テストのためのボタンで、通常は使用する必要はない。&lt;/p>
+&lt;h3 id="状態をリセット">&lt;code>状態をリセット&lt;/code>&lt;/h3>
+&lt;p>試合が始まったのに場面を認識できずにタイマーが始まらない、マッチング中の画面を正しく認識できない
+などの症状を見かけた時は、マージンタイマー自動開始装置の状態のリセットを試してほしい。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/reset.png" alt="自動開始装置のリセット">
+タイトルバーを右クリックすると、`状態をリセット`メニューがあるので、それを選択する。
+マージンタイマー自動開始装置の状態に関係なく起動直後の状態に戻る。
+&lt;p>「状態をリセット」の状態とは自動開始装置のことを指し、マージンタイマーのことではない。&lt;br>
+つまり、「状態をリセット」を行っても、表示されているマージンタイマーはそのまま表示されたままとなることに注意する。
+マージンタイマーの表示を消したい場合は、&lt;code>'MarginTimer' の相互作用&lt;/code>ウィンドウをアクティブ状態にして、ESCキーを押す。&lt;/p>
+&lt;h2 id="エラーメッセージ">エラーメッセージ&lt;/h2>
+&lt;h3 id="obsを探すを押したとき">&lt;code>OBSを探す&lt;/code>を押したとき&lt;/h3>
+&lt;img src="https://sshock-tetris.github.io/images/error_obs_not_detected.png" alt="OBS検出エラーメッセージ">
+&lt;p>自動開始装置に必要なOBSの準備ができていない。特に、以下の点をよく確認する。&lt;/p>
+&lt;ul>
+&lt;li>ソースのウィンドウ プロジェクターを表示しているか？&lt;/li>
+&lt;li>&lt;mark>MarginTimer&lt;/mark>のスペルが間違っていないか？&lt;/li>
+&lt;li>OBSの表示言語が日本語になっているか？&lt;/li>
+&lt;li>OBSが管理者権限で動作している場合、自動開始装置も管理者権限で動いているか？&lt;/li>
+&lt;/ul>
+&lt;h3 id="タイマー手動スタートを押したとき">&lt;code>タイマー手動スタート&lt;/code>を押したとき&lt;/h3>
+&lt;img src="https://sshock-tetris.github.io/images/error_cant_send.png" alt="対話ウィンドウ未検出エラーメッセージ">
+&lt;p>先にOBSの準備をする。&lt;br>
+※タイマー手動スタートボタンは、現在OBSの準備ができるまでは無効化されているので、
+このメッセージを見ることはまずないだろう。旧バージョンの時の名残である。&lt;/p>
+&lt;h2 id="q-amp-a">Q &amp;amp; A&lt;/h2>
+&lt;h3 id="ゲームが始まっても状態が準備完了待機中から進みません">ゲームが始まっても状態が&amp;quot;準備完了。待機中&amp;hellip;&amp;ldquo;から進みません。&lt;/h3>
+&lt;p>以下、ご確認ください。&lt;/p>
+&lt;ol>
+&lt;li>正しいウィンドウ プロジェクターを表示していますか？&lt;br>
+オーバーレイが含まれた映像など、ゲーム映像でない場合は認識できません。&lt;/li>
+&lt;li>ゲーム映像の色が反転、もしくはグレースケールになっていませんか？&lt;br>
+Switchの設定で色設定を変更している場合は認識できません。元の設定に戻してください。&lt;/li>
+&lt;li>キャプチャボードの映像の上下左右に黒縁がありませんか？&lt;br>
+額縁状態に縮小されている場合は額縁状態を解消するよう調整してください。&lt;/li>
+&lt;li>OBSを探す時に、何らかの問題でウィンドウプロジェクターのウィンドウサイズが変化しなかった場合も同様に場面の認識ができません。
+この現象が発生した場合は、作者までご連絡ください。&lt;/li>
+&lt;li>ウィンドウ プロジェクター ウィンドウを画面外に移動していないか確認してください。&lt;/li>
+&lt;/ol>
+&lt;h3 id="想定外のところでタイマーが動いてしまいます">想定外のところでタイマーが動いてしまいます。&lt;/h3>
+&lt;p>TETRIS 99のゲーム画面が表示されていることが前提条件となるため、Switchのアルバムから静止画や動画を再生した場合は、
 実際のゲーム画面と区別がつかずタイマーが誤動作することがあります。
-誤動作した場合は、タイマー状態のリセットを試してください。&lt;/p&gt;
-&lt;h3 id=&#34;ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする&#34;&gt;&lt;code&gt;ウィンドウ プロジェクター (ソース)&lt;/code&gt;ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？&lt;/h3&gt;
-&lt;p&gt;ウィンドウを閉じたことを自動開始装置が検知し、状態が&lt;code&gt;[自動開始できません]&lt;/code&gt;になります。
-この時、無効化されていた「OBSを探す」ボタンが再び有効になります。
-ウィンドウプロジェクター ウィンドウや対話ウィンドウをもう一度開いて、&lt;code&gt;OBSを探す&lt;/code&gt;ボタンを押してください。&lt;/p&gt;
-&lt;h3 id=&#34;ゲームの音は場面認識に関係ありますか&#34;&gt;ゲームの音は場面認識に関係ありますか？&lt;/h3&gt;
-&lt;p&gt;無関係です。映像さえあれば無音でも問題なく使用できます。&lt;/p&gt;
-&lt;h3 id=&#34;ホーム画面に戻っても大丈夫&#34;&gt;ホーム画面に戻っても大丈夫？&lt;/h3&gt;
-&lt;p&gt;マッチング中に限り、ホーム画面に戻っている時間が長いほどタイマーを自動開始できる可能性が低くなります。
-できる限り問題が起こらないようにしていますが、仕様上どうしても認識できない場合があります。
-たとえば、対戦を始めてすぐにホーム画面に戻り、試合開始の準備が終わるまでしばらく待った後でゲーム画面に復帰した場合、
-自動開始装置は動作しません。
-これは「マッチング中」または「ゲーム開始準備中」の表示部分を画像認識する仕様のため、
-その表示を見つけられなかったことで自動開始装置が場面を認識できなかったことによります。&lt;/p&gt;
-&lt;h3 id=&#34;cpuバトルで動作しますか&#34;&gt;CPUバトルで動作しますか？&lt;/h3&gt;
-&lt;p&gt;動作しません。これは「マッチング中」の表示が場面を認識するのに必要で、CPUバトルにはその表示がないためです。&lt;/p&gt;
-&lt;h3 id=&#34;シェアバトルもちよりバトルで動作しますか&#34;&gt;シェアバトル、もちよりバトルで動作しますか？&lt;/h3&gt;
-&lt;p&gt;動作未確認です。「ゲーム開始準備中」の表示がなければ動作しないと思います。&lt;/p&gt;
-&lt;h3 id=&#34;マラソンで動作しますか&#34;&gt;マラソンで動作しますか？&lt;/h3&gt;
-&lt;p&gt;動作しません。理由はCPUバトルの場合と同じですが、時間が右側に表示されているのでこのタイマーの出番はありませんよね？ : )&lt;/p&gt;
-&lt;h1 id=&#34;サポート&#34;&gt;サポート&lt;/h1&gt;
-&lt;p&gt;マージンタイマーの導入に関して質問、うまく動作できないなど何か問題がある場合は、
-
-&lt;a href=&#34;https://twitter.com/sshock_tetris&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@sshock_tetris&lt;/a&gt;にDM(※要フォロー)やメンションなどで連絡してください。&lt;/p&gt;
-&lt;p&gt;マージンタイマー自動開始装置のバグ報告は、
-&lt;a href=&#34;https://github.com/sshock-tetris/autoStartMarginTimer/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Issues&lt;/a&gt;まで。&lt;/p&gt;
-&lt;p&gt;ただし、個人的な都合によりサポートできる範囲に限界があるため、必ずしも対応できるとは限らないことをご理解ください。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TETRIS 99マージンタイマー自動開始装置</title>
-      <link>https://sshock-tetris.github.io/project/timer-auto-starter/</link>
-      <pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate>
-      <guid>https://sshock-tetris.github.io/project/timer-auto-starter/</guid>
-      <description>&lt;h1 id=&#34;tetris99-マージンタイマー自動開始装置&#34;&gt;TETRIS99 マージンタイマー自動開始装置&lt;/h1&gt;
-&lt;p&gt;マージンタイマーを自動的に開始できるソフトウェアです。&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://github.com/sshock-tetris/autoStartMarginTimer/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ダウンロード&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/&#34;&gt;導入方法&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>#あさてと</title>
-      <link>https://sshock-tetris.github.io/project/morning-tetris/</link>
-      <pubDate>Wed, 17 Mar 2021 19:30:00 +0900</pubDate>
-      <guid>https://sshock-tetris.github.io/project/morning-tetris/</guid>
-      <description>&lt;p&gt;
-&lt;a href=&#34;https://twitter.com/Phosphorus7904/status/1294450958500425728&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Illustrated by りんP&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;あさてとhttpstwittercomhashtagあさてと-とは&#34;&gt;
-&lt;a href=&#34;https://twitter.com/hashtag/%e3%81%82%e3%81%95%e3%81%a6%e3%81%a8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#あさてと&lt;/a&gt; とは&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;朝にテトリスをやること。&lt;/li&gt;
-&lt;li&gt;平日朝に、TETRIS 99のVIP部屋に指定した時間に入って一緒にテトリスをするだけの企画。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;このページでは後者について書かれていますが、あさてとの本来の意味は前者です。&lt;/p&gt;
-&lt;h1 id=&#34;あさてと企画とは&#34;&gt;あさてと(企画)とは&lt;/h1&gt;
-&lt;p&gt;平日朝の日本時間8:30前後に、VIP部屋で試合をする企画です。試合時間は私(shellshock)が勝手に決めています。&lt;/p&gt;
-&lt;p&gt;1日1回が原則ですが、場合によっては1日2回することもあります。&lt;/p&gt;
-&lt;p&gt;派生として、
-&lt;a href=&#34;https://twitter.com/hashtag/%e4%bc%91%e6%97%a5%e3%81%82%e3%81%95%e3%81%a6%e3%81%a8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#休日あさてと&lt;/a&gt;もあります。
-休日あさてとは、9:00、9:20、9:40の3回あり、いずれもVIP部屋です。&lt;/p&gt;
-&lt;h1 id=&#34;あさてと-の参加方法&#34;&gt;あさてと の参加方法&lt;/h1&gt;
-&lt;p&gt;私(shellshock)が開始10分前までに時間指定するので、その時間に入ってください。
-マッチング状態により別部屋ができる可能性があります。&lt;/p&gt;
-&lt;h1 id=&#34;目的&#34;&gt;目的&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;朝にテトリスをやることで目を覚まし、脳を活性化させる&lt;/li&gt;
-&lt;li&gt;毎日続けることでテトリスの空白期間を作らないようにする&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;あさてとの歴史&#34;&gt;あさてとの歴史&lt;/h1&gt;
-&lt;p&gt;あさてとは、私のチャンネル登録者100人記念の通話雑談配信にて
+誤動作した場合は、タイマー状態のリセットを試してください。&lt;/p>
+&lt;h3 id="ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする">&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？&lt;/h3>
+&lt;p>ウィンドウを閉じたことを自動開始装置が検知し、状態が&lt;code>[自動開始できません]&lt;/code>になります。
+この時、無効化されていた&lt;code>OBSを探す&lt;/code>ボタンが再び有効になります。
+ウィンドウプロジェクター ウィンドウや対話ウィンドウをもう一度開いて、&lt;code>OBSを探す&lt;/code>ボタンを押してください。&lt;/p>
+&lt;h3 id="ゲームの音は場面認識に関係ありますか">ゲームの音は場面認識に関係ありますか？&lt;/h3>
+&lt;p>無関係です。映像さえあれば無音でも問題なく使用できます。&lt;/p>
+&lt;h3 id="ホーム画面に戻っても大丈夫">ホーム画面に戻っても大丈夫？&lt;/h3>
+&lt;p>まだ部屋に入っていなければ問題ありません。
+部屋に入ってから試合が始まるまでの間は、誤作動の原因となるため、できる限り避けてください。&lt;/p>
+&lt;p>マージンタイマー自動開始装置は「マッチング中」または「ゲーム開始準備中」の表示部分を色で判断する仕様です。
+そのため、それらの表示中にホーム画面に戻ると、マージンタイマー自動開始装置はマッチングが終わり試合が開始していると誤認識します。
+また、部屋に入った直後にホーム画面に戻り、その間に試合が始まっていた場合も、同様の理由でマージンタイマーは動作しません。&lt;/p>
+&lt;h3 id="対応しているモードは">対応しているモードは？&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>モード&lt;/th>
+&lt;th>対応&lt;/th>
+&lt;th>備考&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>TETRIS 99&lt;/td>
+&lt;td>○&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>TETRIS 99 VIP (Invictus)&lt;/td>
+&lt;td>○&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>チームバトル&lt;/td>
+&lt;td>○&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>もちよりバトル&lt;/td>
+&lt;td>？&lt;/td>
+&lt;td>動作未確認。「ゲーム開始準備中」の表示がなければ動作しないと思います&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>シェアバトル&lt;/td>
+&lt;td>×&lt;/td>
+&lt;td>動作未確認。他のモードとは異なる画面構成で場面を認識できないため、動作しない可能性が高い&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CPUバトル&lt;/td>
+&lt;td>×&lt;/td>
+&lt;td>「マッチング中」の表示が場面を認識するのに必要で、CPUバトルにはその表示がないため&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>マラソン&lt;/td>
+&lt;td>×&lt;/td>
+&lt;td>時間が右側に表示されているのでこのタイマーの出番はありませんよね？ : )&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="サポート">サポート&lt;/h2>
+&lt;p>マージンタイマーの導入に関して質問、うまく動作できないなどは、
+&lt;a href="https://twitter.com/sshock_tetris" target="_blank" rel="noopener">
+&lt;i class="fab fa-twitter pr-1 fa-fw">&lt;/i>@sshock_tetris&lt;/a>にDM(※要フォロー)やメンションなどで連絡してください。&lt;/p>
+&lt;p>マージンタイマー自動開始装置のバグ報告は、&lt;a href="https://github.com/sshock-tetris/autoStartMarginTimer/issues" target="_blank" rel="noopener">Issues&lt;/a>まで。&lt;/p>
+&lt;p>ただし、個人的な都合によりサポートできる範囲に限界があります。必ずしも対応できるとは限らないことをご理解ください。&lt;/p></description></item><item><title>TETRIS 99マージンタイマー自動開始装置</title><link>https://sshock-tetris.github.io/project/timer-auto-starter/</link><pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/project/timer-auto-starter/</guid><description>&lt;p>マージンタイマーを自動的に開始できるソフトウェアです。&lt;/dt>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sshock-tetris/autoStartMarginTimer/releases" target="_blank" rel="noopener">ダウンロード&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/">導入方法&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h3 id="マージンとは">マージンとは&lt;/h3>
+&lt;p>試合の早期決着を目的に導入されているTETRIS 99固有のシステム。&lt;br>
+試合開始から10分が経過すると、ライン消去時の相手に送るライン数から上乗せされるようになる。
+30秒ごとに1ラインずつ上乗せされる。たとえば、10分なら+1ライン、11分なら+3ライン。&lt;br>
+TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため、15分が経過すると最大となる
+(1ライン + 11ライン = 12ライン)。相手に送る場合に限定されるため、自陣のせり上がり予告との相殺にはマージンは適用されない。&lt;/p>
+&lt;p>試合時間さえわかれば、どれだけ上乗せされているかが視覚的に理解できるようにするのが、マージンタイマーである。&lt;/p>
+&lt;/div>
+&lt;/div></description></item><item><title>#あさてと</title><link>https://sshock-tetris.github.io/project/morning-tetris/</link><pubDate>Wed, 17 Mar 2021 19:30:00 +0900</pubDate><guid>https://sshock-tetris.github.io/project/morning-tetris/</guid><description>&lt;p>&lt;a href="https://twitter.com/Phosphorus7904/status/1294450958500425728" target="_blank" rel="noopener">Illustrated by りんP&lt;/a>.&lt;/p>
+&lt;h2 id="あさてと-とは">あさてと とは&lt;/h2>
+&lt;ol>
+&lt;li>朝にテトリスをやること。&lt;/li>
+&lt;li>平日朝に、TETRIS 99のVIP部屋に指定した時間に入って一緒にテトリスをするだけの企画。&lt;/li>
+&lt;/ol>
+&lt;p>このページでは後者について書かれていますが、あさてとの本来の意味は前者です。&lt;/p>
+&lt;h2 id="あさてとhttpstwittercomhashtagあさてと-企画とは">&lt;a href="https://twitter.com/hashtag/%e3%81%82%e3%81%95%e3%81%a6%e3%81%a8" target="_blank" rel="noopener">#あさてと&lt;/a> (企画)とは&lt;/h2>
+&lt;p>平日朝の日本時間8:30前後に、VIP部屋で試合をする企画です。試合時間は私(shellshock)が勝手に決めています。&lt;/p>
+&lt;p>1日1回が原則ですが、場合によっては1日2回することもあります。&lt;/p>
+&lt;p>派生として、&lt;a href="https://twitter.com/hashtag/%e4%bc%91%e6%97%a5%e3%81%82%e3%81%95%e3%81%a6%e3%81%a8" target="_blank" rel="noopener">#休日あさてと&lt;/a>もあります。
+休日あさてとは、9:00、9:20、9:40の3回あり、いずれもVIP部屋です。&lt;/p>
+&lt;h2 id="あさてと-の参加方法">あさてと の参加方法&lt;/h2>
+&lt;p>私(shellshock)が開始10分前までに時間指定するので、その時間に入ってください。
+マッチング状態により別部屋ができる可能性があります。&lt;/p>
+&lt;h2 id="目的">目的&lt;/h2>
+&lt;ul>
+&lt;li>朝にテトリスをやることで目を覚まし、脳を活性化させる&lt;/li>
+&lt;li>毎日続けることでテトリスの空白期間を作らないようにする&lt;/li>
+&lt;/ul>
+&lt;h2 id="あさてとの歴史">あさてとの歴史&lt;/h2>
+&lt;p>あさてとは、私のチャンネル登録者100人記念の通話雑談配信にて
 「平日の朝に目覚ましのためにTETRIS 99のVIP部屋に潜ってる」と話したことがきっかけで、
-それまで何もツイートせずにこっそりやっていたのを時間指定して入るようにしたのがきっかけです。&lt;/p&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;個人的にあさてと&lt;br&gt;でw &lt;a href=&#34;https://t.co/bNAkgwchFg&#34;&gt;pic.twitter.com/bNAkgwchFg&lt;/a&gt;&lt;/p&gt;&amp;mdash; シノン@テトリスV最強を目指すVtuber (@sinonTETRIS) &lt;a href=&#34;https://twitter.com/sinonTETRIS/status/1276551395793985537?ref_src=twsrc%5Etfw&#34;&gt;June 26, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;配信されていたんですね。では &lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt; でいきましょう！w&lt;/p&gt;&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1276553726602252288?ref_src=twsrc%5Etfw&#34;&gt;June 26, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/p&gt;
-&lt;p&gt;名前の候補は「朝テト」「あさてと」「あさテト」の3つを考えていて、
+それまで何もツイートせずにこっそりやっていたのを時間指定して入るようにしたのがきっかけです。&lt;/p>
+&lt;p>&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">個人的にあさてと&lt;br>でw &lt;a href="https://t.co/bNAkgwchFg">pic.twitter.com/bNAkgwchFg&lt;/a>&lt;/p>&amp;mdash; シノン@テトリスV最強を目指すVtuber (@sinonTETRIS) &lt;a href="https://twitter.com/sinonTETRIS/status/1276551395793985537?ref_src=twsrc%5Etfw">June 26, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">配信されていたんですね。では &lt;a href="https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw">#あさてと&lt;/a> でいきましょう！w&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1276553726602252288?ref_src=twsrc%5Etfw">June 26, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;p>名前の候補は「朝テト」「あさてと」「あさテト」の3つを考えていて、
 どれにしようか迷っていたところ、シノンさんが「あさてと」を既に使っていたということで
-「あさてと」に即決しました。&lt;/p&gt;
-&lt;p&gt;そして、2020/6/29に初めて時間指定をしました。&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;8:35 VIP &lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt;&lt;/p&gt;&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1277384757546893312?ref_src=twsrc%5Etfw&#34;&gt;June 28, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;が、その時はまだ10分前に告知するルールがなかったので誰もいませんでした。
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;入ったときには10秒前だったし、27人しかいなかったし、時間の告知も直前だったしでいないのは当然だと思う。&lt;/p&gt;&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1277388350127665152?ref_src=twsrc%5Etfw&#34;&gt;June 28, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/p&gt;
-&lt;p&gt;あさてとを1年以上続けた結果、参加者が10名以上集まることが増えてきたり、ほぼ毎回猛者部屋になったりしています。いつもご参加ありがとうございます！&lt;/p&gt;
-&lt;h1 id=&#34;qampa&#34;&gt;Q&amp;amp;A&lt;/h1&gt;
-&lt;h3 id=&#34;q-なぜvip部屋&#34;&gt;Q. なぜVIP部屋？&lt;/h3&gt;
-&lt;p&gt;A. 他の部屋よりも落下速度が速く、目覚ましに効果的だからです。&lt;/p&gt;
-&lt;h3 id=&#34;q-他の部屋の時間指定はしないの&#34;&gt;Q. 他の部屋の時間指定はしないの？&lt;/h3&gt;
-&lt;p&gt;A. 今のところ予定はありません。&lt;/p&gt;
-&lt;h3 id=&#34;q-あさてとって他に時間指定してる人はいる&#34;&gt;Q. あさてとって他に時間指定してる人はいる？&lt;/h3&gt;
-&lt;p&gt;A. 今のところ(2021/2/20現在)確認していません。
-あさてとは私の独占企画ではありません！他の方が時間と部屋を決めてあさてとをすることは歓迎します。&lt;/p&gt;
-&lt;h3 id=&#34;q-あさてとは平日だけ休日はあるの&#34;&gt;Q. あさてとは平日だけ？休日はあるの？&lt;/h3&gt;
-&lt;p&gt;A. 私が時間指定するあさてとは平日のみです。しかし、休日には休日あさてとがあります。
-なお、休日は土曜日と日曜日、日本国における国民の祝日、年末年始とします。&lt;/p&gt;
-&lt;p&gt;何らかのアクシデントにより、平日であっても時間指定がない場合もあります。その場合は中止とします。&lt;/p&gt;
-&lt;h3 id=&#34;q-8時半ぐらいだと通学通勤でできないですなぜこの時間帯なのですか&#34;&gt;Q. 8時半ぐらいだと通学(通勤)でできないです。なぜこの時間帯なのですか？&lt;/h3&gt;
-&lt;p&gt;A. 私の仕事が常時在宅勤務で通勤時間がなく、ちょうど仕事前にできるからです。在宅勤務の特権みたいなものです。
-もし在宅勤務でなくなったらあさてとは終了となりますが、今のところは大丈夫です。&lt;/p&gt;
-&lt;h3 id=&#34;q-あさてとの配信をしてもいいですか&#34;&gt;Q. あさてとの配信をしてもいいですか？&lt;/h3&gt;
-&lt;p&gt;A. もちろんOKです。歓迎します！何の断りもなく配信してしまってかまいません。私が気がついたら配信URLをツイートします。
-ツイート忘れはご容赦ください。&lt;/p&gt;
-&lt;h3 id=&#34;q-なぜ時間指定時間を固定しても良いのでは&#34;&gt;Q. なぜ時間指定？時間を固定しても良いのでは？&lt;/h3&gt;
-&lt;p&gt;A. 2020年9月に時間指定か1試合時間固定か2試合時間固定かのアンケートを採ったことがあり、
+「あさてと」に即決しました。&lt;/p>
+&lt;p>そして、2020/6/29に初めて時間指定をしました。&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="und" dir="ltr">8:35 VIP &lt;a href="https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw">#あさてと&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1277384757546893312?ref_src=twsrc%5Etfw">June 28, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;p>が、その時はまだ10分前に告知するルールがなかったので誰もいませんでした。
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">入ったときには10秒前だったし、27人しかいなかったし、時間の告知も直前だったしでいないのは当然だと思う。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1277388350127665152?ref_src=twsrc%5Etfw">June 28, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;p>あさてとを1年以上続けた結果、参加者が10名以上集まることが増えてきたり、ほぼ毎回猛者部屋になったりしています。いつもご参加ありがとうございます！&lt;/p>
+&lt;h2 id="qampa">Q&amp;amp;A&lt;/h2>
+&lt;h3 id="q-なぜvip部屋">Q. なぜVIP部屋？&lt;/h3>
+&lt;p>A. 他の部屋よりも落下速度が速く、目覚ましに効果的だからです。&lt;/p>
+&lt;h3 id="q-他の部屋の時間指定はしないの">Q. 他の部屋の時間指定はしないの？&lt;/h3>
+&lt;p>A. 今のところ予定はありません。&lt;/p>
+&lt;h3 id="q-あさてとって他に時間指定してる人はいる">Q. あさてとって他に時間指定してる人はいる？&lt;/h3>
+&lt;p>A. 今のところ(2021/2/20現在)確認していません。
+あさてとは私の独占企画ではありません！他の方が時間と部屋を決めてあさてとをすることは歓迎します。&lt;/p>
+&lt;h3 id="q-あさてとは平日だけ休日はあるの">Q. あさてとは平日だけ？休日はあるの？&lt;/h3>
+&lt;p>A. 私が時間指定するあさてとは平日のみです。しかし、休日には休日あさてとがあります。
+なお、休日は土曜日と日曜日、日本国における国民の祝日、年末年始とします。&lt;/p>
+&lt;p>何らかのアクシデントにより、平日であっても時間指定がない場合もあります。その場合は中止とします。&lt;/p>
+&lt;h3 id="q-8時半ぐらいだと通学通勤でできないですなぜこの時間帯なのですか">Q. 8時半ぐらいだと通学(通勤)でできないです。なぜこの時間帯なのですか？&lt;/h3>
+&lt;p>A. 私の仕事が常時在宅勤務で通勤時間がなく、ちょうど仕事前にできるからです。在宅勤務の特権みたいなものです。
+もし在宅勤務でなくなったらあさてとは終了となりますが、今のところは大丈夫です。&lt;/p>
+&lt;h3 id="q-あさてとの配信をしてもいいですか">Q. あさてとの配信をしてもいいですか？&lt;/h3>
+&lt;p>A. もちろんOKです。歓迎します！何の断りもなく配信してしまってかまいません。私が気がついたら配信URLをツイートします。
+ツイート忘れはご容赦ください。&lt;/p>
+&lt;h3 id="q-なぜ時間指定時間を固定しても良いのでは">Q. なぜ時間指定？時間を固定しても良いのでは？&lt;/h3>
+&lt;p>A. 2020年9月に時間指定か1試合時間固定か2試合時間固定かのアンケートを採ったことがあり、
 過半数ではないものの時間指定が一番多かったため現在も時間指定としています。
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt; の時間指定について&lt;/p&gt;&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1308428144127348738?ref_src=twsrc%5Etfw&#34;&gt;September 22, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;/p&gt;
-&lt;h3 id=&#34;q-あさてとに参加していたら遅刻しましたどうしてくれるんですか&#34;&gt;Q. あさてとに参加していたら遅刻しました。どうしてくれるんですか？&lt;/h3&gt;
-&lt;p&gt;A. 私は一切責任を負えません。参加した人の自己責任です。決して無理に参加されることのないよう、お願いします。
-平日の参加が難しい方向けに休日あさてとがあるのでご検討ください。&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt; は私の独占企画では全くないので、できる時に適当に時間と部屋を決めてやりましょう。&lt;a href=&#34;https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#あさてと&lt;/a&gt; はいいぞ&lt;br&gt;&lt;br&gt;※効果・効能は個人差があります&lt;br&gt;※スナイプは無理のない範囲で&lt;/p&gt;&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1278479331870687232?ref_src=twsrc%5Etfw&#34;&gt;July 2, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>TETRIS99 Margin Timer</title>
-      <link>https://sshock-tetris.github.io/project/margin-timer/</link>
-      <pubDate>Tue, 15 Sep 2020 00:04:47 +0900</pubDate>
-      <guid>https://sshock-tetris.github.io/project/margin-timer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>あきりん企画 #テトリス運動会 に参加・配信しました</title>
-      <link>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</link>
-      <pubDate>Mon, 14 Sep 2020 20:30:13 +0900</pubDate>
-      <guid>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</guid>
-      <description>&lt;p&gt;あきりん企画の 
-&lt;a href=&#34;https://twitter.com/Autumn63775693/status/1297842792815718403&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#テトリス運動会&lt;/a&gt; に参加し、様子を配信しました。&lt;/p&gt;
-&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;運動会企画！！&lt;br&gt;9/12(土)22:00～&lt;br&gt;4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br&gt;詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href=&#34;https://t.co/Vy5KBCYcGN&#34;&gt;pic.twitter.com/Vy5KBCYcGN&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw&#34;&gt;August 24, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/nHMCr2Br2PA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;結果&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt;&lt;br&gt;結果発表！！&lt;br&gt;優勝は緑チームです！！おめでとう！！&lt;br&gt;他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href=&#34;https://t.co/uiIBqqOXAD&#34;&gt;pic.twitter.com/uiIBqqOXAD&lt;/a&gt;&lt;/p&gt;&amp;mdash; あき (@Autumn63775693) &lt;a href=&#34;https://twitter.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw&#34;&gt;September 12, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;hr&gt;
-&lt;p&gt;翌日、こんな感じでつぶやくと&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#テトリス運動会&lt;/a&gt; の反省会配信はない感じかな？(ボソ)&lt;/p&gt;&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href=&#34;https://twitter.com/sshock_tetris/status/1304963392134721539?ref_src=twsrc%5Etfw&#34;&gt;September 13, 2020&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;
-&lt;a href=&#34;https://www.youtube.com/channel/UCoI4Gr6g5SLmAi60AqooDEA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;夏影ソウナ&lt;/a&gt;さんが反省会(?)配信をしてくださり、
-最初から途中までお邪魔しました。&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Ea-xWk6vfOw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;ところが、この反省会配信で肝心な反省会のことがほとんど話せないまま時間が来てしまったため、
-このページに感想と反省内容を箇条書きすることにしました。&lt;/p&gt;
-&lt;h2 id=&#34;試合前の心境&#34;&gt;試合前の心境&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;試合前の練習はできなかった
-&lt;ul&gt;
-&lt;li&gt;前日にシノンさんのスナイプをしたり、当日に野良チームに2回入っただけ&lt;/li&gt;
-&lt;li&gt;ただ、直前に練習することに意味はほとんどないので、時間があっても5試合もやらなかったと思う&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;自分は何ができるかを考えると、中堅戦以外は何ももできないと思った&lt;/li&gt;
-&lt;li&gt;バッジはどうせ取れないので特に考えてなかった&lt;/li&gt;
-&lt;li&gt;試合結果への貢献度は0と思っていた&lt;/li&gt;
-&lt;li&gt;試合結果ではなく、縛りルールを楽しむ感じでいきたいと思った&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;プレイ内容&#34;&gt;プレイ内容&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;最後の試合だけは悪くなかった(タゲゲーしてただけ)&lt;/li&gt;
-&lt;li&gt;貢献度は0だった(想定通り)&lt;/li&gt;
-&lt;li&gt;回転禁止縛りで回転してしまった(配信の通り速やかに自滅しました)&lt;/li&gt;
-&lt;li&gt;大将戦で色を間違えたまま入ってしまった&lt;br&gt;
-　個人としては影響なかったものの、間違えたくなかった&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;プログラム個別順位と感想&#34;&gt;プログラム個別順位と感想&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;①41位。あまり印象なし。ただ、黄が1位を取ったのは幸先がよかった。&lt;/li&gt;
-&lt;li&gt;②70位。様々な耐え方(5列REN、火力積みなど)が見所でした。&lt;/li&gt;
-&lt;li&gt;③81位。96人の昇天王は初で、とても楽しみだった。特にあきさんの速さが際立っていた印象
-&lt;ul&gt;
-&lt;li&gt;この辺から緑チームが得点を稼いでいき差を広げていった印象がある&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;④90位。回転禁止なのに回転してしまい、速やかに自滅。回転できないラインを送ってバッジを取っているのがすごかった&lt;/li&gt;
-&lt;li&gt;⑤68位。同じタイミングで一気に落ちていく様子は処理落ちを含めて圧巻。&lt;/li&gt;
-&lt;li&gt;⑥96位。人間最下位を記録。実況に終始していた。&lt;/li&gt;
-&lt;li&gt;⑦38位。黄1人対緑4人で、しかも黄はバッジ0%という圧倒的に不利な状況から1対1に持って行ったのはすごく興奮した。
-　これがビームかと思った。&lt;/li&gt;
-&lt;li&gt;⑧50位。火力の飛び方は大将がいなくても全く変わることなく、他の通常ルールの試合と変わらない感じだった。&lt;/li&gt;
-&lt;li&gt;⑨開始即昇天王で観戦。しかし、色替えを忘れて緑で入ってしまい(無影響とはいえ)申し訳なかった。&lt;/li&gt;
-&lt;li&gt;⑩33位。タゲゲーをやりまくった感じだった。それでも誰もKOできなかったのはさすがだなと思った。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;放送委員として&#34;&gt;放送委員として&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;涼蒼さんと掛け合いができたのは最高に楽しかった&lt;/li&gt;
-&lt;li&gt;もうちょっと自分の配信のことを宣伝しても良かった
-&lt;ul&gt;
-&lt;li&gt;自分が放送委員であることをあまりアピールしなかった&lt;/li&gt;
-&lt;li&gt;Twitterでは配信が始まったことしかツイートしてなかった&lt;/li&gt;
-&lt;li&gt;そのツイートに #テトリス運動会 を付け忘れてた&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;サムネ手抜き過ぎ
-&lt;ul&gt;
-&lt;li&gt;時間が取れなかったのが主因だが、それは言い訳に過ぎない&lt;/li&gt;
-&lt;li&gt;配信者の腕の見せ所なので、次回からは少しは改善したい&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;通話相手(涼蒼さん)に頼りっきりになっていた感があった
-&lt;ul&gt;
-&lt;li&gt;自分だけで面白い配信ができるよう頑張りたい&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;マージンタイマーをほとんどつけ忘れていた (中村天飛さんに感謝！)
-&lt;ul&gt;
-&lt;li&gt;話ながらだとよく忘れる理由がわかった気がする&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;放置王の配点ルールを理解してなかった
-&lt;ul&gt;
-&lt;li&gt;得点ルールを勝手にチーム順位と思っていて、意味がないのにCPUを応援していたのは非常に恥ずかしかった
-(でも、チーム順位と書いてあったはずなんだけどな・・・)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;配信に精一杯で余裕がなく、ほかの配信者さんにリアルタイムで挨拶できなかった&lt;/li&gt;
-&lt;li&gt;通話用Discordサーバーを開放して入ってきた人がもう１人いたが、その人へのフォローが全くできなかった&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;内心&#34;&gt;内心&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;配信用テロップを作るのが地味に面倒で心が折れそうだった
-&lt;ul&gt;
-&lt;li&gt;優先順位間違ってない？感 (&lt;code&gt;サムネ &amp;gt; テロップ&lt;/code&gt; じゃないの？)&lt;/li&gt;
-&lt;li&gt;こういったテロップやサムネをきちんと用意できる(私以外の)配信者をあらためて尊敬した&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;配信前日～配信3時間前の時点では配信モチベーションが0だった
-&lt;ul&gt;
-&lt;li&gt;大勢の配信者がいる中で、自分の配信に何の特徴も見いだせないのではと思った
-(以前に配信したpgさん感謝祭、シノン祭の時と同じく)&lt;/li&gt;
-&lt;li&gt;配信中の待ち時間の間、観戦できるとはいえ自力で場をつなげられるか非常に不安だった
-(自分の配信者としての資質のなさに不安しかなかった)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;そのほか&#34;&gt;そのほか&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;試合中の奇跡が思いのほかあった。印象に残ったのは以下。
-&lt;ul&gt;
-&lt;li&gt;90人以上での昇天王や放置王は初めて！&lt;/li&gt;
-&lt;li&gt;放置王の開始時間がふさふさタイム(23:23)、なおかつおにくさんが23位をとったこと&lt;/li&gt;
-&lt;li&gt;もみじさん1人だけで緑組4人を相手にバッジ0%という超不利な状況で3人をKOしたこと&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;プログラム⑧～⑩の得点がずっとブラックボックスだったのは少し気がかり
-&lt;ul&gt;
-&lt;li&gt;点差がかなり離れていて、どういう得点にするのかがずっとわからなかったのでもやもや感があった&lt;/li&gt;
-&lt;li&gt;逆転の可能性を上げるために得点を可変にしたと思うが、得点を教えて欲しかった&lt;/li&gt;
-&lt;li&gt;とはいえ・・・&lt;br&gt;
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw">#あさてと&lt;/a> の時間指定について&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1308428144127348738?ref_src=twsrc%5Etfw">September 22, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;h3 id="q-あさてとに参加していたら遅刻しましたどうしてくれるんですか">Q. あさてとに参加していたら遅刻しました。どうしてくれるんですか？&lt;/h3>
+&lt;p>A. 私は一切責任を負えません。参加した人の自己責任です。決して無理に参加されることのないよう、お願いします。
+平日の参加が難しい方向けに休日あさてとがあるのでご検討ください。&lt;/p>
+&lt;h3 id="q-あさてとで上位に残れません">Q. あさてとで上位に残れません。&lt;/h3>
+&lt;p>A. あさてとが2年目に入ってから、猛者が多く集まることが増えています。
+最大で42人中17人キラキラ光った(※直近10試合の平均順位が10位以内)日もあります。&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="und" dir="ltr">17/42&lt;a href="https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw">#あさてと&lt;/a> &lt;a href="https://twitter.com/hashtag/Tetris99?src=hash&amp;amp;ref_src=twsrc%5Etfw">#Tetris99&lt;/a> &lt;a href="https://t.co/qvrubixICs">pic.twitter.com/qvrubixICs&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1438652461552586758?ref_src=twsrc%5Etfw">September 16, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;p>いかにバッジを集めるか、いかに高火力に耐えるか、
+いかにカウンターしてくる人から逃れるかが重要になることもあります。&lt;/p>
+&lt;p>あさてとは普段のVIP部屋より難易度が上がっているため、
+たとえひどい順位だったとしても気にしないでください。&lt;/p>
+&lt;hr>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw">#あさてと&lt;/a> は私の独占企画では全くないので、できる時に適当に時間と部屋を決めてやりましょう。&lt;a href="https://twitter.com/hashtag/%E3%81%82%E3%81%95%E3%81%A6%E3%81%A8?src=hash&amp;amp;ref_src=twsrc%5Etfw">#あさてと&lt;/a> はいいぞ&lt;br>&lt;br>※効果・効能は個人差があります&lt;br>※スナイプは無理のない範囲で&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1278479331870687232?ref_src=twsrc%5Etfw">July 2, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script></description></item><item><title>TETRIS99 Margin Timer</title><link>https://sshock-tetris.github.io/project/margin-timer/</link><pubDate>Tue, 15 Sep 2020 00:04:47 +0900</pubDate><guid>https://sshock-tetris.github.io/project/margin-timer/</guid><description/></item><item><title>あきりん企画 #テトリス運動会 に参加・配信しました</title><link>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</link><pubDate>Mon, 14 Sep 2020 20:30:13 +0900</pubDate><guid>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</guid><description>&lt;p>あきりん企画の &lt;a href="https://twitter.com/Autumn63775693/status/1297842792815718403" target="_blank" rel="noopener">#テトリス運動会&lt;/a> に参加し、様子を配信しました。&lt;/p>
+&lt;p>&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>運動会企画！！&lt;br>9/12(土)22:00～&lt;br>4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br>詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href="https://t.co/Vy5KBCYcGN">pic.twitter.com/Vy5KBCYcGN&lt;/a>&lt;/p>&amp;mdash; あき 3/13 21:00～テトナイリーグ (@Autumn63775693) &lt;a href="https://twitter.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw">August 24, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/nHMCr2Br2PA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/p>
+&lt;hr>
+&lt;p>結果&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>結果発表！！&lt;br>優勝は緑チームです！！おめでとう！！&lt;br>他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href="https://t.co/uiIBqqOXAD">pic.twitter.com/uiIBqqOXAD&lt;/a>&lt;/p>&amp;mdash; あき 3/13 21:00～テトナイリーグ (@Autumn63775693) &lt;a href="https://twitter.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw">September 12, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;hr>
+&lt;p>翌日、こんな感じでつぶやくと&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a> の反省会配信はない感じかな？(ボソ)&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1304963392134721539?ref_src=twsrc%5Etfw">September 13, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;p>&lt;a href="https://www.youtube.com/channel/UCoI4Gr6g5SLmAi60AqooDEA" target="_blank" rel="noopener">夏影ソウナ&lt;/a>さんが反省会(?)配信をしてくださり、
+最初から途中までお邪魔しました。&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/Ea-xWk6vfOw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;p>ところが、この反省会配信で肝心な反省会のことがほとんど話せないまま時間が来てしまったため、
+このページに感想と反省内容を箇条書きすることにしました。&lt;/p>
+&lt;h2 id="試合前の心境">試合前の心境&lt;/h2>
+&lt;ul>
+&lt;li>試合前の練習はできなかった
+&lt;ul>
+&lt;li>前日にシノンさんのスナイプをしたり、当日に野良チームに2回入っただけ&lt;/li>
+&lt;li>ただ、直前に練習することに意味はほとんどないので、時間があっても5試合もやらなかったと思う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>自分は何ができるかを考えると、中堅戦以外は何ももできないと思った&lt;/li>
+&lt;li>バッジはどうせ取れないので特に考えてなかった&lt;/li>
+&lt;li>試合結果への貢献度は0と思っていた&lt;/li>
+&lt;li>試合結果ではなく、縛りルールを楽しむ感じでいきたいと思った&lt;/li>
+&lt;/ul>
+&lt;h2 id="プレイ内容">プレイ内容&lt;/h2>
+&lt;ul>
+&lt;li>最後の試合だけは悪くなかった(タゲゲーしてただけ)&lt;/li>
+&lt;li>貢献度は0だった(想定通り)&lt;/li>
+&lt;li>回転禁止縛りで回転してしまった(配信の通り速やかに自滅しました)&lt;/li>
+&lt;li>大将戦で色を間違えたまま入ってしまった&lt;br>
+　個人としては影響なかったものの、間違えたくなかった&lt;/li>
+&lt;/ul>
+&lt;h2 id="プログラム個別順位と感想">プログラム個別順位と感想&lt;/h2>
+&lt;ul>
+&lt;li>①41位。あまり印象なし。ただ、黄が1位を取ったのは幸先がよかった。&lt;/li>
+&lt;li>②70位。様々な耐え方(5列REN、火力積みなど)が見所でした。&lt;/li>
+&lt;li>③81位。96人の昇天王は初で、とても楽しみだった。特にあきさんの速さが際立っていた印象
+&lt;ul>
+&lt;li>この辺から緑チームが得点を稼いでいき差を広げていった印象がある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>④90位。回転禁止なのに回転してしまい、速やかに自滅。回転できないラインを送ってバッジを取っているのがすごかった&lt;/li>
+&lt;li>⑤68位。同じタイミングで一気に落ちていく様子は処理落ちを含めて圧巻。&lt;/li>
+&lt;li>⑥96位。人間最下位を記録。実況に終始していた。&lt;/li>
+&lt;li>⑦38位。黄1人対緑4人で、しかも黄はバッジ0%という圧倒的に不利な状況から1対1に持って行ったのはすごく興奮した。
+　これがビームかと思った。&lt;/li>
+&lt;li>⑧50位。火力の飛び方は大将がいなくても全く変わることなく、他の通常ルールの試合と変わらない感じだった。&lt;/li>
+&lt;li>⑨開始即昇天王で観戦。しかし、色替えを忘れて緑で入ってしまい(無影響とはいえ)申し訳なかった。&lt;/li>
+&lt;li>⑩33位。タゲゲーをやりまくった感じだった。それでも誰もKOできなかったのはさすがだなと思った。&lt;/li>
+&lt;/ul>
+&lt;h2 id="放送委員として">放送委員として&lt;/h2>
+&lt;ul>
+&lt;li>涼蒼さんと掛け合いができたのは最高に楽しかった&lt;/li>
+&lt;li>もうちょっと自分の配信のことを宣伝しても良かった
+&lt;ul>
+&lt;li>自分が放送委員であることをあまりアピールしなかった&lt;/li>
+&lt;li>Twitterでは配信が始まったことしかツイートしてなかった&lt;/li>
+&lt;li>そのツイートに #テトリス運動会 を付け忘れてた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サムネ手抜き過ぎ
+&lt;ul>
+&lt;li>時間が取れなかったのが主因だが、それは言い訳に過ぎない&lt;/li>
+&lt;li>配信者の腕の見せ所なので、次回からは少しは改善したい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>通話相手(涼蒼さん)に頼りっきりになっていた感があった
+&lt;ul>
+&lt;li>自分だけで面白い配信ができるよう頑張りたい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マージンタイマーをほとんどつけ忘れていた (中村天飛さんに感謝！)
+&lt;ul>
+&lt;li>話ながらだとよく忘れる理由がわかった気がする&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>放置王の配点ルールを理解してなかった
+&lt;ul>
+&lt;li>得点ルールを勝手にチーム順位と思っていて、意味がないのにCPUを応援していたのは非常に恥ずかしかった
+(でも、チーム順位と書いてあったはずなんだけどな・・・)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>配信に精一杯で余裕がなく、ほかの配信者さんにリアルタイムで挨拶できなかった&lt;/li>
+&lt;li>通話用Discordサーバーを開放して入ってきた人がもう１人いたが、その人へのフォローが全くできなかった&lt;/li>
+&lt;/ul>
+&lt;h2 id="内心">内心&lt;/h2>
+&lt;ul>
+&lt;li>配信用テロップを作るのが地味に面倒で心が折れそうだった
+&lt;ul>
+&lt;li>優先順位間違ってない？感 (&lt;code>サムネ &amp;gt; テロップ&lt;/code> じゃないの？)&lt;/li>
+&lt;li>こういったテロップやサムネをきちんと用意できる(私以外の)配信者をあらためて尊敬した&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>配信前日～配信3時間前の時点では配信モチベーションが0だった
+&lt;ul>
+&lt;li>大勢の配信者がいる中で、自分の配信に何の特徴も見いだせないのではと思った
+(以前に配信したpgさん感謝祭、シノン祭の時と同じく)&lt;/li>
+&lt;li>配信中の待ち時間の間、観戦できるとはいえ自力で場をつなげられるか非常に不安だった
+(自分の配信者としての資質のなさに不安しかなかった)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="そのほか">そのほか&lt;/h2>
+&lt;ul>
+&lt;li>試合中の奇跡が思いのほかあった。印象に残ったのは以下。
+&lt;ul>
+&lt;li>90人以上での昇天王や放置王は初めて！&lt;/li>
+&lt;li>放置王の開始時間がふさふさタイム(23:23)、なおかつおにくさんが23位をとったこと&lt;/li>
+&lt;li>もみじさん1人だけで緑組4人を相手にバッジ0%という超不利な状況で3人をKOしたこと&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>プログラム⑧～⑩の得点がずっとブラックボックスだったのは少し気がかり
+&lt;ul>
+&lt;li>点差がかなり離れていて、どういう得点にするのかがずっとわからなかったのでもやもや感があった&lt;/li>
+&lt;li>逆転の可能性を上げるために得点を可変にしたと思うが、得点を教えて欲しかった&lt;/li>
+&lt;li>とはいえ・・・&lt;br>
 体育委員(集計係)の立場としては集計と計算の時間に余裕が生まれること、
-参加者全員の立場としてはどの組が優勝するのかがすぐにわからないことを考えると、これでよかったかなとも思ったりする&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;パスワードマッチでフライングする人が誰もいなかったのはとても良かった&lt;/li&gt;
-&lt;li&gt;ルール違反では？の指摘が少なからず見つかったのは残念
-&lt;ul&gt;
-&lt;li&gt;REN禁止で端開けのRENを組んでいる人がいる、放置王で目に見えるぐらい接地が遅れている・・・など&lt;/li&gt;
-&lt;li&gt;ただ、90人超も参加しているのにあれ以上荒れることはなかったし、目立ったルール違反がなくとても平和で安心した&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;全体の時間が長く深夜までかかり、離脱者が少なからずいた
-&lt;ul&gt;
-&lt;li&gt;時間を1時間早くする、あるいは前編/後編に分けてもよかったかもしれない(現実の運動会で午前と午後で分かれていたように)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;最後に&#34;&gt;最後に&lt;/h2&gt;
-&lt;p&gt;いつも素敵な企画をありがとうございます。今回もとても楽しかったです。
+参加者全員の立場としてはどの組が優勝するのかがすぐにわからないことを考えると、これでよかったかなとも思ったりする&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>パスワードマッチでフライングする人が誰もいなかったのはとても良かった&lt;/li>
+&lt;li>ルール違反では？の指摘が少なからず見つかったのは残念
+&lt;ul>
+&lt;li>REN禁止で端開けのRENを組んでいる人がいる、放置王で目に見えるぐらい接地が遅れている・・・など&lt;/li>
+&lt;li>ただ、90人超も参加しているのにあれ以上荒れることはなかったし、目立ったルール違反がなくとても平和で安心した&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>全体の時間が長く深夜までかかり、離脱者が少なからずいた
+&lt;ul>
+&lt;li>時間を1時間早くする、あるいは前編/後編に分けてもよかったかもしれない(現実の運動会で午前と午後で分かれていたように)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="最後に">最後に&lt;/h2>
+&lt;p>いつも素敵な企画をありがとうございます。今回もとても楽しかったです。
 結果は緑組の優勝ということで、黄組は惜しくも2位で自分がそこまで貢献できたわけでは決してありませんが、
-観戦しているだけでも興奮していました。&lt;/p&gt;
-&lt;p&gt;配信内で通話だけでなく場までつないだ涼蒼さん、配信に来てくださった皆様、そして参加者の皆様、ありがとうございました。
-来年の運動会企画も検討されているそうで、次回が待ち遠しいです。&lt;/p&gt;
-&lt;p&gt;では、これにて。&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+観戦しているだけでも興奮していました。&lt;/p>
+&lt;p>配信内で通話だけでなく場までつないだ涼蒼さん、配信に来てくださった皆様、そして参加者の皆様、ありがとうございました。
+来年の運動会企画も検討されているそうで、次回が待ち遠しいです。&lt;/p>
+&lt;p>では、これにて。&lt;/p></description></item></channel></rss>

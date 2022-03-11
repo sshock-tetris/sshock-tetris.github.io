@@ -1,1967 +1,253 @@
-<!DOCTYPE html><html lang="ja-jp" >
-
+<!doctype html><html lang=ja>
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.8.0">
-
-  
-
-  
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="shellshock">
-
-  
-  
-  
-    
-  
-  <meta name="description" content="画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法">
-
-  
-  <link rel="alternate" hreflang="ja-jp" href="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/">
-
-  
-
-
-  
-  
-  
-  <meta name="theme-color" content="#2962ff">
-  
-
-  
-  
-  
-  <script src="/js/mathjax-config.js"></script>
-  
-
-  
-  
-  
-  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-        
-      
-    
-
-    
-
-    
-
-    
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
-    
-      
-
-      
-      
-
-      
-    
-
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-  
-
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/academic.css">
-
-  
-
-
-
-
-  
-
-
-  
-  
-
-  
-
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_192x192_fill_lanczos_center_2.png">
-
-  <link rel="canonical" href="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/">
-
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  
-  <meta property="twitter:card" content="summary_large_image">
-  
-  <meta property="twitter:site" content="@sshock_tetris">
-  <meta property="twitter:creator" content="@sshock_tetris">
-  
-  <meta property="og:site_name" content="about: @sshock_tetris">
-  <meta property="og:url" content="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/">
-  <meta property="og:title" content="TETRIS 99マージンタイマー自動開始装置の導入方法 | about: @sshock_tetris">
-  <meta property="og:description" content="画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法"><meta property="og:image" content="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/featured.png">
-  <meta property="twitter:image" content="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/featured.png"><meta property="og:locale" content="ja-jp">
-  
-    
-      <meta property="article:published_time" content="2021-04-04T00:00:00&#43;09:00">
-    
-    <meta property="article:modified_time" content="2021-05-25T00:00:00&#43;09:00">
-  
-
-  
-
-
-    
-
-
-
-
-
-
-  
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/"
-  },
-  "headline": "TETRIS 99マージンタイマー自動開始装置の導入方法",
-  
-  "image": [
-    "https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/featured.png"
-  ],
-  
-  "datePublished": "2021-04-04T00:00:00+09:00",
-  "dateModified": "2021-05-25T00:00:00+09:00",
-  
-  "author": {
-    "@type": "Person",
-    "name": "shellshock"
-  },
-  
-  "publisher": {
-    "@type": "Organization",
-    "name": "about: @sshock_tetris",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://sshock-tetris.github.io/images/icon_hu21ffb5451686b67a242e64c8d30078c8_39819_192x192_fill_lanczos_center_2.png"
-    }
-  },
-  "description": "画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法"
-}
-</script>
-
-  
-
-  
-
-
-  
-
-
-  
-
-
-
-
-
-  <title>TETRIS 99マージンタイマー自動開始装置の導入方法 | about: @sshock_tetris</title>
-
-</head>
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
-
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-  
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">about: @sshock_tetris</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切り替え">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">about: @sshock_tetris</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-      
-
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
-      
-
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  <article class="article">
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.4.0 for Hugo">
+<meta name=author content="shellshock">
+<meta name=description content="画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法">
+<link rel=alternate hreflang=ja href=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/>
+<meta name=theme-color content="#1565c0">
+<script src=/js/mathjax-config.js></script>
+<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload='this.media="all"'>
+<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
+<link rel=stylesheet href=/css/wowchemy.111905fb8cee47463f68a35021c3bb8f.css>
+<link rel=icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_180x180_fill_lanczos_center_3.png>
+<link rel=canonical href=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/>
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@sshock_tetris">
+<meta property="twitter:creator" content="@sshock_tetris">
+<meta property="og:site_name" content="about: @sshock_tetris">
+<meta property="og:url" content="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/">
+<meta property="og:title" content="TETRIS 99マージンタイマー自動開始装置の導入方法 | about: @sshock_tetris">
+<meta property="og:description" content="画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法"><meta property="og:image" content="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/featured.png">
+<meta property="twitter:image" content="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/featured.png"><meta property="og:locale" content="ja">
+<meta property="article:published_time" content="2021-04-04T00:00:00+09:00">
+<meta property="article:modified_time" content="2022-03-05T11:00:00+09:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/"},"headline":"TETRIS 99マージンタイマー自動開始装置の導入方法","image":["https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/featured.png"],"datePublished":"2021-04-04T00:00:00+09:00","dateModified":"2022-03-05T11:00:00+09:00","publisher":{"@type":"Organization","name":"about: @sshock_tetris","logo":{"@type":"ImageObject","url":"https://sshock-tetris.github.io/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_192x192_fill_lanczos_center_3.png"}},"description":"画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法"}</script>
+<title>TETRIS 99マージンタイマー自動開始装置の導入方法 | about: @sshock_tetris</title></head><body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=0850d1fbe21d6e6b47132598af89292f>
+<script src=/js/wowchemy-init.min.7e5427316d1b14a30f257ae3467b3e21.js></script>
+<div class=page-header>
+<header class=header--fixed>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container-xl>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/>about: @sshock_tetris</a>
+</div><button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=ナビゲーションの切り替え>
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/>about: @sshock_tetris</a>
+</div><div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class=nav-link href=/#about><span>Home</span></a>
+</li><li class=nav-item>
+<a class="nav-link active" href=/post/><span>Posts</span></a>
+</li><li class=nav-item>
+<a class=nav-link href=/project/><span>Projects</span></a>
+</li></ul></div><ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>Light</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>Dark</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>Automatic</span>
+</a>
+</div></li></ul></div></nav></header></div><div class=page-body>
+<article class=article>
 <div class="article-container pt-3">
-  <h1>TETRIS 99マージンタイマー自動開始装置の導入方法</h1>
-
-  
-
-  
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  
-  <span ><a href="/author/shellshock/">shellshock</a></span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          最終更新
-      
-    
-    2021/05/25
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    11 分で読める
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/tetris99/">tetris99</a></span>
-  
-
-</div>
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/project/timer-auto-starter/">
-    プロジェクト
-  </a>
-  
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-</div>
-
-
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 312px; max-height: 146px;">
-  <div style="position: relative">
-    <img src="/post/howto_use_timer_auto_starter/featured.png" alt="" class="featured-image">
-    
-  </div>
-</div>
-
-
-
-  <div class="article-container">
-
-    <div class="article-style">
-      <p>この記事は、
-<a href="/project/timer-auto-starter/">TETRIS 99マージンタイマー自動開始装置</a>の取り扱い説明書です。
-
-<a href="https://github.com/sshock-tetris/autoStartMarginTimer/blob/main/docs/%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%E8%87%AA%E5%8B%95%E9%96%8B%E5%A7%8B%E8%A3%85%E7%BD%AE_%E4%BD%BF%E3%81%84%E6%96%B9.txt" target="_blank" rel="noopener">テキスト</a>
-と同じ内容ですが、それには画像がないため、このページでは画像付きで説明します。</p>
-<hr>
-<h2>目次</h2>
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#動作要件">動作要件</a></li>
-    <li><a href="#導入手順">導入手順</a>
-      <ul>
-        <li><a href="#tetris-99用マージンタイマーの導入">TETRIS 99用マージンタイマーの導入</a>
-          <ul>
-            <li><a href="#1-マージンタイマーのダウンロード">1. マージンタイマーのダウンロード</a></li>
-            <li><a href="#2-obsにタイマーを追加">2. OBSにタイマーを追加</a></li>
-            <li><a href="#3-タイマーの動作確認">3. タイマーの動作確認</a></li>
-          </ul>
-        </li>
-        <li><a href="#自動開始装置の準備">自動開始装置の準備</a>
-          <ul>
-            <li><a href="#1-自動開始装置のダウンロード">1. 自動開始装置のダウンロード</a></li>
-            <li><a href="#2-obsの準備">2. OBSの準備</a>
-              <ul>
-                <li><a href="#キャプチャ映像の上下左右に黒縁がある場合">キャプチャ映像の上下左右に黒縁がある場合</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#自動開始装置の操作方法">自動開始装置の操作方法</a>
-          <ul>
-            <li><a href="#状態">状態</a></li>
-            <li><a href="#obsを探すボタン"><code>OBSを探す</code>ボタン</a></li>
-            <li><a href="#タイマー手動スタートボタン"><code>タイマー手動スタート</code>ボタン</a></li>
-            <li><a href="#状態をリセット"><code>状態をリセット</code></a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#エラーメッセージ">エラーメッセージ</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#obsを探すを押したとき"><code>OBSを探す</code>を押したとき</a></li>
-            <li><a href="#タイマー手動スタートを押したとき"><code>タイマー手動スタート</code>を押したとき</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#q-amp-a">Q &amp; A</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#ゲームが始まっても状態が準備完了待機中から進みません">ゲームが始まっても状態が&quot;準備完了。待機中&hellip;&ldquo;から進みません。</a></li>
-            <li><a href="#想定外のところでタイマーが動いてしまいます">想定外のところでタイマーが動いてしまいます。</a></li>
-            <li><a href="#ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする"><code>ウィンドウ プロジェクター (ソース)</code>ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？</a></li>
-            <li><a href="#ゲームの音は場面認識に関係ありますか">ゲームの音は場面認識に関係ありますか？</a></li>
-            <li><a href="#ホーム画面に戻っても大丈夫">ホーム画面に戻っても大丈夫？</a></li>
-            <li><a href="#cpuバトルで動作しますか">CPUバトルで動作しますか？</a></li>
-            <li><a href="#シェアバトルもちよりバトルで動作しますか">シェアバトル、もちよりバトルで動作しますか？</a></li>
-            <li><a href="#マラソンで動作しますか">マラソンで動作しますか？</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#サポート">サポート</a></li>
-  </ul>
-</nav>
-
-<h1 id="動作要件">動作要件</h1>
+<h1>TETRIS 99マージンタイマー自動開始装置の導入方法</h1><div class=article-metadata>
+<div>
+</div><span class=article-date>
+最終更新
+2022/03/05
+</span>
+<span class=middot-divider></span>
+<span class=article-reading-time>
+12 分で読める
+</span>
+<span class=middot-divider></span>
+<span class=article-categories>
+<i class="fas fa-folder mr-1"></i><a href=/category/tetris99/>tetris99</a></span>
+</div><div class="btn-links mb-3">
+<a class="btn btn-outline-primary btn-page-header" href=/project/timer-auto-starter/>
+プロジェクト
+</a>
+</div></div><div class="article-header article-container featured-image-wrapper mt-4 mb-4" style=max-width:312px;max-height:146px>
+<div style=position:relative>
+<img src=/post/howto_use_timer_auto_starter/featured_hu6f44cd79dc252c24fd7ae79990481271_3084_720x2500_fit_q75_h2_lanczos_3.webp width=312 height=146 alt class=featured-image>
+</div></div><div class=article-container>
+<div class=article-style>
+<p>この記事は、<a href=/project/timer-auto-starter/>TETRIS 99マージンタイマー自動開始装置</a>の取り扱い説明書です。
+<a href=https://github.com/sshock-tetris/autoStartMarginTimer/blob/main/docs/%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%E8%87%AA%E5%8B%95%E9%96%8B%E5%A7%8B%E8%A3%85%E7%BD%AE_%E4%BD%BF%E3%81%84%E6%96%B9.txt target=_blank rel=noopener>テキスト</a>
+と同じ内容ですが、それには画像がないため、このページでは画像付きで説明します。</p><hr>
+<details class="toc-inpage d-print-none d-xl-none" open>
+<summary class=font-weight-bold>目次</summary>
+<nav id=TableOfContents>
 <ul>
-<li>Windowsを搭載した配信用パソコン</li>
-<li>HDMIキャプチャボード<br>
-※カメラなどでNintendo Switchの画面を直撮りしている映像には対応しません</li>
-<li>OBS (配信用ソフトウェア)<br>
-※表示言語を日本語にしてください。他の言語では動作しません</li>
-</ul>
-<h1 id="導入手順">導入手順</h1>
-<h2 id="tetris-99用マージンタイマーの導入">TETRIS 99用マージンタイマーの導入</h2>
-<p>※
-<a href="https://github.com/sshock-tetris/Tetris99MarginTimer/" target="_blank" rel="noopener">マージンタイマー</a>を既に導入済の場合は、
-マージンタイマーのソース名を<code>MarginTimer</code>に変更してから
-<a href="#%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e6%ba%96%e5%82%99">自動開始装置の準備</a>へ進んでください</p>
-<h3 id="1-マージンタイマーのダウンロード">1. マージンタイマーのダウンロード</h3>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/save_as_timer_hu547a7544f8c48a671967bc3f1d4278bf_14363_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/save_as_timer_hu547a7544f8c48a671967bc3f1d4278bf_14363_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="600px" height="400">
-</a>
-
-
-
-</figure>
-
-<p><a href="https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html">https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html</a> にアクセスする。
-<code>Raw</code>を右クリックし、名前を付けて保存を選び、<code>timer.html</code>を適当な場所に保存する。</p>
-<h3 id="2-obsにタイマーを追加">2. OBSにタイマーを追加</h3>
-<p>
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/add_browser_hu6b8f25f23caccba8ff00a1c0b51c3690_8545_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/add_browser_hu6b8f25f23caccba8ff00a1c0b51c3690_8545_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="355" height="421">
-</a>
-
-
-
-</figure>
-
-OBSを起動し、ブラウザソースを追加する。</p>
-<p>
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/new_margintimer_huf7907983e7a219ce77a77bade84d15a2_2707_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/new_margintimer_huf7907983e7a219ce77a77bade84d15a2_2707_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="354" height="346">
-</a>
-
-
-
-</figure>
-
-タイマーの名称を<code>MarginTimer</code>にして、OKをクリックする。(⚠スペル要注意)</p>
-<p>
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/timer_property_initial_hua0e557934b108ba89d195df377e59f25_12643_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/timer_property_initial_hua0e557934b108ba89d195df377e59f25_12643_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="524" height="622">
-</a>
-
-
-
-</figure>
-
-<code>'MarginTimer' のプロパティ</code>が表示される。</p>
-<p>
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/timer_property_example2_huaa2c3a4a7822591b275d441bf80e4662_1188_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/timer_property_example2_huaa2c3a4a7822591b275d441bf80e4662_1188_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="522" height="106">
-</a>
-
-
-
-</figure>
-
-<code>ローカルファイル</code>にチェックを入れ、ローカルファイルの場所をソースのアドレスに保存した<code>timer.html</code>にする。
-幅は600以上を推奨。高さを60あれば十分。変更後、OKをクリックする。</p>
-<h3 id="3-タイマーの動作確認">3. タイマーの動作確認</h3>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/margintimer_menu_huf72c0be1603454277af2f3b5e50bb7e7_5752_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/margintimer_menu_huf72c0be1603454277af2f3b5e50bb7e7_5752_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="418" height="280">
-</a>
-
-
-
-</figure>
-
+<li><a href=#動作要件>動作要件</a></li><li><a href=#導入手順>導入手順</a>
+<ul>
+<li><a href=#tetris-99用マージンタイマーの導入>TETRIS 99用マージンタイマーの導入</a></li><li><a href=#自動開始装置の準備>自動開始装置の準備</a></li></ul></li><li><a href=#自動開始装置の操作方法>自動開始装置の操作方法</a>
+<ul>
+<li><a href=#状態>状態</a></li><li><a href=#obsを探すボタン><code>OBSを探す</code>ボタン</a></li><li><a href=#タイマー手動スタートボタン><code>タイマー手動スタート</code>ボタン</a></li><li><a href=#状態をリセット><code>状態をリセット</code></a></li></ul></li><li><a href=#エラーメッセージ>エラーメッセージ</a>
+<ul>
+<li><a href=#obsを探すを押したとき><code>OBSを探す</code>を押したとき</a></li><li><a href=#タイマー手動スタートを押したとき><code>タイマー手動スタート</code>を押したとき</a></li></ul></li><li><a href=#q-amp-a>Q & A</a>
+<ul>
+<li><a href=#ゲームが始まっても状態が準備完了待機中から進みません>ゲームが始まっても状態が"準備完了。待機中&mldr;&ldquo;から進みません。</a></li><li><a href=#想定外のところでタイマーが動いてしまいます>想定外のところでタイマーが動いてしまいます。</a></li><li><a href=#ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする><code>ウィンドウ プロジェクター (ソース)</code>ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？</a></li><li><a href=#ゲームの音は場面認識に関係ありますか>ゲームの音は場面認識に関係ありますか？</a></li><li><a href=#ホーム画面に戻っても大丈夫>ホーム画面に戻っても大丈夫？</a></li><li><a href=#対応しているモードは>対応しているモードは？</a></li></ul></li><li><a href=#サポート>サポート</a></li></ul></nav></details>
+<h2 id=動作要件>動作要件</h2><ul>
+<li>Windowsを搭載した配信用パソコン</li><li>HDMIキャプチャボード<br>
+※カメラなどでNintendo Switchの画面を直撮りしている映像には対応しません</li><li>OBS (配信用ソフトウェア)<br>
+※表示言語を日本語にしてください。他の言語では動作しません<br>
+※他の配信用ソフトウェア (Streamlabs OBS、XSplitなど) は対応していません</li></ul><h2 id=導入手順>導入手順</h2><h3 id=tetris-99用マージンタイマーの導入>TETRIS 99用マージンタイマーの導入</h3><p>※<a href=https://github.com/sshock-tetris/Tetris99MarginTimer/ target=_blank rel=noopener>マージンタイマー</a>を既に導入済の場合は、
+マージンタイマーのソース名を<mark>MarginTimer</mark>に変更してから<a href=#%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e6%ba%96%e5%82%99>自動開始装置の準備</a>へ進んでください</p><h4 id=1-マージンタイマーのダウンロード>1. マージンタイマーのダウンロード</h4><figure>
+<div class="d-flex justify-content-center">
+<div class=w-100><img src=/images/save_as_timer.png alt=Rawのコンテキストメニュー loading=lazy data-zoomable width=600px></div></div></figure><p><a href=https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html target=_blank rel=noopener>https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html</a> にアクセスする。
+<code>Raw</code>を右クリックし、名前を付けて保存を選び、<code>timer.html</code>を適当な場所に保存する。</p><h4 id=2-obsにタイマーを追加>2. OBSにタイマーを追加</h4><img src=/images/add_browser.png alt="OBS - ソースの追加 - ブラウザ">
+OBSを起動し、ブラウザソースを追加する。
+<img src=/images/new_margintimer.png alt=ソースを作成/選択画面>
+<p>タイマーの名称を <mark>MarginTimer</mark> にして、OKをクリックする。<mark>(⚠スペル要注意)</mark></p><img src=/images/timer_property_initial.png alt="'MarginTimer' のプロパティ画面">
+<p><code>'MarginTimer' のプロパティ</code>が表示される。</p><img src=/images/timer_property_example2.png alt=ローカルファイルチェックボックスと各種設定>
+<p><code>ローカルファイル</code>にチェックを入れ、ローカルファイルの場所をソースのアドレスに保存した<code>timer.html</code>にする。
+幅は600以上を推奨。高さは60あれば十分。変更後、OKをクリックする。</p><h4 id=3-タイマーの動作確認>3. タイマーの動作確認</h4><img src=/images/margintimer_menu.png alt="OBS - ブラウザソース - コンテキストメニュー">
 <p>追加したブラウザソースを右クリックし、[対話]メニューを選択すると<code>'MarginTimer' の相互作用</code>ウィンドウが表示される。
-このウィンドウがアクティブ状態の時にキー操作を行うとタイマーが動作する。</p>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/interactive_window_hu7ef440a7e57086f91cbe55897c3e9dbe_5311_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/interactive_window_hu7ef440a7e57086f91cbe55897c3e9dbe_5311_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="624" height="113">
-</a>
-
-
-
-</figure>
-
+このウィンドウがアクティブ状態の時にキー操作を行うとタイマーが動作する。</p><img src=/images/interactive_window.png alt="'MarginTimer' との相互作用ウィンドウ">
 <div class="alert alert-note">
-  <div>
-    <h4 id="キー操作一覧">キー操作一覧</h4>
-<table>
+<div>
+<h3 id=キー操作一覧>キー操作一覧</h3><table>
 <thead>
 <tr>
-<th>キー</th>
-<th>動作</th>
-</tr>
-</thead>
-<tbody>
+<th>キー</th><th>動作</th></tr></thead><tbody>
 <tr>
-<td>Enter</td>
-<td>タイマー開始</td>
-</tr>
-<tr>
-<td>Space</td>
-<td>タイマー停止・再開(*1)</td>
-</tr>
-<tr>
-<td>ESC</td>
-<td>タイマー消去</td>
-</tr>
-<tr>
-<td>1</td>
-<td>2秒後にタイマー開始（*2）</td>
-</tr>
-<tr>
-<td>2</td>
-<td>3秒後にタイマー開始（*2）</td>
-</tr>
-<tr>
-<td>3</td>
-<td>4秒後にタイマー開始（*2）</td>
-</tr>
-</tbody>
-</table>
-<p>(*1) タイマーを再開できるのはタイマーを停止したときのみです。タイマーを消去した後は再開できません。<br>
-(*2） キーはゲーム開始時のカウントダウンの数値に合わせています。&ldquo;Go&quot;が表示される1秒間があるため、実際の待ち時間ではありません。
-  </div>
-</div>
-
-<p>自動開始装置は、この対話ウィンドウに擬似的にキー入力をさせて、
-タイマー開始とタイマーリセット&amp;消去を自動的に行うことで実現している。</p>
-<p>なお、マージンタイマーはマージンに到達すると色が変わり、最終的に赤くなるようにできている。</p>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/timer_color_hu38bfcf0b6ffd871d52feff33bfdd8d5e_19954_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/timer_color_hu38bfcf0b6ffd871d52feff33bfdd8d5e_19954_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="270" height="301">
-</a>
-
-
-
-</figure>
-
+<td>Enter</td><td>タイマー開始</td></tr><tr>
+<td>Space</td><td>タイマー停止・再開 (*1)</td></tr><tr>
+<td>ESC</td><td>タイマー消去</td></tr><tr>
+<td>1</td><td>2秒後にタイマー開始 (*2)</td></tr><tr>
+<td>2</td><td>3秒後にタイマー開始 (*2)</td></tr><tr>
+<td>3</td><td>4秒後にタイマー開始 (*2)</td></tr></tbody></table><p>(*1) タイマーを再開できるのはタイマーを停止したときのみです。タイマーを消去した後は再開できません。<br>
+(*2) キーはゲーム開始時のカウントダウンの数値に合わせています。&ldquo;Go"が表示される1秒間があるため、実際の待ち時間ではありません。
+</div></div><p>自動開始装置は、この対話ウィンドウに擬似的にキー入力をさせて、
+タイマー開始とタイマーリセット&消去を自動的に行うことで実現している。</p><p>なお、マージンタイマーはマージンに到達すると色が変わり、最終的に赤くなるようにできている。</p><img src=/images/timer_color.png alt=マージンタイマーの時間経過と色一覧>
 <div class="alert alert-note">
-  <div>
-    <h4 id="マージンとは">マージンとは</h4>
-<p>試合の早期決着を目的に導入されているTETRIS 99固有のシステム。<br>
+<div>
+<h3 id=マージンとは>マージンとは</h3><p>試合の早期決着を目的に導入されているTETRIS 99固有のシステム。<br>
 試合開始から10分が経過すると、ライン消去時の相手に送るライン数から上乗せされるようになる。
 30秒ごとに1ラインずつ上乗せされる。たとえば、10分なら+1ライン、11分なら+3ライン。<br>
 TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため、15分が経過すると最大となる
 (1ライン + 11ライン = 12ライン)。相手に送る場合に限定されるため、自陣のせり上がり予告との相殺にはマージンは適用されない。
-  </div>
-</div>
-
-<p>タイマーの導入ができたら、自動開始装置の準備へ進もう。</p>
-<h2 id="自動開始装置の準備">自動開始装置の準備</h2>
-<h3 id="1-自動開始装置のダウンロード">1. 自動開始装置のダウンロード</h3>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/releases_hue070276e24a2b23c27e08520744fcf3d_14212_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/releases_hue070276e24a2b23c27e08520744fcf3d_14212_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="720" height="494">
-</a>
-
-
-
-</figure>
-
-<p><a href="https://github.com/sshock-tetris/autoStartMarginTimer/releases">https://github.com/sshock-tetris/autoStartMarginTimer/releases</a>
-から、最新バージョンの自動開始装置のzipファイルをダウンロードする。</p>
-<div class="alert alert-note">
-  <div>
-    <h4 id="ウェブブラウザ-google-chrome-を使用している場合">ウェブブラウザ Google Chrome を使用している場合</h4>
-<p>ダウンロードが終了した後、</p>
-<blockquote>
-<p>このファイルは一般的にダウンロードされているファイルではなく、危害を及ぼす可能性があります。</p>
-</blockquote>
-<p>と表示される場合がある。</p>
-<figure >
-<p><a data-fancybox="" href="/post/howto_use_timer_auto_starter/dlmgr_bar_hu321632d7c1c03f3f2f7d21d683dac4b5_4447_2000x2000_fit_lanczos_2.png" ></p>
-  <img data-src="/post/howto_use_timer_auto_starter/dlmgr_bar_hu321632d7c1c03f3f2f7d21d683dac4b5_4447_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="460" height="58">
-</a>
-</figure>
-<figure >
-<p><a data-fancybox="" href="/post/howto_use_timer_auto_starter/dlmgr_warn_hubeaaeb3365a5d50819e619b5853dcd65_6869_2000x2000_fit_lanczos_2.png" ></p>
-  <img data-src="/post/howto_use_timer_auto_starter/dlmgr_warn_hubeaaeb3365a5d50819e619b5853dcd65_6869_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="690" height="189">
-</a>
-</figure>
-<p>この場合は、<code>保存</code>を押して進めて欲しい。</p>
-<figure >
-<p><a data-fancybox="" href="/post/howto_use_timer_auto_starter/dlmgr_confirm_huf5b07dfecc3f0b35db1fb2fdad9c4ea1_6661_2000x2000_fit_lanczos_2.png" ></p>
-  <img data-src="/post/howto_use_timer_auto_starter/dlmgr_confirm_huf5b07dfecc3f0b35db1fb2fdad9c4ea1_6661_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="324" height="176">
-</a>
-</figure>
+</div></div><p>タイマーの導入ができたら、自動開始装置の準備へ進もう。</p><h3 id=自動開始装置の準備>自動開始装置の準備</h3><h4 id=1-自動開始装置のダウンロード>1. 自動開始装置のダウンロード</h4><img src=/images/releases.png alt=自動開始装置のReleasesページ>
+<p><a href=https://github.com/sshock-tetris/autoStartMarginTimer/releases target=_blank rel=noopener>https://github.com/sshock-tetris/autoStartMarginTimer/releases</a>
+から、最新バージョンの自動開始装置のzipファイルをダウンロードする。</p><div class="alert alert-note">
+<div>
+<h4 id=ウェブブラウザ-google-chrome-を使用している場合>ウェブブラウザ Google Chrome を使用している場合</h4><p>ダウンロードが終了した後、</p><blockquote>
+<p>このファイルは一般的にダウンロードされているファイルではなく、危害を及ぼす可能性があります。</p></blockquote><p>と表示される場合がある。
+<img src=/images/dlmgr_bar.png alt=ダウンロードバーでの警告表示></p><figure>
+<div class="d-flex justify-content-center">
+<div class=w-100><img src=/images/dlmgr_warn.png alt=ダウンロードマネージャーでの警告表示 loading=lazy data-zoomable></div></div></figure><p>この場合は、<code>保存</code>を押して進めて欲しい。</p><img src=/images/dlmgr_confirm.png alt=ファイル保存時の確認メッセージ>
 <p><code>保存</code>を押したときに上図のような確認メッセージが表示されるが、かまわず<code>続行する</code>を押す。
-これは、ダウンロード数が少ないだけで疑われるというChromeのお節介な機能の1つである。</p>
-<p>上記URLは自動開始装置の正式な公開場所であり、そこからダウンロードしていれば問題ないはずである。
+これは、ダウンロード数が少ないだけで疑われるというChromeのお節介な機能の1つである。</p><p>上記URLは自動開始装置の正式な公開場所であり、そこからダウンロードしていれば問題ないはずである。
 この圧縮ファイルは公開されたソースコードからGitHubの自動ビルド機能によってできたファイルであり、
-危害を加える危険物が含まれないように考慮している。</p>
-
-  </div>
-</div>
-
-<p>ダウンロードしたファイルを右クリックして<code>プロパティ</code>を選び、
+危害を加える危険物が含まれないように考慮している。</p></div></div><p>ダウンロードしたファイルを右クリックして<code>プロパティ</code>を選び、
 下のセキュリティ項目の<code>許可する</code>にチェックを入れてファイルのブロック解除を行う。
 セキュリティ項目が表示されない場合はブロックが解除されているので、その場合は操作不要である。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/property_hudfd7cc8c78bf0bedf82dcd7741ddbc04_13376_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/property_hudfd7cc8c78bf0bedf82dcd7741ddbc04_13376_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="421" height="580">
-</a>
-
-
-
-</figure>
-</p>
-<p>圧縮されているので、適当な場所に展開する。展開すると、次の3ファイルがある。</p>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/extracted_hu4dad4461cc4e2f8abb05c6c4c5f58061_4495_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/extracted_hu4dad4461cc4e2f8abb05c6c4c5f58061_4495_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="609" height="94">
-</a>
-
-
-
-</figure>
-
-<h3 id="2-obsの準備">2. OBSの準備</h3>
-<p>ソースに映像キャプチャデバイス(キャプチャボードの映像)がなければ追加する。</p>
-<p>&lsquo;MarginTimer&rsquo;ソースを右クリックし、<code>対話</code>メニューを選択する。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/margintimer_menu_huf72c0be1603454277af2f3b5e50bb7e7_5752_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/margintimer_menu_huf72c0be1603454277af2f3b5e50bb7e7_5752_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="418" height="280">
-</a>
-
-
-
-</figure>
-</p>
-<p>キャプチャボードの映像ソースを右クリックして<code>ウィンドウ プロジェクター (ソース)</code>メニューを選ぶ。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/window_projector_source_hu4c2d9e321840ceb2e9677cbfb264a0fb_5265_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/window_projector_source_hu4c2d9e321840ceb2e9677cbfb264a0fb_5265_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="361" height="256">
-</a>
-
-
-
-</figure>
-</p>
-<p>それぞれ、<code>'MarginTimer' の相互作用</code>ウィンドウ、<code>ウィンドウ プロジェクター (ソース) - 映像キャプチャデバイス</code>ウィンドウが表示されていることを確認する。</p>
-<h4 id="キャプチャ映像の上下左右に黒縁がある場合">キャプチャ映像の上下左右に黒縁がある場合</h4>
-<p>キャプチャ映像の上下左右が黒く額縁状態なっている場合、
-そのままではタイマー自動開始装置が場面をうまく認識できないので、以下の要領で額縁状態を解消させる。</p>
-<ol>
+<img src=/images/property.png alt=自動開始装置ファイルのプロパティ画面></p><p>圧縮されているので、適当な場所に展開する。展開すると、次の3ファイルがある。</p><img src=/images/extracted.png alt=展開後のファイルリスト>
+<h4 id=2-obsの準備>2. OBSの準備</h4><p>ソースに映像キャプチャデバイス(キャプチャボードの映像)がなければ追加する。</p><p>&lsquo;MarginTimer&rsquo;ソースを右クリックし、<code>対話</code>メニューを選択する。
+<img src=/images/margintimer_menu.png alt="OBS - ブラウザソース - コンテキストメニュー"></p><p>キャプチャボードの映像ソースを右クリックして<code>ウィンドウ プロジェクター (ソース)</code>メニューを選ぶ。
+<img src=/images/window_projector_source.png alt="OBS - 映像ソース - コンテキストメニュー"></p><p>それぞれ、<code>'MarginTimer' の相互作用</code>ウィンドウ、<code>ウィンドウ プロジェクター (ソース) - 映像キャプチャデバイス</code>ウィンドウが表示されていることを確認する。</p><h4 id=キャプチャ映像の上下左右に黒縁がある場合>キャプチャ映像の上下左右に黒縁がある場合</h4><p>キャプチャ映像の上下左右が黒く額縁状態なっている場合、
+そのままではマージンタイマー自動開始装置が場面をうまく認識できないことがある。
+以下の要領で額縁状態を解消させる。</p><ol>
 <li>キャプチャボードの映像ソースを右クリックして、<code>フィルタ</code>を選ぶ。<br>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/filter_hu00136e7027335d4ad65a5900b0d4a469_8954_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/filter_hu00136e7027335d4ad65a5900b0d4a469_8954_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="863" height="758">
-</a>
-
-
-
-</figure>
-
-<code>'映像キャプチャデバイス' のためのフィルタ</code>ウィンドウが表示される。</li>
-<li>ウィンドウ左下(エフェクトフィルタ)の<code>+</code>ボタンをクリックし、<code>クロップ/パッド</code>を追加する。<br>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/crop_pad_hud33a74b80a5b28f03b67a7055c42a479_5357_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/crop_pad_hud33a74b80a5b28f03b67a7055c42a479_5357_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="243" height="428">
-</a>
-
-
-
-</figure>
-</li>
-<li>フィルタの名前を付ける。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/crop_pad_name_hude01bb6c480fa7e40ee5472ca0650c34_1791_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/crop_pad_name_hude01bb6c480fa7e40ee5472ca0650c34_1791_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="557" height="132">
-</a>
-
-
-
-</figure>
-</li>
-<li>追加した<code>クロップ/パッド</code>フィルタをクリックし、黒縁が表示されなくなるまで上下左右の数値を増やす。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/filter_crop_hu5402dd87d72ad24c3f7859770de0992e_9778_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/filter_crop_hu5402dd87d72ad24c3f7859770de0992e_9778_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="863" height="758">
-</a>
-
-
-
-</figure>
-</li>
-</ol>
-<h2 id="自動開始装置の操作方法">自動開始装置の操作方法</h2>
-<p>タイマー自動開始装置 (autoStartMarginTimer.exe)を起動する。
-起動すると、以下のようなウィンドウが表示される。</p>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/autostartmargintimer_init_hu4a02b4f4e2ec0493a9b2f4626215c9b5_3480_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/autostartmargintimer_init_hu4a02b4f4e2ec0493a9b2f4626215c9b5_3480_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="312" height="146">
-</a>
-
-
-
-</figure>
-
-<h3 id="状態">状態</h3>
-<table>
+<figure>
+<div class="d-flex justify-content-center">
+<div class=w-100><img src=/images/filter.png alt=映像ソースのフィルタウィンドウ(初期状態) loading=lazy data-zoomable></div></div></figure>映像ソースのフィルタウィンドウが表示される。</li><li>ウィンドウ左下(エフェクトフィルタ)の<code>+</code>ボタンをクリックし、<code>クロップ/パッド</code>を追加する。<br>
+<img src=/images/crop_pad.png alt="エフェクトフィルタ追加 - クロップ/パッド"></li><li>フィルタの名前を付ける。
+<img src=/images/crop_pad_name.png alt=フィルタ名入力ダイアログボックス></li><li>追加した<code>クロップ/パッド</code>フィルタをクリックし、黒縁が表示されなくなるまで上下左右の数値を増やす。
+<figure>
+<div class="d-flex justify-content-center">
+<div class=w-100><img src=/images/filter_crop.png alt=映像ソースのフィルタウィンドウ(クロップ/パッド選択済) loading=lazy data-zoomable></div></div></figure></li></ol><h2 id=自動開始装置の操作方法>自動開始装置の操作方法</h2><p>マージンタイマー自動開始装置 (autoStartMarginTimer.exe)を起動する。
+起動すると、以下のようなウィンドウが表示される。</p><img src=/images/autostartmargintimer_init.png alt=起動直後の自動開始装置ウィンドウ>
+<h3 id=状態>状態</h3><table>
 <thead>
 <tr>
-<th>状態</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
+<th>状態</th><th>説明</th></tr></thead><tbody>
 <tr>
-<td>[自動開始できません]</td>
-<td>まだ準備ができておらず、タイマーを自動開始できない。<br>自動開始装置を起動した時、および状態をリセットした時はこの状態となる。</td>
-</tr>
-<tr>
-<td>準備完了。待機中&hellip;</td>
-<td>ゲームが始まるのを待っている。タイマーを自動開始できる状態。<br>タイマーが表示中の場合は、この状態になった時にタイマーを自動的に消去する。</td>
-</tr>
-<tr>
-<td>マッチング/ゲーム開始準備中</td>
-<td>マッチング中、またはゲーム開始準備中を認識した。</td>
-</tr>
-<tr>
-<td>READY</td>
-<td>マッチングが終わりREADYを認識した。</td>
-</tr>
-<tr>
-<td>GO</td>
-<td>試合が始まり、タイマーを開始した。</td>
-</tr>
-</tbody>
-</table>
-<div class="alert alert-note">
-  <div>
-    <h4 id="obsを管理者権限で起動している場合">OBSを管理者権限で起動している場合</h4>
-<p>タイマー自動開始装置も管理者権限で実行する。</p>
-<p>Windowsの仕様の問題で、管理者権限でなければOBSが起動していることを認識できない。</p>
-
-  </div>
-</div>
-
-<h3 id="obsを探すボタン"><code>OBSを探す</code>ボタン</h3>
-<p>このボタンをクリックすると、自動開始装置がOBSの<code>ウィンドウ プロジェクター (ソース)</code>ウィンドウと
-<code>'MarginTimer' の相互作用</code>ウィンドウを探し、2つのウィンドウが見つかり次第場面認識を開始する。</p>
-<div class="alert alert-note">
-  <div>
-    <code>ウィンドウ プロジェクター (ソース)</code>ウィンドウのウィンドウサイズが大きくなり、
+<td>[自動開始できません]</td><td>まだ準備ができておらず、タイマーを自動開始できない。<br>自動開始装置を起動した時、および状態をリセットした時はこの状態となる。</td></tr><tr>
+<td>準備完了。待機中&mldr;</td><td>ゲームが始まるのを待っている。タイマーを自動開始できる状態。<br>タイマーが表示中の場合は、この状態になった時にタイマーを自動的に消去する。</td></tr><tr>
+<td>マッチング/ゲーム開始準備中</td><td>マッチング中、またはゲーム開始準備中を認識した。</td></tr><tr>
+<td>READY</td><td>マッチングが終わりREADYを認識した。</td></tr><tr>
+<td>GO</td><td>試合が始まり、タイマーを開始した。</td></tr></tbody></table><div class="alert alert-note">
+<div>
+<h3 id=obsを管理者権限で起動している場合>OBSを管理者権限で起動している場合</h3><p>マージンタイマー自動開始装置も管理者権限で実行する。</p><p>Windowsの仕様の問題で、管理者権限でなければOBSが起動していることを認識できない。</p></div></div><h3 id=obsを探すボタン><code>OBSを探す</code>ボタン</h3><p>このボタンをクリックすると、自動開始装置がOBSの<code>ウィンドウ プロジェクター (ソース)</code>ウィンドウと
+<code>'MarginTimer' の相互作用</code>ウィンドウを探し、2つのウィンドウが見つかり次第場面認識を開始する。</p><div class="alert alert-note">
+<div>
+<code>ウィンドウ プロジェクター (ソース)</code>ウィンドウのウィンドウサイズが大きくなり、
 最大化ボタンと最小化ボタンが消えるが、これは正常動作である。
-  </div>
-</div>
-
-<p>準備ができていない場合は、このようなエラーメッセージが表示される。
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/error_obs_not_detected_hudd94ded3d48e37b872f26abb07ab6710_3132_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/error_obs_not_detected_hudd94ded3d48e37b872f26abb07ab6710_3132_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="412" height="159">
-</a>
-
-
-
-</figure>
-</p>
-<p>準備ができていれば、このボタンが無効化され、自動的に画像認識により場面を認識するようになる。
-場面に応じてタイマーを開始したり消去したりするので、うまく認識できていれば以後操作は不要である。</p>
-<div class="alert alert-warning">
-  <div>
-    <h3 id="ウィンドウ-プロジェクター-ソースウィンドウの注意事項"><code>ウィンドウ プロジェクター (ソース)</code>ウィンドウの注意事項</h3>
-<ol>
+</div></div><p>準備ができていない場合は、このようなエラーメッセージが表示される。
+<img src=/images/error_obs_not_detected.png alt=OBS検出エラーメッセージ></p><p>準備ができていれば、このボタンが無効化され、自動的に画像認識により場面を認識するようになる。
+場面に応じてタイマーを開始したり消去したりするので、うまく認識できていれば以後操作は不要である。</p><div class="alert alert-warning">
+<div>
+<h3 id=ウィンドウ-プロジェクター-ソースウィンドウの注意事項><code>ウィンドウ プロジェクター (ソース)</code>ウィンドウの注意事項</h3><ol>
 <li>ウィンドウを画面外に移動してはならない。<br>
 画面外に移動すると映像が更新されず、正常に認識できなくなる。
-ただし、ウィンドウが背面になっている場合は問題ない。</li>
-<li>コンテキストメニュー(ウィンドウを右クリックした時に表示されるメニュー)のうち、
-<code>ウィンドウをコンテンツに合わせる</code>を選択してはならない。</li>
-<li><code>ウィンドウ プロジェクター (ソース)</code>ウィンドウをアクティブ状態にしてはならない。<br>
-自動開始装置がタイマーを開始させる時にそのウィンドウがアクティブ状態になっていると、
-ウィンドウが閉じてしまい画像認識ができなくなる。
-閉じてしまった場合は<code>ウィンドウ プロジェクター (ソース)</code>を再度開き、<code>OBSを探す</code>ボタンを押す。</li>
-</ol>
-
-  </div>
-</div>
-
-<h3 id="タイマー手動スタートボタン"><code>タイマー手動スタート</code>ボタン</h3>
-<p>OBSとの連携ができている状態でこのボタンを押すと、タイマーを手動で開始することができる。
+ただし、ウィンドウが背面になっている場合は問題ない。</li><li>コンテキストメニュー(ウィンドウを右クリックした時に表示されるメニュー)のうち、
+<code>ウィンドウをコンテンツに合わせる</code>を選択してはならない。</li></ol></div></div><h3 id=タイマー手動スタートボタン><code>タイマー手動スタート</code>ボタン</h3><p>OBSとの連携ができている状態でこのボタンを押すと、タイマーを手動で開始することができる。
 これはタイマーが自動的に開始しないなどのトラブルが発生してタイマーを手動で開始する必要がある場合や
-動作テストのためのボタンで、通常は使用する必要はない。</p>
-<h3 id="状態をリセット"><code>状態をリセット</code></h3>
-<p>試合が始まったのに場面を認識できずにタイマーが始まらない、マッチング中の画面を正しく認識できない
-などの症状を見かけた時は、タイマー自動開始装置の状態のリセットを試してほしい。</p>
-<p>
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/reset_hu9bae2d6dbec073929a3bc5966dec05d7_3996_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/reset_hu9bae2d6dbec073929a3bc5966dec05d7_3996_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="312" height="146">
-</a>
-
-
-
-</figure>
-
-タイトルバーを右クリックすると、<code>状態をリセット</code>メニューがあるので、それを選択する。
-タイマー自動開始装置の状態に関係なく起動直後の状態に戻る。</p>
-<h1 id="エラーメッセージ">エラーメッセージ</h1>
-<h3 id="obsを探すを押したとき"><code>OBSを探す</code>を押したとき</h3>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/error_obs_not_detected_hudd94ded3d48e37b872f26abb07ab6710_3132_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/error_obs_not_detected_hudd94ded3d48e37b872f26abb07ab6710_3132_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="412" height="159">
-</a>
-
-
-
-</figure>
-
-<p>自動開始装置に必要なOBSの準備ができていない。特に、以下の点をよく確認する。</p>
-<ul>
-<li>ソースのウィンドウ プロジェクターを表示しているか？</li>
-<li>MarginTimerのスペルが間違っていないか？</li>
-<li>OBSの表示言語が日本語になっているか？</li>
-<li>OBSが管理者権限で動作している場合、自動開始装置も管理者権限で動いているか？</li>
-</ul>
-<h3 id="タイマー手動スタートを押したとき"><code>タイマー手動スタート</code>を押したとき</h3>
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/howto_use_timer_auto_starter/error_cant_send_hu3bb7ddbf19f48aaa200b23e10a9482a7_2169_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/howto_use_timer_auto_starter/error_cant_send_hu3bb7ddbf19f48aaa200b23e10a9482a7_2169_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="346" height="152">
-</a>
-
-
-
-</figure>
-
-<p>先にOBSの準備をする。</p>
-<h1 id="q-amp-a">Q &amp; A</h1>
-<h3 id="ゲームが始まっても状態が準備完了待機中から進みません">ゲームが始まっても状態が&quot;準備完了。待機中&hellip;&ldquo;から進みません。</h3>
-<p>以下、ご確認ください。</p>
-<ol>
+動作テストのためのボタンで、通常は使用する必要はない。</p><h3 id=状態をリセット><code>状態をリセット</code></h3><p>試合が始まったのに場面を認識できずにタイマーが始まらない、マッチング中の画面を正しく認識できない
+などの症状を見かけた時は、マージンタイマー自動開始装置の状態のリセットを試してほしい。</p><img src=/images/reset.png alt=自動開始装置のリセット>
+タイトルバーを右クリックすると、`状態をリセット`メニューがあるので、それを選択する。
+マージンタイマー自動開始装置の状態に関係なく起動直後の状態に戻る。
+<p>「状態をリセット」の状態とは自動開始装置のことを指し、マージンタイマーのことではない。<br>
+つまり、「状態をリセット」を行っても、表示されているマージンタイマーはそのまま表示されたままとなることに注意する。
+マージンタイマーの表示を消したい場合は、<code>'MarginTimer' の相互作用</code>ウィンドウをアクティブ状態にして、ESCキーを押す。</p><h2 id=エラーメッセージ>エラーメッセージ</h2><h3 id=obsを探すを押したとき><code>OBSを探す</code>を押したとき</h3><img src=/images/error_obs_not_detected.png alt=OBS検出エラーメッセージ>
+<p>自動開始装置に必要なOBSの準備ができていない。特に、以下の点をよく確認する。</p><ul>
+<li>ソースのウィンドウ プロジェクターを表示しているか？</li><li><mark>MarginTimer</mark>のスペルが間違っていないか？</li><li>OBSの表示言語が日本語になっているか？</li><li>OBSが管理者権限で動作している場合、自動開始装置も管理者権限で動いているか？</li></ul><h3 id=タイマー手動スタートを押したとき><code>タイマー手動スタート</code>を押したとき</h3><img src=/images/error_cant_send.png alt=対話ウィンドウ未検出エラーメッセージ>
+<p>先にOBSの準備をする。<br>
+※タイマー手動スタートボタンは、現在OBSの準備ができるまでは無効化されているので、
+このメッセージを見ることはまずないだろう。旧バージョンの時の名残である。</p><h2 id=q-amp-a>Q & A</h2><h3 id=ゲームが始まっても状態が準備完了待機中から進みません>ゲームが始まっても状態が"準備完了。待機中&mldr;&ldquo;から進みません。</h3><p>以下、ご確認ください。</p><ol>
 <li>正しいウィンドウ プロジェクターを表示していますか？<br>
-オーバーレイが含まれた映像、動画ソースなど、キャプチャボードの映像でない場合は認識できません。</li>
-<li>キャプチャボードの映像が額縁状態に縮小されている場合は額縁状態を解消するよう調整してください。</li>
-<li>OBSを探す時に、何らかの問題でウィンドウプロジェクターのウィンドウサイズが変化しなかった場合も同様に場面の認識ができません。
-この現象が発生した場合は、作者までご連絡ください。</li>
-<li>ウィンドウ プロジェクター ウィンドウを画面外に移動していないか確認してください。</li>
-</ol>
-<h3 id="想定外のところでタイマーが動いてしまいます">想定外のところでタイマーが動いてしまいます。</h3>
-<p>TETRIS 99のゲームを動かしていることが前提条件となるため、Switchのアルバムから静止画や動画を再生した場合は、
+オーバーレイが含まれた映像など、ゲーム映像でない場合は認識できません。</li><li>ゲーム映像の色が反転、もしくはグレースケールになっていませんか？<br>
+Switchの設定で色設定を変更している場合は認識できません。元の設定に戻してください。</li><li>キャプチャボードの映像の上下左右に黒縁がありませんか？<br>
+額縁状態に縮小されている場合は額縁状態を解消するよう調整してください。</li><li>OBSを探す時に、何らかの問題でウィンドウプロジェクターのウィンドウサイズが変化しなかった場合も同様に場面の認識ができません。
+この現象が発生した場合は、作者までご連絡ください。</li><li>ウィンドウ プロジェクター ウィンドウを画面外に移動していないか確認してください。</li></ol><h3 id=想定外のところでタイマーが動いてしまいます>想定外のところでタイマーが動いてしまいます。</h3><p>TETRIS 99のゲーム画面が表示されていることが前提条件となるため、Switchのアルバムから静止画や動画を再生した場合は、
 実際のゲーム画面と区別がつかずタイマーが誤動作することがあります。
-誤動作した場合は、タイマー状態のリセットを試してください。</p>
-<h3 id="ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする"><code>ウィンドウ プロジェクター (ソース)</code>ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？</h3>
-<p>ウィンドウを閉じたことを自動開始装置が検知し、状態が<code>[自動開始できません]</code>になります。
-この時、無効化されていた「OBSを探す」ボタンが再び有効になります。
-ウィンドウプロジェクター ウィンドウや対話ウィンドウをもう一度開いて、<code>OBSを探す</code>ボタンを押してください。</p>
-<h3 id="ゲームの音は場面認識に関係ありますか">ゲームの音は場面認識に関係ありますか？</h3>
-<p>無関係です。映像さえあれば無音でも問題なく使用できます。</p>
-<h3 id="ホーム画面に戻っても大丈夫">ホーム画面に戻っても大丈夫？</h3>
-<p>マッチング中に限り、ホーム画面に戻っている時間が長いほどタイマーを自動開始できる可能性が低くなります。
-できる限り問題が起こらないようにしていますが、仕様上どうしても認識できない場合があります。
-たとえば、対戦を始めてすぐにホーム画面に戻り、試合開始の準備が終わるまでしばらく待った後でゲーム画面に復帰した場合、
-自動開始装置は動作しません。
-これは「マッチング中」または「ゲーム開始準備中」の表示部分を画像認識する仕様のため、
-その表示を見つけられなかったことで自動開始装置が場面を認識できなかったことによります。</p>
-<h3 id="cpuバトルで動作しますか">CPUバトルで動作しますか？</h3>
-<p>動作しません。これは「マッチング中」の表示が場面を認識するのに必要で、CPUバトルにはその表示がないためです。</p>
-<h3 id="シェアバトルもちよりバトルで動作しますか">シェアバトル、もちよりバトルで動作しますか？</h3>
-<p>動作未確認です。「ゲーム開始準備中」の表示がなければ動作しないと思います。</p>
-<h3 id="マラソンで動作しますか">マラソンで動作しますか？</h3>
-<p>動作しません。理由はCPUバトルの場合と同じですが、時間が右側に表示されているのでこのタイマーの出番はありませんよね？ : )</p>
-<h1 id="サポート">サポート</h1>
-<p>マージンタイマーの導入に関して質問、うまく動作できないなど何か問題がある場合は、
-
-<a href="https://twitter.com/sshock_tetris" target="_blank" rel="noopener">@sshock_tetris</a>にDM(※要フォロー)やメンションなどで連絡してください。</p>
-<p>マージンタイマー自動開始装置のバグ報告は、
-<a href="https://github.com/sshock-tetris/autoStartMarginTimer/issues" target="_blank" rel="noopener">Issues</a>まで。</p>
-<p>ただし、個人的な都合によりサポートできる範囲に限界があるため、必ずしも対応できるとは限らないことをご理解ください。</p>
-
-    </div>
-
-    
-
-
-
-
-
-
-
-
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/&amp;text=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95" target="_blank" rel="noopener" class="share-btn-twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/&amp;t=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95" target="_blank" rel="noopener" class="share-btn-facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95&amp;body=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/" target="_blank" rel="noopener" class="share-btn-email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/&amp;title=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95" target="_blank" rel="noopener" class="share-btn-linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="whatsapp://send?text=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95%20https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/" target="_blank" rel="noopener" class="share-btn-whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/&amp;title=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95" target="_blank" rel="noopener" class="share-btn-weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-    
-
-
-
-
-
-  
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-</article>
-
-      
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
-        
-      
-
-    
-
-    
-    
-
-    
-    
-    <script>const code_highlighting = true;</script>
-    
-
-    
-    
-    <script>const isSiteThemeDark = false;</script>
-    
-
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="/js/academic.min.a21fcc4a4cdf5eeefae0603e61b3030c.js"></script>
-
-    
-
-
-
-
-
-
-  
-  
-  <div class="container">
-    <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    © 2021 shellshock.
-  </p>
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-  </div>
-  
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">引用</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> コピー
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> ダウンロード
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
+誤動作した場合は、タイマー状態のリセットを試してください。</p><h3 id=ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする><code>ウィンドウ プロジェクター (ソース)</code>ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？</h3><p>ウィンドウを閉じたことを自動開始装置が検知し、状態が<code>[自動開始できません]</code>になります。
+この時、無効化されていた<code>OBSを探す</code>ボタンが再び有効になります。
+ウィンドウプロジェクター ウィンドウや対話ウィンドウをもう一度開いて、<code>OBSを探す</code>ボタンを押してください。</p><h3 id=ゲームの音は場面認識に関係ありますか>ゲームの音は場面認識に関係ありますか？</h3><p>無関係です。映像さえあれば無音でも問題なく使用できます。</p><h3 id=ホーム画面に戻っても大丈夫>ホーム画面に戻っても大丈夫？</h3><p>まだ部屋に入っていなければ問題ありません。
+部屋に入ってから試合が始まるまでの間は、誤作動の原因となるため、できる限り避けてください。</p><p>マージンタイマー自動開始装置は「マッチング中」または「ゲーム開始準備中」の表示部分を色で判断する仕様です。
+そのため、それらの表示中にホーム画面に戻ると、マージンタイマー自動開始装置はマッチングが終わり試合が開始していると誤認識します。
+また、部屋に入った直後にホーム画面に戻り、その間に試合が始まっていた場合も、同様の理由でマージンタイマーは動作しません。</p><h3 id=対応しているモードは>対応しているモードは？</h3><table>
+<thead>
+<tr>
+<th>モード</th><th>対応</th><th>備考</th></tr></thead><tbody>
+<tr>
+<td>TETRIS 99</td><td>○</td><td></td></tr><tr>
+<td>TETRIS 99 VIP (Invictus)</td><td>○</td><td></td></tr><tr>
+<td>チームバトル</td><td>○</td><td></td></tr><tr>
+<td>もちよりバトル</td><td>？</td><td>動作未確認。「ゲーム開始準備中」の表示がなければ動作しないと思います</td></tr><tr>
+<td>シェアバトル</td><td>×</td><td>動作未確認。他のモードとは異なる画面構成で場面を認識できないため、動作しない可能性が高い</td></tr><tr>
+<td>CPUバトル</td><td>×</td><td>「マッチング中」の表示が場面を認識するのに必要で、CPUバトルにはその表示がないため</td></tr><tr>
+<td>マラソン</td><td>×</td><td>時間が右側に表示されているのでこのタイマーの出番はありませんよね？ : )</td></tr></tbody></table><h2 id=サポート>サポート</h2><p>マージンタイマーの導入に関して質問、うまく動作できないなどは、
+<a href=https://twitter.com/sshock_tetris target=_blank rel=noopener>
+<i class="fab fa-twitter pr-1 fa-fw"></i>@sshock_tetris</a>にDM(※要フォロー)やメンションなどで連絡してください。</p><p>マージンタイマー自動開始装置のバグ報告は、<a href=https://github.com/sshock-tetris/autoStartMarginTimer/issues target=_blank rel=noopener>Issues</a>まで。</p><p>ただし、個人的な都合によりサポートできる範囲に限界があります。必ずしも対応できるとは限らないことをご理解ください。</p></div></div></article></div><div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class="powered-by copyright-license-text">
+© 2022 shellshock.
+</p><p class=powered-by>
+Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> — the free, <a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>open source</a> website builder that empowers creators.
+</p></footer></div></div><script src=/js/vendor-bundle.min.3d946de2e8784a477845261d87025092.js></script>
+<script src=https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin=anonymous></script>
+<script id=page-data type=application/json>{"use_headroom":true}</script>
+<script src=/js/wowchemy-headroom.e8fd2d733eef6a8bbbe0539398fc0547.js type=module></script>
+<script src=/ja/js/wowchemy.min.98e82fe50d971df767bed1625cd88228.js></script>
+<script>(function(n){var o={kitId:"nne4ntc",scriptTimeout:3e3,async:!0},s=n.documentElement,r=setTimeout(function(){s.className=s.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},o.scriptTimeout),e=n.createElement("script"),i=!1,a=n.getElementsByTagName("script")[0],t;s.className+=" wf-loading",e.src="https://use.typekit.net/"+o.kitId+".js",e.async=!0,e.onload=e.onreadystatechange=function(){if(t=this.readyState,i||t&&t!="complete"&&t!="loaded")return;i=!0,clearTimeout(r);try{Typekit.load(o)}catch(e){}},a.parentNode.insertBefore(e,a)})(document)</script>
+</body></html>
