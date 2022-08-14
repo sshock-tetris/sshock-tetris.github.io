@@ -3,15 +3,17 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=generator content="Wowchemy 5.4.0 for Hugo">
+<meta name=generator content="Wowchemy 5.6.0 for Hugo">
 <meta name=author content="shellshock">
 <meta name=description content="画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法">
 <link rel=alternate hreflang=ja href=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/>
 <meta name=theme-color content="#1565c0">
 <script src=/js/mathjax-config.js></script>
-<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload='this.media="all"'>
+<link rel=stylesheet href=/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css media=print onload='this.media="all"'>
 <script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
-<link rel=stylesheet href=/css/wowchemy.111905fb8cee47463f68a35021c3bb8f.css>
+<link rel=stylesheet href=/css/wowchemy.3b322cbb548045f9dedac8e2ad00b57d.css>
+<link rel=stylesheet href=/css/libs/chroma/github-light.min.css title=hl-light media=print onload='this.media="all"'>
+<link rel=stylesheet href=/css/libs/chroma/dracula.min.css title=hl-dark media=print onload='this.media="all"' disabled>
 <link rel=icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_32x32_fill_lanczos_center_3.png>
 <link rel=apple-touch-icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_180x180_fill_lanczos_center_3.png>
 <link rel=canonical href=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/>
@@ -27,7 +29,7 @@
 <meta property="article:modified_time" content="2022-04-28T12:00:00+09:00">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/"},"headline":"TETRIS 99マージンタイマー自動開始装置の導入方法","image":["https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/featured.png"],"datePublished":"2021-04-04T00:00:00+09:00","dateModified":"2022-04-28T12:00:00+09:00","publisher":{"@type":"Organization","name":"about: @sshock_tetris","logo":{"@type":"ImageObject","url":"https://sshock-tetris.github.io/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_192x192_fill_lanczos_center_3.png"}},"description":"画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法"}</script>
 <title>TETRIS 99マージンタイマー自動開始装置の導入方法 | about: @sshock_tetris</title></head><body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=0850d1fbe21d6e6b47132598af89292f>
-<script src=/js/wowchemy-init.min.7e5427316d1b14a30f257ae3467b3e21.js></script>
+<script src=/js/wowchemy-init.min.e0ba134a744e0c0ae6a7c0aa85ec7ef2.js></script>
 <div class=page-header>
 <header class=header--fixed>
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
@@ -49,18 +51,18 @@
 <a class=nav-link href=/project/><span>Projects</span></a>
 </li></ul></div><ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
 <li class="nav-item dropdown theme-dropdown">
-<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label=表示設定>
 <i class="fas fa-moon" aria-hidden=true></i>
 </a>
 <div class=dropdown-menu>
 <a href=# class="dropdown-item js-set-theme-light">
-<span>Light</span>
+<span>ライト</span>
 </a>
 <a href=# class="dropdown-item js-set-theme-dark">
-<span>Dark</span>
+<span>ダーク</span>
 </a>
 <a href=# class="dropdown-item js-set-theme-auto">
-<span>Automatic</span>
+<span>自動</span>
 </a>
 </div></li></ul></div></nav></header></div><div class=page-body>
 <article class=article>
@@ -235,18 +237,30 @@ Switchの設定で色設定を変更している場合は認識できません�
 <td>CPUバトル</td><td>×</td><td>「マッチング中」の表示がないため</td></tr><tr>
 <td>マラソン</td><td>×</td><td>時間が右側に表示されているのでこのタイマーの出番はありませんよね？ : )</td></tr></tbody></table><h2 id=サポート>サポート</h2><p>マージンタイマーの導入に関して質問、うまく動作できないなどは、
 <a href=https://twitter.com/sshock_tetris target=_blank rel=noopener>
-<i class="fab fa-twitter pr-1 fa-fw"></i>@sshock_tetris</a>にDM(※要フォロー)やメンションなどで連絡してください。</p><p>マージンタイマー自動開始装置のバグ報告は、<a href=https://github.com/sshock-tetris/autoStartMarginTimer/issues target=_blank rel=noopener>Issues</a>まで。</p><p>ただし、個人的な都合によりサポートできる範囲に限界があります。必ずしも対応できるとは限らないことをご理解ください。</p></div></div></article></div><div class=page-footer>
+<i class="fab fa-twitter pr-1 fa-fw"></i>@sshock_tetris</a>にDM(※要フォロー)やメンションなどで連絡してください。</p><p>マージンタイマー自動開始装置のバグ報告は、<a href=https://github.com/sshock-tetris/autoStartMarginTimer/issues target=_blank rel=noopener>Issues</a>まで。</p><p>ただし、個人的な都合によりサポートできる範囲に限界があります。必ずしも対応できるとは限らないことをご理解ください。</p></div><div class=share-box>
+<ul class=share>
+<li>
+<a href="https://twitter.com/intent/tweet?url=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/&text=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li><li>
+<a href="https://www.facebook.com/sharer.php?u=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/&t=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
+<i class="fab fa-facebook"></i>
+</a>
+</li><li>
+<a href="mailto:?subject=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95&body=https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
+<i class="fas fa-envelope"></i>
+</a>
+</li></ul></div></div></article></div><div class=page-footer>
 <div class=container>
 <footer class=site-footer>
 <p class="powered-by copyright-license-text">
 © 2022 shellshock.
 </p><p class=powered-by>
 Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> — the free, <a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>open source</a> website builder that empowers creators.
-</p></footer></div></div><script src=/js/vendor-bundle.min.3d946de2e8784a477845261d87025092.js></script>
-<script src=https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin=anonymous></script>
-<script src=https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin=anonymous></script>
+</p></footer></div></div><script src=/js/vendor-bundle.min.92d2024afaa4dce0cad42ba360879ce9.js></script>
 <script id=page-data type=application/json>{"use_headroom":true}</script>
 <script src=/js/wowchemy-headroom.e8fd2d733eef6a8bbbe0539398fc0547.js type=module></script>
-<script src=/ja/js/wowchemy.min.98e82fe50d971df767bed1625cd88228.js></script>
+<script src=/ja/js/wowchemy.min.df68dcd7a2bd1d862ab634f1b9c53504.js></script>
 <script>(function(n){var o={kitId:"nne4ntc",scriptTimeout:3e3,async:!0},s=n.documentElement,r=setTimeout(function(){s.className=s.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},o.scriptTimeout),e=n.createElement("script"),i=!1,a=n.getElementsByTagName("script")[0],t;s.className+=" wf-loading",e.src="https://use.typekit.net/"+o.kitId+".js",e.async=!0,e.onload=e.onreadystatechange=function(){if(t=this.readyState,i||t&&t!="complete"&&t!="loaded")return;i=!0,clearTimeout(r);try{Typekit.load(o)}catch(e){}},a.parentNode.insertBefore(e,a)})(document)</script>
 </body></html>

@@ -3,15 +3,17 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=generator content="Wowchemy 5.4.0 for Hugo">
+<meta name=generator content="Wowchemy 5.6.0 for Hugo">
 <meta name=author content="shellshock">
 <meta name=description content="配信者向けTETRIS 99マージンタイマーを、画像認識して自動的に動かすソフトウェア">
 <link rel=alternate hreflang=ja href=https://sshock-tetris.github.io/project/timer-auto-starter/>
 <meta name=theme-color content="#1565c0">
 <script src=/js/mathjax-config.js></script>
-<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload='this.media="all"'>
+<link rel=stylesheet href=/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css media=print onload='this.media="all"'>
 <script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
-<link rel=stylesheet href=/css/wowchemy.111905fb8cee47463f68a35021c3bb8f.css>
+<link rel=stylesheet href=/css/wowchemy.3b322cbb548045f9dedac8e2ad00b57d.css>
+<link rel=stylesheet href=/css/libs/chroma/github-light.min.css title=hl-light media=print onload='this.media="all"'>
+<link rel=stylesheet href=/css/libs/chroma/dracula.min.css title=hl-dark media=print onload='this.media="all"' disabled>
 <link rel=icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_32x32_fill_lanczos_center_3.png>
 <link rel=apple-touch-icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_180x180_fill_lanczos_center_3.png>
 <link rel=canonical href=https://sshock-tetris.github.io/project/timer-auto-starter/>
@@ -27,7 +29,7 @@
 <meta property="article:modified_time" content="2022-03-10T00:10:00+09:00">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sshock-tetris.github.io/project/timer-auto-starter/"},"headline":"TETRIS 99マージンタイマー自動開始装置","image":["https://sshock-tetris.github.io/project/timer-auto-starter/featured.png"],"datePublished":"2021-03-18T00:00:00+09:00","dateModified":"2022-03-10T00:10:00+09:00","publisher":{"@type":"Organization","name":"about: @sshock_tetris","logo":{"@type":"ImageObject","url":"https://sshock-tetris.github.io/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_192x192_fill_lanczos_center_3.png"}},"description":"配信者向けTETRIS 99マージンタイマーを、画像認識して自動的に動かすソフトウェア"}</script>
 <title>TETRIS 99マージンタイマー自動開始装置 | about: @sshock_tetris</title></head><body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=dd6388cd7b3203de025b4f1ad1ed5673>
-<script src=/js/wowchemy-init.min.7e5427316d1b14a30f257ae3467b3e21.js></script>
+<script src=/js/wowchemy-init.min.e0ba134a744e0c0ae6a7c0aa85ec7ef2.js></script>
 <div class=page-header>
 <header class=header--fixed>
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
@@ -49,18 +51,18 @@
 <a class="nav-link active" href=/project/><span>Projects</span></a>
 </li></ul></div><ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
 <li class="nav-item dropdown theme-dropdown">
-<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label=表示設定>
 <i class="fas fa-moon" aria-hidden=true></i>
 </a>
 <div class=dropdown-menu>
 <a href=# class="dropdown-item js-set-theme-light">
-<span>Light</span>
+<span>ライト</span>
 </a>
 <a href=# class="dropdown-item js-set-theme-dark">
-<span>Dark</span>
+<span>ダーク</span>
 </a>
 <a href=# class="dropdown-item js-set-theme-auto">
-<span>Automatic</span>
+<span>自動</span>
 </a>
 </div></li></ul></div></nav></header></div><div class=page-body>
 <article class="article article-project">
@@ -86,7 +88,21 @@
 試合開始から10分が経過すると、ライン消去時の相手に送るライン数から上乗せされるようになる。
 30秒ごとに1ラインずつ上乗せされる。たとえば、10分なら+1ライン、11分なら+3ライン。<br>
 TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため、15分が経過すると最大となる
-(1ライン + 11ライン = 12ライン)。相手に送る場合に限定されるため、自陣のせり上がり予告との相殺にはマージンは適用されない。</p><p>試合時間さえわかれば、どれだけ上乗せされているかが視覚的に理解できるようにするのが、マージンタイマーである。</p></div></div></div><div class="project-related-pages content-widget-hr">
+(1ライン + 11ライン = 12ライン)。相手に送る場合に限定されるため、自陣のせり上がり予告との相殺にはマージンは適用されない。</p><p>試合時間さえわかれば、どれだけ上乗せされているかが視覚的に理解できるようにするのが、マージンタイマーである。</p></div></div></div><div class=share-box>
+<ul class=share>
+<li>
+<a href="https://twitter.com/intent/tweet?url=https://sshock-tetris.github.io/project/timer-auto-starter/&text=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li><li>
+<a href="https://www.facebook.com/sharer.php?u=https://sshock-tetris.github.io/project/timer-auto-starter/&t=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
+<i class="fab fa-facebook"></i>
+</a>
+</li><li>
+<a href="mailto:?subject=TETRIS%2099%e3%83%9e%e3%83%bc%e3%82%b8%e3%83%b3%e3%82%bf%e3%82%a4%e3%83%9e%e3%83%bc%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae&body=https://sshock-tetris.github.io/project/timer-auto-starter/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
+<i class="fas fa-envelope"></i>
+</a>
+</li></ul></div><div class="project-related-pages content-widget-hr">
 <h2>投稿</h2><div class="media stream-item view-compact">
 <div class=media-body>
 <div class="section-subheading article-title mb-0 mt-0">
@@ -109,33 +125,11 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 <span class=middot-divider></span>
 <span class=article-categories>
 <i class="fas fa-folder mr-1"></i><a href=/category/tetris99/>tetris99</a></span>
-</div></div></div><div class=ml-3>
-<a href=/post/howto_use_timer_auto_starter/>
-<img src=/post/howto_use_timer_auto_starter/featured_hu6f44cd79dc252c24fd7ae79990481271_3084_150x0_resize_q75_h2_lanczos_3.webp height=70 width=150 alt="TETRIS 99マージンタイマー自動開始装置の導入方法" loading=lazy>
+</div></div><div class=btn-links>
+<a class="btn btn-outline-primary btn-page-header btn-sm" href=/project/timer-auto-starter/>
+プロジェクト
 </a>
-</div></div><div class="media stream-item view-compact">
-<div class=media-body>
-<div class="section-subheading article-title mb-0 mt-0">
-<a href=/post/howto_use_timer_auto_starter/>TETRIS 99マージンタイマー自動開始装置の導入方法</a>
-</div><a href=/post/howto_use_timer_auto_starter/ class=summary-link>
-<div class=article-style>
-画像付き「TETRIS 99マージンタイマー自動開始装置」の導入方法
-</div></a>
-<div class="stream-meta article-metadata">
-<div class=article-metadata>
-<div>
-</div><span class=article-date>
-最終更新
-2022/04/28
-</span>
-<span class=middot-divider></span>
-<span class=article-reading-time>
-11 分で読める
-</span>
-<span class=middot-divider></span>
-<span class=article-categories>
-<i class="fas fa-folder mr-1"></i><a href=/category/tetris99/>tetris99</a></span>
-</div></div></div><div class=ml-3>
+</div></div><div class=ml-3>
 <a href=/post/howto_use_timer_auto_starter/>
 <img src=/post/howto_use_timer_auto_starter/featured_hu6f44cd79dc252c24fd7ae79990481271_3084_150x0_resize_q75_h2_lanczos_3.webp height=70 width=150 alt="TETRIS 99マージンタイマー自動開始装置の導入方法" loading=lazy>
 </a>
@@ -146,11 +140,9 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 © 2022 shellshock.
 </p><p class=powered-by>
 Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> — the free, <a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>open source</a> website builder that empowers creators.
-</p></footer></div></div><script src=/js/vendor-bundle.min.3d946de2e8784a477845261d87025092.js></script>
-<script src=https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin=anonymous></script>
-<script src=https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin=anonymous></script>
+</p></footer></div></div><script src=/js/vendor-bundle.min.92d2024afaa4dce0cad42ba360879ce9.js></script>
 <script id=page-data type=application/json>{"use_headroom":true}</script>
 <script src=/js/wowchemy-headroom.e8fd2d733eef6a8bbbe0539398fc0547.js type=module></script>
-<script src=/ja/js/wowchemy.min.98e82fe50d971df767bed1625cd88228.js></script>
+<script src=/ja/js/wowchemy.min.df68dcd7a2bd1d862ab634f1b9c53504.js></script>
 <script>(function(n){var o={kitId:"nne4ntc",scriptTimeout:3e3,async:!0},s=n.documentElement,r=setTimeout(function(){s.className=s.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},o.scriptTimeout),e=n.createElement("script"),i=!1,a=n.getElementsByTagName("script")[0],t;s.className+=" wf-loading",e.src="https://use.typekit.net/"+o.kitId+".js",e.async=!0,e.onload=e.onreadystatechange=function(){if(t=this.readyState,i||t&&t!="complete"&&t!="loaded")return;i=!0,clearTimeout(r);try{Typekit.load(o)}catch(e){}},a.parentNode.insertBefore(e,a)})(document)</script>
 </body></html>
