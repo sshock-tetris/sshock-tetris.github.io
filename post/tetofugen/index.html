@@ -1,101 +1,19 @@
-<!doctype html><html lang=ja>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=generator content="Wowchemy 5.6.0 for Hugo">
-<meta name=author content="shellshock">
-<meta name=description content="「譜面画像からテト譜を起こす」の技術資料">
-<link rel=alternate hreflang=ja href=https://sshock-tetris.github.io/post/tetofugen/>
-<meta name=theme-color content="#1565c0">
-<script src=/js/mathjax-config.js></script>
-<link rel=stylesheet href=/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css media=print onload='this.media="all"'>
-<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
-<link rel=stylesheet href=/css/wowchemy.3b322cbb548045f9dedac8e2ad00b57d.css>
-<link rel=stylesheet href=/css/libs/chroma/github-light.min.css title=hl-light media=print onload='this.media="all"'>
-<link rel=stylesheet href=/css/libs/chroma/dracula.min.css title=hl-dark media=print onload='this.media="all"' disabled>
-<link rel=icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_32x32_fill_lanczos_center_3.png>
-<link rel=apple-touch-icon type=image/png href=/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_180x180_fill_lanczos_center_3.png>
-<link rel=canonical href=https://sshock-tetris.github.io/post/tetofugen/>
-<meta property="twitter:card" content="summary">
-<meta property="twitter:site" content="@sshock_tetris">
-<meta property="twitter:creator" content="@sshock_tetris">
-<meta property="og:site_name" content="about: @sshock_tetris">
-<meta property="og:url" content="https://sshock-tetris.github.io/post/tetofugen/">
-<meta property="og:title" content="譜面画像からテト譜を起こす | about: @sshock_tetris">
-<meta property="og:description" content="「譜面画像からテト譜を起こす」の技術資料"><meta property="og:image" content="https://sshock-tetris.github.io/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_512x512_fill_lanczos_center_3.png">
-<meta property="twitter:image" content="https://sshock-tetris.github.io/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="ja">
-<meta property="article:published_time" content="2020-09-24T09:11:47+09:00">
-<meta property="article:modified_time" content="2020-09-24T09:11:47+09:00">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://sshock-tetris.github.io/post/tetofugen/"},"headline":"譜面画像からテト譜を起こす","datePublished":"2020-09-24T09:11:47+09:00","dateModified":"2020-09-24T09:11:47+09:00","publisher":{"@type":"Organization","name":"about: @sshock_tetris","logo":{"@type":"ImageObject","url":"https://sshock-tetris.github.io/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_192x192_fill_lanczos_center_3.png"}},"description":"「譜面画像からテト譜を起こす」の技術資料"}</script>
-<title>譜面画像からテト譜を起こす | about: @sshock_tetris</title></head><body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=9333499b7327024059dfbfae61cb9669>
-<script src=/js/wowchemy-init.min.e0ba134a744e0c0ae6a7c0aa85ec7ef2.js></script>
-<div class=page-header>
-<header class=header--fixed>
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
-<div class=container-xl>
-<div class="d-none d-lg-inline-flex">
-<a class=navbar-brand href=/>about: @sshock_tetris</a>
-</div><button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=ナビゲーションの切り替え>
-<span><i class="fas fa-bars"></i></span>
-</button>
-<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-<a class=navbar-brand href=/>about: @sshock_tetris</a>
-</div><div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
-<ul class="navbar-nav d-md-inline-flex">
-<li class=nav-item>
-<a class=nav-link href=/#about><span>Home</span></a>
-</li><li class=nav-item>
-<a class="nav-link active" href=/post/><span>Posts</span></a>
-</li><li class=nav-item>
-<a class=nav-link href=/project/><span>Projects</span></a>
-</li></ul></div><ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-<li class="nav-item dropdown theme-dropdown">
-<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label=表示設定>
-<i class="fas fa-moon" aria-hidden=true></i>
-</a>
-<div class=dropdown-menu>
-<a href=# class="dropdown-item js-set-theme-light">
-<span>ライト</span>
-</a>
-<a href=# class="dropdown-item js-set-theme-dark">
-<span>ダーク</span>
-</a>
-<a href=# class="dropdown-item js-set-theme-auto">
-<span>自動</span>
-</a>
-</div></li></ul></div></nav></header></div><div class=page-body>
-<article class=article>
-<div class="article-container pt-3">
-<h1>譜面画像からテト譜を起こす</h1><div class=article-metadata>
-<div>
-</div><span class=article-date>
-2020/09/24
-</span>
+<!doctype html><!-- This site was created with Wowchemy. https://www.wowchemy.com --><!-- Last Published: 2023年7月10日 --><html lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=generator content="Wowchemy 5.7.0 for Hugo"><script src=/js/mathjax-config.js></script>
+<link rel=stylesheet href="/css/vendor-bundle.min.c39d5bdedbe8c62e1d6f1223767a866c.css" media=print onload='this.media="all"'><script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
+<link rel=stylesheet href="/css/wowchemy.4d35c586f7721c4f85468e9360157338.css"><link rel=stylesheet href=/css/libs/chroma/github-light.min.css title=hl-light media=print onload='this.media="all"'><link rel=stylesheet href=/css/libs/chroma/dracula.min.css title=hl-dark media=print onload='this.media="all"' disabled><meta name=author content="shellshock"><meta name=description content="「譜面画像からテト譜を起こす」の技術資料"><link rel=alternate hreflang=ja href=https://sshock-tetris.github.io/post/tetofugen/><link rel=canonical href=https://sshock-tetris.github.io/post/tetofugen/><link rel=icon type=image/png href=/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_32x32_fill_lanczos_center_3.png><link rel=apple-touch-icon type=image/png href=/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_180x180_fill_lanczos_center_3.png><meta name=theme-color content="#1565c0"><meta property="twitter:card" content="summary"><meta property="twitter:site" content="@sshock_tetris"><meta property="twitter:creator" content="@sshock_tetris"><meta property="twitter:image" content="https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png"><meta property="og:site_name" content="about: @sshock_tetris"><meta property="og:url" content="https://sshock-tetris.github.io/post/tetofugen/"><meta property="og:title" content="譜面画像からテト譜を起こす | about: @sshock_tetris"><meta property="og:description" content="「譜面画像からテト譜を起こす」の技術資料"><meta property="og:image" content="https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="ja"><meta property="article:published_time" content="2020-09-24T09:11:47+09:00"><meta property="article:modified_time" content="2020-09-24T09:11:47+09:00"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://sshock-tetris.github.io/post/tetofugen/"},"headline":"譜面画像からテト譜を起こす","datePublished":"2020-09-24T09:11:47+09:00","dateModified":"2020-09-24T09:11:47+09:00","author":{"@type":"Person","name":"Authors"},"publisher":{"@type":"Organization","name":"about: @sshock_tetris","logo":{"@type":"ImageObject","url":"https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_192x192_fill_lanczos_center_3.png"}},"description":"「譜面画像からテト譜を起こす」の技術資料"}</script><title>譜面画像からテト譜を起こす | about: @sshock_tetris</title></head><body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=9333499b7327024059dfbfae61cb9669><script src=/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js></script><div class="page-header header--fixed"><header><nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main><div class=container-xl><div class="d-none d-lg-inline-flex"><a class=navbar-brand href=/>about: @sshock_tetris</a></div><button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label=ナビゲーションの切り替え>
+<span><i class="fas fa-bars"></i></span></button><div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class=navbar-brand href=/>about: @sshock_tetris</a></div><div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content><ul class="navbar-nav d-md-inline-flex"><li class=nav-item><a class=nav-link href=/#about><span>Home</span></a></li><li class=nav-item><a class="nav-link active" href=/post/><span>Posts</span></a></li><li class=nav-item><a class=nav-link href=/project/><span>Projects</span></a></li></ul></div><ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2"><li class="nav-item d-none d-lg-inline-flex"><a class=nav-link href=https://twitter.com/sshock_tetris data-toggle=tooltip data-placement=bottom title="Follow me on Twitter" target=_blank rel=noopener aria-label="Follow me on Twitter"><i class="fab fa-twitter" aria-hidden=true></i></a></li><li class="nav-item d-none d-lg-inline-flex"><a class=nav-link href=https://github.com/sshock-tetris target=_blank rel=noopener aria-label=github><i class="fab fa-github" aria-hidden=true></i></a></li><li class="nav-item d-none d-lg-inline-flex"><a class=nav-link href=https://www.youtube.com/@shellshock_ch data-toggle=tooltip data-placement=bottom title="My YouTube channel" target=_blank rel=noopener aria-label="My YouTube channel"><i class="fab fa-youtube" aria-hidden=true></i></a></li><li class="nav-item dropdown theme-dropdown"><a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label=表示設定><i class="fas fa-moon" aria-hidden=true></i></a><div class=dropdown-menu><a href=# class="dropdown-item js-set-theme-light"><span>ライト</span></a>
+<a href=# class="dropdown-item js-set-theme-dark"><span>ダーク</span></a>
+<a href=# class="dropdown-item js-set-theme-auto"><span>自動</span></a></div></li></ul></div></nav></header></div><div class=page-body><article class=article><div class="article-container pt-3"><h1>譜面画像からテト譜を起こす</h1><div class=article-metadata><div></div><span class=article-date>2020/09/24</span>
 <span class=middot-divider></span>
-<span class=article-reading-time>
-4 分で読める
-</span>
-</div><div class="btn-links mb-3">
-<a class="btn btn-outline-primary btn-page-header" href=/project/tetofugen/>
-プロジェクト
-</a>
-</div></div><div class=article-container>
-<div class=article-style>
-<p>この記事は、<a href=/tetofugen.html>譜面画像からテト譜を起こす</a>の技術資料です。
+<span class=article-reading-time>4 分で読める</span></div><div class="btn-links mb-3"><a class="btn btn-outline-primary btn-page-header" href=/project/tetofugen/>プロジェクト</a></div></div><div class=article-container><div class=article-style><p>この記事は、<a href=/tetofugen.html>譜面画像からテト譜を起こす</a>の技術資料です。
 画像からどのような方法を使ってテト譜を起こすのか興味がある人が対象です。
-手法に興味はなく、ただ使ってみたいという人は、<a href=/tetofugen.html>譜面画像からテト譜を起こす</a>に移動してください。</p><hr>
-<h2 id=きっかけ>きっかけ</h2><p>この配信を見たとき、画像から自動的にテト譜を起こせたら効率よく分析できるんじゃないかと思った。</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
-<iframe src=https://www.youtube.com/embed/1gm5MSPGlUM style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe>
-</div><p>需要あるのかな？と適当に調べるとまず<a href=https://crize.blog.jp/archives/16752321.html target=_blank rel=noopener>テトリスの画面をテト譜に起こしたかった</a>
-が見つかり、その中で</p><blockquote class=twitter-tweet><p lang=ja dir=ltr>画像からテト譜起こして解析するツール出来ないかな<br>画像処理に長けた人が少ないんだろうか</p>&mdash; もりおじの⁰よめにおいでよ⁰いますぐに⁰はやくしないと⁰かれてしまうよ (@sakana897) <a href="https://twitter.com/sakana897/status/1055769972054482944?ref_src=twsrc%5Etfw">October 26, 2018</a></blockquote><script async src=https://platform.twitter.com/widgets.js></script>
-<p>というツイートを見つけた。2年前から需要があったことがわかり、作ってみることにした。</p><h2 id=認識手法>認識手法</h2><h3 id=入力画像の前提条件の設定>入力画像の前提条件の設定</h3><p>まず、入力画像はキャプチャボードからのみを前提とした。
+手法に興味はなく、ただ使ってみたいという人は、<a href=/tetofugen.html>譜面画像からテト譜を起こす</a>に移動してください。</p><hr><h2 id=きっかけ>きっかけ</h2><p>この配信を見たとき、画像から自動的にテト譜を起こせたら効率よく分析できるんじゃないかと思った。</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube.com/embed/1gm5MSPGlUM style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><p>需要あるのかな？と適当に調べるとまず<a href=https://crize.blog.jp/archives/16752321.html target=_blank rel=noopener>テトリスの画面をテト譜に起こしたかった</a>
+が見つかり、その中で</p><blockquote class=twitter-tweet><p lang=ja dir=ltr>画像からテト譜起こして解析するツール出来ないかな<br>画像処理に長けた人が少ないんだろうか</p>&mdash; もりおじの⁰よめにおいでよ⁰いますぐに⁰はやくしないと⁰あそびにいくぞ (@sakana897) <a href="https://twitter.com/sakana897/status/1055769972054482944?ref_src=twsrc%5Etfw">October 26, 2018</a></blockquote><script async src=https://platform.twitter.com/widgets.js></script><p>というツイートを見つけた。2年前から需要があったことがわかり、作ってみることにした。</p><h2 id=認識手法>認識手法</h2><h3 id=入力画像の前提条件の設定>入力画像の前提条件の設定</h3><p>まず、入力画像はキャプチャボードからのみを前提とした。
 カメラからの撮影画像の場合、どう撮影しても譜面がまっすぐにはならず、ゆがみ補正が必須になる。
 色補正も必要だったり、場合によってはノイズを消さないといけなかったりと、
 前処理がどうしても必要になり、これでは画像認識の本質にたどりつかず本末転倒となる。</p><p>次に、キャプチャボードの画像から縦20ブロック、横10ブロックの譜面画像のみを切り出したものを入力画像とすることとした。
 キャプチャボードの画像全体からの場合、譜面を認識させるという前処理が必要で、
-この場合も画像認識の本質にたどり着けなくなる恐れがある。</p><p>以上から、入力画像の前提条件は</p><ul>
-<li>キャプチャボードからのみ</li><li>縦20ブロック、横10ブロックの画像のみを切り出した譜面画像を入力とする</li></ul><p>とした。</p><h3 id=入力画像から20x10ブロックを特定する>入力画像から20x10ブロックを特定する</h3><p>前提条件を満たした入力画像は、縦横比が2:1となっているはずで、1ブロックが正方形となっているはずである。
+この場合も画像認識の本質にたどり着けなくなる恐れがある。</p><p>以上から、入力画像の前提条件は</p><ul><li>キャプチャボードからのみ</li><li>縦20ブロック、横10ブロックの画像のみを切り出した譜面画像を入力とする</li></ul><p>とした。</p><h3 id=入力画像から20x10ブロックを特定する>入力画像から20x10ブロックを特定する</h3><p>前提条件を満たした入力画像は、縦横比が2:1となっているはずで、1ブロックが正方形となっているはずである。
 1ブロックあたりのピクセル数は、<code>画像の縦ピクセル ÷ 20</code>、<code>画像の横ピクセル ÷ 10</code>の大きい方とする。
 これは、縦横比がぴったり2:1となっているとは限らず、もし小さい方を採用すると認識するべき位置にずれが生じて別のブロックの色を
 誤って読み取ってしまい、認識率が低下するためである。</p><h3 id=ブロックごとに色を調べる>ブロックごとに色を調べる</h3><p>まず、特定したブロックのピクセルのうち中央50%を取り、ピクセルのRGBカラーの値のそれぞれの平均を求める。
@@ -106,33 +24,8 @@
 全体的に明るめの色となる場合や、全体的に暗めの色となる場合がある。
 両者ではRGBの色差関係やRGBの数値の大小関係が大きく異なることがあるが、それぞれについて別の閾値を定義することはできない。
 これは、ブロック単位で色情報を見ている現時点での手法に問題があり、
-ブロック全体の明るさの傾向などを新たに調査し適合させる必要がある。そのような方法をいかに実装するかが、今後の課題である。</p><hr>
-<h2 id=youtube用のテト譜ジェネレーターがリリースされています>YouTube用のテト譜ジェネレーターがリリースされています</h2><p><a href=https://twitter.com/X7_SoRA target=_blank rel=noopener>SoRA_X7さん</a>が、Chrome拡張機能<a href=https://chrome.google.com/webstore/detail/kjphnlnbbkgljiaabegchlghlaejpgfb target=_blank rel=noopener>YouTube用のテト譜ジェネレーター</a>を既にリリースしています。
-その拡張機能の方が便利で、認識精度も高いので是非ご利用ください。</p><h2 id=参考資料>参考資料</h2><ol>
-<li><a href=https://crize.blog.jp/archives/16752321.html target=_blank rel=noopener>https://crize.blog.jp/archives/16752321.html</a></li><li><a href="https://docs.google.com/presentation/d/1V4PNyt41to81phK9u0iXnIkAfp-nV3g3xcl7c5qW-FI/edit#slide=id.g21adbcaeda_0_87" target=_blank rel=noopener>https://docs.google.com/presentation/d/1V4PNyt41to81phK9u0iXnIkAfp-nV3g3xcl7c5qW-FI/edit#slide=id.g21adbcaeda_0_87</a></li></ol></div><div class=share-box>
-<ul class=share>
-<li>
-<a href="https://twitter.com/intent/tweet?url=https://sshock-tetris.github.io/post/tetofugen/&text=%e8%ad%9c%e9%9d%a2%e7%94%bb%e5%83%8f%e3%81%8b%e3%82%89%e3%83%86%e3%83%88%e8%ad%9c%e3%82%92%e8%b5%b7%e3%81%93%e3%81%99" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
-<i class="fab fa-twitter"></i>
-</a>
-</li><li>
-<a href="https://www.facebook.com/sharer.php?u=https://sshock-tetris.github.io/post/tetofugen/&t=%e8%ad%9c%e9%9d%a2%e7%94%bb%e5%83%8f%e3%81%8b%e3%82%89%e3%83%86%e3%83%88%e8%ad%9c%e3%82%92%e8%b5%b7%e3%81%93%e3%81%99" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
-<i class="fab fa-facebook"></i>
-</a>
-</li><li>
-<a href="mailto:?subject=%e8%ad%9c%e9%9d%a2%e7%94%bb%e5%83%8f%e3%81%8b%e3%82%89%e3%83%86%e3%83%88%e8%ad%9c%e3%82%92%e8%b5%b7%e3%81%93%e3%81%99&body=https://sshock-tetris.github.io/post/tetofugen/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
-<i class="fas fa-envelope"></i>
-</a>
-</li></ul></div></div></article></div><div class=page-footer>
-<div class=container>
-<footer class=site-footer>
-<p class="powered-by copyright-license-text">
-© 2022 shellshock.
-</p><p class=powered-by>
-Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> — the free, <a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>open source</a> website builder that empowers creators.
-</p></footer></div></div><script src=/js/vendor-bundle.min.92d2024afaa4dce0cad42ba360879ce9.js></script>
-<script id=page-data type=application/json>{"use_headroom":true}</script>
-<script src=/js/wowchemy-headroom.e8fd2d733eef6a8bbbe0539398fc0547.js type=module></script>
-<script src=/ja/js/wowchemy.min.df68dcd7a2bd1d862ab634f1b9c53504.js></script>
-<script>(function(n){var o={kitId:"nne4ntc",scriptTimeout:3e3,async:!0},s=n.documentElement,r=setTimeout(function(){s.className=s.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},o.scriptTimeout),e=n.createElement("script"),i=!1,a=n.getElementsByTagName("script")[0],t;s.className+=" wf-loading",e.src="https://use.typekit.net/"+o.kitId+".js",e.async=!0,e.onload=e.onreadystatechange=function(){if(t=this.readyState,i||t&&t!="complete"&&t!="loaded")return;i=!0,clearTimeout(r);try{Typekit.load(o)}catch(e){}},a.parentNode.insertBefore(e,a)})(document)</script>
-</body></html>
+ブロック全体の明るさの傾向などを新たに調査し適合させる必要がある。そのような方法をいかに実装するかが、今後の課題である。</p><hr><h2 id=youtube用のテト譜ジェネレーターがリリースされています>YouTube用のテト譜ジェネレーターがリリースされています</h2><p><a href=https://twitter.com/X7_SoRA target=_blank rel=noopener>SoRA_X7さん</a>が、Chrome拡張機能<a href=https://chrome.google.com/webstore/detail/kjphnlnbbkgljiaabegchlghlaejpgfb target=_blank rel=noopener>YouTube用のテト譜ジェネレーター</a>を既にリリースしています。
+その拡張機能の方が便利で、認識精度も高いので是非ご利用ください。</p><h2 id=参考資料>参考資料</h2><ol><li><a href=https://crize.blog.jp/archives/16752321.html target=_blank rel=noopener>https://crize.blog.jp/archives/16752321.html</a></li><li><a href="https://docs.google.com/presentation/d/1V4PNyt41to81phK9u0iXnIkAfp-nV3g3xcl7c5qW-FI/edit#slide=id.g21adbcaeda_0_87" target=_blank rel=noopener>https://docs.google.com/presentation/d/1V4PNyt41to81phK9u0iXnIkAfp-nV3g3xcl7c5qW-FI/edit#slide=id.g21adbcaeda_0_87</a></li></ol></div><div class=share-box><ul class=share><li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsshock-tetris.github.io%2Fpost%2Ftetofugen%2F&amp;text=%E8%AD%9C%E9%9D%A2%E7%94%BB%E5%83%8F%E3%81%8B%E3%82%89%E3%83%86%E3%83%88%E8%AD%9C%E3%82%92%E8%B5%B7%E3%81%93%E3%81%99" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter><i class="fab fa-twitter"></i></a></li><li><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsshock-tetris.github.io%2Fpost%2Ftetofugen%2F&amp;t=%E8%AD%9C%E9%9D%A2%E7%94%BB%E5%83%8F%E3%81%8B%E3%82%89%E3%83%86%E3%83%88%E8%AD%9C%E3%82%92%E8%B5%B7%E3%81%93%E3%81%99" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook><i class="fab fa-facebook"></i></a></li><li><a href="mailto:?subject=%E8%AD%9C%E9%9D%A2%E7%94%BB%E5%83%8F%E3%81%8B%E3%82%89%E3%83%86%E3%83%88%E8%AD%9C%E3%82%92%E8%B5%B7%E3%81%93%E3%81%99&amp;body=https%3A%2F%2Fsshock-tetris.github.io%2Fpost%2Ftetofugen%2F" target=_blank rel=noopener class=share-btn-email aria-label=envelope><i class="fas fa-envelope"></i></a></li><li><a href="https://pinterest.com/pin/create/link/?url=https%3A%2F%2Fsshock-tetris.github.io%2Fpost%2Ftetofugen%2F&amp;description=%E8%AD%9C%E9%9D%A2%E7%94%BB%E5%83%8F%E3%81%8B%E3%82%89%E3%83%86%E3%83%88%E8%AD%9C%E3%82%92%E8%B5%B7%E3%81%93%E3%81%99" target=_blank rel=noopener class=share-btn-pinterest aria-label=pinterest><i class="fab fa-pinterest"></i></a></li><li><a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3A%2F%2Fsshock-tetris.github.io%2Fpost%2Ftetofugen%2F&amp;title=%E8%AD%9C%E9%9D%A2%E7%94%BB%E5%83%8F%E3%81%8B%E3%82%89%E3%83%86%E3%83%88%E8%AD%9C%E3%82%92%E8%B5%B7%E3%81%93%E3%81%99" target=_blank rel=noopener class=share-btn-tumblr aria-label=tumblr><i class="fab fa-tumblr"></i></a></li></ul></div></div></article></div><div class=page-footer><div class=container><footer class=site-footer><p class="powered-by copyright-license-text">© 2023 shellshock.</p><p class=powered-by>Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> — the free, <a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>open source</a> website builder that empowers creators.</p></footer></div></div><script src=/js/vendor-bundle.min.1d4346c6f7d46c340dc0a9058dd85c13.js></script>
+<script id=page-data type=application/json>{"use_headroom":true}</script><script src=/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js type=module></script>
+<script src=/ja/js/wowchemy.min.bbb9cbd6ab16b77c7b73fd7d83317603.js></script>
+<script>(function(e){var n,s={kitId:"nne4ntc",scriptTimeout:3e3,async:!0},o=e.documentElement,r=setTimeout(function(){o.className=o.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},s.scriptTimeout),t=e.createElement("script"),i=!1,a=e.getElementsByTagName("script")[0];o.className+=" wf-loading",t.src="https://use.typekit.net/"+s.kitId+".js",t.async=!0,t.onload=t.onreadystatechange=function(){if(n=this.readyState,i||n&&n!="complete"&&n!="loaded")return;i=!0,clearTimeout(r);try{Typekit.load(s)}catch{}},a.parentNode.insertBefore(t,a)})(document)</script></body></html>

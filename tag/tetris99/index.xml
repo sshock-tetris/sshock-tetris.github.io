@@ -1,5 +1,545 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tetris99 | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/tag/tetris99/</link><atom:link href="https://sshock-tetris.github.io/tag/tetris99/index.xml" rel="self" type="application/rss+xml"/><description>tetris99</description><generator>Wowchemy (https://wowchemy.com)</generator><language>ja</language><lastBuildDate>Mon, 14 Sep 2020 20:30:13 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_hu37c0710e4653aca6f4ac7ce1d2e100be_10603_512x512_fill_lanczos_center_3.png</url><title>tetris99</title><link>https://sshock-tetris.github.io/tag/tetris99/</link></image><item><title>あきりん企画 #テトリス運動会 に参加・配信しました</title><link>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</link><pubDate>Mon, 14 Sep 2020 20:30:13 +0900</pubDate><guid>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</guid><description>&lt;p>あきりん企画の &lt;a href="https://twitter.com/Autumn63775693/status/1297842792815718403" target="_blank" rel="noopener">#テトリス運動会&lt;/a> に参加し、様子を配信しました。&lt;/p>
-&lt;p>&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>運動会企画！！&lt;br>9/12(土)22:00～&lt;br>4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br>詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href="https://t.co/Vy5KBCYcGN">pic.twitter.com/Vy5KBCYcGN&lt;/a>&lt;/p>&amp;mdash; あき (@Autumn63775693) &lt;a href="https://twitter.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw">August 24, 2020&lt;/a>&lt;/blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tetris99 | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/tag/tetris99/</link><atom:link href="https://sshock-tetris.github.io/tag/tetris99/index.xml" rel="self" type="application/rss+xml"/><description>tetris99</description><generator>Wowchemy (https://wowchemy.com)</generator><language>ja</language><lastBuildDate>Sat, 27 May 2023 00:00:00 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png</url><title>tetris99</title><link>https://sshock-tetris.github.io/tag/tetris99/</link></image><item><title>TETRIS 99の不満</title><link>https://sshock-tetris.github.io/post/20230527/</link><pubDate>Sat, 27 May 2023 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/post/20230527/</guid><description>&lt;p>TETRIS 99という、Nintendo Switch Onlineに加入していれば無料で遊べるテトリスがある。
+2019年2月にゲームの配信が始まり、それから既に4年が経過している。
+筆者は配信開始から2ヶ月後にやり始めて、今ではすっかりテトリスプレイヤーになってしまった。
+大きなアップデートは2回。1回目は2019年9月。2回目は2019年12月。
+それ以後、バグ修正や細かな内容以外のアップデートは来ていない。&lt;/p>
+&lt;p>アップデートがないのはゲームとして完成しているからだろうか？
+いや、まだまだ直して欲しいところがいくつかあることを、これから書いていきたい。&lt;/p>
+&lt;h2 id="個人的に感じている不満点要望">個人的に感じている不満点、要望&lt;/h2>
+&lt;h3 id="チケットの使い道が乏しい">チケットの使い道が乏しい&lt;/h3>
+&lt;p>デイリーミッションをこなすと獲得できるチケットは、エンブレムミッションでもある999枚に到達するとカンストとなる。
+しかし、チケットを消費する手段がテーマの交換以外にない。
+テーマを全部交換してしまうとチケットの使い道が完全になくなり、チケットが死蔵する。&lt;/p>
+&lt;h3 id="vip部屋にパスワードマッチがない">VIP部屋にパスワードマッチがない&lt;/h3>
+&lt;p>通常部屋やチームバトルにはパスワードマッチが存在するが、通常部屋でテト1を取った人に開放されるVIP部屋には存在しない。
+チームバトル登場当初から閑散としていたVIP部屋にはパスワードマッチは不要ということだろうか。謎である。&lt;/p>
+&lt;h3 id="ルールを設定できるパスワードマッチがほしい">ルールを設定できるパスワードマッチがほしい&lt;/h3>
+&lt;p>現行の部屋ごとにパスワードを入れて部屋を作る、もしくは入室する方法はとてもシンプルで手軽だが、
+その反面何もカスタマイズができない。パスワードが合っていても、部屋を間違えると入れない。
+6桁の数字を入れるだけで入れるので、誰かが前もって同じ数字を入れていれば、入室できる時間が短くなるという問題もある。
+ホールド禁止の設定ができないのはもちろんのこと、チームバトルにおいてはチームカラーの選択肢に制限をつけたくても付けられないなど、
+シンプルな故に凝ったことをすると弊害が出やすい。
+パスワードマッチ専用のカスタマイズ部屋がほしいところである。&lt;/p>
+&lt;h3 id="観戦機能は通常部屋vipにもほしい">観戦機能は通常部屋、VIPにもほしい&lt;/h3>
+&lt;p>チームバトルは同じチームで残っている人を応援するためなのか観戦機能がついている。
+この観戦機能は、通常部屋やVIP部屋にはないが、個人的には実装してほしいと思っている。
+できれば、観戦時に名前は出さない方向で。&lt;/p>
+&lt;h3 id="テーマが適用されないチームバトル">テーマが適用されないチームバトル&lt;/h3>
+&lt;p>テト1カップが開催されることで新しいテーマが登場しているが、チームバトルには一切適用されない。
+チームカラーが災いしているのだろうか。
+BGMもデフォルトのままで、チームバトルの仕様から他の部屋よりも長時間
+熊蜂の飛行のアレンジ曲を聞き続けることになりがちである。
+配信者にとっては、デフォルトのBGMがYouTubeの著作権保護システムのコンテンツIDに引っかかりやすいため、
+せめてBGMが変えられるようになってほしいと思う。&lt;/p>
+&lt;h3 id="左アナログスティックの操作性">左アナログスティックの操作性&lt;/h3>
+&lt;p>テトリス99には、特定の状態になっている人を自動的に狙う4つの作戦&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 以外に、火力を送る相手を直接指定することもできる。
+その指定方法として、タッチパネルで直接タッチする方法(携帯モード限定)と、左アナログスティックを使って指定する方法の2種類がある。
+前者は狙いたい相手を直接指定できるが、TVモードでは使えない。配信者は必然的に左アナログスティックを使うことになるのだが・・・&lt;/p>
+&lt;p>この左アナログスティックの操作性が良くない。縦や横なら問題ないが、
+斜めに移動したい時に思ったように動かない場合が多い。
+残っている人数が少なくなると、たいていの場合指定するプレイヤーが飛び飛びになっているため、
+斜め移動は欠かせないものになっている。
+操作性の悪さによって何度も左アナログスティックを操作する羽目になり、置きミスを誘発して、ストレスの元になることもある。
+試合中だけでなく、チームバトルの観戦時も同様である。見たい人のところにカーソルが当たらない。&lt;/p>
+&lt;h2 id="意見の分かれる不満点">意見の分かれる不満点&lt;/h2>
+&lt;h3 id="チームバトルの経験値の入り方">チームバトルの経験値の入り方&lt;/h3>
+&lt;p>チームバトルでは、個人の順位によって変化する個人経験値と、チームの順位によって変化するチーム経験値がある。
+チームの順位が確定しないまま部屋から退出した場合を除き、実際に獲得する経験値はそれらの合計である。
+チーム順位が1位であれば、チーム経験値は700ポイントである。700ポイントはそのチームに属している人全員もらえる。これは通常部屋の2位(0KOの場合)に相当する。
+このことを利用して、チームバトルの部屋に入っては何も操作せずに放置してチーム経験値を獲得してランクを上げるプレイヤーが何人か存在する。
+このような、対戦もせずにランクを上げる行為を快く思わないプレイヤーもいる。&lt;/p>
+&lt;h3 id="タゲ釣りという技">「タゲ釣り」という技&lt;/h3>
+&lt;p>タゲ釣り&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>とは、カウンター作戦を基本に、一瞬だけ別の作戦に切り替えてはカウンターに戻すことで狙われる人数を意図的に増やす技。
+狙われている人数がすぐにはリセットされないことを悪用している。
+ターゲットに当たった相手がカウンターで、かつその作戦を維持していることが条件となるが、
+操作を繰り返せばどんどん狙われる人数が増えることもある。
+狙われる人数が多いほど火力が上がるため、ピンチ偽装&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> をすることなく自身の火力を上げられる。
+特に、タゲ釣りしている上級者が集まった場合、複数人が常時10人程度狙われている状態になってしまう。
+この状態が続くとゲーム機に大きな負荷がかかり、通信エラーを誘発したり、TETRIS 99自体が異常終了する場合がある。&lt;/p>
+&lt;p>1ラインを消すだけでは生き残れないような状況で、タゲ釣りを行ってから1ラインを消して延命するという活用方法がある一方で、
+タゲ釣りは作戦の仕様の裏を突いた技であり、解釈の仕方によってはバグと言われてもおかしくない。
+意図的に狙われる人数を増やせること自体が想定外ではないのか。
+とはいえ、どうやってもタイムラグが発生してしまうオンラインプレイの性質上、根本的な修正は困難だと思われる。&lt;/p>
+&lt;h3 id="ren30-に対する不満">REN&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup> に対する不満&lt;/h3>
+&lt;p>TETRIS 99に限らず、現在のガイドラインに従ってリリースされているほぼ全てのテトリス製品で言われていることだが、
+RENが強すぎてゲームバランスが崩壊していないか？と疑われている。
+RENに必要な学習コストが、火力を出すために必要な各種学習コストよりも少なく、
+RENを繋げられさえすれば簡単に高火力を出せることに不満を持っている人もいる。&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>TETRIS 99ではライン消去時はせり上がらないという仕様上、
+REN中はライン消去ミスがない限りトップアウト&lt;sup id="fnref:6">&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref">6&lt;/a>&lt;/sup> することが決してないため、
+RENができるようにあらかじめテトリミノを積んでおくと非常に安定する&lt;sup id="fnref:7">&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref">7&lt;/a>&lt;/sup>。
+REN積みが速いほど有利に立ち回れるため、上位勢ならRENが欠かせないものとなる。
+その結果、試合時間が長時間になりすぎたり、試合展開が単調になりがちである&lt;sup id="fnref:8">&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref">8&lt;/a>&lt;/sup>。&lt;/p>
+&lt;p>端4列を開けて残り6列を平積みで積んでいく端開け4列RENは、
+あさてと(特に休日あさてと)などの強者が集まる非公式イベントでは必ず目にする光景である。
+タゲ釣りと組み合わせて、1ラインだけ消しては火力を送り、RENを消化したらまた積む。
+これをただひたすら数十分繰り返すだけである。
+致命的なミスをせず持久力のある人だけが残っていく傾向があり、置きミスばかりやってしまう人にとっては面白みを感じなくなっているかもしれない。&lt;/p>
+&lt;p>ちなみに、ぷよテト2発売時に、RENの火力が前作よりも弱体化していなかったことが判明して、Twitterでハッシュタグ&lt;code>#RENGaming&lt;/code>が
+一部の範囲内で一時的に流行したが、TETRIS 99こそが真のRENGamingである。&lt;/p>
+&lt;h2 id="提言">提言&lt;/h2>
+&lt;p>ただの1プレイヤーの戯れ言にすぎないが、もしアップデートの機会があるなら、以下を提案したい。&lt;/p>
+&lt;h3 id="チケットの使い道を増やす">チケットの使い道を増やす&lt;/h3>
+&lt;p>一定時間だけ獲得経験値を2倍にするなど、ランク上げに役に立つようなチケットの使い方を提案する。
+ランク上げの価値が下がるので、不満を感じる人は出るだろうが、ランク上げにはとても時間がかかる。
+そのような救済措置はあってもよいのではないだろうか。&lt;/p>
+&lt;h3 id="チーム経験値も個人順位に影響があるようにする">チーム経験値も個人順位に影響があるようにする&lt;/h3>
+&lt;p>チーム経験値を一律で配るのではなく、多少は個人順位に影響を受けるようにする。
+あまり影響がありすぎると個人経験値とチーム経験値を分ける意味がないので、「多少」である。
+そうすれば、放置している人には経験値が少なくなり健全になるだろう。&lt;/p>
+&lt;h3 id="火力分割60をやりにくくする">火力分割&lt;sup id="fnref:9">&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref">9&lt;/a>&lt;/sup>をやりにくくする&lt;/h3>
+&lt;p>せり上がり予告上限を超える火力が無効化される仕様を撤廃してみてはどうか。
+たとえば、合計で11ラインを受ける状態の時に10ラインの火力を受けても10ラインのまま減らさないようにする、とか。
+もちろん、受ける総火力数は増えてしまい、初心者がテト1を取れる可能性が下がってしまうが、
+1時間近くになっても決着が付かないという異常事態は避けられるのではないか。
+最初から撤廃するのがやりすぎだとしたら、最大マージン(15分経過後)から撤廃してみてはどうか。&lt;/p>
+&lt;h3 id="カウンター火力の見直し">カウンター火力の見直し&lt;/h3>
+&lt;p>ターゲットが大勢集まったときに1ラインを消しただけで十数ライン分の火力を出すのは気持ちいいが、
+もう少し抑えてもいいのではないかと個人的に思う。&lt;/p>
+&lt;h3 id="消えないブロックをせり上げさせる">消えないブロックをせり上げさせる&lt;/h3>
+&lt;p>上記の火力分割を阻止させる使用の実現が難しいなら、次点としてこれを提案する。
+特に、火力分割しかやらずに試合展開が滞る状況を避けるため、
+一定時間経過後に下部に消せないブロックをせり上げさせる&lt;sup id="fnref:10">&lt;a href="#fn:10" class="footnote-ref" role="doc-noteref">10&lt;/a>&lt;/sup>。
+たとえば、最大マージン経過してから2分ごとに消せないブロックを1ラインずつせり上げさせる、はどうか。&lt;/p>
+&lt;p>問題は、テトリスのガイドラインに抵触する可能性があること。&lt;/p>
+&lt;h2 id="最後に">最後に&lt;/h2>
+&lt;p>冒頭の通り、TETRIS 99はもう4年が経過しているゲームである。
+4年が経過していても、通常部屋ならいまだに99人が集まらないことが少ない。過疎化しているとはまだまだ言いがたいのではないか。&lt;/p>
+&lt;p>一方で、同じ99人のバトルロイヤル対戦ゲームのPAC-MAN 99は、TETRIS 99の後発だが&lt;a href="https://pacapl.pacman.com/" target="_blank" rel="noopener">10月8日にオンラインサービスが終了&lt;/a>する。
+TETRIS 99もオンラインサービス終了が近い可能性を否定できない。
+それでも、TETRIS 99がより長生きすること、そしてそのてこ入れとなるアップデートが来ることを願いたい&lt;sup id="fnref:11">&lt;a href="#fn:11" class="footnote-ref" role="doc-noteref">11&lt;/a>&lt;/sup>。&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>「とどめうち」「ランダム」「バッジねらい」「カウンター」の4つ。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>非公式な呼び名であり、誰が言い始めたのかはわからない。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>意図的に最上部付近まで積み上げてピンチ状態を装い、作戦をとどめうちにしている人たちに狙われるようにすること。
+テトリス99がリリースしてすぐに流行した。&lt;a href="https://www.4gamer.net/games/449/G044993/20190513034/#%e7%8b%99%e3%82%8f%e3%82%8c%e3%81%aa%e3%81%84%e3%82%88%e3%82%8a%e7%8b%99%e3%82%8f%e3%82%8c%e3%82%8b%e6%96%b9%e3%81%8c%e5%ac%89%e3%81%97%e3%81%84%ef%bc%9f%e3%80%80%e5%b8%b8%e3%81%ab%e3%83%aa%e3%82%b9%e3%82%af%e3%81%a8%e3%83%aa%e3%82%bf%e3%83%bc%e3%83%b3%e3%82%92%e8%80%83%e6%85%ae%e3%81%97%e3%81%9f%e3%82%b2%e3%83%bc%e3%83%a0%e8%a8%ad%e8%a8%88" target="_blank" rel="noopener">開発者側もテストプレイで既に認識済&lt;/a>。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4">
+&lt;p>RENは日本語固有で、海外では&lt;code>Combo&lt;/code>と呼ばれている。要するに連続でライン消去することを指す。&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:5">
+&lt;p>この不満は、ぷよテトの方が多いと思われる。&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:6">
+&lt;p>自分の盤面のブロックが最上段までせり上がり窒息してゲームオーバーとなる状態のこと。&amp;#160;&lt;a href="#fnref:6" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:7">
+&lt;p>余談だが、TETRIS 99はライトユーザー向けだと筆者は思う。
+その理由として、TETRIS 99固有の仕様によるものがあげられる。
+たとえば、ライン消去中はせり上がることがないし、せり上がり予告もたったの12ラインに制限され、
+12ラインが貯まっていればどれだけ火力が来ようと無効化される。
+狙われる人が多いほど火力が上がる仕様も、実にライトユーザー向けだ。
+RENなしで1ラインを消すだけで相殺、もしくは火力を送られるテトリスはハンデ戦を除いてないだろう。
+TETRIS 99に飽きてきたら、他のテトリスゲームに専念するとよい。
+それぞれのゲームの善し悪しがわかってくるだろう。&amp;#160;&lt;a href="#fnref:7" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:8">
+&lt;p>ただし、試合時間が長時間になる原因はRENだけではないことに注意。
+そのような部屋においては、単に積んでRENを消化するだけでテト1が取れるほど単純なものではない。
+それ以外の立ち回りが重要になる。&amp;#160;&lt;a href="#fnref:8" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:9">
+&lt;p>せり上がり予告の上限(12ライン)を超える火力が来ても、上限までに抑えられる仕様を利用して、
+せり上がってくる予告火力を小さくすることで一気にせり上がらないようにする防衛戦術。
+たとえば、11ラインまで予告が貯まっているときに1ライン以上受ける。その後、1ラインだけ相殺して、
+再度1ライン以上の火力を受ける。以上を繰り返すことで、1ラインしかせり上がらない状態にできる。
+この仕様が災いして、試合時間が大幅に長くなり決着が付かないことがある。&amp;#160;&lt;a href="#fnref:9" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:10">
+&lt;p>Tetris Effect: Connectedのコネクテッドモードで、ボス側に攻撃を送ったブロックのようなものを想定。
+それに加えて、ライン消去しても消えない要素を追加する。&amp;#160;&lt;a href="#fnref:10" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:11">
+&lt;p>とはいえ、Nintendo Switch Online加入者なら無料であり、
+最後のアップデートからかなり経過しているので、開発予算はないと思われる。
+現実的には、ゲームに支障を来すほどの致命的なバグが見つからない限りアップデートはもう来ないのでは？と疑っている。&amp;#160;&lt;a href="#fnref:11" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>TETRIS 99マージンタイマー自動開始装置の導入方法</title><link>https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/</link><pubDate>Sun, 04 Apr 2021 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/</guid><description>&lt;p>この記事は、&lt;a href="https://sshock-tetris.github.io/project/timer-auto-starter/">TETRIS 99マージンタイマー自動開始装置&lt;/a>の取り扱い説明書です。
+&lt;a href="https://github.com/sshock-tetris/autoStartMarginTimer/blob/main/docs/%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%E8%87%AA%E5%8B%95%E9%96%8B%E5%A7%8B%E8%A3%85%E7%BD%AE_%E4%BD%BF%E3%81%84%E6%96%B9.txt" target="_blank" rel="noopener">テキスト&lt;/a>
+と同じ内容ですが、それには画像がないため、このページでは画像付きで説明します。&lt;/p>
+&lt;hr>
+&lt;details class="toc-inpage d-print-none d-xl-none " open>
+&lt;summary class="font-weight-bold">目次&lt;/summary>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#動作要件">動作要件&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#導入手順">導入手順&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#tetris-99用マージンタイマーの導入">TETRIS 99用マージンタイマーの導入&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#自動開始装置の準備">自動開始装置の準備&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#自動開始装置の操作方法">自動開始装置の操作方法&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#状態">状態&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#obsを探すボタン">&lt;code>OBSを探す&lt;/code>ボタン&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#タイマー手動スタートボタン">&lt;code>タイマー手動スタート&lt;/code>ボタン&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#状態をリセット">&lt;code>状態をリセット&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#エラーメッセージ">エラーメッセージ&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#obsを探すを押したとき">&lt;code>OBSを探す&lt;/code>を押したとき&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#タイマー手動スタートを押したとき">&lt;code>タイマー手動スタート&lt;/code>を押したとき&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#q-amp-a">Q &amp;amp; A&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#ゲームが始まっても状態が準備完了待機中から進みません">ゲームが始まっても状態が&amp;quot;準備完了。待機中&amp;hellip;&amp;ldquo;から進みません。&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#想定外のところでタイマーが動いてしまいます">想定外のところでタイマーが動いてしまいます。&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする">&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#ゲームの音は場面認識に関係ありますか">ゲームの音は場面認識に関係ありますか？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#ホーム画面に戻っても大丈夫">ホーム画面に戻っても大丈夫？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#対応しているモードは">対応しているモードは？&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#サポート">サポート&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/details>
+&lt;h2 id="動作要件">動作要件&lt;/h2>
+&lt;ul>
+&lt;li>Windowsを搭載した配信用パソコン&lt;/li>
+&lt;li>HDMIキャプチャボード&lt;br>
+※カメラなどでNintendo Switchの画面を直撮りしている映像には対応しません&lt;/li>
+&lt;li>OBS (配信用ソフトウェア)&lt;br>
+※表示言語を日本語にしてください。他の言語では動作しません&lt;br>
+※他の配信用ソフトウェア (Streamlabs OBS、XSplitなど) は対応していません&lt;/li>
+&lt;/ul>
+&lt;h2 id="導入手順">導入手順&lt;/h2>
+&lt;h3 id="tetris-99用マージンタイマーの導入">TETRIS 99用マージンタイマーの導入&lt;/h3>
+&lt;p>※&lt;a href="https://github.com/sshock-tetris/Tetris99MarginTimer/" target="_blank" rel="noopener">マージンタイマー&lt;/a>を既に導入済の場合は、
+マージンタイマーのソース名を
+&lt;mark>MarginTimer&lt;/mark>に変更してから&lt;a href="#%e8%87%aa%e5%8b%95%e9%96%8b%e5%a7%8b%e8%a3%85%e7%bd%ae%e3%81%ae%e6%ba%96%e5%82%99">自動開始装置の準備&lt;/a>へ進んでください&lt;/p>
+&lt;h4 id="1-マージンタイマーのダウンロード">1. マージンタイマーのダウンロード&lt;/h4>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://sshock-tetris.github.io/images/save_as_timer.webp" alt="Rawのコンテキストメニュー" loading="lazy" data-zoomable width="600px" />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;p>&lt;a href="https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html" target="_blank" rel="noopener">https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html&lt;/a> にアクセスする。
+&lt;code>Raw&lt;/code>を右クリックし、名前を付けて保存を選び、&lt;code>timer.html&lt;/code>を適当な場所に保存する。&lt;/p>
+&lt;h4 id="2-obsにタイマーを追加">2. OBSにタイマーを追加&lt;/h4>
+&lt;img src="https://sshock-tetris.github.io/images/add_browser.webm" alt="OBS - ソースの追加 - ブラウザ">
+OBSを起動し、ブラウザソースを追加する。
+&lt;img src="https://sshock-tetris.github.io/images/new_margintimer.webp" alt="ソースを作成/選択画面">
+&lt;p>タイマーの名称を
+&lt;mark>MarginTimer&lt;/mark> にして、OKをクリックする。
+&lt;mark>(⚠スペル要注意)&lt;/mark>&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/timer_property_initial.webp" alt="'MarginTimer' のプロパティ画面">
+&lt;p>&lt;code>'MarginTimer' のプロパティ&lt;/code>が表示される。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/timer_property_example.webp" alt="ローカルファイルチェックボックスと各種設定">
+&lt;p>&lt;code>ローカルファイル&lt;/code>にチェックを入れ、ローカルファイルの場所をソースのアドレスに保存した&lt;code>timer.html&lt;/code>にする。
+幅は600以上を推奨。高さは60あれば十分。変更後、OKをクリックする。&lt;/p>
+&lt;h4 id="3-タイマーの動作確認">3. タイマーの動作確認&lt;/h4>
+&lt;img src="https://sshock-tetris.github.io/images/margintimer_menu.webp" alt="OBS - ブラウザソース - コンテキストメニュー">
+&lt;p>追加したブラウザソースを右クリックし、[対話]メニューを選択すると&lt;code>'MarginTimer' の相互作用&lt;/code>ウィンドウが表示される。
+このウィンドウがアクティブ状態の時にキー操作を行うとタイマーが動作する。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/interactive_window.webp" alt="'MarginTimer' との相互作用ウィンドウ">
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h3 id="キー操作一覧">キー操作一覧&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>キー&lt;/th>
+&lt;th>動作&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Enter&lt;/td>
+&lt;td>タイマー開始&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Space&lt;/td>
+&lt;td>タイマー停止・再開 (*1)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ESC&lt;/td>
+&lt;td>タイマー消去&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>2秒後にタイマー開始 (*2)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2&lt;/td>
+&lt;td>3秒後にタイマー開始 (*2)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3&lt;/td>
+&lt;td>4秒後にタイマー開始 (*2)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>(*1) タイマーを再開できるのはタイマーを停止したときのみです。タイマーを消去した後は再開できません。&lt;br>
+(*2) キーはゲーム開始時のカウントダウンの数値に合わせています。&amp;ldquo;Go&amp;quot;が表示される1秒間があるため、実際の待ち時間ではありません。
+&lt;/div>
+&lt;/div>
+&lt;p>自動開始装置は、この対話ウィンドウに擬似的にキー入力をさせて、
+タイマー開始とタイマーリセット&amp;amp;消去を自動的に行うことで実現している。&lt;/p>
+&lt;p>なお、マージンタイマーはマージンに到達すると色が変わり、最終的に赤くなるようにできている。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/timer_color.webp" alt="マージンタイマーの時間経過と色一覧">
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h3 id="マージンとは">「マージン」とは&lt;/h3>
+&lt;p>試合の早期決着を目的に導入されているTETRIS 99固有のシステム。&lt;br>
+試合開始から10分が経過すると、ライン消去時の相手に送るライン数から上乗せされるようになる。
+30秒ごとに1ラインずつ上乗せされる。たとえば、10分なら+1ライン、11分なら+3ライン。&lt;br>
+TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため、15分が経過すると最大となる
+(1ライン + 11ライン = 12ライン)。相手に送る場合に限定されるため、自陣のせり上がり予告との相殺にはマージンは適用されない。
+&lt;/div>
+&lt;/div>
+&lt;p>タイマーの導入ができたら、自動開始装置の準備へ進もう。&lt;/p>
+&lt;h3 id="自動開始装置の準備">自動開始装置の準備&lt;/h3>
+&lt;h4 id="1-自動開始装置のダウンロード">1. 自動開始装置のダウンロード&lt;/h4>
+&lt;img src="https://sshock-tetris.github.io/images/releases.webp" alt="自動開始装置のReleasesページ">
+&lt;p>&lt;a href="https://github.com/sshock-tetris/autoStartMarginTimer/releases" target="_blank" rel="noopener">https://github.com/sshock-tetris/autoStartMarginTimer/releases&lt;/a>
+から、最新バージョンの自動開始装置のzipファイルをダウンロードする。&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h4 id="ウェブブラウザ-google-chrome-を使用している場合">ウェブブラウザ Google Chrome を使用している場合&lt;/h4>
+&lt;p>ダウンロードが終了した後、&lt;/p>
+&lt;blockquote>
+&lt;p>このファイルは一般的にダウンロードされているファイルではなく、危害を及ぼす可能性があります。&lt;/p>
+&lt;/blockquote>
+&lt;p>と表示される場合がある。
+&lt;img src="https://sshock-tetris.github.io/images/dlmgr_bar.webp" alt="ダウンロードバーでの警告表示">&lt;/p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://sshock-tetris.github.io/images/dlmgr_warn.webp" alt="ダウンロードマネージャーでの警告表示" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;p>この場合は、&lt;code>保存&lt;/code>を押して進めて欲しい。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/dlmgr_confirm.webp" alt="ファイル保存時の確認メッセージ">
+&lt;p>&lt;code>保存&lt;/code>を押したときに上図のような確認メッセージが表示されるが、かまわず&lt;code>続行する&lt;/code>を押す。
+これは、ダウンロード数が少ないだけで疑われるというChromeのお節介な機能の1つである。&lt;/p>
+&lt;p>上記URLは自動開始装置の正式な公開場所であり、そこからダウンロードしていれば問題ないはずである。
+この圧縮ファイルは公開されたソースコードからGitHubの自動ビルド機能によってできたファイルであり、
+危害を加える危険物が含まれないように考慮している。&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;p>ダウンロードしたファイルを右クリックして&lt;code>プロパティ&lt;/code>を選び、
+下のセキュリティ項目の&lt;code>許可する&lt;/code>にチェックを入れてファイルのブロック解除を行う。
+セキュリティ項目が表示されない場合はブロックが解除されているので、その場合は操作不要である。
+&lt;img src="https://sshock-tetris.github.io/images/property.webp" alt="自動開始装置ファイルのプロパティ画面">&lt;/p>
+&lt;p>圧縮されているので、適当な場所に展開する。展開すると、次の3ファイルがある。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/extracted.webp" alt="展開後のファイルリスト">
+&lt;h4 id="2-obsの準備">2. OBSの準備&lt;/h4>
+&lt;p>ソースに映像キャプチャデバイス(キャプチャボードの映像)がなければ追加する。&lt;/p>
+&lt;p>&amp;lsquo;MarginTimer&amp;rsquo;ソースを右クリックし、&lt;code>対話&lt;/code>メニューを選択する。
+&lt;img src="https://sshock-tetris.github.io/images/margintimer_menu.webp" alt="OBS - ブラウザソース - コンテキストメニュー">&lt;/p>
+&lt;p>キャプチャボードの映像ソースを右クリックして&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>メニューを選ぶ。
+&lt;img src="https://sshock-tetris.github.io/images/window_projector_source.webp" alt="OBS - 映像ソース - コンテキストメニュー">&lt;/p>
+&lt;p>それぞれ、&lt;code>'MarginTimer' の相互作用&lt;/code>ウィンドウ、&lt;code>ウィンドウ プロジェクター (ソース) - 映像キャプチャデバイス&lt;/code>ウィンドウが表示されていることを確認する。&lt;/p>
+&lt;h4 id="キャプチャ映像の上下左右に黒縁がある場合">キャプチャ映像の上下左右に黒縁がある場合&lt;/h4>
+&lt;p>キャプチャ映像の上下左右が黒く額縁状態なっている場合、
+そのままではマージンタイマー自動開始装置が場面をうまく認識できないことがある。
+以下の要領で額縁状態を解消させる。&lt;/p>
+&lt;ol>
+&lt;li>キャプチャボードの映像ソースを右クリックして、&lt;code>フィルタ&lt;/code>を選ぶ。&lt;br>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://sshock-tetris.github.io/images/filter.webp" alt="映像ソースのフィルタウィンドウ(初期状態)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+映像ソースのフィルタウィンドウが表示される。&lt;/li>
+&lt;li>ウィンドウ左下(エフェクトフィルタ)の&lt;code>+&lt;/code>ボタンをクリックし、&lt;code>クロップ/パッド&lt;/code>を追加する。&lt;br>
+&lt;img src="https://sshock-tetris.github.io/images/crop_pad.webp" alt="エフェクトフィルタ追加 - クロップ/パッド">&lt;/li>
+&lt;li>フィルタの名前を付ける。
+&lt;img src="https://sshock-tetris.github.io/images/crop_pad_name.webp" alt="フィルタ名入力ダイアログボックス">&lt;/li>
+&lt;li>追加した&lt;code>クロップ/パッド&lt;/code>フィルタをクリックし、黒縁が表示されなくなるまで上下左右の数値を増やす。
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://sshock-tetris.github.io/images/filter_crop.webp" alt="映像ソースのフィルタウィンドウ(クロップ/パッド選択済)" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="自動開始装置の操作方法">自動開始装置の操作方法&lt;/h2>
+&lt;p>マージンタイマー自動開始装置 (autoStartMarginTimer.exe)を起動する。
+起動すると、以下のようなウィンドウが表示される。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/autostartmargintimer_init.webp" alt="起動直後の自動開始装置ウィンドウ">
+&lt;h3 id="状態">状態&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>状態&lt;/th>
+&lt;th>説明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>[自動開始できません]&lt;/td>
+&lt;td>まだ準備ができておらず、タイマーを自動開始できない。&lt;br>自動開始装置を起動した時、および状態をリセットした時はこの状態となる。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>準備完了。待機中&amp;hellip;&lt;/td>
+&lt;td>ゲームが始まるのを待っている。タイマーを自動開始できる状態。&lt;br>タイマーが表示中の場合は、この状態になった時にタイマーを自動的に消去する。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>マッチング/ゲーム開始準備中&lt;/td>
+&lt;td>マッチング中、またはゲーム開始準備中を認識した。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>READY&lt;/td>
+&lt;td>マッチングが終わりREADYを認識した。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>GO&lt;/td>
+&lt;td>試合が始まり、タイマーを開始した。&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;h3 id="obsを管理者権限で起動している場合">OBSを管理者権限で起動している場合&lt;/h3>
+&lt;p>マージンタイマー自動開始装置も管理者権限で実行する。&lt;/p>
+&lt;p>Windowsの仕様の問題で、管理者権限でなければOBSが起動していることを認識できない。&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="obsを探すボタン">&lt;code>OBSを探す&lt;/code>ボタン&lt;/h3>
+&lt;p>このボタンをクリックすると、自動開始装置がOBSの&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウと
+&lt;code>'MarginTimer' の相互作用&lt;/code>ウィンドウを探し、2つのウィンドウが見つかり次第場面認識を開始する。&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウのウィンドウサイズが大きくなり、
+最大化ボタンと最小化ボタンが消えるが、これは正常動作である。
+&lt;/div>
+&lt;/div>
+&lt;p>準備ができていない場合は、このようなエラーメッセージが表示される。
+&lt;img src="https://sshock-tetris.github.io/images/error_obs_not_detected.webp" alt="OBS検出エラーメッセージ">&lt;/p>
+&lt;p>準備ができていれば、このボタンが無効化され、自動的に画像認識により場面を認識するようになる。
+場面に応じてタイマーを開始したり消去したりするので、うまく認識できていれば以後操作は不要である。&lt;/p>
+&lt;div class="alert alert-warning">
+&lt;div>
+&lt;h3 id="ウィンドウ-プロジェクター-ソースウィンドウの注意事項">&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウの注意事項&lt;/h3>
+&lt;ol>
+&lt;li>ウィンドウを画面外に移動してはならない。&lt;br>
+画面外に移動すると映像が更新されず、画像認識が正常に行われなくなる。&lt;/li>
+&lt;li>コンテキストメニュー(ウィンドウを右クリックした時に表示されるメニュー)のうち、
+&lt;code>ウィンドウをコンテンツに合わせる&lt;/code>を選択してはならない。&lt;/li>
+&lt;/ol>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="タイマー手動スタートボタン">&lt;code>タイマー手動スタート&lt;/code>ボタン&lt;/h3>
+&lt;p>OBSとの連携ができている状態でこのボタンを押すと、タイマーを手動で開始することができる。
+これはタイマーが自動的に開始しないなどのトラブルが発生してタイマーを手動で開始する必要がある場合や
+動作テストのためのボタンで、通常は使用する必要はない。&lt;/p>
+&lt;h3 id="状態をリセット">&lt;code>状態をリセット&lt;/code>&lt;/h3>
+&lt;p>試合が始まったのに場面を認識できずにタイマーが始まらない、マッチング中の画面を正しく認識できない
+などの症状を見かけた時は、マージンタイマー自動開始装置の状態のリセットを試してほしい。&lt;/p>
+&lt;img src="https://sshock-tetris.github.io/images/reset.webp" alt="自動開始装置のリセット">
+&lt;p>タイトルバーを右クリックすると、&lt;code>状態をリセット&lt;/code>メニューがあるので、それを選択する。
+マージンタイマー自動開始装置の状態に関係なく起動直後の状態に戻る。&lt;/p>
+&lt;p>「状態をリセット」の状態とは自動開始装置のことを指し、マージンタイマーのことではない。
+つまり、「状態をリセット」を行っても、表示されているマージンタイマーはそのまま表示されたままとなることに注意する。
+マージンタイマーの表示を消したい場合は、&lt;code>'MarginTimer' の相互作用&lt;/code>ウィンドウをアクティブ状態にして、ESCキーを押す。&lt;/p>
+&lt;h2 id="エラーメッセージ">エラーメッセージ&lt;/h2>
+&lt;h3 id="obsを探すを押したとき">&lt;code>OBSを探す&lt;/code>を押したとき&lt;/h3>
+&lt;img src="https://sshock-tetris.github.io/images/error_obs_not_detected.webp" alt="OBS検出エラーメッセージ">
+&lt;p>自動開始装置に必要なOBSの準備ができていない。特に、以下の点をよく確認する。&lt;/p>
+&lt;ul>
+&lt;li>ソースのウィンドウ プロジェクターを表示しているか？&lt;/li>
+&lt;li>
+&lt;mark>MarginTimer&lt;/mark>のスペルが間違っていないか？&lt;/li>
+&lt;li>OBSの表示言語が日本語になっているか？&lt;/li>
+&lt;li>OBSが管理者権限で動作している場合、自動開始装置も管理者権限で動いているか？&lt;/li>
+&lt;/ul>
+&lt;h3 id="タイマー手動スタートを押したとき">&lt;code>タイマー手動スタート&lt;/code>を押したとき&lt;/h3>
+&lt;img src="https://sshock-tetris.github.io/images/error_cant_send.webp" alt="対話ウィンドウ未検出エラーメッセージ">
+&lt;p>先にOBSの準備をする。&lt;br>
+※タイマー手動スタートボタンは、現在OBSの準備ができるまでは無効化されているので、
+このメッセージを見ることはまずないだろう。旧バージョンの時の名残である。&lt;/p>
+&lt;h2 id="q-amp-a">Q &amp;amp; A&lt;/h2>
+&lt;h3 id="ゲームが始まっても状態が準備完了待機中から進みません">ゲームが始まっても状態が&amp;quot;準備完了。待機中&amp;hellip;&amp;ldquo;から進みません。&lt;/h3>
+&lt;p>以下、ご確認ください。&lt;/p>
+&lt;ol>
+&lt;li>正しいウィンドウ プロジェクターを表示していますか？&lt;br>
+オーバーレイが含まれた映像など、ゲーム映像でない場合は認識できません。&lt;/li>
+&lt;li>ゲーム映像の色が反転、もしくはグレースケールになっていませんか？&lt;br>
+Switchの設定で色設定を変更している場合は認識できません。元の設定に戻してください。&lt;/li>
+&lt;li>キャプチャボードの映像の上下左右に黒縁がありませんか？&lt;br>
+額縁状態に縮小されている場合は額縁状態を解消するよう調整してください。&lt;/li>
+&lt;li>OBSを探す時に、何らかの問題でウィンドウプロジェクターのウィンドウサイズが変化しなかった場合も同様に場面の認識ができません。
+この現象が発生した場合は、作者までご連絡ください。&lt;/li>
+&lt;li>ウィンドウ プロジェクター ウィンドウを画面外に移動していないか確認してください。&lt;/li>
+&lt;/ol>
+&lt;h3 id="想定外のところでタイマーが動いてしまいます">想定外のところでタイマーが動いてしまいます。&lt;/h3>
+&lt;p>TETRIS 99のゲーム画面が表示されていることが前提条件となるため、Switchのアルバムから静止画や動画を再生した場合は、
+実際のゲーム画面と区別がつかずタイマーが誤動作することがあります。
+誤動作した場合は、タイマー状態のリセットを試してください。&lt;/p>
+&lt;h3 id="ウィンドウ-プロジェクター-ソースウィンドウや対話ウィンドウを閉じてしまった場合はどうする">&lt;code>ウィンドウ プロジェクター (ソース)&lt;/code>ウィンドウや対話ウィンドウを閉じてしまった場合はどうする？&lt;/h3>
+&lt;p>ウィンドウを閉じたことを自動開始装置が検知し、状態が&lt;code>[自動開始できません]&lt;/code>になります。
+この時、無効化されていた&lt;code>OBSを探す&lt;/code>ボタンが再び有効になります。
+ウィンドウプロジェクター ウィンドウや対話ウィンドウをもう一度開いて、&lt;code>OBSを探す&lt;/code>ボタンを押してください。&lt;/p>
+&lt;h3 id="ゲームの音は場面認識に関係ありますか">ゲームの音は場面認識に関係ありますか？&lt;/h3>
+&lt;p>無関係です。映像さえあれば無音でも問題なく使用できます。&lt;/p>
+&lt;h3 id="ホーム画面に戻っても大丈夫">ホーム画面に戻っても大丈夫？&lt;/h3>
+&lt;p>まだ部屋に入っていなければ問題ありません。
+部屋に入ってから試合が始まるまでの間は、誤作動の原因となるため、できる限り避けてください。&lt;/p>
+&lt;p>マージンタイマー自動開始装置は「マッチング中」または「ゲーム開始準備中」の表示部分を色で判断する仕様です。
+そのため、それらの表示中にホーム画面に戻ると、マージンタイマー自動開始装置はマッチングが終わり試合が開始していると誤認識します。
+また、部屋に入った直後にホーム画面に戻り、その間に試合が始まっていた場合も、同様の理由でマージンタイマーは動作しません。&lt;/p>
+&lt;h3 id="対応しているモードは">対応しているモードは？&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>モード&lt;/th>
+&lt;th>対応&lt;/th>
+&lt;th>備考&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>TETRIS 99&lt;/td>
+&lt;td>○&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>TETRIS 99 VIP (Invictus)&lt;/td>
+&lt;td>○&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>チームバトル&lt;/td>
+&lt;td>○&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>もちよりバトル&lt;/td>
+&lt;td>？&lt;/td>
+&lt;td>動作未確認。「ゲーム開始準備中」の表示がなければ動作しないと思います&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>シェアバトル&lt;/td>
+&lt;td>×&lt;/td>
+&lt;td>動作未確認。他のモードとは異なる画面構成のため、動作しない可能性が高い&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CPUバトル&lt;/td>
+&lt;td>×&lt;/td>
+&lt;td>「マッチング中」の表示がないため&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>マラソン&lt;/td>
+&lt;td>×&lt;/td>
+&lt;td>時間が右側に表示されているのでこのタイマーの出番はありませんよね？ : )&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="サポート">サポート&lt;/h2>
+&lt;p>マージンタイマーの導入に関して質問、うまく動作できないなどは、
+&lt;a href="https://twitter.com/sshock_tetris" target="_blank" rel="noopener">
+&lt;i class="fab fa-twitter pr-1 fa-fw">&lt;/i>sshock_tetris&lt;/a>にDMやメンションなどで連絡してください。&lt;/p>
+&lt;p>マージンタイマー自動開始装置のバグ報告は、&lt;a href="https://github.com/sshock-tetris/autoStartMarginTimer/issues" target="_blank" rel="noopener">Issues&lt;/a>まで。&lt;/p>
+&lt;p>ただし、個人的な都合によりサポートできる範囲に限界があります。必ずしも対応できるとは限らないことをご理解ください。&lt;/p></description></item><item><title>あきりん企画 #テトリス運動会 に参加・配信しました</title><link>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</link><pubDate>Mon, 14 Sep 2020 20:30:13 +0900</pubDate><guid>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</guid><description>&lt;p>あきりん企画の &lt;a href="https://twitter.com/Autumn63775693/status/1297842792815718403" target="_blank" rel="noopener">#テトリス運動会&lt;/a> に参加し、様子を配信しました。&lt;/p>
+&lt;p>&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>運動会企画！！&lt;br>9/12(土)22:00～&lt;br>4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br>詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href="https://t.co/Vy5KBCYcGN">pic.twitter.com/Vy5KBCYcGN&lt;/a>&lt;/p>&amp;mdash; あき 本日 19:00～テトナイリーグ (@Autumn63775693) &lt;a href="https://twitter.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw">August 24, 2020&lt;/a>&lt;/blockquote>
 &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/nHMCr2Br2PA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
@@ -7,7 +547,7 @@
 &lt;/p>
 &lt;hr>
 &lt;p>結果&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>結果発表！！&lt;br>優勝は緑チームです！！おめでとう！！&lt;br>他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href="https://t.co/uiIBqqOXAD">pic.twitter.com/uiIBqqOXAD&lt;/a>&lt;/p>&amp;mdash; あき (@Autumn63775693) &lt;a href="https://twitter.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw">September 12, 2020&lt;/a>&lt;/blockquote>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>結果発表！！&lt;br>優勝は緑チームです！！おめでとう！！&lt;br>他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href="https://t.co/uiIBqqOXAD">pic.twitter.com/uiIBqqOXAD&lt;/a>&lt;/p>&amp;mdash; あき 本日 19:00～テトナイリーグ (@Autumn63775693) &lt;a href="https://twitter.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw">September 12, 2020&lt;/a>&lt;/blockquote>
 &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;hr>
 &lt;p>翌日、こんな感じでつぶやくと&lt;/p>

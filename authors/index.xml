@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Authors | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/authors/</link><atom:link href="https://sshock-tetris.github.io/authors/index.xml" rel="self" type="application/rss+xml"/><description>Authors</description><generator>Wowchemy (https://wowchemy.com)</generator><language>ja</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png</url><title>Authors</title><link>https://sshock-tetris.github.io/authors/</link></image><item><title>shellshockの由来</title><link>https://sshock-tetris.github.io/authors/sshock/more/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/authors/sshock/more/</guid><description>&lt;p>shellshockがどういう人かは&lt;a href="https://sshock-tetris.github.io/">トップページ&lt;/a>の通りだが、名前やアイコンの由来をより詳しく知りたい人向けに。&lt;/p>
+&lt;details class="toc-inpage d-print-none " open>
+&lt;summary class="font-weight-bold">目次&lt;/summary>
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#名前の由来">名前の由来&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#アイコンの由来">アイコンの由来&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#heading">&amp;ldquo;🐚😱&amp;rdquo;&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/details>
+&lt;h2 id="名前の由来">名前の由来&lt;/h2>
+&lt;p>Nintendo Switchを買った時点では、名前は何も決まっていなかった。(Twitterさえやってなかった)
+さて、なんて名前にしようか。10文字までの適当な名前にしよう。
+セキュリティ脆弱性で有名になった名前なら(知ってる人だけかもしれないけど)インパクトあるよな、
+みたいな感じで何も考えずに決まったのがこの名前。
+ひょっとしたらheartbleed&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>だったかもしれないし、bashdoor&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>だったかもしれない。
+はたまたpoodle&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>だった可能性もある。
+全て小文字にしているのは、既存の名称が固有名詞や略称でありそれらと区別させるため。
+筆者は別にコンピューターセキュリティ研究家ではないので、特に考えがあったわけではない。
+この名前には何も深い意味がない。だからこそ本当は名前を変えたいのだが、既に手遅れである。&lt;/p>
+&lt;h2 id="アイコンの由来">アイコンの由来&lt;/h2>
+&lt;p>&lt;a href="https://twitter.com/pg99m/status/1283367275894996992" target="_blank" rel="noopener">#room009900&lt;/a>
+で22時に入りそびれた人の役に立てられたらと思い、当初はマイクなしでゲーム画面だけ映して配信していた。
+そんなある日、&lt;a href="https://www.youtube.com/live/_Gc-LRq3Pf0?feature=share" target="_blank" rel="noopener">pg99mさん感謝祭&lt;/a>や
+&lt;a href="https://www.youtube.com/live/H7aj8qXysTA?feature=share" target="_blank" rel="noopener">第3回シノン祭＆第1回夕暮れ祭&lt;/a>に
+配信者側として誘われた。今後も配信者として活動するならアイコンぐらいは必要だろうということで、
+何らかのアイコンを用意しないといけなくなった。&lt;/p>
+&lt;p>絵心の全くなく、適当なアイコンがなくて困っていた筆者が、&lt;a href="https://ccjktype.fonts.adobe.com/2017/11/ten-mincho-ja.html" target="_blank" rel="noopener">とあるフォントの存在&lt;/a>を知った。
+それは、貂明朝である&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>。Adobe Fontsに収録されていて、Adobe Creative Cloud契約者であれば使えるフォントである。
+このフォントにはカラー絵文字が収録されていて、その中にある貂の絵文字が可愛く、その絵文字をアイコンとして使用していた。
+(左が通常時、右が冬季限定)&lt;/p>
+&lt;div style="display: flex;">
+&lt;span style="margin: 0 auto;">
+&lt;figure class="article-style img" >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="貂の絵文字" srcset="
+/authors/sshock/more/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_c35b702e768c56b598bfec45ad29d325.webp 400w,
+/authors/sshock/more/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_c90e80b4b1d9324d9b1a01d464c821f2.webp 760w,
+/authors/sshock/more/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://sshock-tetris.github.io/authors/sshock/more/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_c35b702e768c56b598bfec45ad29d325.webp"
+width="128px"
+height="512"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/span>
+&lt;span style="margin: 0 auto;">
+&lt;figure class="article-style img" >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="貂の絵文字(雪だるま)" srcset="
+/authors/sshock/more/winter_icon_huf675a1ab1d6904d5bf608c0ed86d6fe2_42877_0394f3cda7e16e1ae091e9578cb8d6f7.webp 400w,
+/authors/sshock/more/winter_icon_huf675a1ab1d6904d5bf608c0ed86d6fe2_42877_213a0fa4965dba9d9b52905be65f5692.webp 760w,
+/authors/sshock/more/winter_icon_huf675a1ab1d6904d5bf608c0ed86d6fe2_42877_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://sshock-tetris.github.io/authors/sshock/more/winter_icon_huf675a1ab1d6904d5bf608c0ed86d6fe2_42877_0394f3cda7e16e1ae091e9578cb8d6f7.webp"
+width="128px"
+height="400"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/span>
+&lt;/div>
+&lt;p>このフォントに入っている絵文字が筆者に影響を与えたことは2つ。
+ひとつは、ホンドテンなどのイタチ科テン属の動物を初めて知ったことである。
+絵文字の元となった動物は、イタチ科の日本固有の動物、ホンドテンである。
+Googleの画像検索をしていると可愛い写真がいっぱいヒットする&lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>。
+もうひとつは、筆者のイメージカラーが黄色になったこと。絵文字の通り、ホンドテンの冬毛の色が黄色&lt;sup id="fnref:6">&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref">6&lt;/a>&lt;/sup>ということで、
+自分の色が黄色に定着してしまった。筆者にとっては想定外のことである。&lt;/p>
+&lt;figure class="article-style img" >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="現在のアイコン" srcset="
+/authors/sshock/more/new_icon_huea4b0be317f1cd9468e85e3edeac73fc_77761_418addf5f1e502e0f2ee546a2d8cd2ee.webp 400w,
+/authors/sshock/more/new_icon_huea4b0be317f1cd9468e85e3edeac73fc_77761_d0cbec765e4619561c20cf143c910eba.webp 760w,
+/authors/sshock/more/new_icon_huea4b0be317f1cd9468e85e3edeac73fc_77761_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://sshock-tetris.github.io/authors/sshock/more/new_icon_huea4b0be317f1cd9468e85e3edeac73fc_77761_418addf5f1e502e0f2ee546a2d8cd2ee.webp"
+width="256px"
+height="500"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;p>なお、現在のアイコンは&lt;a href="https://twitter.com/todaypict" target="_blank" rel="noopener">つるぎのまい&lt;/a>さん作である&lt;sup id="fnref:7">&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref">7&lt;/a>&lt;/sup> &lt;sup id="fnref:8">&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref">8&lt;/a>&lt;/sup>。
+2022年に&lt;a href="https://www.youtube.com/watch?v=7s9Vws0VgE4" target="_blank" rel="noopener">ぷよテト30先対決&lt;/a>で対戦させていただいた時に
+ご厚意でいただいたもので、立ち絵やプロフィール画像として使わせていただいている。とても可愛くて感謝している。&lt;/p>
+&lt;h2 id="heading">&amp;ldquo;🐚😱&amp;rdquo;&lt;/h2>
+&lt;p>shellshockを当てた🐚😱は、&lt;a href="https://twitter.com/Yasaijin_0831" target="_blank" rel="noopener">やさいじん&lt;/a>さん考案である&lt;sup id="fnref:9">&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref">9&lt;/a>&lt;/sup>。
+&lt;em>shell&lt;/em>には🐚、&lt;em>shock&lt;/em>にはショックを受けた顔の😱を当てている。うまい。
+ちなみに、Vtuberにはファンマークとして絵文字だけで表現する文化があるようだが、筆者はVtuberではないので、特にファンマークであるというわけではない。
+この絵文字に隠語以外の使い道はないと思われるが、どのような使い方をするのかは使用者の自由である。&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>Heartbleed脆弱性。OpenSSLという暗号化・署名ライブラリのバグによって、
+漏れてはならないサーバーの秘密鍵やパスワードなどが漏れる恐れのある非常に深刻なもの。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>Shellshock脆弱性の別名。bashというLinuxコマンドラインシェルが影響を受けたので、
+backdoorをもじって呼ばれた。&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>POODLE (&lt;em>Padding Oracle On Downgraded Legacy Encryption&lt;/em>)
+SSL 3.0の設計上の脆弱性。&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4">
+&lt;p>このWebサイトの本文に使われているフォントも貂明朝である(正確には、
+本文の読みやすさ重視のためにかな文字の個性を控えめにした、貂明朝テキスト)。
+明朝体なのにぼってりしていて柔らかく、ぬくもりを感じるフォントだと筆者は思う。&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:5">
+&lt;p>見た目は可愛いが、性格は凶暴。農作物を荒らし、家畜の鶏を襲うだけでなく、国の特別天然記念物トキを襲った個体もいる。
+ちょこまかと動きまくって落ち着きがないように見える。
+人にはまず懐かないので、ペットとして飼育するのはかなり難しいらしい。&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:6">
+&lt;p>年中茶褐色の個体もいて、その個体はスステンと呼ばれている。&amp;#160;&lt;a href="#fnref:6" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:7">
+&lt;p>ポケモンアルセウスらしき世界観の中のポケモンという発想で描かれたという。
+電気を帯びた貝殻を背負っていて(?)、電気ショックを使いそうである。
+ちなみに筆者はポケモンを一切プレイしたことがない。&amp;#160;&lt;a href="#fnref:7" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:8">
+&lt;p>ありがたいことに冬バージョンもいただいているが、冬季限定のためここには掲載しない。
+12月になったらTwitterのプロフィール画像を冬季限定に変えるので、冬の風物詩としてお楽しみに。&amp;#160;&lt;a href="#fnref:8" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:9">
+&lt;p>筆者の記憶が正しければ。&amp;#160;&lt;a href="#fnref:9" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>
