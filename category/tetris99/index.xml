@@ -227,7 +227,7 @@ TETRIS 99に飽きてきたら、他のテトリスゲームに専念すると�
 &lt;p>&lt;a href="https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html" target="_blank" rel="noopener">https://github.com/sshock-tetris/Tetris99MarginTimer/blob/master/timer.html&lt;/a> にアクセスする。
 &lt;code>Raw&lt;/code>を右クリックし、名前を付けて保存を選び、&lt;code>timer.html&lt;/code>を適当な場所に保存する。&lt;/p>
 &lt;h4 id="2-obsにタイマーを追加">2. OBSにタイマーを追加&lt;/h4>
-&lt;img src="https://sshock-tetris.github.io/images/add_browser.webm" alt="OBS - ソースの追加 - ブラウザ">
+&lt;img src="https://sshock-tetris.github.io/images/add_browser.webp" alt="OBS - ソースの追加 - ブラウザ">
 OBSを起動し、ブラウザソースを追加する。
 &lt;img src="https://sshock-tetris.github.io/images/new_margintimer.webp" alt="ソースを作成/選択画面">
 &lt;p>タイマーの名称を
