@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/project/</link><atom:link href="https://sshock-tetris.github.io/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Wowchemy (https://wowchemy.com)</generator><language>ja</language><lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png</url><title>Projects</title><link>https://sshock-tetris.github.io/project/</link></image><item><title>TETRIS 99マージンタイマー自動開始装置</title><link>https://sshock-tetris.github.io/project/timer-auto-starter/</link><pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/project/timer-auto-starter/</guid><description>&lt;p>マージンタイマーを自動的に開始できるソフトウェアを公開しています。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/project/</link><atom:link href="https://sshock-tetris.github.io/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png</url><title>Projects</title><link>https://sshock-tetris.github.io/project/</link></image><item><title>TETRIS 99マージンタイマー自動開始装置</title><link>https://sshock-tetris.github.io/project/timer-auto-starter/</link><pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/project/timer-auto-starter/</guid><description>&lt;p>マージンタイマーを自動的に開始できるソフトウェアを公開しています。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/sshock-tetris/autoStartMarginTimer/releases" target="_blank" rel="noopener">ダウンロード&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://sshock-tetris.github.io/post/howto_use_timer_auto_starter/">導入方法&lt;/a>&lt;/li>
@@ -17,7 +17,7 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 &lt;h2 id="あさてと-とは">あさてと とは&lt;/h2>
 &lt;ol>
 &lt;li>朝にテトリスをやること。&lt;/li>
-&lt;li>平日朝に、TETRIS 99のVIP部屋に指定した時間に入って一緒にテトリスをするだけの企画。&lt;/li>
+&lt;li>平日朝に、TETRIS 99のVIP部屋に指定した時間に入って一緒に対戦する企画。&lt;/li>
 &lt;/ol>
 &lt;p>このページでは後者について書かれていますが、あさてとの本来の意味は前者です。&lt;/p>
 &lt;h2 id="あさてとhttpstwittercomhashtagあさてと-企画とは">&lt;a href="https://twitter.com/hashtag/%e3%81%82%e3%81%95%e3%81%a6%e3%81%a8" target="_blank" rel="noopener">#あさてと&lt;/a> (企画)とは&lt;/h2>
@@ -55,7 +55,7 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 &lt;div class="alert alert-info">
 &lt;div>
 &lt;h3 id="twitterがシステムダウンなどによりツイートができなくなった場合">Twitterがシステムダウンなどによりツイートができなくなった場合&lt;/h3>
-&lt;p>特に事前連絡がなければ、8:30とします。
+&lt;p>特に事前連絡がなければ、8:30とします。&lt;/p>
 &lt;/div>
 &lt;/div>
 &lt;h2 id="目的">目的&lt;/h2>
@@ -65,7 +65,12 @@ TETRIS 99ではせり上がり予告の最大ライン数が12ラインのため
 &lt;/ul>
 &lt;h2 id="qampa">Q&amp;amp;A&lt;/h2>
 &lt;h3 id="q-なぜvip部屋">Q. なぜVIP部屋？&lt;/h3>
-&lt;p>A. 他の部屋よりも落下速度が速く、目覚ましに効果的だからです。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>A.&lt;/p>
+&lt;ul>
+&lt;li>他の部屋よりも落下速度が速く、目覚ましに効果的だから。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/li>
+&lt;li>他の部屋より集まる人が少なく、同じ部屋になりやすいから。&lt;/li>
+&lt;li>あさてとを知らない人が、普段とは異質な部屋を目の当たりにしてやる気をなくしてしまうのをできる限り防ぐため。&lt;/li>
+&lt;/ul>
 &lt;h3 id="q-他の部屋の時間指定はしないの">Q. 他の部屋の時間指定はしないの？&lt;/h3>
 &lt;p>A. 今のところ予定はありません。&lt;/p>
 &lt;h3 id="q-企画主とは別の人がいつもの830以外に時間指定してもいいですか">Q. 企画主とは別の人がいつもの8:30以外に時間指定してもいいですか？&lt;/h3>
@@ -304,7 +309,7 @@ text-align: center;
 &lt;/tr>
 &lt;tr>
 &lt;td>2022/08/13&lt;/td>
-&lt;td>&lt;a href="https://www.youtube.com/watch?v=M5xEGKQqTc0" target="_blank" rel="noopener">[TETRIS99]初見さん大歓迎！　テトライブメンバーでTETRIS99を遊ぶよ！　視聴者参加型&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://www.youtube.com/watch?v=M5xEGKQqTc0" target="_blank" rel="noopener">初見さん大歓迎！　テトライブメンバーでTETRIS99を遊ぶよ！　視聴者参加型&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>2022/12/24&lt;/td>
@@ -320,15 +325,19 @@ text-align: center;
 &lt;/tr>
 &lt;tr>
 &lt;td>2023/07/22&lt;/td>
-&lt;td>&lt;a href="https://www.youtube.com/watch?v=QxBjsD_JcjU" target="_blank" rel="noopener">【視聴者参加型】英語・外来語禁止テトライブ【TETRIS 99】&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://www.youtube.com/watch?v=QxBjsD_JcjU" target="_blank" rel="noopener">英語・外来語禁止テトライブ【TETRIS 99】&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>2023/10/08&lt;/td>
-&lt;td>&lt;a href="https://www.youtube.com/watch?v=8ZolR35mxhM" target="_blank" rel="noopener">[ジオゲッサー]初見さん大歓迎！　テトライブ定期コラボでみんなでジオゲッサーやっていくよ！　視聴者参加型もあるよ！&lt;/a>&lt;/td>
+&lt;td>&lt;a href="https://www.youtube.com/watch?v=8ZolR35mxhM" target="_blank" rel="noopener">初見さん大歓迎！　テトライブ定期コラボでみんなでジオゲッサーやっていくよ！　視聴者参加型もあるよ！&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2023/12/23&lt;/td>
+&lt;td>&lt;a href="https://www.youtube.com/watch?v=1ywieapjYqU" target="_blank" rel="noopener">【雑談】テトリス配信者忘年会 2023&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h2 id="heading">🤔&lt;/h2>
+&lt;h2 id="thinking">&amp;#x1f914;&lt;/h2>
 &lt;ul>
 &lt;li>「テトライブ」という名称、大丈夫??&lt;/li>
 &lt;/ul>

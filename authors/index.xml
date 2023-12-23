@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Authors | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/authors/</link><atom:link href="https://sshock-tetris.github.io/authors/index.xml" rel="self" type="application/rss+xml"/><description>Authors</description><generator>Wowchemy (https://wowchemy.com)</generator><language>ja</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png</url><title>Authors</title><link>https://sshock-tetris.github.io/authors/</link></image><item><title>shellshockの由来</title><link>https://sshock-tetris.github.io/authors/sshock/more/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/authors/sshock/more/</guid><description>&lt;p>shellshockがどういう人かは&lt;a href="https://sshock-tetris.github.io/">トップページ&lt;/a>の通りだが、名前やアイコンの由来をより詳しく知りたい人向けに。&lt;/p>
-&lt;details class="toc-inpage d-print-none " open>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Authors | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/authors/</link><atom:link href="https://sshock-tetris.github.io/authors/index.xml" rel="self" type="application/rss+xml"/><description>Authors</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png</url><title>Authors</title><link>https://sshock-tetris.github.io/authors/</link></image><item><title>shellshockの由来</title><link>https://sshock-tetris.github.io/authors/sshock/more/</link><pubDate>Thu, 01 Jun 2023 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/authors/sshock/more/</guid><description>&lt;p>shellshockがどういう人かはトップページの通りだが、名前やアイコンの由来をより詳しく知りたい人向けに。&lt;/p>
+&lt;details class="toc-inpage d-print-none d-xl-none " open>
 &lt;summary class="font-weight-bold">目次&lt;/summary>
 &lt;nav id="TableOfContents">
 &lt;ul>
@@ -25,14 +25,13 @@
 そんなある日、&lt;a href="https://www.youtube.com/live/_Gc-LRq3Pf0?feature=share" target="_blank" rel="noopener">pg99mさん感謝祭&lt;/a>や
 &lt;a href="https://www.youtube.com/live/H7aj8qXysTA?feature=share" target="_blank" rel="noopener">第3回シノン祭＆第1回夕暮れ祭&lt;/a>に
 配信者側として誘われた。今後も配信者として活動するならアイコンぐらいはあるべきだろうということで、
-何らかのアイコンを用意する必要が出てきた。&lt;/p>
-&lt;p>絵心の全くない筆者は、適当なアイコンがなくて困っていた。ある日、&lt;a href="https://ccjktype.fonts.adobe.com/2017/11/ten-mincho-ja.html" target="_blank" rel="noopener">とあるフォントの存在&lt;/a>を知った。
+何らかのアイコンを用意する必要が出てきた。&lt;/p>&lt;p>絵心の全くない筆者は、適当なアイコンがなくて困っていた。ある日、&lt;a href="https://ccjktype.fonts.adobe.com/2017/11/ten-mincho-ja.html" target="_blank" rel="noopener">とあるフォントの存在&lt;/a>を知った。
 貂明朝である&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>。Adobe Fontsに収録されていて、Adobe Creative Cloud契約者であれば使えるフォントである。
 このフォントにはカラー絵文字が収録されていて、その中にある貂の絵文字が可愛く、その絵文字をアイコンとして使用していた。
 (左が通常時、右が冬季限定)&lt;/p>
-&lt;div style="display: flex;">
-&lt;span style="margin: 0 auto;">
-&lt;figure class="article-style img" >
+&lt;div style=display:flex>
+&lt;span style="margin:0 auto">
+&lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="貂の絵文字" srcset="
 /authors/sshock/more/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_c35b702e768c56b598bfec45ad29d325.webp 400w,
@@ -43,9 +42,8 @@ width="128px"
 height="512"
 loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
-&lt;/span>
-&lt;span style="margin: 0 auto;">
-&lt;figure class="article-style img" >
+&lt;/span>&lt;span style="margin:0 auto">
+&lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="貂の絵文字(雪だるま)" srcset="
 /authors/sshock/more/winter_icon_huf675a1ab1d6904d5bf608c0ed86d6fe2_42877_0394f3cda7e16e1ae091e9578cb8d6f7.webp 400w,
@@ -56,8 +54,7 @@ width="128px"
 height="400"
 loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
-&lt;/span>
-&lt;/div>
+&lt;/span>&lt;/div>
 &lt;p>このフォントに入っている絵文字が筆者に影響を与えたことは2つ。
 ひとつは、ホンドテンなどのイタチ科テン属の動物を初めて知ったことである。
 絵文字の元となった動物は、イタチ科の日本固有の動物、ホンドテンである。
@@ -65,7 +62,7 @@ Googleの画像検索をしていると可愛い写真がいっぱいヒット�
 もうひとつは、筆者のイメージカラーが黄色になったこと。絵文字の通り、ホンドテンの冬毛の色が黄色&lt;sup id="fnref:6">&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref">6&lt;/a>&lt;/sup>ということで、
 自分の色が黄色に定着してしまった。その結果&lt;a href="https://www.youtube.com/watch?v=eNui7tnWV8w" target="_blank" rel="noopener">イメージカラー対抗戦&lt;/a>
 というコラボ配信に黄色い人として呼ばれることとなった。筆者にとっては想定外のことである。&lt;/p>
-&lt;figure class="article-style img" >
+&lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="現在のアイコン" srcset="
 /authors/sshock/more/new_icon_huea4b0be317f1cd9468e85e3edeac73fc_77761_418addf5f1e502e0f2ee546a2d8cd2ee.webp 400w,
@@ -77,8 +74,8 @@ height="500"
 loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;p>なお、現在のアイコンは&lt;a href="https://twitter.com/todaypict" target="_blank" rel="noopener">つるぎのまい&lt;/a>さん作である&lt;sup id="fnref:7">&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref">7&lt;/a>&lt;/sup> &lt;sup id="fnref:8">&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref">8&lt;/a>&lt;/sup>。
-2022年に&lt;a href="https://www.youtube.com/watch?v=7s9Vws0VgE4" target="_blank" rel="noopener">ぷよテト30先対決&lt;/a>で対戦させていただいた時に
-ご厚意でいただいたもので、立ち絵やプロフィール画像として使わせていただいている。とても可愛くて感謝している。&lt;/p>
+2022年に&lt;a href="https://www.youtube.com/watch?v=7s9Vws0VgE4" target="_blank" rel="noopener">ぷよテト30先対決&lt;/a>
+での対戦配信の時にご厚意でいただいたもので、立ち絵やプロフィール画像として使わせていただいている。とても可愛くて感謝している。&lt;/p>
 &lt;h2 id="heading">&amp;ldquo;🐚😱&amp;rdquo;&lt;/h2>
 &lt;p>shellshockを当てた🐚😱は、&lt;a href="https://twitter.com/Yasaijin_0831" target="_blank" rel="noopener">やさいじん&lt;/a>さん考案である&lt;sup id="fnref:9">&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref">9&lt;/a>&lt;/sup>。
 &lt;em>shell&lt;/em>には🐚、&lt;em>shock&lt;/em>にはショックを受けた顔の😱を当てている。うまい。
