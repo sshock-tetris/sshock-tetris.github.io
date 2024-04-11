@@ -75,7 +75,7 @@ APIによるツイートの取得(やその他操作)が有料化され、課金
 こうなることはTwitterのシステムを運用している人間なら誰もが簡単に想像が付くはずである。
 が、運用に関わる人はかなり辞めさせられているので、運用すらままならない状態になっていそうである。&lt;/p>
 &lt;p>それでも強行するのは、Twitterの経営を立て直すためである。
-Twitter社&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>はイーロンマスクに買収される前から経営状態が火の車で、誰も何もしなかったら潰れていたのではないだろうか。
+Twitter社&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>はイーロンマスクに買収される前から経営状態が火の車で、誰も何もしなかったら潰れていたのではないかと言われている。
 今もその状態は変わっていないように見える&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>。従業員の半数近くをレイオフ&lt;/a>したり、
 &lt;a href="https://game.watch.impress.co.jp/docs/news/1452658.html" target="_blank" rel="noopener">Twitter Blueを機能追加して値上げ&lt;/a>したり、
 Twitter BlueからX Premiumに名称を変え、さらに&lt;a href="https://www.watch.impress.co.jp/docs/news/1542821.html" target="_blank" rel="noopener">有料プランを3つに増やしたり&lt;/a>、
@@ -385,7 +385,8 @@ REN積みが速いほど有利に立ち回れるため、上位勢ならRENが�
 最初から撤廃するのがやりすぎだとしたら、最大マージン(15分経過後)から撤廃してみてはどうか。&lt;/p>
 &lt;h3 id="カウンター火力の見直し">カウンター火力の見直し&lt;/h3>
 &lt;p>ターゲットが大勢集まったときに1ラインを消しただけで十数ライン分の火力を出すのは気持ちいいが、
-もう少し抑えてもいいのではないかと個人的に思う。&lt;/p>
+もう少し抑えてもいいのではないかと個人的に思う。
+ただし、この対策を行っても試合時間が短縮できるとは限らない点は注意が必要である。&lt;/p>
 &lt;h3 id="消えないブロックをせり上げさせる">消えないブロックをせり上げさせる&lt;/h3>
 &lt;p>上記の火力分割を阻止させる仕様の実現が難しいなら、次点としてこれを提案する。
 特に、火力分割しかやらずに試合展開が滞る状況を避けるため、
