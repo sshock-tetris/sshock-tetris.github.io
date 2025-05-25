@@ -88,7 +88,7 @@
 <li>譜面の自動切り抜き</li>
 </ul>
 <hr>
-<small class="copyright">Tetofu-generator v0.3, Copyright: (C) 2020 shellshock.</small>
+<small class="copyright">Tetofu-generator v0.4, Copyright: (C) 2020-2025 shellshock.</small>
 
 <script>
 // This script is released under the MIT License.
@@ -188,47 +188,48 @@ function getColorIndex(src, x, y, blockPx, srcWidth) {
   color[0] = trimMean(pixelColors.r, 0);
   color[1] = trimMean(pixelColors.g, 0);
   color[2] = trimMean(pixelColors.b, 0);
-  //console.log(x,y, color[0], color[1], color[2]);
 
   const rgb = color[0] + color[1] + color[2];
   const r_g = color[0] - color[1];
   const r_b = color[0] - color[2];
   const g_b = color[1] - color[2];
 
+  let mino = 0;
   if (rgb > 200 && Math.abs(r_g) < 25 && Math.abs(r_b) < 25 && Math.abs(g_b) < 25) {
     // Gray
-    return 8;
+    mino = 8;
   }
-  if (color[0] > 160 && r_g > 20 && r_b > 20 && Math.abs(g_b) < 40) {
+  else if (color[0] > 160 && r_g > 20 && r_b > 20 && Math.abs(g_b) < 40) {
     // Z
-    return 4;
+    mino = 4;
   }
-  if (color[1] < 110 && color[2] > 160 && r_b < -80 && g_b < -80) {
+  else if (color[1] < 110 && color[2] > 160 && r_b < -80 && g_b < -80) {
     // J
-    return 6;
+    mino = 6;
   }
-  if (color[2] > 160 && r_b < -80 && g_b < -10) {
+  else if (color[2] > 160 && r_b < -80 && g_b < -10) {
     // I
-    return 1;
+    mino = 1;
   }
-  if (color[0] > 160 && color[1] > 160 && color[2] < 90 && Math.abs(r_g) < 80) {
+  else if (color[0] > 160 && color[1] > 160 && color[2] < 90 && Math.abs(r_g) < 80) {
     // O
-    return 3;
+    mino = 3;
   }
-  if (color[0] > 35 && color[0] <= 160 && color[1] > 120 && color[2] < 80 && r_g > 30 && g_b > 80) {
+  else if (color[0] > 35 && color[0] <= 160 && color[1] > 120 && color[2] < 80 && r_g < -30 && g_b > 80) {
     // S
-    return 7;
+    mino = 7;
   }
-  if (color[0] > 160 && color[1] > 80 && color[2] < 60) {
+  else if (color[0] > 160 && color[1] > 80 && color[2] < 80) {
     // L
-    return 2;
+    mino = 2;
   }
-  if (color[1] < 120 && Math.abs(r_g) > 70 && Math.abs(g_b) > 70 && Math.abs(r_b) < 100) {
+  else if (color[1] < 120 && Math.abs(r_g) > 70 && Math.abs(g_b) > 70 && Math.abs(r_b) < 100) {
     // T
-    return 5;
+    mino = 5;
   }
+  //console.log(`(${x}, ${y}) r: ${color[0]}, g: ${color[1]}, b: ${color[2]} => ${mino}`);
 
-  return 0;
+  return mino;
 }
 
 function recognize(src, dst, srcWidth, srcHeight) {
