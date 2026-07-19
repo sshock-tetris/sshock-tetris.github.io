@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/post/</link><atom:link href="https://sshock-tetris.github.io/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Fri, 03 Jan 2025 00:00:00 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png</url><title>Posts</title><link>https://sshock-tetris.github.io/post/</link></image><item><title>雑記(2025/01/03)</title><link>https://sshock-tetris.github.io/post/20250103/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/post/20250103/</guid><description>&lt;p>&lt;a href="https://sshock-tetris.github.io/post/20220311">2022/03/11&lt;/a>の続き。あれからもう3年になろうとしているが、
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | about: @sshock_tetris</title><link>https://sshock-tetris.github.io/post/</link><atom:link href="https://sshock-tetris.github.io/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Wed, 29 Oct 2025 00:00:00 +0900</lastBuildDate><image><url>https://sshock-tetris.github.io/media/icon_huee3f86f7a4da16f554c58e963fcfefcf_11379_512x512_fill_lanczos_center_3.png</url><title>Posts</title><link>https://sshock-tetris.github.io/post/</link></image><item><title>雑記(2025/01/03)</title><link>https://sshock-tetris.github.io/post/20250103/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/post/20250103/</guid><description>&lt;p>&lt;a href="https://sshock-tetris.github.io/post/20220311">2022/03/11&lt;/a>の続き。あれからもう3年になろうとしているが、
 根本的な問題が解決できたわけではない。テトリスの腕前が中途半端なことは何も変わっていないし、
 場をつなぐフリートークが苦手なことも変わらない。正直なところ、配信することが苦行とさえ思った日は何度もあった。&lt;/p>
 &lt;p>配信のモチベーションが再起不能になるまで落ちなかったのは、2つ要因がある。
@@ -43,8 +43,7 @@ Plug and Playに対応していない古いデバイスと対応している新�
 正式に対応したのはWindows 98からである&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。USBが登場して間もない頃はバグが多かった。
 まだ完成前のWindows 98でUSB接続の実演中にブルースクリーンを披露した動画(☟)は、Plug and Prayの象徴である。&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/yeUyxjLhAxU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
->&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/yeUyxjLhAxU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;p>後にWindows 98の製品版が発売されたが、安定して動くかどうかは祈るしかない状況は変わらなかった。
 OSそのものが安定しないことも重なり、USBケーブルを挿した途端にブルースクリーンが出たり、OSごとフリーズする現象が起きることもあった。&lt;/p>
@@ -76,8 +75,7 @@ USBはいつの時代もトラブルメーカーである。
 &lt;/ol>
 &lt;/div></description></item><item><title>英語禁止ポエム</title><link>https://sshock-tetris.github.io/post/20230831/</link><pubDate>Thu, 31 Aug 2023 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/post/20230831/</guid><description>&lt;p>テトライブ5人での英語禁止テトリスの配信にて、筆者が5人の中で英語を一番しゃべってしまったせいで、1週間英語禁止ポエムを書く羽目になった。&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/QxBjsD_JcjU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
->&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/QxBjsD_JcjU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;p>ここでは、1週間ポエムの内容と、それに付け加えてどうでも良いことを書いていこうと思う。&lt;/p>
 &lt;details class="toc-inpage d-print-none d-xl-none " open>
@@ -96,49 +94,49 @@ USBはいつの時代もトラブルメーカーである。
 &lt;/nav>
 &lt;/details>
 &lt;h2 id="20230723">2023/07/23&lt;/h2>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【英語禁止詩 (1/7)】&lt;br>7月23日深夜2時。&lt;br>夜も更け、あたりは静寂に包まれる。英語禁止配信が終わり、放心している。ほっと一息つけるため、冷房の効いていない外に出たが暑い。熱帯夜を実感する。夏はこれからが本番。まだ終わりそうもないと思うとぞっとする。この英語禁止詩も、これから始まる。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1682797654752002049?ref_src=twsrc%5Etfw">July 22, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【英語禁止詩 (1/7)】&lt;br>7月23日深夜2時。&lt;br>夜も更け、あたりは静寂に包まれる。英語禁止配信が終わり、放心している。ほっと一息つけるため、冷房の効いていない外に出たが暑い。熱帯夜を実感する。夏はこれからが本番。まだ終わりそうもないと思うとぞっとする。この英語禁止詩も、これから始まる。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1682797654752002049?ref_src=twsrc%5Etfw">July 22, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>詩のことを何も考えないで作ったただの日記。散文詩のつもりで書いたものでは決してない。Twitterの文字数制限いっぱいまで書くのを目標にしていた。
 当時の所感☟&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">2時にツイートした英語禁止ポエム、何人かから散文詩という声を聞きましたが、そのつもりで書いたわけではなくて適当に書いただけです。&lt;br>調べたらいくつか分野があるらしいので、別のも考えますが別のをやるとは限りません()&lt;br>&lt;br>正直なところ、どうやって詩を書くのか疑問符ばかりが付いています。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1682912156159995910?ref_src=twsrc%5Etfw">July 23, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">2時にツイートした英語禁止ポエム、何人かから散文詩という声を聞きましたが、そのつもりで書いたわけではなくて適当に書いただけです。&lt;br>調べたらいくつか分野があるらしいので、別のも考えますが別のをやるとは限りません()&lt;br>&lt;br>正直なところ、どうやって詩を書くのか疑問符ばかりが付いています。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1682912156159995910?ref_src=twsrc%5Etfw">July 23, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;h2 id="20230724">2023/07/24&lt;/h2>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (2/7)】&lt;br>週の初めの月曜日&lt;br>普段の仕事 開始前&lt;br>定期作業のあさてとを&lt;br>普段通りにこなすまで&lt;br>季節寒暖かかわらず&lt;br>結果順位がどうであれ&lt;br>今や日課となっている&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1683250638984216576?ref_src=twsrc%5Etfw">July 23, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://x.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (2/7)】&lt;br>週の初めの月曜日&lt;br>普段の仕事 開始前&lt;br>定期作業のあさてとを&lt;br>普段通りにこなすまで&lt;br>季節寒暖かかわらず&lt;br>結果順位がどうであれ&lt;br>今や日課となっている&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1683250638984216576?ref_src=twsrc%5Etfw">July 23, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>真面目に書こうと思って定型詩に。&lt;/p>
 &lt;p>※「あさてと」は固有名詞扱いで、配信の英語・外来語禁止規則に合わせて、勝手ながら英語ではないとみなします&lt;/p>
 &lt;h2 id="20230725">2023/07/25&lt;/h2>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (3/7)】&lt;br>どこにきえたの　あおいとり&lt;br>いきているのか　わからない&lt;br>うまれかわった　とはきくが&lt;br>みためがばつに　しかみえず&lt;br>すばこのなかへ　とじこもり&lt;br>みなのこころに　のこりけり&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1683613031471669249?ref_src=twsrc%5Etfw">July 24, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://x.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (3/7)】&lt;br>どこにきえたの　あおいとり&lt;br>いきているのか　わからない&lt;br>うまれかわった　とはきくが&lt;br>みためがばつに　しかみえず&lt;br>すばこのなかへ　とじこもり&lt;br>みなのこころに　のこりけり&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1683613031471669249?ref_src=twsrc%5Etfw">July 24, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>TwitterがXになったおかげで全部ひらがなの定型詩ができた。
 元は苦し紛れに文体を体言止めで統一した散文詩だったけどお蔵入り。&lt;/p>
 &lt;h2 id="20230726">2023/07/26&lt;/h2>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (4/7)】&lt;br>英語禁止詩も漸く折り返し地点に到達する&lt;br>しかし書くことに困り既に息が切れている&lt;br>自身が提案した罰則を自身が今噛み締める&lt;br>まだかまだかともがき苦しみ作詩し続ける&lt;br>言葉の吟味と共に今日もまた時間が過ぎる&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1683975417693343744?ref_src=twsrc%5Etfw">July 25, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://x.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (4/7)】&lt;br>英語禁止詩も漸く折り返し地点に到達する&lt;br>しかし書くことに困り既に息が切れている&lt;br>自身が提案した罰則を自身が今噛み締める&lt;br>まだかまだかともがき苦しみ作詩し続ける&lt;br>言葉の吟味と共に今日もまた時間が過ぎる&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1683975417693343744?ref_src=twsrc%5Etfw">July 25, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>自由詩だけど文末を全て「る」で終わらせるのと文字数を一致させた。&lt;/p>
 &lt;h2 id="20230727">2023/07/27&lt;/h2>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (5/7)】&lt;br>私が英語を話しても、&lt;br>発音違いで通じない。&lt;br>必死で思いを伝えても&lt;br>知らない単語で返される。&lt;br>&lt;br>私が日本語話しても、&lt;br>見当違いで通じない。&lt;br>必死で説得してみても&lt;br>理解されずにそっぽ向く。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1684337809635819520?ref_src=twsrc%5Etfw">July 26, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://x.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (5/7)】&lt;br>私が英語を話しても、&lt;br>発音違いで通じない。&lt;br>必死で思いを伝えても&lt;br>知らない単語で返される。&lt;br>&lt;br>私が日本語話しても、&lt;br>見当違いで通じない。&lt;br>必死で説得してみても&lt;br>理解されずにそっぽ向く。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1684337809635819520?ref_src=twsrc%5Etfw">July 26, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>また定型詩。少しだけ叙事詩を意図。やりすぎ感あり。&lt;/p>
 &lt;h2 id="20230728">2023/07/28&lt;/h2>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (6/7)】&lt;br>猛暑時々台風&lt;br>8月の予報は大体これではないだろうか&lt;br>仕事時々遊戯&lt;br>これは私の平日である&lt;br>五千兆円欲しい&lt;br>これは人類の夢である&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1684700197945749506?ref_src=twsrc%5Etfw">July 27, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://x.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (6/7)】&lt;br>猛暑時々台風&lt;br>8月の予報は大体これではないだろうか&lt;br>仕事時々遊戯&lt;br>これは私の平日である&lt;br>五千兆円欲しい&lt;br>これは人類の夢である&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1684700197945749506?ref_src=twsrc%5Etfw">July 27, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>適当に語感を合わせてできたもの。五千兆円欲しいを何となく入れたかったせいでこうなってしまった。&lt;/p>
 &lt;h2 id="20230729">2023/07/29&lt;/h2>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (7/7)】&lt;br>英語禁止詩 最終日&lt;br>作文からの 解放感&lt;br>走りきったぜ 7日間&lt;br>それでは最後に 感想を&lt;br>「英語だいしゅき！shellshock」&lt;br>違う、違うぞ そうでない&lt;br>「あっという間に 完走だ」&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1684956882384166912?ref_src=twsrc%5Etfw">July 28, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://x.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (7/7)】&lt;br>英語禁止詩 最終日&lt;br>作文からの 解放感&lt;br>走りきったぜ 7日間&lt;br>それでは最後に 感想を&lt;br>「英語だいしゅき！shellshock」&lt;br>違う、違うぞ そうでない&lt;br>「あっという間に 完走だ」&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1684956882384166912?ref_src=twsrc%5Etfw">July 28, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>定型詩で〆。定型詩というよりはラップの歌詞である。もはや、やけくそである。&lt;/p>
 &lt;p>※shellshockは人名ということで、配信の英語・外来語禁止規則に合わせて、勝手ながら英語ではないこととします&lt;/p>
 &lt;h2 id="おまけ">おまけ&lt;/h2>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (おまけ)】&lt;br>或人求漢詩&lt;br>我期待欲応&lt;br>規則有無数&lt;br>作詩也困難&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1684957137376804864?ref_src=twsrc%5Etfw">July 28, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">【&lt;a href="https://x.com/hashtag/%E8%8B%B1%E8%AA%9E%E7%A6%81%E6%AD%A2%E8%A9%A9?src=hash&amp;amp;ref_src=twsrc%5Etfw">#英語禁止詩&lt;/a> (おまけ)】&lt;br>或人求漢詩&lt;br>我期待欲応&lt;br>規則有無数&lt;br>作詩也困難&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1684957137376804864?ref_src=twsrc%5Etfw">July 28, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>漢詩を見たいというリクエストに何とか応えた作品。&lt;br>
 書き下し文と所感☟&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">平仄も押韻もできてないので似非漢詩、似非近体詩です。&lt;br>&lt;br>【書き下し】&lt;br>或人 漢詩を求む&lt;br>我 期待に 応えんと欲す&lt;br>規則 無数に有り&lt;br>詩を作るは 困難也り &lt;a href="https://t.co/qyFmbl5vRD">https://t.co/qyFmbl5vRD&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1684957506995642368?ref_src=twsrc%5Etfw">July 28, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">平仄も押韻もできてないので似非漢詩、似非近体詩です。&lt;br>&lt;br>【書き下し】&lt;br>或人 漢詩を求む&lt;br>我 期待に 応えんと欲す&lt;br>規則 無数に有り&lt;br>詩を作るは 困難也り &lt;a href="https://t.co/qyFmbl5vRD">https://t.co/qyFmbl5vRD&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1684957506995642368?ref_src=twsrc%5Etfw">July 28, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>以上。お粗末。&lt;/p></description></item><item><title>Twitterが死にそうな件</title><link>https://sshock-tetris.github.io/post/20230702/</link><pubDate>Sun, 02 Jul 2023 21:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/post/20230702/</guid><description>&lt;p>2023/7/2、全ユーザーのAPIのレートリミット制限を厳しくした影響で、Twitter&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>が瀕死状態になっている。&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">To address extreme levels of data scraping &amp;amp; system manipulation, we’ve applied the following temporary limits:&lt;br>&lt;br>- Verified accounts are limited to reading 6000 posts/day&lt;br>- Unverified accounts to 600 posts/day&lt;br>- New unverified accounts to 300/day&lt;/p>&amp;mdash; Elon Musk (@elonmusk) &lt;a href="https://twitter.com/elonmusk/status/1675187969420828672?ref_src=twsrc%5Etfw">July 1, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">To address extreme levels of data scraping &amp;amp; system manipulation, we’ve applied the following temporary limits:&lt;br>&lt;br>- Verified accounts are limited to reading 6000 posts/day&lt;br>- Unverified accounts to 600 posts/day&lt;br>- New unverified accounts to 300/day&lt;/p>&amp;mdash; Elon Musk (@elonmusk) &lt;a href="https://x.com/elonmusk/status/1675187969420828672?ref_src=twsrc%5Etfw">July 1, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>このような制限を始めたのは、スクレイピング&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>対策によるもので、
 一時的なものであると主張している。しかし、その対策はスクレイピングに無関係なユーザーにとっても厳しいものとなり、
 ただタイムラインを見るだけでも「問題が発生しました」や「API呼び出しの回数制限を超えました」が
@@ -277,8 +275,8 @@ Twitterなどのような一極集中のサービスとは大きく異なるこ�
 &lt;p>収益化の条件緩和は大変喜ばしいことだが、筆者にはある疑問が浮かんだ。&lt;/p>
 &lt;h2 id="条件が緩和されて達成できる見込みがあるのか">条件が緩和されて達成できる見込みがあるのか？&lt;/h2>
 &lt;p>発表当時、筆者は単純にこう感じていた。&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">今や月1～2回しか配信をやらないぐらい滅茶苦茶マイペースだったけど、登録者数の条件が緩和されたのを見て心がちょっと揺らいできている。別に収益化前提で活動しているわけではないが、ここまで来たらその権利を行使できる所までは行きたいな。せめて週1ぐらいは配信やろうか思案中。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1668933046689746945?ref_src=twsrc%5Etfw">June 14, 2023&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">今や月1～2回しか配信をやらないぐらい滅茶苦茶マイペースだったけど、登録者数の条件が緩和されたのを見て心がちょっと揺らいできている。別に収益化前提で活動しているわけではないが、ここまで来たらその権利を行使できる所までは行きたいな。せめて週1ぐらいは配信やろうか思案中。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1668933046689746945?ref_src=twsrc%5Etfw">June 14, 2023&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>興奮してYouTubeで雑談配信するぐらい舞い上がっていたが、ふと我に返って思った疑問が上記見出しである。
 登録者数に関しては、配信もしくは動画作成を頑張れば達成できる見込みが十分ある&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>と思う。
 問題は、総再生時間である。&lt;/p>
@@ -362,38 +360,38 @@ NEXTの表示部分を前フレームと差分を取ることでゲームが始�
 &lt;h3 id="2021226">2021/2/26&lt;/h3>
 &lt;p>オーバーレイでゲーム画面が小さい人も少なくないし、どうしたらいいのかと思ったら
 OBSにキャプチャ映像だけを映す機能を知り、これは行ける！と思った。
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">OBSのウィンドウプロジェクターはキャプチャデバイス単体のプレビューもできるのか。これを使えばオーバーレイでゲーム画面が小さくなっても使える。これは行ける！ &lt;a href="https://t.co/9KuBPrkSTI">pic.twitter.com/9KuBPrkSTI&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1365251268973789187?ref_src=twsrc%5Etfw">February 26, 2021&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">OBSのウィンドウプロジェクターはキャプチャデバイス単体のプレビューもできるのか。これを使えばオーバーレイでゲーム画面が小さくなっても使える。これは行ける！ &lt;a href="https://t.co/9KuBPrkSTI">pic.twitter.com/9KuBPrkSTI&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1365251268973789187?ref_src=twsrc%5Etfw">February 26, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;/p>
 &lt;h3 id="2021228">2021/2/28&lt;/h3>
 &lt;p>とりあえずできた。
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">まだまだ誤認識したりUIが不完全だったり、直さないといけないところが大量にあるけどとりあえずできた。&lt;br>&lt;br>テスト用に録画済の動画で認識させてますがキャプチャボードでも同様に認識できます &lt;a href="https://t.co/01MRdeTPoR">pic.twitter.com/01MRdeTPoR&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1365873238388039684?ref_src=twsrc%5Etfw">February 28, 2021&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">まだまだ誤認識したりUIが不完全だったり、直さないといけないところが大量にあるけどとりあえずできた。&lt;br>&lt;br>テスト用に録画済の動画で認識させてますがキャプチャボードでも同様に認識できます &lt;a href="https://t.co/01MRdeTPoR">pic.twitter.com/01MRdeTPoR&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1365873238388039684?ref_src=twsrc%5Etfw">February 28, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;/p>
 &lt;p>早速自分の配信で動作チェックしたところ問題なさそうだった。
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">タイマー自動開始機能を試しに22時部屋で動かしました。それでも、普通に連戦をやってる限りは大丈夫そう。&lt;br>&lt;br>問題は途中でメニューに戻ったりホーム画面に戻ったりした時。 &lt;a href="https://t.co/hzwTvEE8JF">pic.twitter.com/hzwTvEE8JF&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1366018254477557760?ref_src=twsrc%5Etfw">February 28, 2021&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">タイマー自動開始機能を試しに22時部屋で動かしました。それでも、普通に連戦をやってる限りは大丈夫そう。&lt;br>&lt;br>問題は途中でメニューに戻ったりホーム画面に戻ったりした時。 &lt;a href="https://t.co/hzwTvEE8JF">pic.twitter.com/hzwTvEE8JF&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1366018254477557760?ref_src=twsrc%5Etfw">February 28, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;/p>
 &lt;h3 id="202133">2021/3/3&lt;/h3>
 &lt;p>ユーザー先行募集。続々と希望者集まる。
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">配信者向けの &lt;a href="https://twitter.com/hashtag/Tetris99?src=hash&amp;amp;ref_src=twsrc%5Etfw">#Tetris99&lt;/a> のマージンタイマー自動開始機能ができました。99のゲームメニューでの誤爆は少なくなったと思いますが、まだテストが足りません。&lt;br>&lt;br>動かなくてもかまわないので一足先に使ってみたい方を緩く募集します！ &lt;a href="https://t.co/xJYNwm3wfk">pic.twitter.com/xJYNwm3wfk&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1367081464475475974?ref_src=twsrc%5Etfw">March 3, 2021&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">配信者向けの &lt;a href="https://x.com/hashtag/Tetris99?src=hash&amp;amp;ref_src=twsrc%5Etfw">#Tetris99&lt;/a> のマージンタイマー自動開始機能ができました。99のゲームメニューでの誤爆は少なくなったと思いますが、まだテストが足りません。&lt;br>&lt;br>動かなくてもかまわないので一足先に使ってみたい方を緩く募集します！ &lt;a href="https://t.co/xJYNwm3wfk">pic.twitter.com/xJYNwm3wfk&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1367081464475475974?ref_src=twsrc%5Etfw">March 3, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;/p>
 &lt;h3 id="202137">2021/3/7&lt;/h3>
 &lt;p>配信者によって環境は様々で、上手く動かない場合が見つかる。
 対話ウィンドウを閉じてしまうと自動開始装置を再起動しないと使い物にならない問題もあるのでそれも直すことにした。
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">マージンタイマー自動開始装置の要改善点メモ:&lt;br>・二重起動防止&lt;br>・暗転判定の閾値をもっと緩めに(暗転したのを認識できない場合があったため)&lt;br>・メモリとCPU使用率の改善(60fps→30fpsでも十分いけそう)&lt;br>・タイマー開始時にウィンドウプロジェクターが消える謎現象の原因追求&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1368423599653015552?ref_src=twsrc%5Etfw">March 7, 2021&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">マージンタイマー自動開始装置の要改善点メモ:&lt;br>・二重起動防止&lt;br>・暗転判定の閾値をもっと緩めに(暗転したのを認識できない場合があったため)&lt;br>・メモリとCPU使用率の改善(60fps→30fpsでも十分いけそう)&lt;br>・タイマー開始時にウィンドウプロジェクターが消える謎現象の原因追求&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1368423599653015552?ref_src=twsrc%5Etfw">March 7, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;/p>
 &lt;h3 id="202138">2021/3/8&lt;/h3>
 &lt;p>更新版完成。希望者に配布。
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">マージンタイマー自動開始装置の最新版ができたので、使用希望者向けにこれからDMで配布します。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1368890286575808518?ref_src=twsrc%5Etfw">March 8, 2021&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">マージンタイマー自動開始装置の最新版ができたので、使用希望者向けにこれからDMで配布します。&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1368890286575808518?ref_src=twsrc%5Etfw">March 8, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;/p>
 &lt;h3 id="2021317">2021/3/17&lt;/h3>
 &lt;p>一般公開。
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">配信者向け &lt;a href="https://twitter.com/hashtag/Tetris99?src=hash&amp;amp;ref_src=twsrc%5Etfw">#Tetris99&lt;/a> のマージンタイマー自動開始装置を公開しました！&lt;a href="https://t.co/62vlKxsJhE">https://t.co/62vlKxsJhE&lt;/a> &lt;a href="https://t.co/GOKNaKofhD">pic.twitter.com/GOKNaKofhD&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1372148170629652483?ref_src=twsrc%5Etfw">March 17, 2021&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">配信者向け &lt;a href="https://x.com/hashtag/Tetris99?src=hash&amp;amp;ref_src=twsrc%5Etfw">#Tetris99&lt;/a> のマージンタイマー自動開始装置を公開しました！&lt;a href="https://t.co/62vlKxsJhE">https://t.co/62vlKxsJhE&lt;/a> &lt;a href="https://t.co/GOKNaKofhD">pic.twitter.com/GOKNaKofhD&lt;/a>&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1372148170629652483?ref_src=twsrc%5Etfw">March 17, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;/p></description></item><item><title>TETRIS 99の不満</title><link>https://sshock-tetris.github.io/post/dissatisfied_with_tetris99/</link><pubDate>Sat, 27 May 2023 00:00:00 +0900</pubDate><guid>https://sshock-tetris.github.io/post/dissatisfied_with_tetris99/</guid><description>&lt;p>TETRIS 99という、Nintendo Switch Onlineに加入していれば無料で遊べるテトリスがある。
 2019年2月にゲームの配信が始まり、それから既に4年が経過している。
 筆者は配信開始から2ヶ月後にやり始めて、今ではすっかりテトリスプレイヤーになってしまった。
@@ -1081,10 +1079,10 @@ Nintendo Switch 2の&lt;code>設定&lt;/code> - &lt;code>ディスプレイ&lt;/
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/post/streaming_env/lct240pro_hu0074e8e86c414b86361433b35fea6840_53860_d3f7f4e41fe523bb7078b909f2c1812f.webp 400w,
-/post/streaming_env/lct240pro_hu0074e8e86c414b86361433b35fea6840_53860_7c1fd672ca50e17c3d98eb401225f4e7.webp 760w,
+/post/streaming_env/lct240pro_hu0074e8e86c414b86361433b35fea6840_53860_e286dd1c4bd20471ebb448e5998a9d16.webp 400w,
+/post/streaming_env/lct240pro_hu0074e8e86c414b86361433b35fea6840_53860_d0158d334073e51e7a4516224747b3cd.webp 760w,
 /post/streaming_env/lct240pro_hu0074e8e86c414b86361433b35fea6840_53860_1200x1200_fit_q75_h2_lanczos.webp 1200w"
-src="https://sshock-tetris.github.io/post/streaming_env/lct240pro_hu0074e8e86c414b86361433b35fea6840_53860_d3f7f4e41fe523bb7078b909f2c1812f.webp"
+src="https://sshock-tetris.github.io/post/streaming_env/lct240pro_hu0074e8e86c414b86361433b35fea6840_53860_e286dd1c4bd20471ebb448e5998a9d16.webp"
 width="400px"
 height="570"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1111,10 +1109,10 @@ LCT240 Proに変えてからは、このマイクアンプが不要になりよ�
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/post/streaming_env/motum2_hue8f926c98177cae308eff825e490c023_65801_29b1eaf02b1f0e6e55b3129710029b7c.webp 400w,
-/post/streaming_env/motum2_hue8f926c98177cae308eff825e490c023_65801_dae2b5e391763d78a0b32fc410fd106f.webp 760w,
+/post/streaming_env/motum2_hue8f926c98177cae308eff825e490c023_65801_32fca7a4c350caaf6996ec2135400b9e.webp 400w,
+/post/streaming_env/motum2_hue8f926c98177cae308eff825e490c023_65801_a7e0b9ad5ed5e7049b2924764a46f11b.webp 760w,
 /post/streaming_env/motum2_hue8f926c98177cae308eff825e490c023_65801_1200x1200_fit_q75_h2_lanczos.webp 1200w"
-src="https://sshock-tetris.github.io/post/streaming_env/motum2_hue8f926c98177cae308eff825e490c023_65801_29b1eaf02b1f0e6e55b3129710029b7c.webp"
+src="https://sshock-tetris.github.io/post/streaming_env/motum2_hue8f926c98177cae308eff825e490c023_65801_32fca7a4c350caaf6996ec2135400b9e.webp"
 width="640px"
 height="428"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1131,10 +1129,10 @@ AG03なら音量調整もミュートも手元のボタンで一発でできる�
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img alt="" srcset="
-/post/streaming_env/gc573_hu5afdb19aedcd81f867fdc0bb6561a9f3_95289_7321756d4a64160de29cfe37a0181dbc.webp 400w,
-/post/streaming_env/gc573_hu5afdb19aedcd81f867fdc0bb6561a9f3_95289_d4fe659906b9b4dfe1d01bee0c43ba4d.webp 760w,
+/post/streaming_env/gc573_hu5afdb19aedcd81f867fdc0bb6561a9f3_95289_6d5a5148db9850fd518011aef077aef6.webp 400w,
+/post/streaming_env/gc573_hu5afdb19aedcd81f867fdc0bb6561a9f3_95289_ea0d075caed0970dbd18c10993f00f4d.webp 760w,
 /post/streaming_env/gc573_hu5afdb19aedcd81f867fdc0bb6561a9f3_95289_1200x1200_fit_q75_h2_lanczos.webp 1200w"
-src="https://sshock-tetris.github.io/post/streaming_env/gc573_hu5afdb19aedcd81f867fdc0bb6561a9f3_95289_7321756d4a64160de29cfe37a0181dbc.webp"
+src="https://sshock-tetris.github.io/post/streaming_env/gc573_hu5afdb19aedcd81f867fdc0bb6561a9f3_95289_6d5a5148db9850fd518011aef077aef6.webp"
 width="426px"
 height="551"
 loading="lazy" data-zoomable />&lt;/div>
@@ -1315,13 +1313,12 @@ Vocal Assistantを使えばいい感じに設定してくれる。
 &lt;h2 id="きっかけ">きっかけ&lt;/h2>
 &lt;p>この配信を見たとき、画像から自動的にテト譜を起こせたら効率よく分析できるんじゃないかと思った。&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1gm5MSPGlUM?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
->&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/1gm5MSPGlUM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;p>需要あるのかな？と適当に調べるとまず&lt;a href="https://crize.blog.jp/archives/16752321.html" target="_blank" rel="noopener">テトリスの画面をテト譜に起こしたかった&lt;/a>
 が見つかり、その中で&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">画像からテト譜起こして解析するツール出来ないかな&lt;br>画像処理に長けた人が少ないんだろうか&lt;/p>&amp;mdash; もりおじの⁰よめにおいでよ⁰いますぐに⁰はやくしないと⁰あそびにいくぞ (@sakana897) &lt;a href="https://twitter.com/sakana897/status/1055769972054482944?ref_src=twsrc%5Etfw">October 26, 2018&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">画像からテト譜起こして解析するツール出来ないかな&lt;br>画像処理に長けた人が少ないんだろうか&lt;/p>&amp;mdash; えんどうもりお (@sakana897) &lt;a href="https://x.com/sakana897/status/1055769972054482944?ref_src=twsrc%5Etfw">October 26, 2018&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>というツイートを見つけた。2年前から需要があったことがわかり、作ってみることにした。&lt;/p>
 &lt;h2 id="認識手法">認識手法&lt;/h2>
 &lt;h3 id="入力画像の前提条件の設定">入力画像の前提条件の設定&lt;/h3>
@@ -1384,26 +1381,24 @@ Vocal Assistantを使えばいい感じに設定してくれる。
 &lt;li>&lt;a href="https://crize.blog.jp/archives/16752321.html" target="_blank" rel="noopener">https://crize.blog.jp/archives/16752321.html&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.google.com/presentation/d/1V4PNyt41to81phK9u0iXnIkAfp-nV3g3xcl7c5qW-FI/edit#slide=id.g21adbcaeda_0_87" target="_blank" rel="noopener">https://docs.google.com/presentation/d/1V4PNyt41to81phK9u0iXnIkAfp-nV3g3xcl7c5qW-FI/edit#slide=id.g21adbcaeda_0_87&lt;/a>&lt;/li>
 &lt;/ol></description></item><item><title>あきりん企画 #テトリス運動会 に参加・配信しました</title><link>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</link><pubDate>Mon, 14 Sep 2020 20:30:13 +0900</pubDate><guid>https://sshock-tetris.github.io/post/2020_akirin_sports_day/</guid><description>&lt;p>あきりん企画の &lt;a href="https://twitter.com/Autumn63775693/status/1297842792815718403" target="_blank" rel="noopener">#テトリス運動会&lt;/a> に参加し、様子を配信しました。&lt;/p>
-&lt;p>&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>運動会企画！！&lt;br>9/12(土)22:00～&lt;br>4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br>詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href="https://t.co/Vy5KBCYcGN">pic.twitter.com/Vy5KBCYcGN&lt;/a>&lt;/p>&amp;mdash; あき (@Autumn63775693) &lt;a href="https://twitter.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw">August 24, 2020&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;p>&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://x.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>運動会企画！！&lt;br>9/12(土)22:00～&lt;br>4つの組に分かれて勝負！参加受付はこのリプ欄に参加するときの名前を教えてください～！&lt;br>詳細は以下のとおりです！！分からないことがあったらなんでも教えてください～ &lt;a href="https://t.co/Vy5KBCYcGN">pic.twitter.com/Vy5KBCYcGN&lt;/a>&lt;/p>&amp;mdash; あき (@Autumn63775693) &lt;a href="https://x.com/Autumn63775693/status/1297842792815718403?ref_src=twsrc%5Etfw">August 24, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/nHMCr2Br2PA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
->&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/nHMCr2Br2PA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;/p>
 &lt;hr>
 &lt;p>結果&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>結果発表！！&lt;br>優勝は緑チームです！！おめでとう！！&lt;br>他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href="https://t.co/uiIBqqOXAD">pic.twitter.com/uiIBqqOXAD&lt;/a>&lt;/p>&amp;mdash; あき (@Autumn63775693) &lt;a href="https://twitter.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw">September 12, 2020&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://x.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a>&lt;br>結果発表！！&lt;br>優勝は緑チームです！！おめでとう！！&lt;br>他のチームもみんなめちゃ強かったです！ありがとうございました～！！ &lt;a href="https://t.co/uiIBqqOXAD">pic.twitter.com/uiIBqqOXAD&lt;/a>&lt;/p>&amp;mdash; あき (@Autumn63775693) &lt;a href="https://x.com/Autumn63775693/status/1304824699428331526?ref_src=twsrc%5Etfw">September 12, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;hr>
 &lt;p>翌日、こんな感じでつぶやくと&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://twitter.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a> の反省会配信はない感じかな？(ボソ)&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://twitter.com/sshock_tetris/status/1304963392134721539?ref_src=twsrc%5Etfw">September 13, 2020&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">&lt;a href="https://x.com/hashtag/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E9%81%8B%E5%8B%95%E4%BC%9A?src=hash&amp;amp;ref_src=twsrc%5Etfw">#テトリス運動会&lt;/a> の反省会配信はない感じかな？(ボソ)&lt;/p>&amp;mdash; shellshock🐚😱 (@sshock_tetris) &lt;a href="https://x.com/sshock_tetris/status/1304963392134721539?ref_src=twsrc%5Etfw">September 13, 2020&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.x.com/widgets.js" charset="utf-8">&lt;/script>
 &lt;p>&lt;a href="https://www.youtube.com/channel/UCoI4Gr6g5SLmAi60AqooDEA" target="_blank" rel="noopener">夏影ソウナ&lt;/a>さんが反省会(?)配信をしてくださり、
 最初から途中までお邪魔しました。&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Ea-xWk6vfOw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
->&lt;/iframe>
+&lt;iframe src="https://www.youtube.com/embed/Ea-xWk6vfOw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;hr>
 &lt;p>ところが、この反省会配信で肝心な反省会のことがほとんど話せないまま時間が来てしまったため、
