@@ -1,0 +1,72 @@
+<!doctype html><html lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><script>(function(){var e;try{e=localStorage.getItem("theme")}catch{}e!=="dark"&&e!=="light"&&(e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),document.documentElement.dataset.theme=e})()</script><title>Twitterが死にそうな件 | about: @sshock_tetris</title><meta name=description content="Twitterの代わりになるものは？"><link rel=canonical href=https://sshock-tetris.github.io/post/20230702/><meta name=google-site-verification content="36vRf1OW_6SdA-2RGmsVOnxUOJ4jBuSAEZe8VhUmiyk"><meta property="og:site_name" content="about: @sshock_tetris"><meta property="og:title" content="Twitterが死にそうな件 | about: @sshock_tetris"><meta property="og:description" content="Twitterの代わりになるものは？"><meta property="og:url" content="https://sshock-tetris.github.io/post/20230702/"><meta property="og:type" content="article"><meta property="og:image" content="https://sshock-tetris.github.io/media/icon.png"><meta name=twitter:card content="summary"><meta name=twitter:site content="@sshock_tetris"><meta name=twitter:creator content="@sshock_tetris"><link rel=icon type=image/png sizes=32x32 href=/media/icon_hu_6314db6779035cc3.png><link rel=apple-touch-icon sizes=180x180 href=/media/icon_hu_4cfbad838d712882.png><link rel=stylesheet href=/css/main.min.4e11738f281ad89a01d73c01f105b3759fdddeb5e97b1c3ffc338085c162d4f7.css><script defer src=/js/theme-toggle.min.f27920d52fe839d6f73a48e978a4437e8d34fe648fc3b53c3198807cdfbd7382.js></script></head><body><header class=site-header><nav class="container nav"><a class=site-title href=/>about: @sshock_tetris</a><div class=nav-links><a href=/#about>Home</a>
+<a href=/post/ class=active>Posts</a>
+<a href=/project/>Projects</a>
+<button id=theme-toggle type=button aria-label=ライト/ダークモード切替>
+<span class=icon-sun><svg class="icon" fill="currentColor" aria-hidden="true" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 11192 0 96 96 0 11-192 0zm224 0a128 128 0 10-256 0 128 128 0 10256 0z"/></svg></span>
+<span class=icon-moon><svg class="icon" fill="currentColor" aria-hidden="true" viewBox="0 0 384 512"><path d="M223.5 32C1e2 32 0 132.3.0 256S1e2 480 223.5 480c60.6.0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9.0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg></span></button></div></nav></header><main><article class="article container"><header class=article-header><h1>Twitterが死にそうな件</h1><div class=article-meta><time datetime=2023-07-02>2023/07/02</time>
+<span>最終更新: 2023/11/03</span>
+<span><a href=/tag/%E9%9B%91%E8%A8%98/>#雑記</a></span></div></header><div class=article-body><p>2023/7/2、全ユーザーのAPIのレートリミット制限を厳しくした影響で、Twitter<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>が瀕死状態になっている。</p><blockquote class=twitter-tweet><a href=https://twitter.com/elonmusk/status/1675187969420828672>https://twitter.com/elonmusk/status/1675187969420828672</a></blockquote><script async src=https://platform.twitter.com/widgets.js></script><p>このような制限を始めたのは、スクレイピング<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>対策によるもので、
+一時的なものであると主張している。しかし、その対策はスクレイピングに無関係なユーザーにとっても厳しいものとなり、
+ただタイムラインを見るだけでも「問題が発生しました」や「API呼び出しの回数制限を超えました」が
+表示され、「Twitterが終わるのか？」と一時騒然となった。
+常時Twitterが欠かせないような、いわゆるツイ廃の人たちが一番影響を受けている。</p><p>スクレイピングが急増するのは自業自得である。
+Twitterが提供するAPIを利用した方が無駄がないのだが、
+APIによるツイートの取得(やその他操作)が有料化され、課金しても制限が厳しく実用的とは言えなかった。
+元APIの利用者が、これまで通りできていたことを実現するためにスクレイピングするようになったのである。
+ツイートを取得するためだけにウェブサイトから取得するのは効率が悪く、Twitterのサーバー負荷も増える。
+こうなることはTwitterのシステムを運用している人間なら誰もが簡単に想像が付くはずである。
+が、運用に関わる人はかなり辞めさせられているので、運用すらままならない状態になっていそうである。</p><p>それでも強行するのは、Twitterの経営を立て直すためである。
+Twitter社<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>はイーロンマスクに買収される前から経営状態が火の車で、誰も何もしなかったら潰れていたのではないかと言われている。
+今もその状態は変わっていないように見える<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>。従業員の半数近くをレイオフ</a>したり、
+<a href=https://game.watch.impress.co.jp/docs/news/1452658.html>Twitter Blueを機能追加して値上げ</a>したり、
+Twitter BlueからX Premiumに名称を変え、さらに<a href=https://www.watch.impress.co.jp/docs/news/1542821.html>有料プランを3つに増やしたり</a>、
+<a href=https://www.itmedia.co.jp/news/articles/2302/02/news171.html>APIを有料化</a>したりしているが、
+それでも<a href=https://jbpress.ismedia.jp/articles/-/75495>広告主がTwitterから逃げ出して広告収入が6割減少したり</a>、
+<a href=https://cafe-dc.com/cloud/twitter-refused-to-pay-aws-bill-so-amazon-refused-to-pay-for-ads/>AWSクラウドサーバー代が未払いだったり</a>、
+<a href=https://www.itmedia.co.jp/news/articles/2306/15/news200.html>Twitter本社の家賃も未払いで家主から出て行けと言われていたり</a>する。
+黒字化するまでの道のりは果てしなく長い。<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup></p><h2 id=twitterからの避難候補>Twitterからの避難候補</h2><p>さて、いざTwitterが使えなくなった時にどこに避難したらいいのだろうか？
+現時点での候補をいくつか出しておこう。</p><h3 id=misskeyio>Misskey(.io)</h3><p>分散型SNS<sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup>の1つ。その中でも特にユーザーが増えているらしい<sup id=fnref:7><a href=#fn:7 class=footnote-ref role=doc-noteref>7</a></sup>。
+Twitterの「いいね」の代わりとなるリアクションがとても独特で、
+「レターパックで現金送れはすべて詐欺です」と言ったらMisskeyである。</p><p>Misskeyの中でもっとも大規模なサーバーはMisskey.ioであり、Twitterが大規模な障害を起こす度に話題になっている。
+しかし、個人で運営されているサーバーであり、ユーザーの急増には手を焼いている。
+新規ユーザーが増えるとサーバーの負荷が跳ね上がってしまうので、現時点では運営資金の支援者からの招待制になっている。
+Twitterから流れてきたこともあり負荷が高い状態が続いており、サーバー設備の増強が行われるまではタイムラインの表示が遅く、不安定な印象である。
+資金面、人的リソースの面のいずれも既に限界が来ているのではないか。
+それがMisskey.io最大のデメリットなのかもしれない。</p><h3 id=mastodon>Mastodon</h3><p>一昔前に流行した分散型SNS。最近は新興のMisskeyに押され気味だが、独特すぎるリアクション機能がない分見た目の印象では落ち着いた雰囲気だと思う<sup id=fnref:8><a href=#fn:8 class=footnote-ref role=doc-noteref>8</a></sup>。
+最近、とりあえずの所属サーバーとしてmastodon.socialが選ばれ、そこから簡単にアカウント登録ができるようになっている。
+分散型SNSで悩みがちなサーバー選択をすっ飛ばして気軽に始められるようだ。</p><h3 id=bluesky>Bluesky</h3><p>Twitterの創業者、ジャックドーシーが支援する分散型SNS。見た目がTwitterと似ているというのが最大の特長。
+しかし、今のところは招待制で、招待コードがなければ新規登録ができない状態である。
+こちらも新規登録者が急増し、サーバー設備増強が追いついていないと言われている。
+最近クローズドベータになったばかりで、使える機能が少ない。たとえば、鍵垢にできないし、ダイレクトメッセージも送れない。
+サービスとしてはまだまだである。</p><h3 id=discord>Discord</h3><p>Twitterとは全く性質が異なるが、配信者がよく利用しているので、Discordの方が連絡が付きやすいのではないだろうか。</p><h3 id=instagram>Instagram</h3><p>雰囲気がTwitterと真逆なイメージ<sup id=fnref1:7><a href=#fn:7 class=footnote-ref role=doc-noteref>7</a></sup>で、ここに移るのは辛い気持ちになりそうな気がする。</p><h3 id=mixi>mixi</h3><p>え？今頃？</p><h3 id=facebook>Facebook</h3><p>実名必須。ハンドルネームで活動している人から見れば論外だろう。</p><h3 id=threads>Threads</h3><p>FacebookやInstagramを運営するMeta社が新しく提供予定のTwitter対抗サービス。
+2023/7/6サービス開始と、今のようにTwitterが不調なタイミングを見計らって前倒しで始まった印象を受ける。
+あのMeta社が運営していることから、インフラ面は全く心配ないが、
+中身はInstagramの一機能にすぎないことから、Twitterの文化とは相反するものでこれがTwitterの代わりとなるのかどうかは未知数。
+Meta社の個人情報の扱いに不安を持つユーザー<sup id=fnref:9><a href=#fn:9 class=footnote-ref role=doc-noteref>9</a></sup>やキラキラまぶしいInstagram<sup id=fnref1:8><a href=#fn:8 class=footnote-ref role=doc-noteref>8</a></sup>に吐き気を催すユーザーはまず移行しないのではないだろうか。</p><p>現時点では、スマホアプリでしか投稿ができないという筆者にとっては致命的な欠点がある。
+Twitterのトレンドに相当するものがない、名前変更がInstagramと共有で不自由、
+フォローも時系列も無視するタイムライン、ハッシュタグが機能しない、キーワード検索不可など、
+Twitterの代わりと名乗るには必要な機能が足りていない。
+リリースを急ぎすぎたので完成度はお察しください、ということか、それともInstagramの文化に合わせたものだからこういうものです、か。
+Clubhouse<sup id=fnref:10><a href=#fn:10 class=footnote-ref role=doc-noteref>10</a></sup>の二の舞だと言う人もいる。当面はTwitterの代わりにはならないと思う。</p><h2 id=移行できるのか>移行できるのか？</h2><p>もしTwitterが使い物にならなくなり、移行せざるを得なくなった場合、最大の問題にぶち当たる。
+それはフォロワーがどこに移行するかわからないということである。
+ある人はMisskeyに、またある人はBlueskyに、別のある人はそのまま、と人によって意見が分かれ、分断してしまう。
+また、分散型SNSなのにユーザー数の多い同じサーバーにアカウント登録が集中する現象が起きているせいで、新規登録が制限されているような状況である。
+たとえ招待制でなくなったとしてもアカウント登録が面倒だし、多少なりにも使い勝手が変わるから慣れないうちは使いにくいと思うだろう。
+また、移行することを知らず、消えたと誤認されるかもしれない。</p><p>ここへ移行すると決められればいいが、難しい。筆者もMisskeyが良いのかBlueskyが良いのか、
+はたまたMastodonが良いのかは全然決められない。全部というのは面倒なことになるから無理だなと思うし、
+本格的にTwitterが潰れてしまうまでは様子見となりそうである。</p><p>ほか、Twitterに世間の話題やニュースなどがトレンドとして上がってくれるおかげで、
+情報収集がしやすかったのだが、Twitterから移行することで情報が分散されてしまい、
+今後情報収集がやりづらくなったのは大変残念である。
+こればかりは、どうにもならない。</p><p>個人的にはTwitterは潰れてほしくはないが、今のやり方のままでは支援する気になれない、というのが正直な感想である。</p><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>執筆時点(2023/7/6)ではまだTwitterだった。現在はサービス名称がXに変わっているが、ここではTwitterのままとする。&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p>ウェブサイトから必要なデータを抜き出して取得すること。&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3><p>Twitter社は既にX社となっているが、わかりづらいのでTwitter社と呼ぶ。&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:4><p>変わっていないどころかひどくなっているのでは？&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:5><p>今回の一件と、ログインが必要な場面を増やしたことで広告を見るユーザーが減り、
+広告の費用対効果がさらに悪化していることから、広告主離れが加速して広告収入がさらに減る可能性が高い。
+黒字化はますます困難になるだろう。&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:6><p>つぶやきなどのデータが一つのサーバー内に集まっておらず、
+複数に分散されているSNSのこと。趣味ごとに複数のサーバーに分かれていて、
+ユーザーが自分に合ったサーバーを選んでそのサーバーに登録する、という使い方となる。
+サーバーが分かれていても別サーバーのユーザーをフォローできるのが、
+Twitterなどのような一極集中のサービスとは大きく異なることである。&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:7><p><a href=https://www.itmedia.co.jp/news/articles/2303/03/news185.html>ITmediaの記事</a>によると、
+「Slack・Discord的なコミュニケーションができるMastodon、ノリはふたばか2010年代のTwitter」らしい。
+筆者はその頃のTwitterを見たことがないのでよくわからないが、それがウケているらしい。&#160;<a href=#fnref:7 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:8><p>個人の感想である。&#160;<a href=#fnref:8 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a>&#160;<a href=#fnref1:8 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:9><p>どうでもよいことだが、筆者はMeta社に電話番号を渡すと本名バレしたり、
+ここでの活動が知人や仕事関係の人にバレるリスクが高いので絶対に近づかないようにしている。
+(※Instagramのアカウント登録に電話番号は必須ではないから考えすぎだが)
+たとえThreadsがTwitterを抜くぐらいユーザーが増えても行かないだろう。&#160;<a href=#fnref:9 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:10><p>元招待制の音声SNS。本名必須、音声の録音やメモ書きさえも禁止というガチガチの利用規約、
+テキストではなく音声のため距離感の取り方が難しかったからかは不明だが、流行が長続きせず、存在を忘れていた人がほとんど(筆者含む)。&#160;<a href=#fnref:10 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></div><footer class=article-footer><nav class=pager-nav aria-label=前後の記事><div class=prev><a href=/post/20230831/>← 英語禁止ポエム</a></div><div class=next><a href=/post/20230615/>YouTube収益化条件緩和で配信頑張ろうと思ったが... →</a></div></nav></footer></article></main><footer class=site-footer><div class=container><p>© 2026 shellshock. <a href=/index.xml aria-label="RSS フィード"><svg class="icon" fill="currentColor" aria-hidden="true" viewBox="0 0 448 512"><path d="M0 64C0 46.3 14.3 32 32 32c229.8.0 416 186.2 416 416 0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96 14.3 96 0 81.7.0 64zM0 416a64 64 0 11128 0A64 64 0 110 416zM32 160c159.1.0 288 128.9 288 288 0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224-17.7.0-32-14.3-32-32s14.3-32 32-32z"/></svg></a></p><p>Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a></p></div></footer><script>(function(e){var n,s={kitId:"nne4ntc",scriptTimeout:3e3,async:!0},o=e.documentElement,r=setTimeout(function(){o.className=o.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},s.scriptTimeout),t=e.createElement("script"),i=!1,a=e.getElementsByTagName("script")[0];o.className+=" wf-loading",t.src="https://use.typekit.net/"+s.kitId+".js",t.async=!0,t.onload=t.onreadystatechange=function(){if(n=this.readyState,i||n&&n!="complete"&&n!="loaded")return;i=!0,clearTimeout(r);try{Typekit.load(s)}catch{}},a.parentNode.insertBefore(t,a)})(document)</script></body></html>

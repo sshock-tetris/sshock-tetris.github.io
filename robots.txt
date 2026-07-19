@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sshock-tetris.github.io/sitemap.xml
